@@ -8,12 +8,26 @@
     opacity: 1;
   }
 }
+@keyframes black {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 *{
 font-family: "Michroma", sans-serif;
 
 
 }
+html
+{
+  -webkit-tap-highlight-color:transparent;
+}
+div { outline-style:none;}
+
 body {
   background-color: white;
   margin: 0px;
@@ -26,7 +40,8 @@ body {
 }
 
 a {
-  color:#0078ff;
+  color:#ffffff;
+  text-decoration: none;
 }
 ul{
   list-style: none;
@@ -35,7 +50,9 @@ ul{
 
 #container{
   height: 100vh;
+
 }
+
 .disableSelection{
 -webkit-touch-callout: none;
 -webkit-user-select: none;
@@ -79,8 +96,8 @@ text-align: center;
     display:block;
     margin:0;
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 5%;
+    left: 0;
     background-color: rgba(0, 0, 0, 0);
     z-index: 5;
 }
@@ -97,13 +114,13 @@ text-align: center;
 }
 .instructions{
   background: rgba(0,0,0,0); /* For browsers that do not support gradients */
-
+  text-align: left;
   padding-top: 5px;
   width:245px;
   height:30px;
-  font-size: 8px;
+  font-size: 7px;
   display: block;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, .5);
 }
 .blackbar{
   display: none;
@@ -148,7 +165,7 @@ text-align: center;
 }
 .start div{
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);;
+  background-color: rgba(0, 0, 0, 1);
   width: 150px;
   height:150px;
   border: 10px;
@@ -158,6 +175,8 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation-name: black;
+   animation-duration: 40s;
 }
 .hide{
   display: none;
@@ -184,4 +203,30 @@ iframe{
 .vimeo{
   width: 80%;
   text-align: center;
+}
+
+.main-nav {
+  font-size:10px;
+  color:rgba(255, 255, 255, 0.3);;
+  background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+
+  position:absolute;
+  top:85%;
+  width:100%;
+  text-align:center;
+  height:15vh;
+  animation-name: appear;
+   animation-duration: 8s;
+  z-index: 150;
+  margin-bottom: -15vh;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }

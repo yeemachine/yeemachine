@@ -14,15 +14,23 @@
 		<div class="start">
 			<div class="element"></div>
 		</div>
-		<div id="container" class="disableSelection"></div>
+		<div id="container" class="disableSelection" ></div>
 		<div class="blackbar"></div>
 		<ul class='GUIcontainer'>
-			<li class= 'instructions'>navigate with WASD - arrows - mouse<br><br>headphones for best experience</li>
+			<li class= 'instructions'>navigate with WASD - arrows - mouse<br>headphones for best experience</li>
 				<li class = 'moveGUI'></li>
 
 		</ul>
-		<div class="intro" ><p class="introP">my name <br>is <br>Richard</p></div>
+		<div class="intro" ></div>
+		<nav class="main-nav">
+			<ul>
 
+  <a href="#">Nav Link 1</a>
+  <a href="#">Nav Link 2</a>
+  <a href="#">Nav Link 3</a>
+  <a href="#">My Name is Richard</a>
+</ul>
+</nav>
 		<div class="hundred">
 			<div class="content description" ></div>
 			<div class="content photo" ></div>
@@ -33,8 +41,7 @@
 		</div>
 		<div class="hundred">
 			<div class="content photo" style="background-color:black">
-				<iframe src="https://player.vimeo.com/video/171520721?color=ff9933&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p class="vimeo">A demonstration of a sound/sculptural piece that utilizes the human voice, Max Msp, and an Arduino.</p>
+				<iframe src="https://player.vimeo.com/video/171520721?color=ff9933&title=0&byline=0&portrait=0&showinfo=0&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p>A demonstration of a sound/sculptural piece that utilizes the human voice, Max Msp, and an Arduino.</p>
 			</div>
 
 		</div>
@@ -445,6 +452,17 @@
       });
 
     });
+		var  mn = $(".main-nav");
+    mns = "main-nav-scrolled";
+    hdr = $('#container').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > (hdr*.85) ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
 
   </script>
 	</body>
