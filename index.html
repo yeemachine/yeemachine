@@ -25,16 +25,16 @@
 		<nav class="main-nav">
 			<ul class="iconcontainer">
 				<li>
-			  <a href="#">Nav Link 1</a>
+			  <a href="#">Sound</a>
 				</li>
 				<li>
-			  <a href="#">Nav Link 2</a>
+			  <a href="#">Sound</a>
 				</li>
 				<li>
-			  <a href="#">Nav Link 3</a>
+			  <a href="#">Sound</a>
 				</li>
 				<li>
-			  <a href="#">My Name is Richard</a>
+			  <a href="#">Sound</a>
 				</li>
 			</ul>
 </nav>
@@ -81,7 +81,9 @@
 							console.log(response);
 							console.log(response[0].link);
 
-
+							$(window).on('beforeunload', function() {
+							    $(window).scrollTop(0);
+							});
 		//////////////////////////////
 
 		////////////////////////////////////////////////////////////
@@ -462,14 +464,32 @@
 		var  mn = $(".main-nav");
     mns = "main-nav-scrolled";
     hdr = $('#container').height();
-
-$(window).scroll(function() {
-  if( $(this).scrollTop() > (hdr*.85) ) {
-    mn.addClass(mns);
-  } else {
-    mn.removeClass(mns);
-  }
-});
+		var windowPosY = $(this).scrollTop();
+		$(window).scroll(function() {
+		if($(this).scrollTop() > (hdr*.85) && windowPosY < hdr*1.85)
+		{
+			mn.addClass(mns);
+		 $( ".iconcontainer li a" ).html( "Design" );
+		}
+		else{
+	    mn.removeClass(mns);
+			 $( ".iconcontainer li a" ).html( "Sound" );
+		}
+			if($(this).scrollTop() > (hdr*1.85) && windowPosY < hdr*2){
+				$( ".iconcontainer li a" ).html( "Painting" );
+			}
+		});
+// $(window).scroll(function() {
+//   if( $(this).scrollTop() > (hdr*.85) ) {
+//     mn.addClass(mns);
+// 		$( ".iconcontainer li a" ).html( "Design" );
+//   } else if( $(this).scrollTop() > (hdr*1.5) ){
+// 		$( ".iconcontainer li a" ).html( "Painting" );
+// 	} else{
+//     mn.removeClass(mns);
+// 		$( ".iconcontainer li a" ).html( "Sound" );
+//   }
+// });
 
   </script>
 	</body>
