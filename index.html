@@ -27,7 +27,7 @@
 				<li>
 			  <a href="#">Sound</a>
 				</li>
-				<li>
+				<!-- <li>
 			  <a href="#">Sound</a>
 				</li>
 				<li>
@@ -35,7 +35,7 @@
 				</li>
 				<li>
 			  <a href="#">Sound</a>
-				</li>
+				</li> -->
 			</ul>
 </nav>
 		<div class="hundred">
@@ -466,7 +466,7 @@
     hdr = $('#container').height();
 		var windowPosY = $(this).scrollTop();
 		$(window).scroll(function() {
-		if($(this).scrollTop() > (hdr*.85) && windowPosY < hdr*1.85)
+		if($(this).scrollTop() > (hdr*.85) && windowPosY < hdr*2)
 		{
 			mn.addClass(mns);
 		 $( ".iconcontainer li a" ).html( "Design" );
@@ -475,7 +475,7 @@
 	    mn.removeClass(mns);
 			 $( ".iconcontainer li a" ).html( "Sound" );
 		}
-			if($(this).scrollTop() > (hdr*1.85) && windowPosY < hdr*2){
+			if($(this).scrollTop() > (hdr*2) && windowPosY < hdr*3){
 				$( ".iconcontainer li a" ).html( "Painting" );
 			}
 		});
