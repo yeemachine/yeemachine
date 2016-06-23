@@ -25,17 +25,8 @@
 		<nav class="main-nav">
 			<ul class="iconcontainer">
 				<li>
-			  <a href="#">Richard Yee</a>
+			  <a href="#">Richard<br> Yee</a>
 				</li>
-				<!-- <li>
-			  <a href="#">Sound</a>
-				</li>
-				<li>
-			  <a href="#">Sound</a>
-				</li>
-				<li>
-			  <a href="#">Sound</a>
-				</li> -->
 			</ul>
 </nav>
 		<div class="hundred">
@@ -50,8 +41,12 @@
 			<div class="content photo" style="background-color:black">
 				<iframe src="https://player.vimeo.com/video/171520721?color=ff9933&title=0&byline=0&portrait=0&showinfo=0&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p>A demonstration of a sound/sculptural piece that utilizes the human voice, Max Msp, and an Arduino.</p>
 			</div>
+			</div>
+			<div class="hundred">
+				<div class="content photo"></div>
+				<div class="content description" ></div>
 
-		</div>
+
 		<script src="build/three.js"></script>
 
 		<script src="js/controls/FirstPersonControls.js"></script>
@@ -376,7 +371,7 @@
 					});
 
 					$( "#container" ).click(function() {
-						$( ".hide div" ).html( "Click to Resume" );
+						$( ".hide div" ).html( "click to resume" );
 					$( ".hide" ).addClass( "start" );
 					$( ".hide" ).removeClass( "hide" );
 						listener.setMasterVolume(0);
@@ -452,7 +447,7 @@
 		<script>
     $(function() {
       $(".element").typed({
-        strings: ["Hello", "Click to Begin"],
+        strings: ["hello", "click to begin"],
 				startDelay: 1500,
 				backDelay: 1000,
         typeSpeed: 10,
@@ -473,23 +468,16 @@
 		}
 		else{
 	    mn.removeClass(mns);
-			 $( ".iconcontainer li a" ).html( "Sound" );
+			 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
 		}
 			if($(this).scrollTop() > (hdr*2) && windowPosY < hdr*3){
+				$( ".iconcontainer li a" ).html( "Sound" );
+			}
+			if($(this).scrollTop() > (hdr*3) && windowPosY < hdr*4){
 				$( ".iconcontainer li a" ).html( "Painting" );
 			}
 		});
-// $(window).scroll(function() {
-//   if( $(this).scrollTop() > (hdr*.85) ) {
-//     mn.addClass(mns);
-// 		$( ".iconcontainer li a" ).html( "Design" );
-//   } else if( $(this).scrollTop() > (hdr*1.5) ){
-// 		$( ".iconcontainer li a" ).html( "Painting" );
-// 	} else{
-//     mn.removeClass(mns);
-// 		$( ".iconcontainer li a" ).html( "Sound" );
-//   }
-// });
+
 
   </script>
 	</body>
