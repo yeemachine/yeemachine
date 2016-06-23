@@ -15,10 +15,9 @@
 			<div class="element"></div>
 		</div>
 		<div id="container" class="disableSelection" ></div>
-		<div class="blackbar"></div>
-		<ul class='GUIcontainer'>
+		<ul class='instrContainer'>
 			<li class= 'instructions'>navigate with WASD - arrows - mouse<br>headphones for best experience</li>
-				<li class = 'moveGUI'></li>
+
 
 		</ul>
 		<div class="intro" ></div>
@@ -366,21 +365,45 @@
 
 					listener.setMasterVolume(0);
 
-					var customContainer = $('.moveGUI').append($(gui.domElement));
 
-					$( ".start" ).click(function() {
-					$( ".start" ).addClass( "hide" );
-					$( ".start" ).removeClass( "start" );
-					listener.setMasterVolume(1);
-					});
 
-					$( "#container" ).click(function() {
-						$( ".hide div" ).html( "click to resume" );
-					$( ".hide" ).addClass( "start" );
-					$( ".hide" ).removeClass( "hide" );
-						listener.setMasterVolume(0);
+/////////////////////////////////////////////////////////////////////
+					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+					if (isMobile.matches) {
+						$( ".element" ).html( "mobile not<br> supported" );
 
-					});
+					} else {
+
+			      $(".element").typed({
+			        strings: ["hello", "click to begin"],
+							startDelay: 500,
+							backDelay: 1000,
+			        typeSpeed: 10,
+							backSpeed:10,
+			        showCursor: false
+			      });
+
+						$( ".start" ).click(function() {
+						$( ".start" ).addClass( "hide" );
+						$( ".start" ).removeClass( "start" );
+						listener.setMasterVolume(1);
+						});
+
+						$( "#container" ).click(function() {
+							$( ".hide div" ).html( "click to resume" );
+						$( ".hide" ).addClass( "start" );
+						$( ".hide" ).removeClass( "hide" );
+							listener.setMasterVolume(0);
+
+						});
+
+				}
+
+
+
+
+
+
 
 				///
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
@@ -449,17 +472,7 @@
 
 		</script>
 		<script>
-    $(function() {
-      $(".element").typed({
-        strings: ["hello", "click to begin"],
-				startDelay: 1500,
-				backDelay: 1000,
-        typeSpeed: 10,
-				backSpeed:10,
-        showCursor: false
-      });
 
-    });
 		var  mn = $(".main-nav");
     mns = "main-nav-scrolled";
     hdr = $('#container').height();

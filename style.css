@@ -113,7 +113,7 @@ text-align: center;
   background: rgba(0,0,0,1); /* For browsers that do not support gradients */
 
 }
-.GUIcontainer{
+.instrContainer{
     display:block;
     margin-left:142px;
     padding: 0;
@@ -203,9 +203,7 @@ text-align: center;
 .hide{
   display: none;
 }
-.moveGUI{
-  display: none;
-}
+
 .content{
   background-color: black;
   height: 100%;
