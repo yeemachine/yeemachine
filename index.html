@@ -21,7 +21,7 @@
 				<li class = 'moveGUI'></li>
 
 		</ul>
-		<div class="shader" ></div>
+		<div class="intro" ></div>
 		<nav class="main-nav">
 			<ul class="iconcontainer">
 				<li>
@@ -79,6 +79,10 @@
 							$(window).on('beforeunload', function() {
 							    $(window).scrollTop(0);
 							});
+
+
+
+
 		//////////////////////////////
 
 		////////////////////////////////////////////////////////////
@@ -403,7 +407,7 @@
 
 			function onContainerResize() {
 
-				camera.aspect = $(container).width(), $(container).height();
+				camera.aspect = $(container).width() / $(container).height();
 				camera.updateProjectionMatrix();
 
 				renderer.setSize( $(container).width(), $(container).height() );
