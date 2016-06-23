@@ -370,7 +370,14 @@
 /////////////////////////////////////////////////////////////////////
 					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 					if (isMobile.matches) {
-						$( ".element" ).html( "mobile not<br> supported" );
+						$(".element").typed({
+			        strings: ["hello", "mobile not<br>supported"],
+							startDelay: 500,
+							backDelay: 1000,
+			        typeSpeed: 10,
+							backSpeed:10,
+			        showCursor: false
+			      });
 
 					} else {
 
