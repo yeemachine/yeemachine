@@ -306,27 +306,7 @@ iframe{
     filter: grayscale(100%);
 
 }
-/*div.grid.grid--loaded .grid__item:nth-child(1){
-  opacity: .7;
-}
-div.grid.grid--loaded .grid__item:nth-child(2){
-  opacity: .5;
-}
-div.grid.grid--loaded .grid__item:nth-child(3){
-  opacity: .5;
-}
-div.grid.grid--loaded .grid__item:nth-child(4){
-  opacity: .7;
-}
-div.grid.grid--loaded .grid__item:nth-child(5){
-  opacity: .5;
-}
-div.grid.grid--loaded .grid__item:nth-child(6){
-  opacity: .5;
-}
-div.grid.grid--loaded .grid__item:nth-child(7){
-  opacity: .7;
-}*/
+
 .img-wrap img:hover {
   opacity: 1;
   transition: 1s;
