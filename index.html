@@ -796,16 +796,24 @@
 			{
 				mn.addClass(mns);
 			 $( ".iconcontainer li a" ).html( "Design" );
+			 $( ".iconcontainer li a" ).css( "font-size", "10px" );
+
 			}
 			if($(this).scrollTop() < (hdr*.85) && windowPosY ){
 				mn.removeClass(mns);
 				 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
+				 $( ".iconcontainer li a" ).css( "font-size", "10px" );
+
 			}
 				if($(this).scrollTop() > (hdr+gdr) && windowPosY < (hdr+gdr+pdr)){
-					$( ".iconcontainer li a" ).html( "Experiments" );
+					$( ".iconcontainer li a" ).html( "Painting?" );
+					$( ".iconcontainer li a" ).css( "font-size", "10px" );
+
 				}
 				if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+gdr+pdr+sdr)){
-					$( ".iconcontainer li a" ).html( "Sound" );
+					$( ".iconcontainer li a" ).html( "&#9836" );
+					$( ".iconcontainer li a" ).css( "font-size", "20px" );
+
 				}
 			});
 
@@ -840,16 +848,23 @@
 				{
 					mn.addClass(mns);
 				 $( ".iconcontainer li a" ).html( "Design" );
+				 $( ".iconcontainer li a" ).css( "font-size", "10px" );
+
 				}
 				if($(this).scrollTop() < (hdr*.85) && windowPosY ){
 					mn.removeClass(mns);
 					 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
+					 $( ".iconcontainer li a" ).css( "font-size", "10px" );
+
 				}
 					if($(this).scrollTop() > (hdr+(gdr)) && windowPosY < (hdr+gdr+pdr)){
-						$( ".iconcontainer li a" ).html( "Experiments" );
+						$( ".iconcontainer li a" ).html( "Painting?" );
+						$( ".iconcontainer li a" ).css( "font-size", "10px" );
+
 					}
 					if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+(gdr)+pdr+sdr)){
-						$( ".iconcontainer li a" ).html( "Sound" );
+						$( ".iconcontainer li a" ).html( "&#9836" );
+						$( ".iconcontainer li a" ).css( "font-size", "20px" );
 					}
 
 
