@@ -210,7 +210,7 @@
 								</div>
 							</a>
 						</div>
-						
+
 						<div class="grid__item" data-size="1280x853">
 							<a href="img/original/12.gif" class="img-wrap"><img src="img/original/12.gif" alt="img08" />
 								<div class="description description--grid">
@@ -813,14 +813,14 @@
 				mn.addClass(mns);
 			 $( ".iconcontainer li a" ).html( "Design" );
 			}
-			else{
+			if($(this).scrollTop() < (hdr*.85) && windowPosY ){
 				mn.removeClass(mns);
 				 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
 			}
-				if($(this).scrollTop() > (hdr+gdr+100) && windowPosY < (hdr+gdr+pdr+100)){
+				if($(this).scrollTop() > (hdr+gdr) && windowPosY < (hdr+gdr+pdr)){
 					$( ".iconcontainer li a" ).html( "Painting" );
 				}
-				if($(this).scrollTop() > (hdr+gdr+pdr+100) && windowPosY < (hdr+gdr+pdr+sdr)){
+				if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+gdr+pdr+sdr)){
 					$( ".iconcontainer li a" ).html( "Sound" );
 				}
 			});
@@ -861,10 +861,10 @@
 					mn.removeClass(mns);
 					 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
 				}
-					if($(this).scrollTop() > (hdr+(gdr)+100) && windowPosY < (hdr+gdr+pdr+100)){
+					if($(this).scrollTop() > (hdr+(gdr)) && windowPosY < (hdr+gdr+pdr)){
 						$( ".iconcontainer li a" ).html( "Painting" );
 					}
-					if($(this).scrollTop() > (hdr+(gdr)+pdr+100) && windowPosY < (hdr+(gdr)+pdr+sdr)){
+					if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+(gdr)+pdr+sdr)){
 						$( ".iconcontainer li a" ).html( "Sound" );
 					}
 
