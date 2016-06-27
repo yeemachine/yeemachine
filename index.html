@@ -436,9 +436,11 @@
 
 	$( document ).ready(function() {
 
+		setTimeout(function() {
 
 
-		$(window).load(function() {
+
+
 
 			var  mn = $(".main-nav");
 		var  mns = "main-nav-scrolled";
@@ -479,7 +481,7 @@
 				}
 			});
 
-			});
+		}, 2000);
  				var resizeTimeout;
 
 	      $(window).resize(function() {
