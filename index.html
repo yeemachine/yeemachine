@@ -436,12 +436,12 @@
 	$('.class2').imagesLoaded( function() {
 
 
-			var  mn = $(".main-nav");
-		var  mns = "main-nav-scrolled";
-		var  hdr = $('#container').height();
-		var	pdr = $('.class2').height();
-		var	gdr = $('.class1').height();
-		var	sdr = $('.hundred').height();
+		mn = $(".main-nav");
+		mns = "main-nav-scrolled";
+		hdr = $('#container').height();
+		gdr = $('.class1').height();
+		pdr = $('.class2').height();
+		sdr = $('.hundred').height();
 
 		console.log(gdr);
 		console.log(pdr);
@@ -449,7 +449,7 @@
 			var windowPosY = $(this).scrollTop();
 
 			$(window).scroll(function() {
-				console.log(pdr);
+				console.log(gdr);
 
 			if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 			{
@@ -503,7 +503,7 @@
 
 			$(window).scroll(function() {
 				var windowPosY = $(this).scrollTop();
-				console.log(pdr);
+				console.log(gdr);
 				if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 				{
 					mn.addClass(mns);
