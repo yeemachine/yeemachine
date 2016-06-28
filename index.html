@@ -11,6 +11,7 @@
 
 
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 		<script src="js/modernizr-custom.js"></script>
 	</head>
 	<body>
@@ -30,7 +31,7 @@
 		<nav class="main-nav">
 			<ul class="iconcontainer">
 				<li>
-			  <a href="#">Richard<br> Yee</a>
+			  <a href="#"><i class="fa fa-chevron-down hideicon"></i><br>Richard<br>Yee<br><i class="fa fa-chevron-down"></i></a>
 				</li>
 			</ul>
 </nav>
@@ -486,24 +487,24 @@
 			if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 			{
 				mn.addClass(mns);
-			 $( ".iconcontainer li a" ).html( "Design" );
+			 $( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>" );
 			 $( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 			}
 			if($(this).scrollTop() < (hdr*.85) && windowPosY ){
 				mn.removeClass(mns);
-				 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
+				 $( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down'></i>" );
 				 $( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 			}
 				if($(this).scrollTop() > (hdr+gdr) && windowPosY < (hdr+gdr+pdr)){
-					$( ".iconcontainer li a" ).html( "Painting?" );
+					$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Painting?<br><i class='fa fa-chevron-down'></i>" );
 					$( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 				}
 				if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+gdr+pdr+sdr)){
-					$( ".iconcontainer li a" ).html( "&#9836" );
-					$( ".iconcontainer li a" ).css( "font-size", "20px" );
+					$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Sound<br><i class='fa fa-chevron-down hideicon'></i>" );
+					$( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 				}
 			});
@@ -538,24 +539,24 @@
 				if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 				{
 					mn.addClass(mns);
-				 $( ".iconcontainer li a" ).html( "Design" );
+				 $( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'>" );
 				 $( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 				}
 				if($(this).scrollTop() < (hdr*.85) && windowPosY ){
 					mn.removeClass(mns);
-					 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
+					 $( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down'>" );
 					 $( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 				}
 					if($(this).scrollTop() > (hdr+(gdr)) && windowPosY < (hdr+gdr+pdr)){
-						$( ".iconcontainer li a" ).html( "Painting?" );
+						$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Painting?<br><i class='fa fa-chevron-down'>" );
 						$( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 					}
 					if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+(gdr)+pdr+sdr)){
-						$( ".iconcontainer li a" ).html( "&#9836" );
-						$( ".iconcontainer li a" ).css( "font-size", "20px" );
+						$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Sound<br><i class='fa fa-chevron-down hideicon'>" );
+						$( ".iconcontainer li a" ).css( "font-size", "10px" );
 					}
 
 
