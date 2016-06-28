@@ -45,7 +45,8 @@ a {
   height: auto;
 }
 .class2 {
-  padding-top: 100px;
+  padding-top: 200px;
+  padding-bottom: 100px;
   background: rgba(89, 65, 209, 1);
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, 1),rgba(89, 65, 209, 1),rgba(0, 0, 0, 0));
@@ -58,6 +59,16 @@ a {
   /* Standard syntax */
 
   height: auto;
+}
+
+.class2 .grid__item{
+
+}
+.class2 .grid__item .img-wrap img{
+
+}
+.class2 .grid__item .img-wrap img:hover{
+
 }
 ul {
   list-style: none;
