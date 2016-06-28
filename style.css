@@ -68,6 +68,9 @@ a {
 
 }
 .class2 .grid__item .img-wrap img:hover{
+  -webkit-box-shadow: 0px 0px 43px 10px rgba(130, 112, 220, 1);
+  -moz-box-shadow: 0px 0px 43px 10px rgba(130, 112, 220, 1);
+  box-shadow: 0px 0px 43px 10px rgba(130, 112, 220, 1);
 
 }
 ul {
@@ -405,9 +408,10 @@ iframe {
   display: none;
 }
 .description--preview {
+  cursor: default;
   font-size: 1.5em;
   position: absolute;
-  z-index: 140;
+  z-index: 999;
   left: 110%;
   top: 0;
   height: 100%;
@@ -565,6 +569,8 @@ button.action {
   color: orange;
   border: none;
   background: none;
+  left:0;
+  cursor: pointer;
 }
 .action:hover, .action:focus {
   color: #6bd68a;
@@ -597,6 +603,10 @@ button.action {
 }
 .container1 {}
 .container2 {
+}
+.link{
+  color:red;
+
 }
 @media screen and (max-width: 50em) {
   .description--preview h3 {
