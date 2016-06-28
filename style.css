@@ -584,7 +584,7 @@ button.action {
   padding: 0;
   z-index: 998;
   vertical-align: top;
-  color: orange;
+  color: transparent;
   border: none;
   background: none;
   left:0;
