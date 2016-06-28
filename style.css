@@ -47,16 +47,19 @@ a {
 .class2 {
   padding-top: 200px;
   padding-bottom: 100px;
-  background: rgba(89, 65, 209, 1);
+  background: rgba(22, 65, 52, 1);
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, 1),rgba(89, 65, 209, 1),rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, 1),rgba(89, 65, 209, 1),rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, 1),rgba(89, 65, 209, 1),rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, 1),rgba(89, 65, 209, 1),rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* Standard syntax */
+
+
+
 
   height: auto;
 }
@@ -68,9 +71,9 @@ a {
 
 }
 .class2 .grid__item .img-wrap img:hover{
-  -webkit-box-shadow: 0px 0px 43px 10px rgba(130, 112, 220, 1);
-  -moz-box-shadow: 0px 0px 43px 10px rgba(130, 112, 220, 1);
-  box-shadow: 0px 0px 43px 10px rgba(130, 112, 220, 1);
+  -webkit-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 1);
+  -moz-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 1);
+  box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 1);
 
 }
 ul {
@@ -197,6 +200,7 @@ ul {
   color: rgba(255, 255, 255, 1);
 }
 .start {
+  cursor: crosshair;
   position: absolute;
   z-index: 999;
   background-color: transparent;
@@ -411,11 +415,11 @@ iframe {
   cursor: default;
   font-size: 1.5em;
   position: absolute;
+
   z-index: 999;
   left: 110%;
-  top: 0;
-  height: 100%;
-  padding: 0 1em;
+  bottom: 0;
+  padding: 2em;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
@@ -447,11 +451,13 @@ iframe {
   font-weight: normal;
   margin: 0;
   text-align: right;
+  z-index: 999;
 }
 .description--preview p {
   font-size: 0.65em;
   max-width: 100%;
   text-align: right;
+  z-index: 999;
 }
 .description--preview p em {
   color: #5D5D5D;
@@ -570,7 +576,7 @@ button.action {
   border: none;
   background: none;
   left:0;
-  cursor: pointer;
+  cursor: default;
 }
 .action:hover, .action:focus {
   color: #6bd68a;
@@ -612,6 +618,7 @@ button.action {
   .description--preview h3 {
     font-size: 0.5em;
   }
+
   .description--preview p, .details {
     display: none;
   }
