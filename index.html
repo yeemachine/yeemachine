@@ -433,15 +433,15 @@
 
 
 
-	$('.class2').imagesLoaded( function() {
 
+		$(window).load(function() {
 
-		mn = $(".main-nav");
-		mns = "main-nav-scrolled";
-		hdr = $('#container').height();
-		gdr = $('.class1').height();
-		pdr = $('.class2').height();
-		sdr = $('.hundred').height();
+			var  mn = $(".main-nav");
+		var  mns = "main-nav-scrolled";
+		var  hdr = $('#container').height();
+		var	pdr = $('.class2').height();
+		var	gdr = $('.class1').height();
+		var	sdr = $('.hundred').height();
 
 		console.log(gdr);
 		console.log(pdr);
@@ -449,7 +449,6 @@
 			var windowPosY = $(this).scrollTop();
 
 			$(window).scroll(function() {
-				console.log(gdr);
 
 			if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 			{
@@ -458,7 +457,6 @@
 			 $( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 			}
-
 			if($(this).scrollTop() < (hdr*.85) && windowPosY ){
 				mn.removeClass(mns);
 				 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
