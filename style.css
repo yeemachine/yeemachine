@@ -99,6 +99,13 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+.iconcontainer li .fa{
+  color:rgba(255, 255, 255, .25);
+}
+.iconcontainer li .fa.hideicon{
+  color:transparent;
+}
 #container {
   height: 100vh;
   overflow: hidden;
@@ -235,9 +242,7 @@ ul {
 .hideicon{
   color:transparent;
 }
-.fa{
-  font-size: 10px;
-}
+
 
 .content {
   background-color: black;
