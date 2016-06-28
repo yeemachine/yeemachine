@@ -449,6 +449,7 @@
 			var windowPosY = $(this).scrollTop();
 
 			$(window).scroll(function() {
+				console.log(pdr);
 
 			if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 			{
@@ -457,6 +458,7 @@
 			 $( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 			}
+
 			if($(this).scrollTop() < (hdr*.85) && windowPosY ){
 				mn.removeClass(mns);
 				 $( ".iconcontainer li a" ).html( "Richard <br> Yee" );
@@ -501,7 +503,7 @@
 
 			$(window).scroll(function() {
 				var windowPosY = $(this).scrollTop();
-				console.log(gdr);
+				console.log(pdr);
 				if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 				{
 					mn.addClass(mns);
