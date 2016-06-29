@@ -478,7 +478,11 @@
 		    return window.setTimeout(arguments.callee, 10);
 
 		var pdr = $pdr.height();
-		var	gdr = $('.class1').height();
+		var	$gdr = $('.class1').height();
+		if ($gdr.length == 0)
+		    return window.setTimeout(arguments.callee, 10);
+
+		var gdr = $gdr.height();
 		var	sdr = $('.hundred').height();
 
 		console.log(gdr);
