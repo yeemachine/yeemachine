@@ -106,7 +106,7 @@
 		// init masonry after all images are loaded
 		imagesLoaded( this.gridEl, function() {
 			// initialize masonry
-			new Masonry(self.gridEl, {
+			var masonry = new Masonry(self.gridEl, {
 				itemSelector: '.grid__item',
 				isFitWidth : true
 			});
@@ -120,9 +120,19 @@
 			self._setClone();
 
 
+			masonry.on( 'layoutComplete', function() {
+				 $('body').trigger('gridfx-loaded', [self]);
 
 
-		
+
+
+
+
+
+			 });
+
+
+
 
 		});
 	};
@@ -359,5 +369,8 @@
 	};
 
 	window.GridFx = GridFx;
+
+
+
 
 })(window);
