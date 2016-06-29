@@ -119,39 +119,10 @@
 			// create the clone image and append it to the DOM
 			self._setClone();
 
-			var  mn = $(".main-nav");
-		var  mns = "main-nav-scrolled";
-		var  hdr = $('#container').height();
-		var pdr = $('.class2').height();
-		var	gdr = $('.class1').height();
-		var	sdr = $('.hundred').height();
-
-			var windowPosY = $(this).scrollTop();
 
 
-			if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
-			{
-				mn.addClass(mns);
-			 $( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>" );
-			 $( ".iconcontainer li a" ).css( "font-size", "10px" );
 
-			}
-			if($(this).scrollTop() < (hdr*.85) && windowPosY ){
-				mn.removeClass(mns);
-				 $( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down'></i>" );
-				 $( ".iconcontainer li a" ).css( "font-size", "10px" );
-
-			}
-				if($(this).scrollTop() > (hdr+gdr) && windowPosY < (hdr+gdr+pdr)){
-					$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Sculpture<br><i class='fa fa-chevron-down'></i>" );
-					$( ".iconcontainer li a" ).css( "font-size", "10px" );
-
-				}
-				if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+gdr+pdr+sdr)){
-					$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Sound<br><i class='fa fa-chevron-down hideicon'></i>" );
-					$( ".iconcontainer li a" ).css( "font-size", "10px" );
-
-				}
+		
 
 		});
 	};
