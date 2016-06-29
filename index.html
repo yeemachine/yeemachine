@@ -332,15 +332,28 @@
 			</div>
 		</div>
 		<div class="hundred">
-			<div class="content photo" style="background-color:black">
-
+			<div class="vimeoplayer">
 				<iframe src="https://player.vimeo.com/video/171520721?color=ff9933&title=0&byline=0&portrait=0&showinfo=0&autohide=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<p class="vimeodesc">A demonstration of a sound sculpture that utilizes the human voice, Max Msp, and an Arduino.</p>
+			</div>
+			<div class=vimeodesc>
+				<p>A demonstration of a sound sculpture that utilizes the human voice, Max Msp, and an Arduino.</p>
 			</div>
 			</div>
-			<div class="hundred">
+			<div class="hundred infopage">
+						<ul class="education">
+							<li><h3>Education</h3></li>
 
-				</div>
+							<li>Cooper Union 2014-2018 BFA</li>
+						</ul>
+					<div class="about">
+					<p>My name is Richard Yee.<br><br>I'm an artist and designer living in CA and NYC.</p>
+					</div>
+						<ul class="work">
+							<li><h3>Work</h3></li>
+							<li>Yunhua Fang Art Studio</li>
+							<li><br>World Financial Group</li>
+						</ul>
+					</div>
 
 
 
@@ -513,6 +526,19 @@
 					$( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 				}
+///////////////resizes circle///////////////
+				$(function() {
+				var about = $('.infopage .about');
+				var education = $('ul.education');
+				var work = $('ul.work');
+				var aboutwidth = about.width();
+				var educationwidth = education.width();
+				var workwidth = work.width();
+
+				$('.infopage .about').css('height', aboutwidth);
+					$('ul.education').css('height', educationwidth);
+						$('ul.work').css('height', workwidth);
+				});
 			});
 
 
@@ -529,6 +555,22 @@
 
 	function doneResizing()
 	{
+		//////////resizes circle/////////
+		$(function() {
+			var about = $('.infopage .about');
+			var education = $('ul.education');
+			var work = $('ul.work');
+			var aboutwidth = about.width();
+			var educationwidth = education.width();
+			var workwidth = work.width();
+
+			$('.infopage .about').css('height', aboutwidth);
+				$('ul.education').css('height', educationwidth);
+					$('ul.work').css('height', workwidth);
+		});
+
+
+///////////scrolltop nav function/////////
 
 			mn = $(".main-nav");
 			mns = "main-nav-scrolled";
@@ -571,6 +613,8 @@
 
 
 				});
+
+
 
 	}
 

@@ -1,4 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Michroma);
+@font-face {
+    font-family: 'EamesCenturyModern-Black';
+    src: url(fonts/EamesCenturyModern-Black.woff2);
+}
+@font-face {
+    font-family: 'EamesCenturyModern-Thin';
+    src: url(fonts/EamesCenturyModern-Thin.woff2);
+}
+@font-face {
+    font-family: 'EamesCenturyModern-Stencil';
+    src: url(fonts/EamesCenturyModern-Stencil.woff2);
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -49,13 +62,13 @@ a {
   padding-bottom: 100px;
   background: rgba(22, 65, 52, 1);
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
   /* Standard syntax */
 
 
@@ -258,13 +271,35 @@ cursor: default;
 }
 iframe {
   margin-top: 0;
-  width: 70%;
+  width: 80%;
   height: 70%;
   align-items: center;
   justify-content: center;
 }
-.vimeodesc {
+.vimeoplayer{
+  position: absolute;
+  left:0;
   width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+.vimeodesc {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right:0;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.vimeodesc p{
+  width: 50%;
+  text-align: right;
 }
 .main-nav {
   font-size: 12px;
@@ -629,12 +664,97 @@ button.action {
   color:red;
 
 }
+.infopage{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.infopage .about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 100%;
+}
+.infopage .about p{
+  width: 85%;
+  text-align: center;
+/*font-family: 'EamesCenturyModern-Thin';*/
+}
+ul.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  padding: 0;
+  border: 1px dashed rgba(255, 255, 255, .25);
+  border-radius: 100%;
+  -webkit-transform-origin: center center;
+           -moz-transform-origin: center center;
+           -ms-transform-origin: center center;
+           -o-transform-origin: center center;
+           transform-origin: center center;
+           -webkit-transform: rotate(-30deg);
+           -moz-transform: rotate(-30deg);
+           -ms-transform: rotate(-30deg);
+           -o-transform: rotate(-30deg);
+           transform: rotate(-30deg);
+}
+ul.education li {
+  /*font-family: 'EamesCenturyModern-Thin';*/
+  font-size: 9px
+}
+ul.education li h3{
+  /*font-family: 'EamesCenturyModern-Thin';*/
+  color:rgba(255, 255, 255, .25);
+}
+ul.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  padding: 0;
+  border: 1px dashed rgba(255, 255, 255, .25);
+  border-radius: 100%;
+  -webkit-transform-origin: center center;
+           -moz-transform-origin: center center;
+           -ms-transform-origin: center center;
+           -o-transform-origin: center center;
+           transform-origin: center center;
+           -webkit-transform: rotate(30deg);
+           -moz-transform: rotate(30deg);
+           -ms-transform: rotate(30deg);
+           -o-transform: rotate(30deg);
+           transform: rotate(30deg);
+}
+ul.work li{
+/*font-family: 'EamesCenturyModern-Thin';*/
+  font-size: 9px
+}
+ul.work li h3{
+  /*font-family: 'EamesCenturyModern-Thin';*/
+  color:rgba(255, 255, 255, .25);
+}
+
+
 @media screen and (max-width: 50em) {
-  .description--preview h3 {
+  .description--preview h3, .vimeodesc p{
     font-size: 0.5em;
   }
-
-  .description--preview p, .details {
+ul.work li,ul.education li,.infopage .about{
+  font-size: .5em;
+  text-align: center;
+}
+  .description--preview p, .details,ul.work li h3,ul.education li h3 {
     display: none;
   }
 }
