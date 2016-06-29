@@ -555,7 +555,11 @@
 
 					}
 					if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+(gdr)+pdr+sdr)){
-						$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Sound<br><i class='fa fa-chevron-down hideicon'>" );
+						$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Sound<br><i class='fa fa-chevron-down'>" );
+						$( ".iconcontainer li a" ).css( "font-size", "10px" );
+					}
+					if($(this).scrollTop() > (hdr+gdr+pdr+sdr) && windowPosY < (hdr+(gdr)+pdr+sdr+sdr)){
+						$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>About<br><i class='fa fa-chevron-down hideicon'>" );
 						$( ".iconcontainer li a" ).css( "font-size", "10px" );
 					}
 
