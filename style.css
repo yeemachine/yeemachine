@@ -43,7 +43,7 @@ body {
   margin: 0px;
   color: white;
   font-family: Monospace;
-  font-size: 11px;
+  font-size: 9px;
   text-align: center;
   font-weight: bold;
   text-align: center;
@@ -669,6 +669,16 @@ button.action {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background: rgba(22, 65, 52, 1);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  /* Standard syntax */
 }
 .infopage .about{
   display: flex;
@@ -713,7 +723,7 @@ ul.education li {
 }
 ul.education li h3{
   /*font-family: 'EamesCenturyModern-Thin';*/
-  color:rgba(255, 255, 255, .25);
+  color:rgba(142, 108, 252, 1)
 }
 ul.work {
   display: flex;
@@ -742,7 +752,7 @@ ul.work li{
 }
 ul.work li h3{
   /*font-family: 'EamesCenturyModern-Thin';*/
-  color:rgba(255, 255, 255, .25);
+  color:rgba(142, 108, 252, 1)
 }
 
 
