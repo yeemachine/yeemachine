@@ -99,7 +99,10 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.iconcontainer li a{
+cursor: default;
 
+}
 .iconcontainer li .fa{
   color:rgba(255, 255, 255, .25);
 }
