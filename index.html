@@ -539,13 +539,16 @@
 				var about = $('.infopage .about');
 				var education = $('ul.education');
 				var work = $('ul.work');
+				var gridwidth= $('.grid2 .grid--loaded');
 				var aboutwidth = about.width();
 				var educationwidth = education.width();
 				var workwidth = work.width();
+				var vimeowidth = gridwidth.width();
 
 				$('.infopage .about').css('height', aboutwidth);
 					$('ul.education').css('height', educationwidth);
 						$('ul.work').css('height', workwidth);
+						$('iframe').css('width', vimeowidth);
 				});
 			});
 
