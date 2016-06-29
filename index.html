@@ -481,6 +481,7 @@
 
 
 
+		$(window).load(function() {
 			$.when( new GridFx(document.querySelector('.grid2')) ).done(function() {
 			var  mn = $(".main-nav");
 		var  mns = "main-nav-scrolled";
@@ -528,7 +529,6 @@
 
 					}
 				});
-				$(window).load(function() {
 
 ///////////////resizes circle///////////////
 				$(function() {
