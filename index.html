@@ -31,7 +31,7 @@
 		<nav class="main-nav">
 			<ul class="iconcontainer">
 				<li>
-			  <a href="#"><i class="fa fa-chevron-down hideicon"></i><br>Richard<br>Yee<br><i class="fa fa-chevron-down"></i></a>
+			  <a><i class="fa fa-chevron-down hideicon"></i><br>Richard<br>Yee<br><i class="fa fa-chevron-down"></i></a>
 				</li>
 			</ul>
 </nav>
@@ -473,17 +473,10 @@
 			var  mn = $(".main-nav");
 		var  mns = "main-nav-scrolled";
 		var  hdr = $('#container').height();
-		var $pdr = $('.class2');
-		if ($pdr.length == 0)
-		    return window.setTimeout(arguments.callee, 500);
+		var pdr = $('.class2').height();
 
-		var pdr = $pdr.height();
 
 		var	gdr = $('.class1').height();
-		// if ($gdr.length == 0)
-		//     return window.setTimeout(arguments.callee, 10);
-		//
-		// var gdr = $gdr.height();
 		var	sdr = $('.hundred').height();
 
 		console.log(gdr);
