@@ -30,6 +30,9 @@
 }
 * {
   font-family: "Michroma", sans-serif;
+}
+.scroll {
+  overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 html {
