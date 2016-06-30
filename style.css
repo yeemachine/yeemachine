@@ -105,8 +105,14 @@ ul {
 .iconcontainer li a {
   cursor: default;
 }
-.iconcontainer li .fa {
+.fa {
   color: rgba(255, 255, 255, .5);
+}
+.scrollup{
+  color: rgba(255, 255, 255, 1) ;
+}
+.scrolldown{
+  color: rgba(255, 255, 255, 1) ;
 }
 .iconcontainer li .fa.hideicon {
   color: transparent;
@@ -216,6 +222,7 @@ ul {
   justify-content: center;
   animation-name: black;
   animation-duration: 40s;
+  font-size: 12px;
 }
 .hide {
   display: none;
@@ -422,7 +429,7 @@ iframe {
   z-index: 999;
   left: 110%;
   bottom: 0;
-  margin: 2em;
+  margin: 1em;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
@@ -433,7 +440,6 @@ iframe {
   -webkit-justify-content: center;
   justify-content: center;
   -ms-flex-align: start;
-  -webkit-align-items: flex-start;
   align-items: flex-end;
   opacity: 0;
   -webkit-transition: opacity 1s, -webkit-transform 1s;

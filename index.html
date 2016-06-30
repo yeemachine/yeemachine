@@ -590,7 +590,14 @@ $('.height-fix').height(h);
 			var gdr = $('.class1').height();
 			var sdr = $('.hundred').height();
 
+
 			var windowPosY = $(this).scrollTop();
+
+
+
+
+
+
 			if ($(this).scrollTop() > (hdr * .85) && windowPosY < (hdr + (gdr))) {
 				mn.addClass(mns);
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
@@ -609,25 +616,56 @@ $('.height-fix').height(h);
 
 			if ($(this).scrollTop() < (hdr * .85) && windowPosY) {
 				mn.removeClass(mns);
-				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down'></i>");
+				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr) && windowPosY < (hdr + gdr + pdr)) {
-				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Sculpture<br><i class='fa fa-chevron-down'></i>");
+				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sculpture<br><i class='fa fa-chevron-down showicon'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr) && windowPosY < (hdr + gdr + pdr + sdr)) {
-				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Sound<br><i class='fa fa-chevron-down'>");
+				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sound<br><i class='fa fa-chevron-down showicon'>");
 				$(".iconcontainer li a").css("font-size", "10px");
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr + sdr) && windowPosY < (hdr + gdr + pdr + sdr + sdr)) {
-				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>About<br><i class='fa fa-chevron-down hideicon'>");
+				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>About<br><i class='fa fa-chevron-down hideicon'>");
 				$(".iconcontainer li a").css("font-size", "10px");
 			}
+
+			var lastScrollTop = windowPosY;
+			// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+			window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+			var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+			if (st > lastScrollTop){
+				 // downscroll code
+				 $(".fa-chevron-down").addClass("scrolldown");
+				 $(".fa-chevron-up").removeClass("scrollup");
+
+
+
+
+
+			} else {
+			 $(".fa-chevron-down").removeClass("scrolldown");
+			 $(".fa-chevron-up").addClass("scrollup");
+
+
+
+		
+
+
+				// upscroll code
+			}
+			lastScrollTop = st
+			}, false);
+
+
 		});
+
+
 	</script>
 
 	<script>

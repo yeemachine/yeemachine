@@ -1,13 +1,4 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2015, Codrops
- * http://www.codrops.com
- */
+
 ;(function(window) {
 
 	'use strict';
@@ -191,6 +182,7 @@
 		// item's image
 		var gridImg = item.querySelector('img'),
 			gridImgOffset = gridImg.getBoundingClientRect();
+			
 
 		// index of current item
 		this.current = this.items.indexOf(item);
