@@ -489,17 +489,14 @@
 
 
 		$(window).load(function() {
-
-
-			// $.when( new GridFx(document.querySelector('.grid2')) ).done(function() {
+			function waitASec(callback) {
+			    window.setTimeout(callback, 2000)
+			}
+function scrollNav(){
 			var  mn = $(".main-nav");
 		var  mns = "main-nav-scrolled";
 		var  hdr = $('#container').height();
-		var $pdr = $('.class2');
-if ($pdr.length == 0)
-    return window.setTimeout(arguments.callee, 1000);
-
-var pdr = $pdr.height();
+		var pdr = $('.class2').height();
 		var	gdr = $('.class1').height();
 		var	sdr = $('.hundred').height();
 
@@ -542,6 +539,8 @@ var pdr = $pdr.height();
 
 					}
 });
+}
+waitASec(scrollNav);
 ///////////////resizes circle///////////////
 				$(function() {
 				var about = $('.infopage .about');
