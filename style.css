@@ -156,6 +156,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   background: rgba(0, 0, 0, 1);
   /* For browsers that do not support gradients */
 }
@@ -257,7 +260,7 @@ ul {
 }
 iframe {
   margin-top: 0;
-  width: 100%;
+  width: 60%;
   height: 60%;
   align-items: center;
   justify-content: center;
@@ -273,19 +276,11 @@ iframe {
   justify-content: center;
 }
 .vimeodesc {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 10%;
-  width: 20%;
-  height: 100%;
-  align-items: flex-end;
-  justify-content: center;
-}
-.vimeodesc p {
-  width: 50%;
+  width: 15%;
   text-align: right;
+  margin-left: 5%
 }
+
 .main-nav {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.3);
@@ -453,7 +448,7 @@ iframe {
   z-index: 999;
   left: 110%;
   bottom: 0;
-  padding: 2em;
+  margin: 2em;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
@@ -677,6 +672,7 @@ button.action {
   text-align: center;
   /*font-family: 'EamesCenturyModern-Thin';*/
 }
+
 ul.education {
   display: flex;
   flex-direction: column;
@@ -735,19 +731,22 @@ ul.work li h3 {
   /*font-family: 'EamesCenturyModern-Thin';*/
   color: rgba(142, 108, 252, 1)
 }
-@media screen and (max-width: 50em) {
+
+@media screen and (max-width: 760px) {
   .description--preview h3, .vimeodesc p {
     font-size: 0.5em;
   }
   ul.work li, ul.education li, .infopage .about {
-    font-size: .5em;
+    font-size: 8px;
     text-align: center;
+  }
+  ul.work, ul.education{
+    width: 40%
   }
   .description--preview p, .details, ul.work li h3, ul.education li h3 {
     display: none;
   }
-}
-@media screen and (max-width: 760px) {
+
   .img-wrap img:hover {
     opacity: 1;
     transition: .5s;
@@ -784,5 +783,29 @@ ul.work li h3 {
     /* Standard syntax */
     border: 0px !important
 
+  }
+  .hundred{
+    flex-direction: column;
+  }
+  iframe{
+    width: 80%;
+    height: 40%;
+  }
+  .vimeodesc{
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .preview{
+    width: 100%;
+  }
+  .description{
+
+  }
+  .description--preview{
+    left:0;
+    background-color: rgba(31, 29, 29, 0.5);
+    height:auto;
   }
 }
