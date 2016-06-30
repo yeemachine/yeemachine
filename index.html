@@ -490,7 +490,7 @@
 
 		$(window).load(function() {
 			function waitASec(callback) {
-			    window.setTimeout(callback, 2000)
+			    window.setTimeout(callback, 5000)
 			}
 function scrollNav(){
 			var  mn = $(".main-nav");
@@ -533,11 +533,11 @@ function scrollNav(){
 						$( ".iconcontainer li a" ).css( "font-size", "10px" );
 
 					}
-					if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+(gdr)+pdr+sdr)){
+					if($(this).scrollTop() > (hdr+gdr+pdr) && windowPosY < (hdr+gdr+pdr+sdr)){
 						$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>Sound<br><i class='fa fa-chevron-down'>" );
 						$( ".iconcontainer li a" ).css( "font-size", "10px" );
 					}
-					if($(this).scrollTop() > (hdr+gdr+pdr+sdr) && windowPosY < (hdr+(gdr)+pdr+sdr+sdr)){
+					if($(this).scrollTop() > (hdr+gdr+pdr+sdr) && windowPosY < (hdr+gdr+pdr+sdr+sdr)){
 						$( ".iconcontainer li a" ).html( "<i class='fa fa-chevron-up'></i><br>About<br><i class='fa fa-chevron-down hideicon'>" );
 						$( ".iconcontainer li a" ).css( "font-size", "10px" );
 					}
