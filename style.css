@@ -47,8 +47,7 @@ body {
   text-align: center;
   font-weight: bold;
   text-align: center;
-  overflow: scroll;
--webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; 
 }
 a {
   color: #ffffff;
