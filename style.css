@@ -47,7 +47,7 @@ body {
   text-align: center;
   font-weight: bold;
   text-align: center;
-  overflow: auto;
+  overflow: scroll;
 -webkit-overflow-scrolling: touch;
 }
 a {
