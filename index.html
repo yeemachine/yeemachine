@@ -208,7 +208,7 @@
 												</div>
 
 
-												
+
 
 					</div>
 					<!-- /grid -->
@@ -489,11 +489,17 @@
 
 
 		$(window).load(function() {
+
+
 			// $.when( new GridFx(document.querySelector('.grid2')) ).done(function() {
 			var  mn = $(".main-nav");
 		var  mns = "main-nav-scrolled";
 		var  hdr = $('#container').height();
-		var pdr = $('.class2').height();
+		var $pdr = $('.class2');
+if ($pdr.length == 0)
+    return window.setTimeout(arguments.callee, 1000);
+
+var pdr = $pdr.height();
 		var	gdr = $('.class1').height();
 		var	sdr = $('.hundred').height();
 
