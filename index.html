@@ -489,10 +489,10 @@
 
 
 		$(window).load(function() {
-			function waitASec(callback) {
-			    window.setTimeout(callback, 0)
-			}
-function scrollNav(){
+// 			function waitASec(callback) {
+// 			    window.setTimeout(callback, 0)
+// 			}
+// function scrollNav(){
 
 		// if ($pdr.length == 0)
 		//     return window.setTimeout(arguments.callee, 10);
@@ -501,8 +501,6 @@ function scrollNav(){
 
 
 
-		console.log(gdr);
-		console.log(pdr);
 
 
 
@@ -517,7 +515,6 @@ function scrollNav(){
 			var	sdr = $('.hundred').height();
 
 				var windowPosY = $(this).scrollTop();
-			// var $pdr = $('.class2');
 				if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 				{
 					mn.addClass(mns);
@@ -545,9 +542,9 @@ function scrollNav(){
 						$( ".iconcontainer li a" ).css( "font-size", "10px" );
 					}
 });
-}
-waitASec(scrollNav);
-///////////////resizes circle///////////////
+// }
+// waitASec(scrollNav);
+/////////////resizes circle///////////////
 				$(function() {
 				var about = $('.infopage .about');
 				var education = $('ul.education');
