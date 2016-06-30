@@ -30,6 +30,7 @@
 }
 * {
   font-family: "Michroma", sans-serif;
+  -webkit-overflow-scrolling: touch;
 }
 html {
   -webkit-tap-highlight-color: transparent;
@@ -47,16 +48,11 @@ body {
   text-align: center;
   font-weight: bold;
   text-align: center;
-  overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+
 
 }
 
-body::-webkit-scrollbar
-{
-    -webkit-appearance: none;
-    background-color: transparent;
-}
+
 a {
   color: #ffffff;
   text-decoration: none;
