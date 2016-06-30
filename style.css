@@ -747,20 +747,7 @@ ul.work li h3 {
     display: none;
   }
 
-  /*.img-wrap img:hover {
-    opacity: 1;
-    transition: .5s;
-    -webkit-box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
-    -moz-box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
-    box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
-  .class2 .grid__item .img-wrap img:hover {
-    -webkit-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
-    -moz-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
-    box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
-  }*/
+
   .img-wrap img {
     display: block;
     max-width: 100%;
