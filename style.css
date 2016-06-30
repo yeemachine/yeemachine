@@ -740,7 +740,8 @@ ul.work li h3 {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     /* Standard syntax */
-    border: 0px !important
+    border: 0px !important;
+    transition: 1s;
 
   }
   .hundred{
