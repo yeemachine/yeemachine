@@ -795,4 +795,7 @@ ul.work li h3 {
     background-color: rgba(31, 29, 29, 0.5);
     height:auto;
   }
+  .instrContainer{
+    display: none;
+  }
 }
