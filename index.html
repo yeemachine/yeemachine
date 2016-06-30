@@ -935,6 +935,7 @@
 					/////////////////////////////////////////////////////////////////////
 					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 					if (isMobile.matches) {
+						$(".grid__item").removeClass('no-touch');
 						$(".element").typed({
 							strings: ["Hello", "Mobile not<br>Supported"],
 							startDelay: 500,
