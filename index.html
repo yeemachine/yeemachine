@@ -23,7 +23,7 @@
 	<div class="start">
 		<div class="element"></div>
 	</div>
-	<div id="container" class="disableSelection height-fix"></div>
+	<div id="container" class="disableSelection height-load"></div>
 	<ul class='instrContainer'>
 		<li class='instructions'>navigate with WASD - arrows - mouse
 			<br>headphones for best experience</li>
@@ -396,8 +396,8 @@
 	<script>
 	$( document ).ready(function() {
 	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	var h = $('.height-fix').height();
-	$('.height-fix').height(h);
+	var h = $('.height-load').height();
+	$('.height-fix').css('bottom',h*.15);
 	}
 	});
 
