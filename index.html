@@ -493,15 +493,7 @@
 			    window.setTimeout(callback, 2000)
 			}
 function scrollNav(){
-			var  mn = $(".main-nav");
-		var  mns = "main-nav-scrolled";
-		var  hdr = $('#container').height();
-		var pdr = $('.class2').height();
-		var	gdr = $('.class1').height();
-		var	sdr = $('.hundred').height();
 
-			var windowPosY = $(this).scrollTop();
-		// var $pdr = $('.class2');
 		// if ($pdr.length == 0)
 		//     return window.setTimeout(arguments.callee, 10);
 		//
@@ -515,6 +507,17 @@ function scrollNav(){
 
 
 			$(window).scroll(function() {
+
+
+				var  mn = $(".main-nav");
+			var  mns = "main-nav-scrolled";
+			var  hdr = $('#container').height();
+			var pdr = $('.class2').height();
+			var	gdr = $('.class1').height();
+			var	sdr = $('.hundred').height();
+
+				var windowPosY = $(this).scrollTop();
+			// var $pdr = $('.class2');
 				if($(this).scrollTop() > (hdr*.85) && windowPosY < (hdr+(gdr)))
 				{
 					mn.addClass(mns);
