@@ -596,15 +596,21 @@ $('.height-fix').height(h);
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 
-				$(".main-nav").addClass("mobilenav");
 
 
 			}
+			if ($(this).scrollTop() > (hdr) && windowPosY) {
+
+				$(".main-nav").addClass("mobilenav");
+			}
+				if ($(this).scrollTop() < (hdr) && windowPosY) {
+					$(".main-nav").removeClass("mobilenav");
+			}
+
 			if ($(this).scrollTop() < (hdr * .85) && windowPosY) {
 				mn.removeClass(mns);
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
-				$(".main-nav").removeClass("mobilenav");
 
 
 			}

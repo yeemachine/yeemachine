@@ -19,6 +19,7 @@
     opacity: 1;
   }
 }
+
 @keyframes black {
   from {
     opacity: 0.5;
@@ -741,7 +742,7 @@ ul.work li h3 {
     background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     /* Standard syntax */
     border: 0px !important;
-    transition: 1s;
+
 
   }
   .hundred{
