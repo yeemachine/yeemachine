@@ -108,6 +108,9 @@ ul {
 .fa {
   color: rgba(255, 255, 255, .5);
 }
+.fa-times{
+  color:transparent;
+}
 .scrollup{
   color: rgba(255, 255, 255, 1) ;
 }
