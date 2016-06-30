@@ -1,17 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Michroma);
 @font-face {
-    font-family: 'EamesCenturyModern-Black';
-    src: url(fonts/EamesCenturyModern-Black.woff2);
+  font-family: 'EamesCenturyModern-Black';
+  src: url(fonts/EamesCenturyModern-Black.woff2);
 }
 @font-face {
-    font-family: 'EamesCenturyModern-Thin';
-    src: url(fonts/EamesCenturyModern-Thin.woff2);
+  font-family: 'EamesCenturyModern-Thin';
+  src: url(fonts/EamesCenturyModern-Thin.woff2);
 }
 @font-face {
-    font-family: 'EamesCenturyModern-Stencil';
-    src: url(fonts/EamesCenturyModern-Stencil.woff2);
+  font-family: 'EamesCenturyModern-Stencil';
+  src: url(fonts/EamesCenturyModern-Stencil.woff2);
 }
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -62,32 +61,22 @@ a {
   padding-bottom: 100px;
   background: rgba(22, 65, 52, 1);
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1), rgba(22, 65, 52, 1), rgba(0, 0, 0, 0));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1), rgba(22, 65, 52, 1), rgba(0, 0, 0, 0));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1), rgba(22, 65, 52, 1), rgba(0, 0, 0, 0));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1),rgba(22, 65, 52, 1),rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(22, 65, 52, 1), rgba(22, 65, 52, 1), rgba(0, 0, 0, 0));
   /* Standard syntax */
-
-
-
-
   height: auto;
 }
-
-.class2 .grid__item{
-
-}
-.class2 .grid__item .img-wrap img{
-
-}
-.class2 .grid__item .img-wrap img:hover{
+.class2 .grid__item {}
+.class2 .grid__item .img-wrap img {}
+.class2 .grid__item .img-wrap img:hover {
   -webkit-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 1);
   -moz-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 1);
   box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 1);
-
 }
 ul {
   list-style: none;
@@ -112,15 +101,14 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.iconcontainer li a{
-cursor: default;
-
+.iconcontainer li a {
+  cursor: default;
 }
-.iconcontainer li .fa{
-  color:rgba(255, 255, 255, .25);
+.iconcontainer li .fa {
+  color: rgba(255, 255, 255, .25);
 }
-.iconcontainer li .fa.hideicon{
-  color:transparent;
+.iconcontainer li .fa.hideicon {
+  color: transparent;
 }
 #container {
   height: 100vh;
@@ -255,11 +243,9 @@ cursor: default;
 .hide {
   display: none;
 }
-.hideicon{
-  color:transparent;
+.hideicon {
+  color: transparent;
 }
-
-
 .content {
   background-color: black;
   height: 100%;
@@ -276,28 +262,27 @@ iframe {
   align-items: center;
   justify-content: center;
 }
-.vimeoplayer{
+.vimeoplayer {
   position: absolute;
-  left:10%;
+  left: 10%;
   width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
 }
 .vimeodesc {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right:10%;
+  right: 10%;
   width: 20%;
   height: 100%;
   align-items: flex-end;
   justify-content: center;
 }
-.vimeodesc p{
+.vimeodesc p {
   width: 50%;
   text-align: right;
 }
@@ -465,7 +450,6 @@ iframe {
   cursor: default;
   font-size: 1.5em;
   position: absolute;
-
   z-index: 999;
   left: 110%;
   bottom: 0;
@@ -625,7 +609,7 @@ button.action {
   color: transparent;
   border: none;
   background: none;
-  left:0;
+  left: 0;
   cursor: default;
 }
 .action:hover, .action:focus {
@@ -658,43 +642,40 @@ button.action {
   color: transparent;
 }
 .container1 {}
-.container2 {
+.container2 {}
+.link {
+  color: red;
 }
-.link{
-  color:red;
-
-}
-.infopage{
+.infopage {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background: rgba(22, 65, 52, 1);
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4), rgba(89, 65, 209, .4), rgba(0, 0, 0, 0));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4), rgba(89, 65, 209, .4), rgba(0, 0, 0, 0));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4), rgba(89, 65, 209, .4), rgba(0, 0, 0, 0));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4),rgba(89, 65, 209, .4),rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(89, 65, 209, .4), rgba(89, 65, 209, .4), rgba(0, 0, 0, 0));
   /* Standard syntax */
 }
-.infopage .about{
+.infopage .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50%;
-
   font-size: 16px;
   border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 100%;
 }
-.infopage .about p{
+.infopage .about p {
   width: 85%;
   text-align: center;
-/*font-family: 'EamesCenturyModern-Thin';*/
+  /*font-family: 'EamesCenturyModern-Thin';*/
 }
 ul.education {
   display: flex;
@@ -707,23 +688,23 @@ ul.education {
   border: 1px dashed rgba(255, 255, 255, .25);
   border-radius: 100%;
   -webkit-transform-origin: center center;
-           -moz-transform-origin: center center;
-           -ms-transform-origin: center center;
-           -o-transform-origin: center center;
-           transform-origin: center center;
-           -webkit-transform: rotate(-30deg);
-           -moz-transform: rotate(-30deg);
-           -ms-transform: rotate(-30deg);
-           -o-transform: rotate(-30deg);
-           transform: rotate(-30deg);
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
 ul.education li {
   /*font-family: 'EamesCenturyModern-Thin';*/
   font-size: 9px
 }
-ul.education li h3{
+ul.education li h3 {
   /*font-family: 'EamesCenturyModern-Thin';*/
-  color:rgba(142, 108, 252, 1)
+  color: rgba(142, 108, 252, 1)
 }
 ul.work {
   display: flex;
@@ -736,62 +717,58 @@ ul.work {
   border: 1px dashed rgba(255, 255, 255, .25);
   border-radius: 100%;
   -webkit-transform-origin: center center;
-           -moz-transform-origin: center center;
-           -ms-transform-origin: center center;
-           -o-transform-origin: center center;
-           transform-origin: center center;
-           -webkit-transform: rotate(30deg);
-           -moz-transform: rotate(30deg);
-           -ms-transform: rotate(30deg);
-           -o-transform: rotate(30deg);
-           transform: rotate(30deg);
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
-ul.work li{
-/*font-family: 'EamesCenturyModern-Thin';*/
+ul.work li {
+  /*font-family: 'EamesCenturyModern-Thin';*/
   font-size: 9px
 }
-ul.work li h3{
+ul.work li h3 {
   /*font-family: 'EamesCenturyModern-Thin';*/
-  color:rgba(142, 108, 252, 1)
+  color: rgba(142, 108, 252, 1)
 }
-
-
 @media screen and (max-width: 50em) {
-  .description--preview h3, .vimeodesc p{
+  .description--preview h3, .vimeodesc p {
     font-size: 0.5em;
   }
-ul.work li,ul.education li,.infopage .about{
-  font-size: .5em;
-  text-align: center;
-}
-  .description--preview p, .details,ul.work li h3,ul.education li h3 {
+  ul.work li, ul.education li, .infopage .about {
+    font-size: .5em;
+    text-align: center;
+  }
+  .description--preview p, .details, ul.work li h3, ul.education li h3 {
     display: none;
   }
 }
 @media screen and (max-width: 760px) {
-.img-wrap img:hover {
-  opacity: 1;
-  transition: .5s;
-  -webkit-box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
-  -moz-box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
-  box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
-  -webkit-filter: grayscale(0%);
-
-  filter: grayscale(0%);
-}
-.class2 .grid__item .img-wrap img:hover{
-  -webkit-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
-  -moz-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
-  box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
-
-}
-.img-wrap img {
-  display: block;
-  max-width: 100%;
-  transition: .5s;
-  opacity: 1;
-  -webkit-filter: grayscale(0%);
-  /* Chrome, Safari, Opera */
-  filter: grayscale(0%);
-}
+  .img-wrap img:hover {
+    opacity: 1;
+    transition: .5s;
+    -webkit-box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
+    -moz-box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 43px 10px rgba(255, 255, 255, 0);
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  .class2 .grid__item .img-wrap img:hover {
+    -webkit-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
+    -moz-box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
+    box-shadow: 0px 0px 43px 10px rgba(80, 112, 102, 0);
+  }
+  .img-wrap img {
+    display: block;
+    max-width: 100%;
+    transition: .5s;
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+  }
 }
