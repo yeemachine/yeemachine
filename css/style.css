@@ -142,6 +142,7 @@ ul {
   height: 100vh;
   display:block;
   overflow: hidden;
+  cursor: crosshair;
 }
 .disableSelection {
   -webkit-touch-callout: none;
@@ -215,7 +216,7 @@ ul {
 
 
 .start {
-  cursor: crosshair;
+  cursor: pointer;
   position: absolute;
   z-index: 999;
   background-color: transparent;
@@ -1149,7 +1150,7 @@ ul.work li h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  
+
   }
   .infopage .about {
     width: 80%;
