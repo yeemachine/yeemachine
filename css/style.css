@@ -546,7 +546,23 @@ iframe {
   text-align: right;
   margin-left: 5%
 }
-
+.metaimg{
+  background-image: url("../img/original/soundscapeglitch.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:inherit;
+  background-size: 150% ;
+  margin-top: 0;
+  width: 60%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+}
+.metadesc {
+  width: 15%;
+  text-align: right;
+  margin-left: 5%
+}
 .main-nav {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.3);
@@ -1004,8 +1020,28 @@ ul.work li h3 {
   }
 }
 @media screen and (max-width: 760px) {
-  .description--preview h3, .vimeodesc p {
+  .description--preview h3, p.vimeodesc  {
     font-size: 0.7em;
+  }
+  iframe{
+      width: 80%;
+      height: 40%;
+    }
+    .metaimg{
+        width: 80%;
+        height: 40%;
+      }
+      .metadesc{
+        margin-top: 5%;
+        width: 80%;
+        margin-left: 0;
+        text-align: center;
+      }
+  .vimeodesc{
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 0;
+    text-align: center;
   }
   ul.work li, ul.education li, .infopage .about,ul.work li h3, ul.education li h3 {
     font-size: .9em;
@@ -1050,16 +1086,7 @@ ul.work li h3 {
   .hundred{
     flex-direction: column;
   }
-  iframe{
-    width: 80%;
-    height: 40%;
-  }
-  .vimeodesc{
-    margin-top: 5%;
-    width: 80%;
-    margin-left: 0;
-    text-align: center;
-  }
+
   .preview{
     width: 100%;
   }
