@@ -32,8 +32,8 @@
   font-family: "Michroma", sans-serif;
 }
 .scroll {
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
+  /*overflow-y: auto; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;*/
 }
 html {
   -webkit-tap-highlight-color: transparent;
