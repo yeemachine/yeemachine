@@ -21,7 +21,11 @@
 
 
 	<div class="start">
-		<div class="element"></div>
+		<div>
+			<div class="element">
+
+		</div>
+		</div>
 	</div>
 	<div id="container" class="disableSelection height-fix"></div>
 	<ul class='instrContainer'>
@@ -1003,7 +1007,7 @@ $('.height-fix').height(h);
 					if (isMobile.matches) {
 						$(".grid__item").removeClass('no-touch');
 						$(".element").typed({
-							strings: ["Hello", "Mobile not<br>Supported"],
+							strings: ["Hello", "<p class='glitch3' data-text='Mobile Not Supported'>Mobile Not Supported</p>"],
 							startDelay: 500,
 							backDelay: 1000,
 							typeSpeed: 10,
@@ -1014,7 +1018,7 @@ $('.height-fix').height(h);
 					} else {
 
 						$(".element").typed({
-							strings: ["Hello", "Click to Begin"],
+							strings: ["Hello", "<p class='glitch' data-text='Click to Begin'>Click to Begin</p>"],
 							startDelay: 500,
 							backDelay: 1000,
 							typeSpeed: 10,
@@ -1029,7 +1033,8 @@ $('.height-fix').height(h);
 						});
 
 						$("#container").click(function() {
-							$(".hide div").html("Click to Resume");
+							$(".hide div").html("<div><p class='glitch2' data-text='Click to Resume'>Click to Resume</p>");
+
 							$(".hide").addClass("start");
 							$(".hide").removeClass("hide");
 							listener.setMasterVolume(0);
