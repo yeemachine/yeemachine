@@ -32,12 +32,13 @@
   font-family: "Michroma", sans-serif;
 }
 .scroll {
-  /*overflow-y: auto; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;*/
+
 }
 html {
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 div {
   outline-style: none;
