@@ -417,6 +417,8 @@
 
 
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.3.5/tabletop.min.js"></script>
+	<script src="https://cdn.rawgit.com/CooperUnion/javascript-learning/master/tabletop-simple.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
@@ -707,7 +709,8 @@ $('.height-fix').height(h);
 		////Spreadsheet Config////
 		$(document).ready(function() {
 			//configure spreadsheet
-
+			var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/17D2pdAaHixfjQ6s5uzu56iHB5oFG7jOFLqIaP_M9Ly8/pubhtml';
+			getSpreadsheetJSON(public_spreadsheet_url, function(response) {
 
 
 				$(window).on('beforeunload', function() {
@@ -822,35 +825,35 @@ $('.height-fix').height(h);
 
 
 
-					var sphere = new THREE.SphereGeometry(80, 50, 50);
+					var sphere = new THREE.SphereGeometry(response[0].radius, response[0].polygon, response[0].polygon);
 
 					var objectMaterial1 = new THREE.MeshStandardMaterial({
-						color: 'rgb(255, 80, 43)',
+						color: response[0].spherecolor,
 						roughness: 0.5,
 						metalness: 1.0
 					});
 					var objectMaterial2 = new THREE.MeshStandardMaterial({
-						color: 'rgb(255, 80, 43)',
+						color: response[1].spherecolor,
 						roughness: 0.5,
 						metalness: 0.5
 					});
 					var objectMaterial5 = new THREE.MeshStandardMaterial({
-						color: 'rgb(255, 80, 43)',
+						color: response[2].spherecolor,
 						roughness: 0.5,
 						metalness: 1.0
 					});
 					var objectMaterial6 = new THREE.MeshStandardMaterial({
-						color: 'rgb(255, 80, 43)',
+						color: response[3].spherecolor,
 						roughness: 0.5,
 						metalness: 0.5
 					});
 					var objectMaterial7 = new THREE.MeshStandardMaterial({
-						color: 'rgb(255, 80, 43)',
+						color: response[4].spherecolor,
 						roughness: 0.5,
 						metalness: 1.0
 					});
 					var objectMaterial8 = new THREE.MeshStandardMaterial({
-						color: 'rgb(255, 80, 43)',
+						color: response[5].spherecolor,
 						roughness: 0.5,
 						metalness: 0.5
 					});
@@ -864,13 +867,13 @@ $('.height-fix').height(h);
 					// sound spheres
 					for (var i = 0; i < 15; i++) {
 						var mesh1 = new THREE.Mesh(sphere, material_sphere1);
-						mesh1.position.x = (Math.random() - 0.5) * 5000;
-						mesh1.position.y = (Math.random() - 0.5) * 5000;
-						mesh1.position.z = (Math.random() - 0.5) * 5000;
+						mesh1.position.x = (Math.random() - 0.5) * response[0].spacing;
+						mesh1.position.y = (Math.random() - 0.5) * response[0].spacing;
+						mesh1.position.z = (Math.random() - 0.5) * response[0].spacing;
 						scene.add(mesh1);
 
 						var sound1 = new THREE.PositionalAudio(listener);
-						sound1.load('sounds/Hiei1.ogg');
+						sound1.load(response[0].link);
 						sound1.setRefDistance(20);
 						sound1.autoplay = true;
 						sound1.setLoop(true);
@@ -882,13 +885,13 @@ $('.height-fix').height(h);
 					//
 					for (var i = 0; i < 5; i++) {
 						var mesh2 = new THREE.Mesh(sphere, material_sphere2);
-						mesh2.position.x = (Math.random() - 0.5) * 5000;
-						mesh2.position.y = (Math.random() - 0.5) * 5000;
-						mesh2.position.z = (Math.random() - 0.5) * 5000;
+						mesh2.position.x = (Math.random() - 0.5) * response[1].spacing;
+						mesh2.position.y = (Math.random() - 0.5) * response[1].spacing;
+						mesh2.position.z = (Math.random() - 0.5) * response[1].spacing;
 						scene.add(mesh2);
 
 						var sound2 = new THREE.PositionalAudio(listener);
-						sound2.load('sounds/kuma1.ogg');
+						sound2.load(response[1].link);
 						sound2.setRefDistance(20);
 						sound2.autoplay = true;
 						sound2.setLoop(true);
@@ -902,13 +905,13 @@ $('.height-fix').height(h);
 					//
 					for (var i = 0; i < 10; i++) {
 						var mesh5 = new THREE.Mesh(sphere, material_sphere5);
-						mesh5.position.x = (Math.random() - 0.5) * 5000;
-						mesh5.position.y = (Math.random() - 0.5) * 5000;
-						mesh5.position.z = (Math.random() - 0.5) * 5000;
+						mesh5.position.x = (Math.random() - 0.5) * response[2].spacing;
+						mesh5.position.y = (Math.random() - 0.5) * response[2].spacing;
+						mesh5.position.z = (Math.random() - 0.5) * response[2].spacing;
 						scene.add(mesh5);
 
 						var sound5 = new THREE.PositionalAudio(listener);
-						sound5.load('sounds/shimakaze.ogg');
+						sound5.load(response[2].link);
 						sound5.setRefDistance(20);
 						sound5.autoplay = true;
 						sound5.setLoop(true);
@@ -917,13 +920,13 @@ $('.height-fix').height(h);
 					///
 					for (var i = 0; i < 5; i++) {
 						var mesh6 = new THREE.Mesh(sphere, material_sphere6);
-						mesh6.position.x = (Math.random() - 0.5) * 5000;
-						mesh6.position.y = (Math.random() - 0.5) * 5000;
-						mesh6.position.z = (Math.random() - 0.5) * 5000;
+						mesh6.position.x = (Math.random() - 0.5) * response[3].spacing;
+						mesh6.position.y = (Math.random() - 0.5) * response[3].spacing;
+						mesh6.position.z = (Math.random() - 0.5) * response[3].spacing;
 						scene.add(mesh6);
 
 						var sound6 = new THREE.PositionalAudio(listener);
-						sound6.load('sounds/help1.ogg');
+						sound6.load(response[3].link);
 						sound6.setRefDistance(20);
 						sound6.autoplay = true;
 						sound6.setLoop(true);
@@ -933,13 +936,13 @@ $('.height-fix').height(h);
 					///
 					for (var i = 0; i < 10; i++) {
 						var mesh7 = new THREE.Mesh(sphere, material_sphere7);
-						mesh7.position.x = (Math.random() - 0.5) * 5000;
-						mesh7.position.y = (Math.random() - 0.5) * 5000;
-						mesh7.position.z = (Math.random() - 0.5) * 5000;
+						mesh7.position.x = (Math.random() - 0.5) * response[4].spacing;
+						mesh7.position.y = (Math.random() - 0.5) * response[4].spacing;
+						mesh7.position.z = (Math.random() - 0.5) * response[4].spacing;
 						scene.add(mesh7);
 
 						var sound7 = new THREE.PositionalAudio(listener);
-						sound7.load('sounds/help2.ogg');
+						sound7.load(response[4].link);
 						sound7.setRefDistance(20);
 						sound7.autoplay = true;
 						sound7.setLoop(true);
@@ -949,13 +952,13 @@ $('.height-fix').height(h);
 					///
 					for (var i = 0; i < 3; i++) {
 						var mesh8 = new THREE.Mesh(sphere, material_sphere8);
-						mesh8.position.x = (Math.random() - 0.5) * 5000;
-						mesh8.position.y = (Math.random() - 0.5) * 5000;
-						mesh8.position.z = (Math.random() - 0.5) * 5000;
+						mesh8.position.x = (Math.random() - 0.5) * response[5].spacing;
+						mesh8.position.y = (Math.random() - 0.5) * response[5].spacing;
+						mesh8.position.z = (Math.random() - 0.5) * response[5].spacing;
 						scene.add(mesh8);
 
 						var sound8 = new THREE.PositionalAudio(listener);
-						sound8.load('sounds/help3.ogg');
+						sound8.load(response[5].link);
 						sound8.setRefDistance(20);
 						sound8.autoplay = true;
 						sound8.setLoop(true);
@@ -976,7 +979,7 @@ $('.height-fix').height(h);
 					// global ambient audio
 
 					var sound4 = new THREE.Audio(listener);
-					sound4.load('sounds/silence.ogg');
+					sound4.load(response[7].link);
 					sound4.autoplay = true;
 					sound4.setLoop(true);
 					sound4.setVolume(0.5);
@@ -1075,8 +1078,8 @@ $('.height-fix').height(h);
 					//
 					controls = new THREE.FirstPersonControls(camera, renderer.domElement);
 
-					controls.movementSpeed = 1000;
-					controls.lookSpeed = 0.1;
+					controls.movementSpeed = response[0].speed;
+					controls.lookSpeed = response[0].lookspeed;
 					controls.noFly = false;
 					controls.lookVertical = true;
 					controls.lon = 270;
@@ -1128,7 +1131,7 @@ $('.height-fix').height(h);
 
 				}
 
-
+			});
 		});
 	</script>
 </body>
