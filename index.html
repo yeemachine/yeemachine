@@ -822,7 +822,7 @@ $('.height-fix').height(h);
 
 
 
-					var sphere = new THREE.IcosahedronGeometry( 100, 1 );
+					var sphere = new THREE.IcosahedronGeometry( 100, 4 );
 
 					var objectMaterial1 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 					var objectMaterial2 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
@@ -1077,7 +1077,7 @@ $('.height-fix').height(h);
 				function animate() {
 
 					sky.uniforms.luminance.value += .0003
-					
+
 					requestAnimationFrame(function() {
 						animate();
 					});

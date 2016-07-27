@@ -381,38 +381,14 @@ $('.height-fix').height(h);
 
 
 
-					var sphere = new THREE.SphereGeometry(response[0].radius, response[0].polygon, response[0].polygon);
+					var sphere = new THREE.IcosahedronGeometry( 100, 4 );
 
-					var objectMaterial1 = new THREE.MeshStandardMaterial({
-						color: response[0].spherecolor,
-						roughness: 0.5,
-						metalness: 1.0
-					});
-					var objectMaterial2 = new THREE.MeshStandardMaterial({
-						color: response[1].spherecolor,
-						roughness: 0.5,
-						metalness: 0.5
-					});
-					var objectMaterial5 = new THREE.MeshStandardMaterial({
-						color: response[2].spherecolor,
-						roughness: 0.5,
-						metalness: 1.0
-					});
-					var objectMaterial6 = new THREE.MeshStandardMaterial({
-						color: response[3].spherecolor,
-						roughness: 0.5,
-						metalness: 0.5
-					});
-					var objectMaterial7 = new THREE.MeshStandardMaterial({
-						color: response[4].spherecolor,
-						roughness: 0.5,
-						metalness: 1.0
-					});
-					var objectMaterial8 = new THREE.MeshStandardMaterial({
-						color: response[5].spherecolor,
-						roughness: 0.5,
-						metalness: 0.5
-					});
+					var objectMaterial1 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
+					var objectMaterial2 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
+					var objectMaterial5 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
+					var objectMaterial6 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
+					var objectMaterial7 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
+					var objectMaterial8 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 					material_sphere1 = objectMaterial1;
 					material_sphere2 = objectMaterial2;
 					material_sphere5 = objectMaterial5;
