@@ -196,6 +196,14 @@ ul {
   display: block;
   color: rgba(255, 255, 255, .5);
 }
+.instructions i{
+  font-size: 13px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.instructions span{
+  font-size: 8px;
+}
 .start {
   cursor: pointer;
   position: absolute;
