@@ -2,14 +2,6 @@
  * @author TatumCreative (Greg Tatum) / http://gregtatum.com/
  */
 
-
-
-
-
-
-
-
-
 function generateMorphTargets(mesh, geometry) {
 
   var vertices = [],
@@ -19,7 +11,7 @@ function generateMorphTargets(mesh, geometry) {
 
     vertices.push(geometry.vertices[i].clone());
 
-    scale = 1 + Math.random() * 0.3;
+    scale = 1 + Math.random() * 0.7;
 
     vertices[vertices.length - 1].x *= scale;
     vertices[vertices.length - 1].y *= scale;
@@ -36,9 +28,6 @@ function generateMorphTargets(mesh, geometry) {
 
 }
 
-
-
-
 function updateMorphs(placeholder, placeholder2) {
 
   return function() {
@@ -50,14 +39,7 @@ function updateMorphs(placeholder, placeholder2) {
 
 }
 
-
-
-
-
-
-
-
-function guiMeshBasicMaterial( mesh, material, geometry) {
+function guiMeshBasicMaterial(mesh, material, geometry) {
 
   var data = {
     color: 0xffffff,
@@ -65,25 +47,13 @@ function guiMeshBasicMaterial( mesh, material, geometry) {
   };
 
   var folder = gui.addFolder('THREE.MeshBasicMaterial');
-
-
-
-
   folder.add(material, 'morphTargets').onChange(updateMorphs(mesh, material));
 
   //folder.add( material, 'skinning' );
 
 }
 
-
-
-
-
-
-
-
-
-function chooseFromHash( mesh, geometry) {
+function chooseFromHash(mesh, geometry) {
 
   var selectedMaterial = "MeshBasicMaterial";
   var material;
@@ -94,9 +64,9 @@ function chooseFromHash( mesh, geometry) {
 
       material = new THREE.MeshBasicMaterial({
         color: 0xffffff,
-				wireframe: true,
+        wireframe: true,
       });
-      guiMeshBasicMaterial( mesh, material, geometry);
+      guiMeshBasicMaterial(mesh, material, geometry);
 
       return material;
 
