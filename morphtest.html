@@ -97,10 +97,16 @@
 		geometry.morphTargets.push({
 			name: "target1",
 			vertices: vertices
+
+
 		});
+		geometry.update
 
 
 		mesh.updateMorphTargets();
+		mesh.needsUpdate = true;
+
+
 
 
 		var render = function() {
@@ -111,7 +117,7 @@
 
 			mesh.rotation.x += 0.005;
 			mesh.rotation.y += 0.005;
-		
+
 			mesh.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 			renderer.render(scene, camera);
 		};
