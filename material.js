@@ -39,12 +39,12 @@ function generateMorphTargets(mesh, geometry) {
 
 
 
-function updateMorphs(torus, material) {
+function updateMorphs(placeholder, placeholder2) {
 
   return function() {
 
-    torus.updateMorphTargets();
-    material.needsUpdate = true;
+    placeholder.updateMorphTargets();
+    placeholder2.needsUpdate = true;
 
   };
 

@@ -71,16 +71,24 @@
 			scene.add( lights[ 2 ] );
 
 
-			var geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
-			material = new THREE.MeshLambertMaterial( { morphTargets: 'true', color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
-			var mesh = new THREE.Mesh( geometry, material );
+			var geometry = new THREE.IcosahedronGeometry( 10, 4 );
+			material = new THREE.MeshLambertMaterial( { morphTargets: 'true', color: 0xffffff, wireframe: true, wireframeLinewidth: 1, wireframeLinejoin:'bevel',emissive:'#000000' } );
+			material.index0AttributeName = "position";
 
-			mesh.material = chooseFromHash(mesh,geometry);
+			var mesh = new THREE.Mesh( geometry, material );
+			mesh.position = 0;
+
+			var mesh2 = new THREE.Mesh( geometry, material );
+			mesh2.position.x = 30;
+
+
+
+			 mesh.material = chooseFromHash(mesh,geometry);
 
 			generateMorphTargets( mesh, geometry );
 			updateMorphs(mesh, material);
 			console.log(updateMorphs);
-			scene.add( mesh );
+			scene.add( mesh, mesh2 );
 
 
 			var prevFog = false;
@@ -93,6 +101,8 @@
 
 				mesh.rotation.x += 0.005;
 				mesh.rotation.y += 0.005;
+				mesh2.rotation.x += 0.005;
+				mesh2.rotation.y += 0.005;
 
 				if ( prevFog !== scene.fog ) {
 
