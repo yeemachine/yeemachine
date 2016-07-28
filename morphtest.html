@@ -75,7 +75,7 @@
 			material = new THREE.MeshLambertMaterial( { morphTargets: 'true', color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 			var mesh = new THREE.Mesh( geometry, material );
 
-			mesh.material = chooseFromHash(gui,mesh,geometry);
+			mesh.material = chooseFromHash(mesh,geometry);
 
 			generateMorphTargets( mesh, geometry );
 			updateMorphs(mesh, material);

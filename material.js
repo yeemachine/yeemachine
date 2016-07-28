@@ -39,7 +39,6 @@ function generateMorphTargets(mesh, geometry) {
 
 
 
-
 function updateMorphs(torus, material) {
 
   return function() {
@@ -58,7 +57,7 @@ function updateMorphs(torus, material) {
 
 
 
-function guiMeshBasicMaterial(gui, mesh, material, geometry) {
+function guiMeshBasicMaterial( mesh, material, geometry) {
 
   var data = {
     color: 0xffffff,
@@ -84,7 +83,7 @@ function guiMeshBasicMaterial(gui, mesh, material, geometry) {
 
 
 
-function chooseFromHash(gui, mesh, geometry) {
+function chooseFromHash( mesh, geometry) {
 
   var selectedMaterial = window.location.hash.substring(1) || "MeshBasicMaterial";
   var material;
@@ -95,9 +94,9 @@ function chooseFromHash(gui, mesh, geometry) {
 
       material = new THREE.MeshBasicMaterial({
         color: 0xffffff,
-				morphTargets: true
+				wireframe: true,
       });
-      guiMeshBasicMaterial(gui, mesh, material, geometry);
+      guiMeshBasicMaterial( mesh, material, geometry);
 
       return material;
 
