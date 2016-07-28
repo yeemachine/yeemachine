@@ -79,9 +79,8 @@
 		});
 		var mesh = new THREE.Mesh(geometry, material);
 		mesh.position = 0;
-		var mesh2 = new THREE.Mesh(geometry, material);
-		mesh2.position.x = 10;
-		scene.add(mesh, mesh2);
+
+		scene.add(mesh);
 		material.index0AttributeName = "position";
 
 
@@ -112,8 +111,7 @@
 
 			mesh.rotation.x += 0.005;
 			mesh.rotation.y += 0.005;
-			mesh2.rotation.x += 0.005;
-			mesh2.rotation.y += 0.005;
+		
 			mesh.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 			renderer.render(scene, camera);
 		};

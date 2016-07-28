@@ -74,7 +74,6 @@
 			var geometry = new THREE.IcosahedronGeometry( 10, 4 );
 			material = new THREE.MeshLambertMaterial( { morphTargets: 'true', color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 			var mesh = new THREE.Mesh( geometry, material );
-			var mesh2 = new THREE.Mesh( geometry, material );
 
 			mesh.material = chooseFromHash(mesh,geometry);
 
