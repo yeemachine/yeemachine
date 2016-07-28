@@ -85,7 +85,7 @@ function guiMeshBasicMaterial( mesh, material, geometry) {
 
 function chooseFromHash( mesh, geometry) {
 
-  var selectedMaterial = window.location.hash.substring(1) || "MeshBasicMaterial";
+  var selectedMaterial = "MeshBasicMaterial";
   var material;
 
   switch (selectedMaterial) {
