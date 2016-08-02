@@ -758,13 +758,13 @@ $('.height-fix').height(h);
 					scene.add(sunSphere);
 					/// GUI
 
-					var lum = 0.1;
-					var target = 2;
-					var tween = new TWEEN.Tween(lum).to(target, 2000);
-
-					tween.onUpdate(function() {
-						sky.uniforms.luminance.value = lum
-					});
+					// var lum = 0.1;
+					// var target = 2;
+					// var tween = new TWEEN.Tween(lum).to(target, 2000);
+					//
+					// tween.onUpdate(function() {
+					// 	sky.uniforms.luminance.value = lum
+					// });
 
 					var effectController = {
 						turbidity: 10,
@@ -772,7 +772,7 @@ $('.height-fix').height(h);
 						mieCoefficient: 0.005,
 						mieDirectionalG: 0.8,
 						luminance: .8,
-						inclination: 0.49, // elevation / inclination
+						inclination: 0.495, // elevation / inclination
 						azimuth: 0.25, // Facing front,
 						sun: !true
 					};
@@ -786,6 +786,7 @@ $('.height-fix').height(h);
 						uniforms.turbidity.value = effectController.turbidity;
 						uniforms.reileigh.value = effectController.reileigh;
 						uniforms.luminance.value = effectController.luminance;
+						uniforms.inclination = effectController.inclination;
 						uniforms.mieCoefficient.value = effectController.mieCoefficient;
 						uniforms.mieDirectionalG.value = effectController.mieDirectionalG;
 						var theta = Math.PI * (effectController.inclination - 0.5);
@@ -823,7 +824,7 @@ $('.height-fix').height(h);
 
 
 
-					var sphere = new THREE.IcosahedronGeometry( 100, 4 );
+					var sphere = new THREE.IcosahedronGeometry( 100, 3 );
 
 					var objectMaterial1 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 					var objectMaterial2 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
@@ -1090,7 +1091,7 @@ $('.height-fix').height(h);
 
 					window.addEventListener('resize', onContainerResize, false);
 
-				
+
 
 					var render = function () {
 
@@ -1135,7 +1136,8 @@ $('.height-fix').height(h);
 
 				function animate() {
 
-					sky.uniforms.luminance.value += .0003
+					sky.uniforms.luminance.value += .0003,
+
 
 					requestAnimationFrame(function() {
 						animate();

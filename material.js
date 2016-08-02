@@ -38,15 +38,7 @@ function updateMorphs(mesh, material) {
 
 }
 
-function guiMeshBasicMaterial(mesh, material) {
 
-
-
-  var folder = gui.addFolder('morph');
-  folder.add(material, 'morphTargets').onChange(updateMorphs(mesh, material));
-
-
-}
 
 function chooseFromHash(mesh, geometry) {
 
@@ -57,10 +49,14 @@ function chooseFromHash(mesh, geometry) {
 
     case "morph":
 
-      material = new THREE.MeshBasicMaterial({
+      material = new THREE.MeshLambertMaterial({
         color: 0x000000,
         wireframe: true,
         morphTargets: true,
+        wireframeLinewidth: 1.5,
+        wireframeLinejoin: 'bevel',
+        emissive: '#000000'
+
       });
       // guiMeshBasicMaterial(mesh, material);
 
