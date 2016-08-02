@@ -232,7 +232,7 @@ ul {
   align-items: center;
   justify-content: center;
   animation-name: black;
-  animation-duration: 10s;
+  animation-duration: 2s;
   font-size: 12px;
 }
 .start div div {
@@ -248,7 +248,7 @@ ul {
   align-items: center;
   justify-content: center;
   animation-name: black;
-  animation-duration: 10s;
+  animation-duration: 2s;
   font-size: 12px;
   text-align: center;
 }

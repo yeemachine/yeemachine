@@ -264,6 +264,8 @@
 					material_sphere8 = objectMaterial8;
 					material_sphere9 = objectMaterial8;
 					material_sphere10 = objectMaterial8;
+					material_sphere11 = objectMaterial8;
+					material_sphere12 = objectMaterial8;
 
 					// sound spheres
 					for (var i = 0; i < 15; i++) {
@@ -399,9 +401,21 @@
 					mesh10.position.z = -7500;
 					scene.add(mesh10);
 
+					var mesh11 = new THREE.Mesh(sphere, material_sphere10);
+					mesh11.position.x = -7500;
+					mesh11.position.y = 100;
+					mesh11.position.z = 0;
+					scene.add(mesh11);
 
+					var mesh12 = new THREE.Mesh(sphere, material_sphere10);
+					mesh12.position.x = 7500;
+					mesh12.position.y = 100;
+					mesh12.position.z = 0;
+					scene.add(mesh12);
 
 				generateMorphTargets( mesh10, sphere );
+				updateMorphs(mesh12, material_sphere10);
+				updateMorphs(mesh11, material_sphere9);
 				updateMorphs(mesh10, material_sphere10);
 				updateMorphs(mesh9, material_sphere9);
 				updateMorphs(mesh8, material_sphere8);
@@ -566,7 +580,8 @@
 
 
 
-
+						mesh12.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+						mesh11.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 							mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 							mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 							mesh8.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
