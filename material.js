@@ -11,7 +11,7 @@ function generateMorphTargets(mesh, geometry) {
 
     vertices.push(geometry.vertices[i].clone());
 
-    scale = 1 + Math.random() * 0.7;
+    scale = 1 + Math.random() * 1;
 
     vertices[vertices.length - 1].x *= scale;
     vertices[vertices.length - 1].y *= scale;
@@ -27,6 +27,8 @@ function generateMorphTargets(mesh, geometry) {
   geometry.update
 
 }
+
+
 
 function updateMorphs(mesh, material) {
 

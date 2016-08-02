@@ -190,7 +190,7 @@
 					container = document.getElementById('container');
 
 					camera = new THREE.PerspectiveCamera(60, $(container).width() / $(container).height(), 100, 2000000);
-					camera.position.set(0, 100, 8000);
+					camera.position.set(0, 100, 8350);
 
 
 
@@ -214,7 +214,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						emissive: 0x000000
 					});
 					var objectMaterial2 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -262,6 +262,8 @@
 					material_sphere6 = objectMaterial6;
 					material_sphere7 = objectMaterial7;
 					material_sphere8 = objectMaterial8;
+					material_sphere9 = objectMaterial8;
+					material_sphere10 = objectMaterial8;
 
 					// sound spheres
 					for (var i = 0; i < 15; i++) {
@@ -269,7 +271,7 @@
 						mesh1.position.x = (Math.random() - 0.5) * response[0].spacing;
 						mesh1.position.y = (Math.random() - 0.5) * response[0].spacing;
 						mesh1.position.z = (Math.random() - 0.5) * response[0].spacing;
-						mesh1.material = chooseFromHash(mesh, sphere);
+						// mesh1.material = chooseFromHash(mesh, sphere);
 						scene.add(mesh1);
 
 						var sound1 = new THREE.PositionalAudio(listener);
@@ -282,15 +284,15 @@
 
 
 					}
-					generateMorphTargets(mesh1, sphere);
-					updateMorphs(mesh1, material_sphere1);
+					// generateMorphTargets(mesh1, sphere);
+					// updateMorphs(mesh1, material_sphere1);
 					//
 					for (var i = 0; i < 5; i++) {
 						var mesh2 = new THREE.Mesh(sphere, material_sphere2);
 						mesh2.position.x = (Math.random() - 0.5) * response[1].spacing;
 						mesh2.position.y = (Math.random() - 0.5) * response[1].spacing;
 						mesh2.position.z = (Math.random() - 0.5) * response[1].spacing;
-						mesh2.material = chooseFromHash(mesh, sphere);
+						// mesh2.material = chooseFromHash(mesh, sphere);
 						scene.add(mesh2);
 
 						var sound2 = new THREE.PositionalAudio(listener);
@@ -302,8 +304,8 @@
 					}
 					//
 
-					generateMorphTargets(mesh2, sphere);
-					updateMorphs(mesh2, material_sphere2);
+					// generateMorphTargets(mesh2, sphere);
+					// updateMorphs(mesh2, material_sphere2);
 
 
 					//
@@ -312,7 +314,7 @@
 						mesh5.position.x = (Math.random() - 0.5) * response[2].spacing;
 						mesh5.position.y = (Math.random() - 0.5) * response[2].spacing;
 						mesh5.position.z = (Math.random() - 0.5) * response[2].spacing;
-						mesh5.material = chooseFromHash(mesh, sphere);
+						// mesh5.material = chooseFromHash(mesh, sphere);
 
 						scene.add(mesh5);
 
@@ -325,15 +327,15 @@
 					}
 
 
-					generateMorphTargets(mesh5, sphere);
-					updateMorphs(mesh5, material_sphere5);
+					// generateMorphTargets(mesh5, sphere);
+					// updateMorphs(mesh5, material_sphere5);
 					///
 					for (var i = 0; i < 5; i++) {
 						var mesh6 = new THREE.Mesh(sphere, material_sphere6);
 						mesh6.position.x = (Math.random() - 0.5) * response[3].spacing;
 						mesh6.position.y = (Math.random() - 0.5) * response[3].spacing;
 						mesh6.position.z = (Math.random() - 0.5) * response[3].spacing;
-						mesh6.material = chooseFromHash(mesh, sphere);
+						// mesh6.material = chooseFromHash(mesh, sphere);
 						scene.add(mesh6);
 
 						var sound6 = new THREE.PositionalAudio(listener);
@@ -344,15 +346,15 @@
 						mesh6.add(sound6);
 					}
 
-					generateMorphTargets(mesh6, sphere);
-					updateMorphs(mesh6, material_sphere6);
+					// generateMorphTargets(mesh6, sphere);
+					// updateMorphs(mesh6, material_sphere6);
 					///
 					for (var i = 0; i < 10; i++) {
 						var mesh7 = new THREE.Mesh(sphere, material_sphere7);
 						mesh7.position.x = (Math.random() - 0.5) * response[4].spacing;
 						mesh7.position.y = (Math.random() - 0.5) * response[4].spacing;
 						mesh7.position.z = (Math.random() - 0.5) * response[4].spacing;
-						mesh7.material = chooseFromHash(mesh, sphere);
+						// mesh7.material = chooseFromHash(mesh, sphere);
 						scene.add(mesh7);
 
 						var sound7 = new THREE.PositionalAudio(listener);
@@ -362,15 +364,15 @@
 						sound7.setLoop(true);
 						mesh7.add(sound7);
 					}
-					generateMorphTargets(mesh7, sphere);
-					updateMorphs(mesh7, material_sphere7);
+					// generateMorphTargets(mesh7, sphere);
+					// updateMorphs(mesh7, material_sphere7);
 					///
 					for (var i = 0; i < 3; i++) {
 						var mesh8 = new THREE.Mesh(sphere, material_sphere8);
 						mesh8.position.x = (Math.random() - 0.5) * response[5].spacing;
 						mesh8.position.y = (Math.random() - 0.5) * response[5].spacing;
 						mesh8.position.z = (Math.random() - 0.5) * response[5].spacing;
-						mesh8.material = chooseFromHash(mesh, sphere);
+						// mesh8.material = chooseFromHash(mesh, sphere);
 						scene.add(mesh8);
 
 						var sound8 = new THREE.PositionalAudio(listener);
@@ -380,8 +382,35 @@
 						sound8.setLoop(true);
 						mesh8.add(sound8);
 					}
-					generateMorphTargets(mesh8, sphere);
-					updateMorphs(mesh8, material_sphere8);
+					// generateMorphTargets(mesh8, sphere);
+					// updateMorphs(mesh8, material_sphere8);
+
+
+
+					var mesh9 = new THREE.Mesh(sphere, material_sphere8);
+					mesh9.position.x = 0;
+					mesh9.position.y = 100;
+					mesh9.position.z = 7500;
+					scene.add(mesh9);
+
+					var mesh10 = new THREE.Mesh(sphere, material_sphere10);
+					mesh10.position.x = 0;
+					mesh10.position.y = 100;
+					mesh10.position.z = -7500;
+					scene.add(mesh10);
+
+
+
+				generateMorphTargets( mesh10, sphere );
+				updateMorphs(mesh10, material_sphere10);
+				updateMorphs(mesh9, material_sphere9);
+				updateMorphs(mesh8, material_sphere8);
+				updateMorphs(mesh7, material_sphere7);
+				updateMorphs(mesh6, material_sphere6);
+				updateMorphs(mesh5, material_sphere5);
+				updateMorphs(mesh2, material_sphere2);
+				updateMorphs(mesh1, material_sphere1);
+
 
 					// analysers
 
@@ -505,7 +534,7 @@
 
 					window.addEventListener('resize', onContainerResize, false);
 
-
+					console.log(mesh7);
 
 					var render = function() {
 
@@ -513,21 +542,42 @@
 
 						var time = Date.now() * 0.001;
 
+						mesh10.rotation.x += 0.005;
+						mesh10.rotation.y += 0.005;
+						mesh9.rotation.x += 0.005;
+						mesh9.rotation.y += 0.005;
 						mesh1.rotation.x += 0.005;
 						mesh1.rotation.y += 0.005;
+						mesh2.rotation.x += 0.005;
+						mesh2.rotation.y += 0.005;
+						mesh5.rotation.x += 0.005;
+						mesh5.rotation.y += 0.005;
+						mesh6.rotation.x += 0.005;
+						mesh6.rotation.y += 0.005;
+
+						mesh7.rotation.x += 0.005;
+						mesh7.rotation.y += 0.005;
 
 
 
-						if (mesh1.morphTargetInfluences) {
+						mesh8.rotation.x += 0.005;
+						mesh8.rotation.y += 0.005;
 
-							mesh1.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
-							mesh2.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
-							mesh5.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
-							mesh6.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
-							mesh7.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+
+
+
+
+							mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+							mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 							mesh8.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+							mesh7.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
+							mesh6.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+							mesh5.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
+							mesh2.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+							mesh1.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 
-						}
+
+
 
 						renderer.render(scene, camera);
 
