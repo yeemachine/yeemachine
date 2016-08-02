@@ -27,7 +27,7 @@
 	</head>
 	<body>
 
-		<a id='newWindow' href='./material-browser.html' target='_blank'>Open in New Window</a>
+		<a id='newWindow' href='./material-browser.html' target='_blank'></a>
 
 		<script src="build/three.js"></script>
 		<script src='js/libs/dat.gui.min.js'></script>
@@ -37,7 +37,7 @@
 
 			document.getElementById( 'newWindow' ).href += window.location.hash;
 
-			var gui = new dat.GUI();
+			// var gui = new dat.GUI();
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 50 );
 			camera.position.z = 30;
@@ -65,17 +65,17 @@
 			scene.add( lights[ 2 ] );
 
 
-			var geometry = new THREE.IcosahedronGeometry( 10, 4 );
+			var sphere = new THREE.IcosahedronGeometry( 10, 4 );
 			material = new THREE.MeshLambertMaterial( { morphTargets: 'true', color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
-			var mesh = new THREE.Mesh( geometry, material );
-			var mesh2 = new THREE.Mesh( geometry, material );
+			var mesh = new THREE.Mesh( sphere, material );
+			var mesh2 = new THREE.Mesh( sphere, material );
 			mesh2.position.x=10;
 
-			mesh.material = chooseFromHash(mesh,geometry);
-			mesh2.material = chooseFromHash(mesh,geometry);
+			mesh.material = chooseFromHash(mesh,sphere);
+			mesh2.material = chooseFromHash(mesh,sphere);
 
 
-			generateMorphTargets( mesh, geometry );
+			generateMorphTargets( mesh, sphere );
 			console.log(updateMorphs);
 			scene.add( mesh, mesh2 );
 

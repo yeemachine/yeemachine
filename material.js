@@ -58,7 +58,7 @@ function chooseFromHash(mesh, geometry) {
     case "morph":
 
       material = new THREE.MeshBasicMaterial({
-        color: 0xffffff,
+        color: 0x000000,
         wireframe: true,
         morphTargets: true,
       });
