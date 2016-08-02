@@ -78,9 +78,8 @@
 			emissive: '#000000'
 		});
 		var mesh = new THREE.Mesh(geometry, material);
-		mesh.position = 0;
+		mesh.position.x = 0;
 
-		scene.add(mesh);
 		material.index0AttributeName = "position";
 
 
@@ -95,18 +94,19 @@
 			vertices[vertices.length - 1].z *= scale;
 		}
 		geometry.morphTargets.push({
-			name: "target1",
-			vertices: vertices
-
+			vertices: geometry.vertices
 
 		});
-		geometry.update
+
+		console.log(geometry.morphTargets[0].vertices)
+
 
 
 		mesh.updateMorphTargets();
-		mesh.needsUpdate = true;
+		// mesh.needsUpdate = true;
 
 
+		console.log(mesh.morphTargetInfluences[0]);
 
 
 		var render = function() {
@@ -130,7 +130,7 @@
 			renderer.setSize(window.innerWidth, window.innerHeight);
 
 		}, false);
-
+		scene.add(mesh);
 		render();
 	</script>
 </body>

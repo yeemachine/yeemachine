@@ -5,12 +5,6 @@
 		<meta charset="utf-8">
 		<title>Three.js Material Browser</title>
 		<style>
-			@font-face {
-				font-family: 'inconsolata';
-				src: url('../files/inconsolata.woff') format('woff');
-				font-weight: normal;
-				font-style: normal;
-			}
 
 			body {
 				margin:0;
@@ -74,14 +68,18 @@
 			var geometry = new THREE.IcosahedronGeometry( 10, 4 );
 			material = new THREE.MeshLambertMaterial( { morphTargets: 'true', color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 			var mesh = new THREE.Mesh( geometry, material );
+			var mesh2 = new THREE.Mesh( geometry, material );
+			mesh2.position.x=10;
 
 			mesh.material = chooseFromHash(mesh,geometry);
+			mesh2.material = chooseFromHash(mesh,geometry);
+
 
 			generateMorphTargets( mesh, geometry );
-			updateMorphs(mesh, material);
 			console.log(updateMorphs);
-			scene.add( mesh );
+			scene.add( mesh, mesh2 );
 
+			updateMorphs(mesh,material);
 
 			var prevFog = false;
 
@@ -94,12 +92,7 @@
 				mesh.rotation.x += 0.005;
 				mesh.rotation.y += 0.005;
 
-				if ( prevFog !== scene.fog ) {
 
-					mesh.material.needsUpdate = true;
-					prevFog = scene.fog;
-
-				}
 
 				if ( mesh.morphTargetInfluences ) {
 
@@ -121,7 +114,6 @@
 			}, false );
 
 			render();
-
 		</script>
 	</body>
 </html>

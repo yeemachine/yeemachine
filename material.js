@@ -28,45 +28,41 @@ function generateMorphTargets(mesh, geometry) {
 
 }
 
-function updateMorphs(placeholder, placeholder2) {
+function updateMorphs(mesh, material) {
 
-  return function() {
 
-    placeholder.updateMorphTargets();
-    placeholder2.needsUpdate = true;
 
-  };
+    mesh.updateMorphTargets();
+    material.needsUpdate = true;
+
 
 }
 
-function guiMeshBasicMaterial(mesh, material, geometry) {
+function guiMeshBasicMaterial(mesh, material) {
 
-  var data = {
-    color: 0xffffff,
 
-  };
 
-  var folder = gui.addFolder('THREE.MeshBasicMaterial');
+  var folder = gui.addFolder('morph');
   folder.add(material, 'morphTargets').onChange(updateMorphs(mesh, material));
 
-  //folder.add( material, 'skinning' );
 
 }
 
 function chooseFromHash(mesh, geometry) {
 
-  var selectedMaterial = "MeshBasicMaterial";
+  var selectedMaterial = "morph";
   var material;
 
   switch (selectedMaterial) {
 
-    case "MeshBasicMaterial":
+    case "morph":
 
       material = new THREE.MeshBasicMaterial({
         color: 0xffffff,
         wireframe: true,
+        morphTargets: true,
       });
-      guiMeshBasicMaterial(mesh, material, geometry);
+      // guiMeshBasicMaterial(mesh, material);
 
       return material;
 
@@ -74,5 +70,4 @@ function chooseFromHash(mesh, geometry) {
 
 
   }
-
 }
