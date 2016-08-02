@@ -53,7 +53,7 @@
 
 
 	<script src="build/three.js"></script>
-
+	<script src='material.js'></script>
 	<script src="js/controls/FirstPersonControls.js"></script>
 
 	<script src="js/Detector.js"></script>
@@ -397,11 +397,12 @@ $('.height-fix').height(h);
 					material_sphere8 = objectMaterial8;
 
 					// sound spheres
-					for (var i = 0; i < 15; i++) {
+						for (var i = 0; i < 15; i++) {
 						var mesh1 = new THREE.Mesh(sphere, material_sphere1);
 						mesh1.position.x = (Math.random() - 0.5) * response[0].spacing;
 						mesh1.position.y = (Math.random() - 0.5) * response[0].spacing;
 						mesh1.position.z = (Math.random() - 0.5) * response[0].spacing;
+						mesh1.material = chooseFromHash(mesh,sphere);
 						scene.add(mesh1);
 
 						var sound1 = new THREE.PositionalAudio(listener);
@@ -411,15 +412,18 @@ $('.height-fix').height(h);
 						sound1.setLoop(true);
 						mesh1.add(sound1);
 
+
+
 					}
-
-
+					generateMorphTargets( mesh1, sphere );
+					updateMorphs(mesh1, material_sphere1);
 					//
 					for (var i = 0; i < 5; i++) {
 						var mesh2 = new THREE.Mesh(sphere, material_sphere2);
 						mesh2.position.x = (Math.random() - 0.5) * response[1].spacing;
 						mesh2.position.y = (Math.random() - 0.5) * response[1].spacing;
 						mesh2.position.z = (Math.random() - 0.5) * response[1].spacing;
+						mesh2.material = chooseFromHash(mesh,sphere);
 						scene.add(mesh2);
 
 						var sound2 = new THREE.PositionalAudio(listener);
@@ -431,7 +435,8 @@ $('.height-fix').height(h);
 					}
 					//
 
-
+					generateMorphTargets( mesh2, sphere );
+					updateMorphs(mesh2, material_sphere2);
 
 
 					//
@@ -440,6 +445,8 @@ $('.height-fix').height(h);
 						mesh5.position.x = (Math.random() - 0.5) * response[2].spacing;
 						mesh5.position.y = (Math.random() - 0.5) * response[2].spacing;
 						mesh5.position.z = (Math.random() - 0.5) * response[2].spacing;
+						mesh5.material = chooseFromHash(mesh,sphere);
+
 						scene.add(mesh5);
 
 						var sound5 = new THREE.PositionalAudio(listener);
@@ -449,12 +456,17 @@ $('.height-fix').height(h);
 						sound5.setLoop(true);
 						mesh5.add(sound5);
 					}
+
+
+						generateMorphTargets( mesh5, sphere );
+						updateMorphs(mesh5, material_sphere5);
 					///
 					for (var i = 0; i < 5; i++) {
 						var mesh6 = new THREE.Mesh(sphere, material_sphere6);
 						mesh6.position.x = (Math.random() - 0.5) * response[3].spacing;
 						mesh6.position.y = (Math.random() - 0.5) * response[3].spacing;
 						mesh6.position.z = (Math.random() - 0.5) * response[3].spacing;
+						mesh6.material = chooseFromHash(mesh,sphere);
 						scene.add(mesh6);
 
 						var sound6 = new THREE.PositionalAudio(listener);
@@ -463,14 +475,17 @@ $('.height-fix').height(h);
 						sound6.autoplay = true;
 						sound6.setLoop(true);
 						mesh6.add(sound6);
-
 					}
+
+						generateMorphTargets( mesh6, sphere );
+						updateMorphs(mesh6, material_sphere6);
 					///
-					for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 10; i++) {
 						var mesh7 = new THREE.Mesh(sphere, material_sphere7);
 						mesh7.position.x = (Math.random() - 0.5) * response[4].spacing;
 						mesh7.position.y = (Math.random() - 0.5) * response[4].spacing;
 						mesh7.position.z = (Math.random() - 0.5) * response[4].spacing;
+						mesh7.material = chooseFromHash(mesh,sphere);
 						scene.add(mesh7);
 
 						var sound7 = new THREE.PositionalAudio(listener);
@@ -479,14 +494,16 @@ $('.height-fix').height(h);
 						sound7.autoplay = true;
 						sound7.setLoop(true);
 						mesh7.add(sound7);
-
-					}
+}
+						generateMorphTargets( mesh7, sphere );
+						updateMorphs(mesh7, material_sphere7);
 					///
-					for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 3; i++) {
 						var mesh8 = new THREE.Mesh(sphere, material_sphere8);
 						mesh8.position.x = (Math.random() - 0.5) * response[5].spacing;
 						mesh8.position.y = (Math.random() - 0.5) * response[5].spacing;
 						mesh8.position.z = (Math.random() - 0.5) * response[5].spacing;
+						mesh8.material = chooseFromHash(mesh,sphere);
 						scene.add(mesh8);
 
 						var sound8 = new THREE.PositionalAudio(listener);
@@ -495,8 +512,9 @@ $('.height-fix').height(h);
 						sound8.autoplay = true;
 						sound8.setLoop(true);
 						mesh8.add(sound8);
-
-					}
+}
+						generateMorphTargets( mesh8, sphere );
+						updateMorphs(mesh8, material_sphere8);
 
 					// analysers
 
@@ -620,6 +638,43 @@ $('.height-fix').height(h);
 
 					window.addEventListener('resize', onContainerResize, false);
 
+
+
+					var render = function () {
+
+						requestAnimationFrame( render );
+
+						var time = Date.now() * 0.001;
+
+						mesh1.rotation.x += 0.005;
+						mesh1.rotation.y += 0.005;
+
+
+
+						if ( mesh1.morphTargetInfluences ) {
+
+							mesh1.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+							mesh2.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+							mesh5.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+							mesh6.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+							mesh7.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+							mesh8.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+
+						}
+
+						renderer.render( scene, camera );
+
+					};
+
+
+					render();
+
+
+
+
+
+
+
 				}
 
 				function onContainerResize() {
@@ -643,7 +698,6 @@ $('.height-fix').height(h);
 
 				}
 
-
 				function render() {
 
 					var delta = clock.getDelta();
@@ -662,6 +716,9 @@ $('.height-fix').height(h);
 					renderer.render(scene, camera);
 
 				}
+
+
+
 
 			});
 		});
