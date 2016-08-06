@@ -192,7 +192,7 @@
 					container = document.getElementById('container');
 
 					camera = new THREE.PerspectiveCamera(60, $(container).width() / $(container).height(), 100, 2000000);
-					camera.position.set(0, 100, 9600);
+					camera.position.set(0, 100, 21600);
 
 
 
@@ -407,6 +407,7 @@
 						sound1.setLoop(true);
 						mesh1.add(sound1);
 					}
+					sound1.setVolume(0);
 					layer1.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0, 1845 ) );
 					var pivot1 = new THREE.Group();
 					pivot1.add(layer1)
@@ -954,28 +955,29 @@
 					mesh10.position.z = 0;
 					pyramid.add(mesh10);
 
+					pyramid.scale.set( 3, 3, 3 );
 					scene.add(pyramid);
 
 					var mesh11 = new THREE.Mesh(sphere, material_sphere11);
 					mesh11.position.x = 0;
 					mesh11.position.y = 100;
-					mesh11.position.z = 7500;
+					mesh11.position.z = 20000;
 					scene.add(mesh11);
 
 					var mesh12 = new THREE.Mesh(sphere, material_sphere12);
 					mesh12.position.x = 0;
 					mesh12.position.y = 100;
-					mesh12.position.z = -7500;
+					mesh12.position.z = -20000;
 					scene.add(mesh12);
 
 					var mesh13 = new THREE.Mesh(sphere, material_sphere13);
-					mesh13.position.x = -7500;
+					mesh13.position.x = -20000;
 					mesh13.position.y = 100;
 					mesh13.position.z = 0;
 					scene.add(mesh13);
 
 					var mesh14 = new THREE.Mesh(sphere, material_sphere14);
-					mesh14.position.x = 7500;
+					mesh14.position.x = 20000;
 					mesh14.position.y = 100;
 					mesh14.position.z = 0;
 					scene.add(mesh14);
@@ -1033,7 +1035,7 @@
 
 					};
 
-					///controler volume///
+					/controler volume///
 
 
 					var gui = new dat.GUI({
@@ -1142,27 +1144,39 @@
 						//
 						//
 						//
-						pivot1.rotation.y +=0.11;
-						pivot2.rotation.y +=0.12;
-						pivot3.rotation.y +=0.13;
-						pivot4.rotation.y +=0.14;
-						pivot5.rotation.y +=0.15;
-						pivot6.rotation.y +=0.16;
-						pivot7.rotation.y +=0.17;
-						pivot8.rotation.y +=0.18;
-						pivot9.rotation.y +=0.19;
-						mesh10.rotation.y +=0.20;
+						pivot1.rotation.y +=0.011;
+						pivot2.rotation.y +=0.012;
+						pivot3.rotation.y +=0.013;
+						pivot4.rotation.y +=0.014;
+						pivot5.rotation.y +=0.015;
+						pivot6.rotation.y +=0.016;
+						pivot7.rotation.y +=0.017;
+						pivot8.rotation.y +=0.018;
+						pivot9.rotation.y +=0.019;
+						mesh10.rotation.y +=0.020;
 
 
 
-						if(-7500<camera.position.z && camera.position.z<7500 && -7500<camera.position.x && camera.position.x<7500){
+						if(-20000<camera.position.z && camera.position.z<20000 && -20000<camera.position.x && camera.position.x<20000){
 						// 	function pyramidrot(){
 						// 	if(pyramid.rotation.x > -(Math.PI/2)){
 						// 		pyramid.rotation.x -= .03
 						// 	}
 						// }
 						// 	setTimeout( pyramidrot, 7000 );
+						sound1.setVolume(1);
+						sound2.setVolume(1);
+						sound3.setVolume(1);
+						sound4.setVolume(1);
+						sound5.setVolume(1);
+						sound6.setVolume(1);
+						sound7.setVolume(1);
+						sound8.setVolume(1);
+						sound9.setVolume(1);
 						function extend(){
+
+							// listener.setMasterVolume(1);
+
 						if(pivot2.position.y <-100){
 							pivot2.position.y += 20
 						} else{
@@ -1212,7 +1226,10 @@
 					extend();
 					} else{
 
+
+
 						function retract(){
+							// listener.setMasterVolume(0);
 						if(pivot2.position.y >-410){
 							pivot2.position.y -= 30
 						} else{
