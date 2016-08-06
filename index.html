@@ -852,32 +852,33 @@ $('.height-fix').height(h);
 					mesh9.position.z = 7500;
 					scene.add(mesh9);
 
-					var mesh10 = new THREE.Mesh(sphere, material_sphere10);
-					mesh10.position.x = 0;
-					mesh10.position.y = 100;
-					mesh10.position.z = -7500;
-					scene.add(mesh10);
+					// var mesh10 = new THREE.Mesh(sphere, material_sphere10);
+					// mesh10.position.x = 0;
+					// mesh10.position.y = 100;
+					// mesh10.position.z = -7500;
+					// scene.add(mesh10);
+					//
+					// var mesh11 = new THREE.Mesh(sphere, material_sphere10);
+					// mesh11.position.x = -7500;
+					// mesh11.position.y = 100;
+					// mesh11.position.z = 0;
+					// scene.add(mesh11);
+					//
+					// var mesh12 = new THREE.Mesh(sphere, material_sphere10);
+					// mesh12.position.x = 7500;
+					// mesh12.position.y = 100;
+					// mesh12.position.z = 0;
+					// scene.add(mesh12);
 
-					var mesh11 = new THREE.Mesh(sphere, material_sphere10);
-					mesh11.position.x = -7500;
-					mesh11.position.y = 100;
-					mesh11.position.z = 0;
-					scene.add(mesh11);
-
-					var mesh12 = new THREE.Mesh(sphere, material_sphere10);
-					mesh12.position.x = 7500;
-					mesh12.position.y = 100;
-					mesh12.position.z = 0;
-					scene.add(mesh12);
 
 
+						generateMorphTargets( mesh9, sphere );
 
-						generateMorphTargets( mesh10, sphere );
 
-						updateMorphs(mesh10, material_sphere10);
 						updateMorphs(mesh9, material_sphere9);
-						updateMorphs(mesh11, material_sphere11);
-						updateMorphs(mesh12, material_sphere12);
+						// updateMorphs(mesh10, material_sphere10);
+						// updateMorphs(mesh11, material_sphere11);
+						// updateMorphs(mesh12, material_sphere12);
 					// sound spheres
 					for (var i = 0; i < 15; i++) {
 						var mesh1 = new THREE.Mesh(sphere, material_sphere1);
@@ -1097,7 +1098,7 @@ $('.height-fix').height(h);
 						$(".start").click(function() {
 							$(".start").addClass("hide");
 							$(".start").removeClass("start");
-							listener.setMasterVolume(1);
+							volumeTicker = 1;
 						});
 
 						$("#container").click(function() {
@@ -1105,7 +1106,8 @@ $('.height-fix').height(h);
 
 							$(".hide").addClass("start");
 							$(".hide").removeClass("hide");
-							listener.setMasterVolume(0);
+							volumeTicker = 0;
+
 
 						});
 
@@ -1141,6 +1143,7 @@ $('.height-fix').height(h);
 					window.addEventListener('resize', onContainerResize, false);
 
 
+					var volumeTicker = 0
 
 					var render = function () {
 
@@ -1150,20 +1153,32 @@ $('.height-fix').height(h);
 
 						mesh9.rotation.x += 0.005;
 						mesh9.rotation.y += 0.005;
-						mesh10.rotation.x += 0.005;
-						mesh10.rotation.y += 0.005;
-						mesh11.rotation.x += 0.005;
-						mesh11.rotation.y += 0.005;
-						mesh12.rotation.x += 0.005;
-						mesh12.rotation.y += 0.005;
+						// mesh10.rotation.x += 0.005;
+						// mesh10.rotation.y += 0.005;
+						// mesh11.rotation.x += 0.005;
+						// mesh11.rotation.y += 0.005;
+						// mesh12.rotation.x += 0.005;
+						// mesh12.rotation.y += 0.005;
 
+						if(volumeTicker===1){
+							scene.remove(mesh9);
+							listener.setMasterVolume(1);
 
+						}else{
+							scene.add(mesh9);
+							listener.setMasterVolume(0);
 
+						}
 
-						mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+						var zCamVec = new THREE.Vector3(0,0,-850);
+ 						var position = camera.localToWorld(zCamVec);
+
+ 						mesh9.position.set(position.x, position.y, position.z);
+
 						mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
-						mesh11.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
-						mesh12.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
+						// mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+						// mesh11.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+						// mesh12.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 						// mesh8.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh7.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 						// mesh6.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;

@@ -304,7 +304,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#ffffff'
+						emissive: '#000000'
 					});
 					var objectMaterial12 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -957,38 +957,44 @@
 					pyramid.scale.set( 3, 3, 3 );
 					scene.add(pyramid);
 
+
+
+
+
+
+
 					var mesh11 = new THREE.Mesh(sphere, material_sphere11);
 					mesh11.position.x = 0;
 					mesh11.position.y = 100;
 					mesh11.position.z = 20000;
 					scene.add(mesh11);
 
-					var mesh12 = new THREE.Mesh(sphere, material_sphere12);
-					mesh12.position.x = 0;
-					mesh12.position.y = 100;
-					mesh12.position.z = -20000;
-					scene.add(mesh12);
-
-					var mesh13 = new THREE.Mesh(sphere, material_sphere13);
-					mesh13.position.x = -20000;
-					mesh13.position.y = 100;
-					mesh13.position.z = 0;
-					scene.add(mesh13);
-
-					var mesh14 = new THREE.Mesh(sphere, material_sphere14);
-					mesh14.position.x = 20000;
-					mesh14.position.y = 100;
-					mesh14.position.z = 0;
-					scene.add(mesh14);
-
-
+					// var mesh12 = new THREE.Mesh(sphere, material_sphere12);
+					// mesh12.position.x = 0;
+					// mesh12.position.y = 100;
+					// mesh12.position.z = -20000;
+					// scene.add(mesh12);
+					//
+					// var mesh13 = new THREE.Mesh(sphere, material_sphere13);
+					// mesh13.position.x = -20000;
+					// mesh13.position.y = 100;
+					// mesh13.position.z = 0;
+					// scene.add(mesh13);
+					//
+					// var mesh14 = new THREE.Mesh(sphere, material_sphere14);
+					// mesh14.position.x = 20000;
+					// mesh14.position.y = 100;
+					// mesh14.position.z = 0;
+					// scene.add(mesh14);
 
 
 
-				generateMorphTargets( mesh12, sphere );
-				updateMorphs(mesh14, material_sphere14);
-				updateMorphs(mesh13, material_sphere13);
-				updateMorphs(mesh12, material_sphere12);
+
+
+				generateMorphTargets( mesh11, sphere );
+				// updateMorphs(mesh14, material_sphere14);
+				// updateMorphs(mesh13, material_sphere13);
+				// updateMorphs(mesh12, material_sphere12);
 				updateMorphs(mesh11, material_sphere11);
 				updateMorphs(mesh10, material_sphere10);
 				updateMorphs(mesh9, material_sphere9);
@@ -1113,12 +1119,12 @@
 						requestAnimationFrame(render);
 
 						var time = Date.now() * 0.001;
-						mesh14.rotation.x += 0.005;
-						mesh14.rotation.y += 0.005;
-						mesh13.rotation.x += 0.005;
-						mesh13.rotation.y += 0.005;
-						mesh12.rotation.x += 0.005;
-						mesh12.rotation.y += 0.005;
+						// mesh14.rotation.x += 0.005;
+						// mesh14.rotation.y += 0.005;
+						// mesh13.rotation.x += 0.005;
+						// mesh13.rotation.y += 0.005;
+						// mesh12.rotation.x += 0.005;
+						// mesh12.rotation.y += 0.005;
 						mesh11.rotation.x += 0.005;
 						mesh11.rotation.y += 0.005;
 
@@ -1137,17 +1143,23 @@
 						pivot9.rotation.y +=0.019;
 						mesh10.rotation.y +=0.020;
 
+						var zCamVec = new THREE.Vector3(0,0,-1500);
+ 						var position = camera.localToWorld(zCamVec);
+
+ 						mesh11.position.set(position.x, position.y, position.z);
+
+
+
 						if(-20000<camera.position.z && camera.position.z<20000 && -20000<camera.position.x && camera.position.x<20000 && volumeTicker===1){
 							listener.setMasterVolume(1);
-
-
-
 						}else{
 							listener.setMasterVolume(0);
-
-
 						}
-
+						if(volumeTicker===1){
+							scene.remove(mesh11);
+						}else{
+							scene.add(mesh11);
+						}
 
 						if(-20000<camera.position.z && camera.position.z<20000 && -20000<camera.position.x && camera.position.x<20000){
 						// 	function pyramidrot(){
@@ -1273,9 +1285,9 @@
 					}
 
 
-						mesh14.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
-						mesh13.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
-							mesh12.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+						// mesh14.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
+						// mesh13.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
+						// 	mesh12.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 							mesh11.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 							mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 							mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
