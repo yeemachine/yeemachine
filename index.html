@@ -855,11 +855,9 @@ $('.gradient').css('top', (h*.85));
 					mesh9.position.x = 0;
 					mesh9.position.y = 100;
 					mesh9.position.z = 7500;
-					if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-				}else{
 					scene.add(mesh9);
 
-				}
+
 
 					// var mesh10 = new THREE.Mesh(sphere, material_sphere10);
 					// mesh10.position.x = 0;
@@ -1092,7 +1090,6 @@ $('.gradient').css('top', (h*.85));
 							backSpeed: 10,
 							showCursor: false
 						});
-
 					} else {
 
 						$(".element").typed({
@@ -1195,7 +1192,9 @@ $('.gradient').css('top', (h*.85));
 						// mesh2.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh1.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 
-
+						if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+							scene.remove(mesh9);
+					}
 
 						renderer.render( scene, camera );
 
