@@ -40,8 +40,8 @@
 
 
 	</ul>
-	<div class="gradient"></div>
-	<nav class="main-nav">
+	<div class="gradient position-fix"></div>
+	<nav class="main-nav position-fix">
 		<ul class="iconcontainer">
 			<li>
 				<a><i class="fa fa-chevron-down hideicon"></i><br>Richard<br>Yee<br><i class="fa fa-chevron-down"></i></a>
@@ -423,13 +423,22 @@
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/main.js"></script>
-
 	<script>
+
+
+
+
+
+
+	</script>
+	<script>
+
 	$( document ).ready(function() {
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 var h = $('.height-fix').height();
 $('.height-fix').height(h);
-
+// $('.main-nav').css('top', (h*.85));
+$('.gradient').css('top', (h*.85));
 
 }
 });
@@ -631,6 +640,10 @@ $('.height-fix').height(h);
 
 			if ($(this).scrollTop() > (hdr * .85) && windowPosY < (hdr + (gdr))) {
 				mn.addClass(mns);
+				$(mn).css('top', '');
+
+
+
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 
@@ -646,7 +659,7 @@ $('.height-fix').height(h);
 			}
 
 			if ($(this).scrollTop() < (hdr * .85) && windowPosY) {
-
+				$(mn).css('top', '85vh');
 				mn.removeClass(mns);
 
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
@@ -702,9 +715,6 @@ $('.height-fix').height(h);
 	</script>
 
 	<script>
-
-
-
 		////Spreadsheet Config////
 		$(document).ready(function() {
 			//configure spreadsheet
@@ -851,7 +861,6 @@ $('.height-fix').height(h);
 					mesh9.position.y = 100;
 					mesh9.position.z = 7500;
 					scene.add(mesh9);
-
 
 
 					// var mesh10 = new THREE.Mesh(sphere, material_sphere10);
@@ -1085,6 +1094,7 @@ $('.height-fix').height(h);
 							backSpeed: 10,
 							showCursor: false
 						});
+
 					} else {
 
 						$(".element").typed({
@@ -1186,10 +1196,8 @@ $('.height-fix').height(h);
 						// mesh5.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 						// mesh2.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh1.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
-						var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-						if ( isMobile.matches) {
-							scene.remove(mesh9);
-					}
+
+
 
 						renderer.render( scene, camera );
 
