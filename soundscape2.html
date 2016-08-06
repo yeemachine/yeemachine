@@ -1035,25 +1035,25 @@
 
 					};
 
-					/controler volume///
-
-
-					var gui = new dat.GUI({
-						autoPlace: false
-					}); {
-
-						var soundControls = new SoundControls();
-
-						gui.add(soundControls, 'volume').min(0.0).max(1.0).step(0.01).onChange(function() {
-							listener.setMasterVolume(soundControls.volume);
-						});
-						gui.add(soundControls, 'ambient').min(0.0).max(1.0).step(0.01).onChange(function() {
-							sound4.setVolume(soundControls.ambient);
-						});
-						gui.close()
-
-					}
-
+					// /controler volume///
+					//
+					//
+					// // var gui = new dat.GUI({
+					// // 	autoPlace: false
+					// // }); {
+					// //
+					// // 	var soundControls = new SoundControls();
+					// //
+					// // 	gui.add(soundControls, 'volume').min(0.0).max(1.0).step(0.01).onChange(function() {
+					// // 		listener.setMasterVolume(soundControls.volume);
+					// // 	});
+					// // 	gui.add(soundControls, 'ambient').min(0.0).max(1.0).step(0.01).onChange(function() {
+					// // 		sound4.setVolume(soundControls.ambient);
+					// // 	});
+					// // 	gui.close()
+					// //
+					// // }
+					//
 					listener.setMasterVolume(0);
 
 
