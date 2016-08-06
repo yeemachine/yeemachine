@@ -637,7 +637,7 @@ $('.position-fix').offset({top:(h*.85),left:0})
 
 			if ($(this).scrollTop() > (hdr * .85) && windowPosY < (hdr + (gdr))) {
 				mn.addClass(mns);
-				mn.removeClass(position-fix);
+				$('.position-fix').offset({top:(0),left:0})
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 
