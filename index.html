@@ -714,12 +714,7 @@ $('.gradient').css('top', (h*.85));
 		$(document).ready(function() {
 			//configure spreadsheet
 
-			var mobile3d=0
-			if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			mobile3d=1
-		}else{
-			console.log(mobile3d);
-		}
+
 
 				$(window).on('beforeunload', function() {
 					$(window).scrollTop(0);
@@ -860,9 +855,11 @@ $('.gradient').css('top', (h*.85));
 					mesh9.position.x = 0;
 					mesh9.position.y = 100;
 					mesh9.position.z = 7500;
-					if(mobile3d=0){
+					if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				}else{
 					scene.add(mesh9);
-					}
+
+				}
 
 					// var mesh10 = new THREE.Mesh(sphere, material_sphere10);
 					// mesh10.position.x = 0;
