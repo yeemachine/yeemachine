@@ -209,6 +209,7 @@
 
 
 					var sphere = new THREE.IcosahedronGeometry(170, 3);
+					var sphere2 = new THREE.IcosahedronGeometry(170, 4);
 
 					var objectMaterial1 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -963,7 +964,7 @@
 
 
 
-					var mesh11 = new THREE.Mesh(sphere, material_sphere11);
+					var mesh11 = new THREE.Mesh(sphere2, material_sphere11);
 					mesh11.position.x = 0;
 					mesh11.position.y = 100;
 					mesh11.position.z = 20000;
@@ -991,7 +992,8 @@
 
 
 
-				generateMorphTargets( mesh11, sphere );
+				generateMorphTargets( mesh10, sphere );
+				generateMorphTargets( mesh11, sphere2 );
 				// updateMorphs(mesh14, material_sphere14);
 				// updateMorphs(mesh13, material_sphere13);
 				// updateMorphs(mesh12, material_sphere12);
