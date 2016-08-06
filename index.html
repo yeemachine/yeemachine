@@ -423,23 +423,19 @@
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/main.js"></script>
+
 	<script>
-
-
+var mobile3d = 0
 	$( document ).ready(function() {
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 var h = $('.height-fix').height();
 $('.height-fix').height(h);
 // $('.main-nav').css('top', (h*.85));
 $('.gradient').css('top', (h*.85));
+mobile3d=1
 
 }
 });
-
-
-
-	</script>
-	<script>
 		(function() {
 
 
@@ -1168,7 +1164,9 @@ $('.gradient').css('top', (h*.85));
 						// mesh11.rotation.y += 0.005;
 						// mesh12.rotation.x += 0.005;
 						// mesh12.rotation.y += 0.005;
-
+						if(mobile3d===1){
+							scene.remove(mesh9);
+						}
 						if(volumeTicker===1){
 							scene.remove(mesh9);
 							listener.setMasterVolume(1);
