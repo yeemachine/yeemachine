@@ -891,13 +891,14 @@ $('.gradient').css('top', (h*.85));
 						// updateMorphs(mesh11, material_sphere11);
 						// updateMorphs(mesh12, material_sphere12);
 					// sound spheres
+					var pyramid = new THREE.Object3D;
 					for (var i = 0; i < 15; i++) {
 						var mesh1 = new THREE.Mesh(sphere, material_sphere1);
 						mesh1.position.x = (Math.random() - 0.5) * 5000;
 						mesh1.position.y = (Math.random() - 0.5) * 5000;
 						mesh1.position.z = (Math.random() - 0.5) * 5000;
 						// mesh1.material = chooseFromHash(mesh,sphere);
-						scene.add(mesh1);
+						pyramid.add(mesh1);
 
 						var sound1 = new THREE.PositionalAudio(listener);
 						sound1.load('sounds/Hiei1.ogg');
@@ -919,7 +920,7 @@ $('.gradient').css('top', (h*.85));
 						mesh2.position.y = (Math.random() - 0.5) * 5000;
 						mesh2.position.z = (Math.random() - 0.5) * 5000;
 						// mesh2.material = chooseFromHash(mesh,sphere);
-						scene.add(mesh2);
+						pyramid.add(mesh2);
 
 						var sound2 = new THREE.PositionalAudio(listener);
 						sound2.load('sounds/kuma1.ogg');
@@ -943,7 +944,7 @@ $('.gradient').css('top', (h*.85));
 						mesh5.position.y = (Math.random() - 0.5) * 5000;
 						mesh5.position.z = (Math.random() - 0.5) * 5000;
 						// mesh5.material = chooseFromHash(mesh,sphere);
-						scene.add(mesh5);
+						pyramid.add(mesh5);
 
 						var sound5 = new THREE.PositionalAudio(listener);
 						sound5.load('sounds/shimakaze.ogg');
@@ -963,7 +964,7 @@ $('.gradient').css('top', (h*.85));
 						mesh6.position.y = (Math.random() - 0.5) * 5000;
 						mesh6.position.z = (Math.random() - 0.5) * 5000;
 						// mesh6.material = chooseFromHash(mesh,sphere);
-						scene.add(mesh6);
+						pyramid.add(mesh6);
 
 						var sound6 = new THREE.PositionalAudio(listener);
 						sound6.load('sounds/help1.ogg');
@@ -984,7 +985,7 @@ $('.gradient').css('top', (h*.85));
 						mesh7.position.y = (Math.random() - 0.5) * 5000;
 						mesh7.position.z = (Math.random() - 0.5) * 5000;
 						// mesh7.material = chooseFromHash(mesh,sphere);
-						scene.add(mesh7);
+						pyramid.add(mesh7);
 
 						var sound7 = new THREE.PositionalAudio(listener);
 						sound7.load('sounds/help2.ogg');
@@ -1005,7 +1006,7 @@ $('.gradient').css('top', (h*.85));
 						mesh8.position.y = (Math.random() - 0.5) * 5000;
 						mesh8.position.z = (Math.random() - 0.5) * 5000;
 						// mesh8.material = chooseFromHash(mesh,sphere);
-						scene.add(mesh8);
+						pyramid.add(mesh8);
 
 						var sound8 = new THREE.PositionalAudio(listener);
 						sound8.load('sounds/help3.ogg');
@@ -1013,10 +1014,11 @@ $('.gradient').css('top', (h*.85));
 						sound8.autoplay = true;
 						sound8.setLoop(true);
 						mesh8.add(sound8);
-
-
-
 					}
+
+					scene.add(pyramid);
+
+
 					// generateMorphTargets( mesh8, sphere );
 					// updateMorphs(mesh8, material_sphere1);
 
@@ -1161,7 +1163,10 @@ $('.gradient').css('top', (h*.85));
 						requestAnimationFrame( render );
 
 						var time = Date.now() * 0.001;
+						if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+						scene.remove(pyramid);
 
+						}
 						mesh9.rotation.x += 0.005;
 						mesh9.rotation.y += 0.005;
 						// mesh10.rotation.x += 0.005;
