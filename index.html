@@ -1013,9 +1013,11 @@ $('.height-fix').height(h);
 						sound8.setLoop(true);
 						mesh8.add(sound8);
 					}
-
-					scene.add(pyramid);
-
+					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+					if (isMobile.matches) {
+					}else{
+						scene.add(pyramid);
+					}
 
 					// generateMorphTargets( mesh8, sphere );
 					// updateMorphs(mesh8, material_sphere1);
