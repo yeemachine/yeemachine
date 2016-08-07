@@ -194,7 +194,7 @@
 					container = document.getElementById('container');
 
 					camera = new THREE.PerspectiveCamera(60, $(container).width() / $(container).height(), 100, 2000000);
-					camera.position.set(0, 100, 21600);
+					camera.position.set(0, 100, 23000);
 
 
 
@@ -958,6 +958,7 @@
 					pyramid.add(mesh10);
 
 					pyramid.scale.set( 3, 3, 3 );
+					pyramid.rotation.x = -(Math.PI/2)
 					scene.add(pyramid);
 
 
@@ -1164,14 +1165,22 @@
 						}else{
 							scene.add(mesh11);
 						}
-
+						if(-21000<camera.position.z && camera.position.z<21000 && -21000<camera.position.x && camera.position.x<21000){
+							if(pyramid.rotation.x < 0){
+								pyramid.rotation.x += .03
+						}
+					}else{
+						if(pyramid.rotation.x > -(Math.PI/2)){
+							pyramid.rotation.x -= .03
+						}
+					}
 						if(-20000<camera.position.z && camera.position.z<20000 && -20000<camera.position.x && camera.position.x<20000){
 						// 	function pyramidrot(){
 						// 	if(pyramid.rotation.x > -(Math.PI/2)){
-						// 		pyramid.rotation.x -= .03
+						// 		pyramid.rotation.x -= .003
 						// 	}
 						// }
-						// 	setTimeout( pyramidrot, 7000 );
+						// 	setTimeout( pyramidrot, 3000 );
 
 						pivot1.rotation.y +=0.11;
 						pivot2.rotation.y +=0.12;
