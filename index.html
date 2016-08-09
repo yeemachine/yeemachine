@@ -1179,11 +1179,15 @@ $('.height-fix').height(h);
 						if(volumeTicker===1){
 							scene.remove(mesh9);
 							listener.setMasterVolume(1);
+							controls.movementSpeed = 1000;
+							controls.lookSpeed = .1;
 
-						}else{
+						}
+						if(volumeTicker===0){
 							scene.add(mesh9);
 							listener.setMasterVolume(0);
-
+							controls.movementSpeed = 0;
+							controls.lookSpeed = 0;
 						}
 
 						var zCamVec = new THREE.Vector3(0,0,-850);
