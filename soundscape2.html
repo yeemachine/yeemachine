@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div id="container" class="disableSelection height-fix"></div>
-	<ul class='instrContainer'>
+	<ul class='instrContainer' style="bottom:2%">
 		<li class='instructions'>'WASD' + Mouse to move
 			<br><i class="fa fa-headphones"></i> for best experience</li>
 
@@ -45,9 +45,16 @@
 		<ul class="iconcontainer">
 			<li>
 				<a>
-					<br>Richard
-					<br>Yee</a>
+					<p style="font-size:10px">Monument<br>Sound</p>
+
+
+				<p style="font-size:8px;color:rgba(255,255,255,0.5)">Richard Yee</p>
+				</a>
+				<a>
+
+				</a>
 			</li>
+
 		</ul>
 	</nav>
 
@@ -1111,10 +1118,11 @@
 					//
 					controls = new THREE.FirstPersonControls(camera, renderer.domElement);
 
-					controls.movementSpeed = response[0].speed;
-					controls.lookSpeed = response[0].lookspeed;
-					controls.noFly = false;
-					controls.lookVertical = true;
+					// controls.movementSpeed = 1000;
+					// controls.lookSpeed = .2;
+					//
+					// controls.noFly = true;
+					// controls.lookVertical = false;
 					controls.lon = 270;
 
 					initSky();
@@ -1156,17 +1164,35 @@
 
  						mesh11.position.set(position.x, position.y, position.z);
 
-
-
+						// if(-20000<camera.position.z && camera.position.z<20000 && -20000<camera.position.x && camera.position.x<20000){
+						// 	controls.noFly = false;
+						// 	controls.lookVertical = true;
+						// }else{
+						// 	controls.noFly = true;
+						// 	controls.lookVertical = false;
+						// }
 						if(-20000<camera.position.z && camera.position.z<20000 && -20000<camera.position.x && camera.position.x<20000 && volumeTicker===1){
 							listener.setMasterVolume(1);
+							controls.noFly = false;
+							controls.lookVertical = true;
+							controls.movementSpeed = 2000;
 						}else{
 							listener.setMasterVolume(0);
+							controls.noFly = true;
+							controls.lookVertical = false;
+							controls.movementSpeed = 100;
 						}
 						if(volumeTicker===1){
 							scene.remove(mesh11);
-						}else{
+							controls.movementSpeed = 1000;
+							controls.lookSpeed = .11;
+						}
+						if(volumeTicker===0){
 							scene.add(mesh11);
+							controls.movementSpeed = 0;
+							controls.lookSpeed = 0;
+
+
 						}
 						if(-21000<camera.position.z && camera.position.z<21000 && -21000<camera.position.x && camera.position.x<21000){
 							if(pyramid.rotation.x < 0){
