@@ -40,7 +40,7 @@
 
 
 	</ul>
-	<div class="gradient position-fix"></div>
+	<!-- <div class="gradient position-fix"></div> -->
 	<nav class="main-nav position-fix">
 		<ul class="iconcontainer">
 			<li>
@@ -95,10 +95,13 @@
 			var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/17D2pdAaHixfjQ6s5uzu56iHB5oFG7jOFLqIaP_M9Ly8/pubhtml';
 			getSpreadsheetJSON(public_spreadsheet_url, function(response) {
 
-
-				$(window).on('beforeunload', function() {
-					$(window).scrollTop(0);
-				});
+				$('html, body').css({
+    'overflow': 'hidden',
+    'height': '100%'
+		});
+				// $(window).on('beforeunload', function() {
+				// 	$(window).scrollTop(0);
+				// });
 
 
 
@@ -193,7 +196,7 @@
 
 					container = document.getElementById('container');
 
-					camera = new THREE.PerspectiveCamera(60, $(container).width() / $(container).height(), 100, 2000000);
+					camera = new THREE.PerspectiveCamera(60, $(container).width() / $(container).height(), .1, 2000000);
 					camera.position.set(0, 100, 23000);
 
 

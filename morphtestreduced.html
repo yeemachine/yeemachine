@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Three.js Material Browser</title>
+		<style>
+
+			body {
+				margin:0;
+				font-family: 'inconsolata';
+				font-size: 15px;
+				line-height: 18px;
+				overflow: hidden;
+			}
+
+			canvas { width: 100%; height: 100% }
+
+			#newWindow {
+				display: block;
+				position: absolute;
+				bottom: 0.3em;
+				left: 0.5em;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+
+		<a id='newWindow' href='./material-browser.html' target='_blank'></a>
+
+		<script src="build/three.js"></script>
+		<script src='js/libs/dat.gui.min.js'></script>
+		<script src='material.js'></script>
+			<script src="js/controls/FirstPersonControls.js"></script>
+
+		<script>
+
+			document.getElementById( 'newWindow' ).href += window.location.hash;
+
+			// var gui = new dat.GUI();
+			var scene = new THREE.Scene();
+			var clock = new THREE.Clock();
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, .1, 2000000 );
+			camera.position.z = 40;
+
+			var renderer = new THREE.WebGLRenderer( { antialias: true } );
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			// renderer.setClearColor( 0x000000 );
+			document.body.appendChild( renderer.domElement );
+
+			var controls = new THREE.FirstPersonControls(camera, renderer.domElement);
+
+			controls.movementSpeed = 50;
+			controls.lookSpeed = .1;
+			controls.noFly = true;
+			controls.lookVertical = false;
+			controls.lon = 270;
+
+			var ambientLight = new THREE.AmbientLight( 0x000000 );
+			scene.add( ambientLight );
+
+			var lights = [];
+			lights[ 0 ] = new THREE.PointLight( 0xffffff, 1, 0 );
+			lights[ 1 ] = new THREE.PointLight( 0xffffff, 1, 0 );
+			lights[ 2 ] = new THREE.PointLight( 0xffffff, 1, 0 );
+
+			lights[ 0 ].position.set( 0, 200, 0 );
+			lights[ 1 ].position.set( 100, 200, 100 );
+			lights[ 2 ].position.set( - 100, - 200, - 100 );
+
+			scene.add( lights[ 0 ] );
+			scene.add( lights[ 1 ] );
+			scene.add( lights[ 2 ] );
+
+
+			var geometry = new THREE.IcosahedronGeometry( 10, 4 );
+			var material = new THREE.MeshLambertMaterial({
+				morphTargets: true,
+				color: 0xffffff,
+				wireframe: true,
+				wireframeLinewidth: 2,
+				wireframeLinejoin:'bevel',
+				emissive:'#ffffff'
+			});
+			var mesh = new THREE.Mesh( geometry, material );
+			mesh.position.x=0
+			scene.add( mesh );
+
+
+			generateMorphTargets( mesh, geometry );
+			updateMorphs(mesh, material);
+
+
+
+			// var prevFog = false;
+
+			var render = function () {
+
+				requestAnimationFrame( render );
+				var delta = clock.getDelta();
+				controls.update(delta);
+				var time = Date.now() * 0.001;
+
+				mesh.rotation.x += 0.05;
+				mesh.rotation.y += 0.05;
+
+
+
+				if ( mesh.morphTargetInfluences ) {
+
+					mesh.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+
+				}
+
+				renderer.render( scene, camera );
+
+			};
+
+			window.addEventListener( 'resize', function () {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}, false );
+
+			render();
+		</script>
+	</body>
+</html>
