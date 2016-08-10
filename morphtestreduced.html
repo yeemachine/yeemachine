@@ -60,29 +60,39 @@
 
 			var ambientLight = new THREE.AmbientLight( 0x000000 );
 			scene.add( ambientLight );
+				// var geometry = new THREE.IcosahedronGeometry( 10, 4 );
+				var geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
+				var sphere = new THREE.IcosahedronGeometry( 1, 3 );
 
 			var lights = [];
-			lights[ 0 ] = new THREE.PointLight( 0xffffff, 1, 0 );
-			lights[ 1 ] = new THREE.PointLight( 0xffffff, 1, 0 );
-			lights[ 2 ] = new THREE.PointLight( 0xffffff, 1, 0 );
+			lights[ 0 ] = new THREE.PointLight( 0xff0040, 2, 30,2 );
+			lights[ 1 ] = new THREE.PointLight( 0x80ff80, 2, 30,2 );
+			lights[ 2 ] = new THREE.PointLight( 0xffaa00, 2, 30,2);
 
-			lights[ 0 ].position.set( 0, 200, 0 );
-			lights[ 1 ].position.set( 100, 200, 100 );
-			lights[ 2 ].position.set( - 100, - 200, - 100 );
+			lights[0].add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0040 } ) ) );
+			lights[1].add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0x80ff80 } ) ) );
+			lights[2].add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xffaa00 } ) ) );
+
+
+			lights[ 0 ].position.set( 0, 20, 0 );
+			lights[ 1 ].position.set( 0, 0, 20 );
+			lights[ 2 ].position.set(20, 0, 0 );
 
 			scene.add( lights[ 0 ] );
 			scene.add( lights[ 1 ] );
 			scene.add( lights[ 2 ] );
 
 
-			var geometry = new THREE.IcosahedronGeometry( 10, 4 );
+
+
 			var material = new THREE.MeshLambertMaterial({
 				morphTargets: true,
 				color: 0xffffff,
 				wireframe: true,
 				wireframeLinewidth: 2,
 				wireframeLinejoin:'bevel',
-				emissive:'#ffffff'
+				transparent: true
+				// emissive:'#ffffff'
 			});
 			var mesh = new THREE.Mesh( geometry, material );
 			mesh.position.x=0
@@ -103,16 +113,41 @@
 				controls.update(delta);
 				var time = Date.now() * 0.001;
 
-				mesh.rotation.x += 0.05;
+				// mesh.rotation.x += 0.05;
 				mesh.rotation.y += 0.05;
 
+				var randomnumber = Math.random();
+				if(randomnumber>.85){
+					// lights[ 0 ].intensity = 0
+					// lights[ 1 ].intensity = 0
+					// lights[ 2 ].intensity = 0
+					//
+					// scene.remove(lights[0])
+					// scene.remove(lights[1])
+					// scene.remove(lights[2])
+					lights[0].visible = false;
+					lights[1].visible = false;
+					// lights[2].visible = false;
+}else{
+					// lights[ 0 ].intensity = 3
+					// lights[ 1 ].intensity = 3
+					// lights[ 2 ].intensity = 3
+					lights[0].visible = true;
+					lights[1].visible = true;
+					// lights[2].visible = true;
 
+
+					// scene.add(lights[0])
+					// scene.add(lights[1])
+					// scene.add(lights[2])
+				}
 
 				if ( mesh.morphTargetInfluences ) {
 
-					mesh.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+					// mesh.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
 
 				}
+				renderer.context.getProgramInfoLog = function () { return '' };
 
 				renderer.render( scene, camera );
 
