@@ -125,7 +125,6 @@
 				var container;
 				var camera, controls, scene, renderer;
 				var sky, sunSphere;
-				var light, pointLight;
 
 				var mesh;
 				var material_sphere1, material_sphere2, material_sphere3, material_sphere4, material_sphere5, material_sphere6, material_sphere7, material_sphere8, material_sphere9, material_sphere10;
@@ -151,7 +150,7 @@
 						})
 					);
 					sunSphere.position.y = -700000;
-					sunSphere.visible = false;
+					sunSphere.visible = true;
 					scene.add(sunSphere);
 					/// GUI
 
@@ -229,7 +228,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: 0x000000
+						// emissive: 0x000000
 					});
 					var objectMaterial2 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -237,7 +236,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial3 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -245,7 +244,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial4 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -253,7 +252,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial5 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -261,7 +260,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial6 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -269,7 +268,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial7 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -277,7 +276,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial6 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -285,7 +284,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial8 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -293,7 +292,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial9 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -301,7 +300,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial10 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -309,7 +308,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial11 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -317,7 +316,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#000000'
+						// emissive: '#000000'
 					});
 					var objectMaterial12 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -325,7 +324,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#ffffff'
+						// emissive: '#ffffff'
 					});
 					var objectMaterial13= new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -333,7 +332,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#ffffff'
+						// emissive: '#ffffff'
 					});
 					var objectMaterial14 = new THREE.MeshLambertMaterial({
 						morphTargets: true,
@@ -341,7 +340,7 @@
 						wireframe: true,
 						wireframeLinewidth: 2,
 						wireframeLinejoin: 'bevel',
-						emissive: '#ffffff'
+						// emissive: '#ffffff'
 					});
 
 
@@ -359,6 +358,10 @@
 					material_sphere12 = objectMaterial12;
 					material_sphere13 = objectMaterial13;
 					material_sphere14 = objectMaterial14;
+
+
+
+
 
 					var pyramid = new THREE.Object3D();
 
