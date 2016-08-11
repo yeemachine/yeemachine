@@ -125,6 +125,7 @@
 				var container;
 				var camera, controls, scene, renderer;
 				var sky, sunSphere;
+				var light, pointLight;
 
 				var mesh;
 				var material_sphere1, material_sphere2, material_sphere3, material_sphere4, material_sphere5, material_sphere6, material_sphere7, material_sphere8, material_sphere9, material_sphere10;
@@ -150,7 +151,7 @@
 						})
 					);
 					sunSphere.position.y = -700000;
-					sunSphere.visible = true;
+					sunSphere.visible = false;
 					scene.add(sunSphere);
 					/// GUI
 
@@ -361,6 +362,15 @@
 
 
 
+					// var lights;
+					// lights= new THREE.PointLight(  0xff0000, 2, 10000 );
+					//
+					//
+					// // lights.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0000 } ) ) );
+					//
+					// lights.position.set( 0, 0, 0 );
+					//
+					// scene.add( lights );
 
 
 					var pyramid = new THREE.Object3D();
@@ -1328,6 +1338,12 @@
 						retract();
 
 					}
+					// var randomnumber = Math.random();
+					// if(randomnumber>.85){
+					// 	lights.intensity = 0
+					// }else{
+					// 	lights.intensity = 2
+					// }
 
 
 						// mesh14.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
@@ -1348,6 +1364,7 @@
 							mesh1.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 
 
+						// renderer.context.getProgramInfoLog = function () { return '' };
 
 
 						renderer.render(scene, camera);

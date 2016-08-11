@@ -33,6 +33,7 @@
 		<script src='js/libs/dat.gui.min.js'></script>
 		<script src='material.js'></script>
 			<script src="js/controls/FirstPersonControls.js"></script>
+			<script src="js/controls/TrackballControls.js"></script>
 
 		<script>
 
@@ -50,13 +51,30 @@
 			// renderer.setClearColor( 0x000000 );
 			document.body.appendChild( renderer.domElement );
 
-			var controls = new THREE.FirstPersonControls(camera, renderer.domElement);
+			// var controls = new THREE.FirstPersonControls(camera, renderer.domElement);
+			//
+			// controls.movementSpeed = 50;
+			// controls.lookSpeed = .1;
+			// controls.noFly = true;
+			// controls.lookVertical = false;
+			// controls.lon = 270;
 
-			controls.movementSpeed = 50;
-			controls.lookSpeed = .1;
-			controls.noFly = true;
-			controls.lookVertical = false;
-			controls.lon = 270;
+
+			controls = new THREE.TrackballControls( camera, renderer.domElement );
+
+				controls.rotateSpeed = 2.0;
+				controls.zoomSpeed = 1.2;
+				controls.panSpeed = 0.8;
+
+				controls.noZoom = false;
+				controls.noPan = false;
+
+				controls.staticMoving = true;
+				controls.dynamicDampingFactor = 0;
+
+
+
+
 
 			var ambientLight = new THREE.AmbientLight( 0x000000 );
 			scene.add( ambientLight );
@@ -69,7 +87,7 @@
 			lights[ 1 ] = new THREE.PointLight( 0x80ff80, 2, 30,2 );
 			lights[ 2 ] = new THREE.PointLight( 0xffaa00, 2, 30,2);
 
-			lights[0].add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0040 } ) ) );
+			lights[0].add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0040} ) ) );
 			lights[1].add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0x80ff80 } ) ) );
 			lights[2].add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xffaa00 } ) ) );
 
@@ -111,6 +129,8 @@
 				requestAnimationFrame( render );
 				var delta = clock.getDelta();
 				controls.update(delta);
+
+
 				var time = Date.now() * 0.001;
 
 				// mesh.rotation.x += 0.05;
