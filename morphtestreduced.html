@@ -40,6 +40,7 @@
 			document.getElementById( 'newWindow' ).href += window.location.hash;
 
 			// var gui = new dat.GUI();
+
 			var scene = new THREE.Scene();
 			var clock = new THREE.Clock();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, .1, 2000000 );
@@ -50,6 +51,20 @@
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			// renderer.setClearColor( 0x000000 );
 			document.body.appendChild( renderer.domElement );
+
+
+
+						var material = new THREE.MeshLambertMaterial({
+							morphTargets: true,
+							color: 0xffffff,
+							wireframe: true,
+							wireframeLinewidth: 2,
+							wireframeLinejoin:'bevel',
+							transparent: true
+							// emissive:'#ffffff'
+						});
+
+
 
 			// var controls = new THREE.FirstPersonControls(camera, renderer.domElement);
 			//
@@ -107,15 +122,9 @@
 
 
 
-			var material = new THREE.MeshLambertMaterial({
-				morphTargets: true,
-				color: 0xffffff,
-				wireframe: true,
-				wireframeLinewidth: 2,
-				wireframeLinejoin:'bevel',
-				transparent: true
-				// emissive:'#ffffff'
-			});
+
+
+
 			var mesh = new THREE.Mesh( geometry, material );
 			mesh.position.x=0
 			lightsphere.add( mesh );
@@ -140,8 +149,8 @@
 
 
 			scene.add(lightsphere);
-			generateMorphTargets( mesh, geometry );
-			updateMorphs(mesh, material);
+			// generateMorphTargets( mesh, geometry );
+			// updateMorphs(mesh, material);
 
 
 
@@ -161,6 +170,7 @@
 
 				var randomnumber = Math.random();
 				if(randomnumber>.85){
+
 					lights[ 0 ].intensity = 0
 					lights[ 1 ].intensity = 0
 					lights[ 2 ].intensity = 0
@@ -176,11 +186,11 @@
 					lights[ 2 ].intensity = 3
 				}
 
-				if ( mesh.morphTargetInfluences ) {
-
-				mesh.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
-
-				}
+				// if ( mesh.morphTargetInfluences ) {
+				//
+				// mesh.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+				//
+				// }
 				renderer.context.getProgramInfoLog = function () { return '' };
 
 				renderer.render( scene, camera );
