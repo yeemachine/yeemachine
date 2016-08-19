@@ -1208,21 +1208,21 @@ $('.height-fix').height(h);
 						// sky.uniforms.luminance.value = 1 +	Math.sin(time/10)*.95;
 
 						// sky.uniforms.luminance.value = 1 +	Math.sin(time/10)*.95;
-						sky.uniforms.luminance.value = 1.2
+						// sky.uniforms.luminance.value = 1.2
 
-						sky.uniforms.reileigh.value  = 2 + Math.sin(time/1000)* -2;
-						// sky.uniforms.reileigh.value  = 0;
+						sky.uniforms.reileigh.value  = 2 + Math.sin(time/120)* -2;
+						// sky.uniforms.reileigh.value  = 1;
 
-						var distance = 400000;
-
-						var inclination = 0.35 + Math.sin(time/10)* -.16;
-						var azimuth = .25;
-						var theta = Math.PI * (inclination - 0.5);
-						var phi = 2 * Math.PI * (azimuth - 0.5);
-						sunSphere.position.x = distance * Math.cos(phi);
-						sunSphere.position.y = distance * Math.sin(phi) * Math.sin(theta);
-						sunSphere.position.z = distance * Math.sin(phi) * Math.cos(theta);
-						sky.uniforms.sunPosition.value.copy(sunSphere.position);
+						// var distance = 400000;
+						//
+						// var inclination = 0.35 + Math.sin(time/10)* -.16;
+						// var azimuth = .25;
+						// var theta = Math.PI * (inclination - 0.5);
+						// var phi = 2 * Math.PI * (azimuth - 0.5);
+						// sunSphere.position.x = distance * Math.cos(phi);
+						// sunSphere.position.y = distance * Math.sin(phi) * Math.sin(theta);
+						// sunSphere.position.z = distance * Math.sin(phi) * Math.cos(theta);
+						// sky.uniforms.sunPosition.value.copy(sunSphere.position);
 
 
 
