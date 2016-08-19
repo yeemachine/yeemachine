@@ -1205,6 +1205,26 @@ $('.height-fix').height(h);
 						// mesh5.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 						// mesh2.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh1.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
+						// sky.uniforms.luminance.value = 1 +	Math.sin(time/10)*.95;
+
+						// sky.uniforms.luminance.value = 1 +	Math.sin(time/10)*.95;
+						sky.uniforms.luminance.value = 1.2
+
+						sky.uniforms.reileigh.value  = 2 + Math.sin(time/1000)* -2;
+						// sky.uniforms.reileigh.value  = 0;
+
+						var distance = 400000;
+
+						var inclination = 0.35 + Math.sin(time/10)* -.16;
+						var azimuth = .25;
+						var theta = Math.PI * (inclination - 0.5);
+						var phi = 2 * Math.PI * (azimuth - 0.5);
+						sunSphere.position.x = distance * Math.cos(phi);
+						sunSphere.position.y = distance * Math.sin(phi) * Math.sin(theta);
+						sunSphere.position.z = distance * Math.sin(phi) * Math.cos(theta);
+						sky.uniforms.sunPosition.value.copy(sunSphere.position);
+
+
 
 						if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 						scene.remove(mesh9);
@@ -1232,7 +1252,6 @@ $('.height-fix').height(h);
 
 				function animate() {
 
-					sky.uniforms.luminance.value += .0003,
 
 
 					requestAnimationFrame(function() {
