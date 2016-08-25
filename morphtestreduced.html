@@ -149,8 +149,8 @@
 
 
 			scene.add(lightsphere);
-			// generateMorphTargets( mesh, geometry );
-			// updateMorphs(mesh, material);
+			generateMorphTargets( mesh, geometry );
+			updateMorphs(mesh, material);
 
 
 
@@ -186,11 +186,10 @@
 					lights[ 2 ].intensity = 3
 				}
 
-				// if ( mesh.morphTargetInfluences ) {
-				//
-				// mesh.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
-				//
-				// }
+
+				mesh.morphTargetInfluences[ 0 ] = ( 1 + Math.sin( 4 * time ) ) / 2;
+
+
 				renderer.context.getProgramInfoLog = function () { return '' };
 
 				renderer.render( scene, camera );

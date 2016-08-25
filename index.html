@@ -840,13 +840,15 @@ $('.height-fix').height(h);
 					var objectMaterial6 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 					var objectMaterial7 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
 					var objectMaterial8 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: true, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
+					var objectMaterial9 = new THREE.MeshLambertMaterial( { morphTargets: true, color: 0xffffff, wireframe: false, wireframeLinewidth: 2, wireframeLinejoin:'bevel',emissive:'#000000' } );
+
 					material_sphere1 = objectMaterial1;
 					material_sphere2 = objectMaterial2;
 					material_sphere5 = objectMaterial5;
 					material_sphere6 = objectMaterial6;
 					material_sphere7 = objectMaterial7;
 					material_sphere8 = objectMaterial8;
-					material_sphere9 = objectMaterial8;
+					material_sphere9 = objectMaterial9;
 					material_sphere10 = objectMaterial8;
 					material_sphere11 = objectMaterial8;
 					material_sphere12 = objectMaterial8;
@@ -854,7 +856,7 @@ $('.height-fix').height(h);
 
 
 
-					var mesh9 = new THREE.Mesh(sphere, material_sphere8);
+					var mesh9 = new THREE.Mesh(sphere, material_sphere9);
 					mesh9.position.x = 0;
 					mesh9.position.y = 100;
 					mesh9.position.z = 7500;
