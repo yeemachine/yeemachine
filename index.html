@@ -656,6 +656,7 @@ $('.height-fix').height(h);
 
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
+				$('body').css('background-color', 'rgba(0,0,0,1)');
 
 
 
@@ -673,21 +674,28 @@ $('.height-fix').height(h);
 
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
+				$('body').css('background-color', 'rgba(0,0,0,1)');
+
 
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr) && windowPosY < (hdr + gdr + pdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sculpture<br><i class='fa fa-chevron-down showicon'></i>");
+				 $('body').css('background-color', 'rgba(0,255,0,1)');
 				$(".iconcontainer li a").css("font-size", "10px");
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr) && windowPosY < (hdr + gdr + pdr + sdr+sdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sound<br><i class='fa fa-chevron-down showicon'>");
 				$(".iconcontainer li a").css("font-size", "10px");
+				$('body').css('background-color', 'rgba(255,0,0,1)');
+
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr + sdr+sdr) && windowPosY < (hdr + gdr + pdr + sdr + sdr + sdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>About<br><i class='fa fa-chevron-down hideicon'>");
 				$(".iconcontainer li a").css("font-size", "10px");
+				$('body').css('background-color', 'rgba(0,0,255,1)');
+
 			}
 
 			var lastScrollTop = windowPosY;

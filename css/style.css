@@ -32,12 +32,13 @@
 }
 html {
   -webkit-tap-highlight-color: transparent;
+
 }
 div {
   outline-style: none;
 }
 body {
-  background-color: black;
+  background-color: rgba(0,0,0,1);
   margin: 0px;
   color: white;
   font-family: Monospace;
@@ -45,29 +46,21 @@ body {
   text-align: center;
   font-weight: bold;
   text-align: center;
+  transition: 1s;
 }
 a {
   color: #ffffff;
   text-decoration: none;
 }
 .class1 {
-  background-color: black;
   padding-top: 100px;
   height: auto;
 }
 .class2 {
   padding-top: 200px;
   padding-bottom: 100px;
-  background: rgba(0, 0, 255, .2);
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* Standard syntax */
+
+
   height: auto;
 }
 .class2 .grid__item {}
@@ -174,7 +167,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0);
   /* For browsers that do not support gradients */
 }
 .instrContainer {
@@ -503,7 +496,6 @@ ul {
   color: transparent;
 }
 .content {
-  background-color: black;
   height: 100%;
   width: 100%;
   display: flex;
@@ -929,16 +921,7 @@ button.action {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 255, .2);
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 255, .2), rgba(0, 0, 255, .2), rgba(0, 0, 0, 0));
-  /* Standard syntax */
+
 }
 .infopage .about {
   display: flex;
