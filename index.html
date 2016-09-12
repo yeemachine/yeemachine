@@ -907,7 +907,11 @@ $('.height-fix').height(h);
 					mesh9.position.x = 0;
 					mesh9.position.y = 100;
 					mesh9.position.z = 7500;
+						if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+						}
+						else{
 					scene.add(mesh9);
+				}
 
 
 					// var mesh10 = new THREE.Mesh(sphere, material_sphere10);
@@ -1297,10 +1301,7 @@ $('.height-fix').height(h);
 
 
 
-						if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-						scene.remove(mesh9);
-
-						}
+					
 
 						renderer.render( scene, camera );
 
