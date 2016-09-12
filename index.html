@@ -55,7 +55,7 @@
 	<nav class="main-nav">
 		<ul class="iconcontainer">
 			<li>
-				<a><i class="fa fa-chevron-down hideicon"></i><br>Richard<br>Yee<br><i class="fa fa-chevron-down"></i></a>
+				<a><i class="fa fa-chevron-down hideicon"></i><br>Work<br><i class="fa fa-chevron-down"></i></a>
 			</li>
 		</ul>
 	</nav>
@@ -383,6 +383,12 @@
 		<p class="metadesc">An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships.<br><span>GRAPHICS INTENSIVE<br>Not Fully Optimized<br></span><em class="gray">&mdash; 2016</em></p>
 	</div>
 	<div class="hundred infopage">
+		<div class="about">
+			<p>My name is Richard Yee.
+				<br>
+				<br> I'm an artist and designer living in CA and NYC.
+			</p>
+		</div>
 		<ul class="education">
 			<li>
 				<h3>Contact</h3></li>
@@ -390,21 +396,16 @@
 				<br>
 			</li>
 			<li>
-				<h3><br>Education</h3></li>
+				<h3>Education</h3></li>
 
 			<li>
-				<br>Cooper Union 2014-2018</li>
+				Cooper Union 2014-2018</li>
 		</ul>
-		<div class="about">
-			<p>My name is Richard Yee.
-				<br>
-				<br> I'm an artist and designer living in CA and NYC.
-			</p>
-		</div>
+
 
 		<ul class="work">
 			<li>
-				<h3>Work</h3></li>
+				<h3>Clients</h3></li>
 			<li>Yunhua Fang Art Studio</li>
 			<li>
 				<br>World Financial Group</li>
@@ -656,7 +657,7 @@ $('.height-fix').height(h);
 				}
 				if ($(this).scrollTop() < (hdr * .9) && windowPosY) {
 					mn.removeClass(mns);
-					$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
+					$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Work<br><i class='fa fa-chevron-down showicon'></i>");
 					$(".iconcontainer li a").css("font-size", "10px");
 				}
 				if ($(this).scrollTop() > (hdr + gdr) && windowPosY < (hdr + gdr + pdr)) {
@@ -676,7 +677,7 @@ $('.height-fix').height(h);
 			if ($(this).scrollTop() > hdr*.85){
 				$('.instrContainer').css('display', 'none');
 				$('.start div').css('display', 'none');
-				$('.start').css('background-color', 'rgba(0,0,0,.7)');
+				$('.start').css('background-color', 'rgba(0,0,0,.8)');
 			}else{
 				$('.instrContainer').css('display', 'block');
 				$('.start div').css('display', 'flex');
@@ -689,7 +690,7 @@ $('.height-fix').height(h);
 			}
 			if ($(this).scrollTop() < (hdr * .85) && windowPosY) {
 				mn.removeClass(mns);
-				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
+				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Work<br><i class='fa fa-chevron-down showicon'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 			}
 			if ($(this).scrollTop() > (hdr + gdr) && windowPosY < (hdr + gdr + pdr)) {
@@ -1119,7 +1120,7 @@ $('.height-fix').height(h);
 					if (isMobile.matches) {
 						$(".grid__item").removeClass('no-touch');
 						$(".element").typed({
-							strings: ["Hello", "<p class='glitch3' data-text='Mobile Not Supported'>Mobile Not Supported</p>"],
+							strings: ["The Yee Machine", "<p class='glitch3' data-text='Mobile Not Supported'>Mobile Not Supported</p>"],
 							startDelay: 500,
 							backDelay: 1000,
 							typeSpeed: 10,
@@ -1130,7 +1131,7 @@ $('.height-fix').height(h);
 					} else {
 
 						$(".element").typed({
-							strings: ["Hello", "<p class='glitch' data-text='Click to Begin'>Click to Begin</p>"],
+							strings: ["The Yee Machine", "<p class='glitch' data-text='Click to Begin'>Click to Begin</p>"],
 							startDelay: 500,
 							backDelay: 1000,
 							typeSpeed: 10,
