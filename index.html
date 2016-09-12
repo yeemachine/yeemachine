@@ -657,6 +657,9 @@ $('.height-fix').height(h);
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 				$('body').css('background-color', 'rgba(0,0,0,1)');
+				$('body').css('color', 'rgba(255,255,255,1)');
+				$('a').css('color', 'rgba(255,255,255,1)');
+
 
 
 
@@ -675,26 +678,46 @@ $('.height-fix').height(h);
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 				$('body').css('background-color', 'rgba(0,0,0,1)');
+				$('body').css('color', 'rgba(255,255,255,1)');
+				$('a').css('color', 'rgba(255,255,255,1)');
+
+
 
 
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr) && windowPosY < (hdr + gdr + pdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sculpture<br><i class='fa fa-chevron-down showicon'></i>");
-				 $('body').css('background-color', 'rgba(0,255,0,1)');
 				$(".iconcontainer li a").css("font-size", "10px");
+				$('body').css('background-color', 'rgba(0,0,0,1)');
+				$('body').css('color', 'rgba(255,255,255,1)');
+				$('a').css('color', 'rgba(255,255,255,1)');
+
+
+
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr) && windowPosY < (hdr + gdr + pdr + sdr+sdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sound<br><i class='fa fa-chevron-down showicon'>");
 				$(".iconcontainer li a").css("font-size", "10px");
-				$('body').css('background-color', 'rgba(255,0,0,1)');
+				$('body').css('background-color', 'rgba(0,0,0,1)');
+				$('body').css('color', 'rgba(255,255,255,1)');
+				$('a').css('color', 'rgba(255,255,255,1)');
+				$('fa').css('color', 'rgba(255,255,255,1)');
+
+
+
+
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr + sdr+sdr) && windowPosY < (hdr + gdr + pdr + sdr + sdr + sdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>About<br><i class='fa fa-chevron-down hideicon'>");
 				$(".iconcontainer li a").css("font-size", "10px");
-				$('body').css('background-color', 'rgba(0,0,255,1)');
+				$('body').css('background-color', 'rgba(0,0,0,1)');
+				$('body').css('color', 'rgba(255,255,255,1)');
+				$('a').css('color', 'rgba(255,255,255,1)');
+				$('fa').css('color', 'rgba(255,255,255,1)');
+
 
 			}
 
@@ -702,7 +725,7 @@ $('.height-fix').height(h);
 			// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
 			window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
 			var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-			if (st > lastScrollTop){
+			if (st > lastScrollTop && $(this).scrollTop() < (hdr + gdr + pdr + sdr+sdr)){
 				 // downscroll code
 				 $(".fa-chevron-down").addClass("scrolldown");
 				 $(".fa-chevron-up").removeClass("scrollup");

@@ -114,6 +114,12 @@ ul {
 .scrolldown {
   color: rgba(255, 255, 255, 1);
 }
+.scrollupblk {
+  color: rgba(0, 0, 0, 1);
+}
+.scrolldownblk {
+  color: rgba(0, 0, 0, 1);
+}
 .iconcontainer li .fa.hideicon {
   color: transparent;
 }
@@ -523,7 +529,7 @@ iframe {
 .vimeodesc {
   width: 15%;
   text-align: right;
-  margin-left: 5%
+  margin-left: 5%;
 }
 .metalink {
   width: 60%;
@@ -547,7 +553,7 @@ iframe {
 .metadesc {
   width: 15%;
   text-align: right;
-  margin-left: 5%
+  margin-left: 5%;
 }
 .metadesc span{
   color:red;
