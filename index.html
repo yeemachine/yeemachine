@@ -59,7 +59,7 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="master">
+	<!-- <div class="master"> -->
 	<div class="class1">
 
 		<div class="container1">
@@ -410,7 +410,7 @@
 				<br>World Financial Group</li>
 		</ul>
 	</div>
-</div>
+<!-- </div> -->
 
 
 
@@ -447,7 +447,7 @@
 
 	$( document ).ready(function() {
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	$('#container').removeAttr('id');
+
 var h = $('.height-fix').height();
 $('.height-fix').height(h);
 // $('.main-nav').css('top', (h*.85));
@@ -1157,7 +1157,7 @@ $('.height-fix').height(h);
 					});
 					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 					if (isMobile.matches) {
-								renderer.domElement.style.display="none";
+								renderer.domElement.style.position="block";
 					}else{
 
 
