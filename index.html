@@ -1191,11 +1191,14 @@ $('.height-fix').height(h);
 					container.innerHTML = "";
 					container.appendChild(renderer.domElement);
 
-
+					if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					renderer.domElement.style.display='none';
+				}else{
 
 
 					renderer.domElement.style.position="fixed";
 					renderer.domElement.style.right="0";
+				}
 
 
 					//
