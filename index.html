@@ -447,10 +447,9 @@
 
 	$( document ).ready(function() {
 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	// $('canvas').css('display','none');
-
 var h = $('.height-fix').height();
 $('.height-fix').height(h);
+// $('.main-nav').css('top', (h*.85));
 // $('.gradient').css('top', (h*.85));
 
 }
@@ -670,7 +669,7 @@ $('.height-fix').height(h);
 				$('.master').css('background-color', 'rgba(0,0,0,0)');
 				$('body').css('color', 'rgba(255,255,255,1)');
 				$('a').css('color', 'rgba(255,255,255,1)');
-				$('.instrContainer').css('display', '');
+				$('.instrContainer').css('display', 'block');
 				$('.start div').css('display', 'flex');
 
 			}
@@ -1106,7 +1105,6 @@ $('.height-fix').height(h);
 					/////////////////////////////////////////////////////////////////////
 					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 					if (isMobile.matches) {
-						$('#.container').css('display','none')
 						$(".grid__item").removeClass('no-touch');
 						$(".element").typed({
 							strings: ["Hello", "<p class='glitch3' data-text='Mobile Not Supported'>Mobile Not Supported</p>"],
@@ -1156,16 +1154,15 @@ $('.height-fix').height(h);
 					renderer = new THREE.WebGLRenderer({
 						antialias: true
 					});
-
 					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 					if (isMobile.matches) {
-						renderer.domElement.style.position="block";
-						renderer.domElement.style.right="0";
-					}
-					else{
+								renderer.domElement.style.position="block";
+					}else{
+
+
 					renderer.domElement.style.position="fixed";
 					renderer.domElement.style.right="0";
-					}
+				}
 
 					renderer.setPixelRatio($(container).devicePixelRatio);
 					renderer.setSize($(container).width(), $(container).height());
@@ -1227,7 +1224,6 @@ $('.height-fix').height(h);
 
 
 
-
 							var mn = $(".main-nav");
 							var mns = "main-nav-scrolled";
 							var hdr = $('#container').height();
@@ -1244,8 +1240,6 @@ $('.height-fix').height(h);
  						var position = camera.localToWorld(zCamVec);
 
  						mesh9.position.set(position.x, position.y, position.z);
-
-
 
 						mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 						// mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
