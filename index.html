@@ -1249,7 +1249,6 @@ $('.height-fix').height(h);
 						}
 
 						if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-							var zCamVec = new THREE.Vector3(0,0,-850);
 
 						}
 						else{
@@ -1264,12 +1263,14 @@ $('.height-fix').height(h);
 						var windowPosY = $(this).scrollTop();
 						var percent = -850-(windowPosY/(hdr + gdr + pdr + sdr + sdr + sdr)*-575)
 						var zCamVec = new THREE.Vector3(0,0,percent);
-					}
- 						var position = camera.localToWorld(zCamVec);
+						var position = camera.localToWorld(zCamVec);
 
- 						mesh9.position.set(position.x, position.y, position.z);
+						mesh9.position.set(position.x, position.y, position.z);
 
 						mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
+					}
+
+
 						// mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh11.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh12.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
