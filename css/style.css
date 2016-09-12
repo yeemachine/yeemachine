@@ -54,8 +54,11 @@ a {
 }
 .master{
   position: absolute;
+  top:85vh;
+  padding-top:15vh;
   width: 100%;
   z-index: 5;
+  transition:.2s;
 }
 .class1 {
 
@@ -946,7 +949,7 @@ button.action {
   justify-content: center;
   width: 50%;
   font-size: 12px;
-  border: 1px solid rgba(255, 255, 255, .25);
+  border: 0px solid rgba(255, 255, 255, .25);
   border-radius: 100%;
 }
 .infopage .about p {
@@ -962,7 +965,7 @@ ul.education {
   text-align: center;
   width: 20%;
   padding: 0;
-  border: 1px dashed rgba(255, 255, 255, .25);
+  border: 0px dashed rgba(255, 255, 255, .25);
   border-radius: 100%;
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
@@ -991,7 +994,7 @@ ul.work {
   text-align: center;
   width: 20%;
   padding: 0;
-  border: 1px dashed rgba(255, 255, 255, .25);
+  border: 0px dashed rgba(255, 255, 255, .25);
   border-radius: 100%;
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;

@@ -61,7 +61,7 @@
 	</nav>
 	<div class="master">
 	<div class="class1">
-		
+
 		<div class="container1">
 
 			<div class="content2">
@@ -643,49 +643,34 @@ $('.height-fix').height(h);
 			var gdr = $('.class1').height();
 			var sdr = $('.hundred').height();
 
-
 			var windowPosY = $(this).scrollTop();
-
-
 			$(".class2").css("margin-top", "gdr");
-
-
 			if ($(this).scrollTop() > (hdr * .85) && windowPosY < (hdr + (gdr))) {
 				mn.addClass(mns);
-
-
-
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
-				$('body').css('background-color', 'rgba(0,0,0,1)');
+				$('.master').css('background-color', 'rgba(0,0,0,.35)');
 				$('body').css('color', 'rgba(255,255,255,1)');
 				$('a').css('color', 'rgba(255,255,255,1)');
-
-
-
+				$('.instrContainer').css('display', 'none');
+				$('.start div').css('display', 'none');
 
 			}
 			if ($(this).scrollTop() > (hdr) && windowPosY) {
-
 				$(".main-nav").addClass("mobilenav");
 			}
 				if ($(this).scrollTop() < (hdr) && windowPosY) {
 					$(".main-nav").removeClass("mobilenav");
 			}
-
 			if ($(this).scrollTop() < (hdr * .85) && windowPosY) {
 				mn.removeClass(mns);
-
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
-				$('body').css('background-color', 'rgba(0,0,0,1)');
+				$('.master').css('background-color', 'rgba(0,0,0,0)');
 				$('body').css('color', 'rgba(255,255,255,1)');
 				$('a').css('color', 'rgba(255,255,255,1)');
-
-
-
-
-
+				$('.instrContainer').css('display', 'block');
+				$('.start div').css('display', 'flex');
 
 			}
 			if ($(this).scrollTop() > (hdr + gdr) && windowPosY < (hdr + gdr + pdr)) {
@@ -694,10 +679,6 @@ $('.height-fix').height(h);
 				$('body').css('background-color', 'rgba(0,0,0,1)');
 				$('body').css('color', 'rgba(255,255,255,1)');
 				$('a').css('color', 'rgba(255,255,255,1)');
-
-
-
-
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr) && windowPosY < (hdr + gdr + pdr + sdr+sdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sound<br><i class='fa fa-chevron-down showicon'>");
@@ -706,11 +687,6 @@ $('.height-fix').height(h);
 				$('body').css('color', 'rgba(255,255,255,1)');
 				$('a').css('color', 'rgba(255,255,255,1)');
 				$('fa').css('color', 'rgba(255,255,255,1)');
-
-
-
-
-
 			}
 			if ($(this).scrollTop() > (hdr + gdr + pdr + sdr+sdr) && windowPosY < (hdr + gdr + pdr + sdr + sdr + sdr)) {
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>About<br><i class='fa fa-chevron-down hideicon'>");
@@ -719,8 +695,6 @@ $('.height-fix').height(h);
 				$('body').css('color', 'rgba(255,255,255,1)');
 				$('a').css('color', 'rgba(255,255,255,1)');
 				$('fa').css('color', 'rgba(255,255,255,1)');
-
-
 			}
 
 			var lastScrollTop = windowPosY;
@@ -1240,7 +1214,22 @@ $('.height-fix').height(h);
 							controls.lookSpeed = 0;
 						}
 
-						var zCamVec = new THREE.Vector3(0,0,-850);
+
+
+
+							var mn = $(".main-nav");
+							var mns = "main-nav-scrolled";
+							var hdr = $('#container').height();
+							var pdr = $('.class2').height();
+							var gdr = $('.class1').height();
+							var sdr = $('.hundred').height();
+
+							var windowPosY = $(this).scrollTop();
+							var percent = -850-(windowPosY/(hdr + gdr + pdr + sdr + sdr + sdr)*-575)
+
+
+
+						var zCamVec = new THREE.Vector3(0,0,percent);
  						var position = camera.localToWorld(zCamVec);
 
  						mesh9.position.set(position.x, position.y, position.z);
