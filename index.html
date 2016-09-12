@@ -1245,8 +1245,19 @@ $('.height-fix').height(h);
 							controls.movementSpeed = 0;
 							controls.lookSpeed = 0;
 						}
+						var mn = $(".main-nav");
+						var mns = "main-nav-scrolled";
+						var hdr = $('#container').height();
+						var pdr = $('.class2').height();
+						var gdr = $('.class1').height();
+						var sdr = $('.hundred').height();
 
-						var zCamVec = new THREE.Vector3(0,0,-850);
+						var windowPosY = $(this).scrollTop();
+						var percent = -850-(windowPosY/(hdr + gdr + pdr + sdr + sdr + sdr)*-575)
+
+
+
+					var zCamVec = new THREE.Vector3(0,0,percent);
  						var position = camera.localToWorld(zCamVec);
 
  						mesh9.position.set(position.x, position.y, position.z);
