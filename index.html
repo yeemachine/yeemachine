@@ -1225,6 +1225,7 @@ $('.height-fix').height(h);
 						scene.remove(pyramid);
 
 						}
+						else{
 						mesh9.rotation.x += 0.005;
 						mesh9.rotation.y += 0.005;
 						// mesh10.rotation.x += 0.005;
@@ -1248,10 +1249,7 @@ $('.height-fix').height(h);
 							controls.lookSpeed = 0;
 						}
 
-						if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-						}
-						else{
 
 						var mn = $(".main-nav");
 						var mns = "main-nav-scrolled";
@@ -1268,13 +1266,14 @@ $('.height-fix').height(h);
 						mesh9.position.set(position.x, position.y, position.z);
 
 						mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
-					}
+					
 
 
 
 						sky.uniforms.luminance.value = 1.5 +	Math.sin(time/10)*.45;
 
 						sky.uniforms.reileigh.value  = 2 + Math.sin(time/4000)* -2;
+					}
 
 
 
