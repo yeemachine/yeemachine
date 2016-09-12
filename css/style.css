@@ -1128,7 +1128,7 @@ ul.work li h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
+    padding-bottom: 30px;
   }
   .infopage .about {
     width: 80%;
