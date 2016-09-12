@@ -1105,6 +1105,7 @@ $('.height-fix').height(h);
 					/////////////////////////////////////////////////////////////////////
 					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 					if (isMobile.matches) {
+						$('#.container').css('display','none')
 						$(".grid__item").removeClass('no-touch');
 						$(".element").typed({
 							strings: ["Hello", "<p class='glitch3' data-text='Mobile Not Supported'>Mobile Not Supported</p>"],
