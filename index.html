@@ -44,14 +44,14 @@
 		</div>
 		</div>
 	</div>
-	<div id="container" class="disableSelection height-fix"></div>
+	<div id="container" class="disableSelection height-fix" ></div>
 	<ul class='instrContainer'>
 		<li class='instructions'>'WASD' + Mouse to move
 			<br><i class="fa fa-headphones"></i> for best experience</li>
 
 
 	</ul>
-	<div class="gradient"></div>
+
 	<nav class="main-nav">
 		<ul class="iconcontainer">
 			<li>
@@ -59,6 +59,7 @@
 			</li>
 		</ul>
 	</nav>
+	<div class="master">
 	<div class="class1">
 		<div class="spacer">
 		</div>
@@ -410,6 +411,7 @@
 				<br>World Financial Group</li>
 		</ul>
 	</div>
+</div>
 
 
 
@@ -505,6 +507,7 @@ $('.height-fix').height(h);
 					$('.infopage .about').css('height', aboutwidth);
 					$('ul.education').css('height', educationwidth);
 					$('ul.work').css('height', workwidth);
+
 
 
 				});
@@ -645,8 +648,7 @@ $('.height-fix').height(h);
 			var windowPosY = $(this).scrollTop();
 
 
-
-
+			$(".class2").css("margin-top", "gdr");
 
 
 			if ($(this).scrollTop() > (hdr * .85) && windowPosY < (hdr + (gdr))) {
@@ -680,6 +682,7 @@ $('.height-fix').height(h);
 				$('body').css('background-color', 'rgba(0,0,0,1)');
 				$('body').css('color', 'rgba(255,255,255,1)');
 				$('a').css('color', 'rgba(255,255,255,1)');
+
 
 
 
@@ -861,13 +864,11 @@ $('.height-fix').height(h);
 					camera.position.set(0, 100, 8350);
 
 
-
 					var listener = new THREE.AudioListener();
 					camera.add(listener);
 
 
 					scene = new THREE.Scene();
-
 
 
 
@@ -1180,8 +1181,14 @@ $('.height-fix').height(h);
 					renderer = new THREE.WebGLRenderer({
 						antialias: true
 					});
+					renderer.domElement.style.position="fixed";
+					renderer.domElement.style.right="0";
+
 					renderer.setPixelRatio($(container).devicePixelRatio);
 					renderer.setSize($(container).width(), $(container).height());
+
+
+
 
 					container.innerHTML = "";
 					container.appendChild(renderer.domElement);

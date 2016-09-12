@@ -52,14 +52,19 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+.master{
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
 .class1 {
-  padding-top: 100px;
+  padding-top: 100vh;
+
   height: auto;
 }
 .class2 {
   padding-top: 200px;
   padding-bottom: 100px;
-
 
   height: auto;
 }
@@ -125,10 +130,12 @@ ul {
 }
 #container {
   height: 100vh;
+  right:0;
   display: block;
   overflow: hidden;
   cursor: crosshair;
 }
+
 .disableSelection {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -184,7 +191,8 @@ ul {
   bottom: 3%;
   left: 0;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 5;
+  z-index: 2;
+  position: fixed;
 }
 .instructions {
   background: rgba(0, 0, 0, 0);
@@ -207,8 +215,8 @@ ul {
 }
 .start {
   cursor: pointer;
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  z-index: 1;
   background-color: transparent;
   top: 0;
   left: 0;
@@ -235,6 +243,7 @@ ul {
   /*animation-name: black;
   animation-duration: 2s;*/
   font-size: 12px;
+
 }
 .start div div {
   text-align: center;
@@ -634,7 +643,7 @@ p>em {
   display: block;
   max-width: 100%;
   transition: .5s;
-  opacity: .5;
+  opacity: 1;
   /*-webkit-box-shadow:  0px 0px 43px 10px rgba(255, 255, 255, 0.3);
   -moz-box-shadow:  0px 0px 43px 10px rgba(255, 255, 255, 0.3);
   box-shadow:  0px 0px 43px 10px rgba(255, 255, 255, 0.3);*/
@@ -1088,6 +1097,7 @@ ul.work li h3 {
   }
   .instrContainer {
     display: none;
+
   }
   .class2 {
     padding-top: 200px;
