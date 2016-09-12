@@ -1028,7 +1028,7 @@ ul.work li h3 {
 }
 @media screen and (max-width: 760px) {
   .start{
-    posi
+    position:fixed;
   }
   .mastermobile{
     position: absolute;
@@ -1084,6 +1084,9 @@ ul.work li h3 {
     /* Chrome, Safari, Opera */
     filter: grayscale(0%);
   }
+.main-nav{
+  z-index: 1000;
+}
   .mobilenav {
     background: rgba(0, 0, 0, 1);
     /* For browsers that do not support gradients */
@@ -1096,6 +1099,7 @@ ul.work li h3 {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     /* Standard syntax */
     border: 0px !important;
+    z-index: 1000;
   }
   .hundred {
     flex-direction: column;

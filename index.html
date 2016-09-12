@@ -656,9 +656,6 @@ $('.height-fix').height(h);
 
 			if ($(this).scrollTop() > (hdr * .85) && windowPosY < (hdr + (gdr))) {
 				mn.addClass(mns);
-
-
-
 				$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
 				$(".iconcontainer li a").css("font-size", "10px");
 				$('body').css('background-color', 'rgba(0,0,0,1)');
@@ -669,11 +666,11 @@ $('.height-fix').height(h);
 
 
 			}
-			if ($(this).scrollTop() > (hdr) && windowPosY) {
+			if ($(this).scrollTop() > (hdr*.85) && windowPosY) {
 
 				$(".main-nav").addClass("mobilenav");
 			}
-				if ($(this).scrollTop() < (hdr) && windowPosY) {
+				if ($(this).scrollTop() < (hdr*.85) && windowPosY) {
 					$(".main-nav").removeClass("mobilenav");
 			}
 
