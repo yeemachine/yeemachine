@@ -1021,6 +1021,9 @@ ul.work li h3 {
   }
 }
 @media screen and (max-width: 760px) {
+  .start{
+    position:absolute;
+  }
   .mastermobile{
     position: absolute;
     padding-top: 15vh;
