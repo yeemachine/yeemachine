@@ -1223,6 +1223,7 @@ $('.height-fix').height(h);
 						}
 
 
+						$(window).scroll(function() {
 
 
 							var mn = $(".main-nav");
@@ -1241,6 +1242,8 @@ $('.height-fix').height(h);
  						var position = camera.localToWorld(zCamVec);
 
  						mesh9.position.set(position.x, position.y, position.z);
+					});
+
 
 						mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 						// mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
