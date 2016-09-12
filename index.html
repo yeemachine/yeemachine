@@ -1186,6 +1186,16 @@ $('.height-fix').height(h);
 					container.innerHTML = "";
 					container.appendChild(renderer.domElement);
 
+					var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+					if (isMobile.matches) {
+								renderer.domElement.style.position="block";
+					}else{
+
+
+					renderer.domElement.style.position="fixed";
+					renderer.domElement.style.right="0";
+				}
+
 					//
 					controls = new THREE.FirstPersonControls(camera, renderer.domElement);
 
