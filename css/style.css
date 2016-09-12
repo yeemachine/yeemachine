@@ -1073,11 +1073,18 @@ ul.work li h3 {
   }
 .main-nav{
   z-index: 1000;
+  width: 100%;
   height: 10vh;
+  top:90vh;
+  background-color: black;
+}
+.main-nav-scrolled{
+  top:0;
 }
 .gradient{
   height: 10vh
   top:90vh;
+  display: none;
 }
   .mobilenav {
     height: 10vh;

@@ -644,7 +644,89 @@ $('.height-fix').height(h);
 
 			var windowPosY = $(this).scrollTop();
 
+			var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+			if (isMobile.matches) {
 
+				if ($(this).scrollTop() > hdr*.9){
+					$('.instrContainer').css('display', 'none');
+					$('.start div').css('display', 'none');
+					$('.start').css('background-color', 'rgba(0,0,0,.7)');
+
+
+
+
+				}else{
+					$('.instrContainer').css('display', 'block');
+					$('.start div').css('display', 'flex');
+
+					$('.start').css('background-color', 'rgba(0,0,0,0)');
+
+
+				}
+
+
+				if ($(this).scrollTop() > (hdr * .9) && windowPosY < (hdr + (gdr))) {
+					mn.addClass(mns);
+					$(".iconcontainer li a").html("<i class='fa fa-chevron-up'></i><br>Design<br><i class='fa fa-chevron-down'></i>");
+					$(".iconcontainer li a").css("font-size", "10px");
+					$('body').css('color', 'rgba(255,255,255,1)');
+					$('a').css('color', 'rgba(255,255,255,1)');
+
+
+
+
+				}
+
+
+				if ($(this).scrollTop() < (hdr * .9) && windowPosY) {
+					mn.removeClass(mns);
+
+					$(".iconcontainer li a").html("<i class='fa fa-chevron-up hideicon'></i><br>Richard<br>Yee<br><i class='fa fa-chevron-down showicon'></i>");
+					$(".iconcontainer li a").css("font-size", "10px");
+					$('body').css('background-color', 'rgba(0,0,0,1)');
+					$('body').css('color', 'rgba(255,255,255,1)');
+					$('a').css('color', 'rgba(255,255,255,1)');
+
+
+
+
+
+				}
+				if ($(this).scrollTop() > (hdr + gdr) && windowPosY < (hdr + gdr + pdr)) {
+					$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sculpture<br><i class='fa fa-chevron-down showicon'></i>");
+					$(".iconcontainer li a").css("font-size", "10px");
+					$('body').css('background-color', 'rgba(0,0,0,1)');
+					$('body').css('color', 'rgba(255,255,255,1)');
+					$('a').css('color', 'rgba(255,255,255,1)');
+
+
+
+
+				}
+				if ($(this).scrollTop() > (hdr + gdr + pdr) && windowPosY < (hdr + gdr + pdr + sdr+sdr)) {
+					$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>Sound<br><i class='fa fa-chevron-down showicon'>");
+					$(".iconcontainer li a").css("font-size", "10px");
+					$('body').css('background-color', 'rgba(0,0,0,1)');
+					$('body').css('color', 'rgba(255,255,255,1)');
+					$('a').css('color', 'rgba(255,255,255,1)');
+					$('fa').css('color', 'rgba(255,255,255,1)');
+
+
+
+
+
+				}
+				if ($(this).scrollTop() > (hdr + gdr + pdr + sdr+sdr) && windowPosY < (hdr + gdr + pdr + sdr + sdr + sdr)) {
+					$(".iconcontainer li a").html("<i class='fa fa-chevron-up showicon'></i><br>About<br><i class='fa fa-chevron-down hideicon'>");
+					$(".iconcontainer li a").css("font-size", "10px");
+
+					$('.start').css('background-color', 'rgba(0,0,0,0)');
+
+
+
+				}
+			}
+			else{
 
 			if ($(this).scrollTop() > hdr*.85){
 				$('.instrContainer').css('display', 'none');
@@ -675,13 +757,7 @@ $('.height-fix').height(h);
 
 
 			}
-			if ($(this).scrollTop() > (hdr*.85) && windowPosY) {
 
-				$(".main-nav").addClass("mobilenav");
-			}
-				if ($(this).scrollTop() < (hdr*.85) && windowPosY) {
-					$(".main-nav").removeClass("mobilenav");
-			}
 
 			if ($(this).scrollTop() < (hdr * .85) && windowPosY) {
 				mn.removeClass(mns);
@@ -730,6 +806,7 @@ $('.height-fix').height(h);
 
 
 			}
+		}
 
 			var lastScrollTop = windowPosY;
 			// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
