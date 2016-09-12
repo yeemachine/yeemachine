@@ -1099,6 +1099,7 @@ ul.work li h3 {
   }
   .hundred {
     flex-direction: column;
+    background-color: black;
   }
   .preview {
     width: 100%;
@@ -1127,6 +1128,7 @@ ul.work li h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
   }
   .infopage .about {
     width: 80%;
@@ -1140,5 +1142,11 @@ ul.work li h3 {
     -ms-transform: rotate(-15deg);
     -o-transform: rotate(-15deg);
     transform: rotate(-15deg);
+  }
+  .class1{
+    background-color: black;
+  }
+  .class2{
+    background-color: black;
   }
 }
