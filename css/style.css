@@ -54,11 +54,10 @@ a {
 }
 .master{
   position: absolute;
-  top:85vh;
-  padding-top:15vh;
+  padding-top: 15vh;
   width: 100%;
   z-index: 5;
-  transition:.2s;
+  transition:1s;
 }
 .class1 {
 
@@ -203,7 +202,6 @@ ul {
   /* For browsers that do not support gradients */
   text-align: left;
   padding-top: 5px;
-  width: 245px;
   height: 30px;
   font-size: 7px;
   display: block;
@@ -582,7 +580,6 @@ p>em {
   /* For browsers that do not support gradients */
   position: absolute;
   top: 85vh;
-  width: 100%;
   text-align: center;
   height: 15vh;
   animation-name: appear;
