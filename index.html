@@ -1248,29 +1248,14 @@ $('.height-fix').height(h);
 							controls.lookSpeed = 0;
 						}
 
-					// 	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-					//
-					// 	}
-					// 	else{
-					//
-					// 	var mn = $(".main-nav");
-					// 	var mns = "main-nav-scrolled";
-					// 	var hdr = $('#container').height();
-					// 	var pdr = $('.class2').height();
-					// 	var gdr = $('.class1').height();
-					// 	var sdr = $('.hundred').height();
-					//
-					// 	var windowPosY = $(this).scrollTop();
-					// 	var percent = -850-(windowPosY/(hdr + gdr + pdr + sdr + sdr + sdr)*-575)
-					// 	var zCamVec = new THREE.Vector3(0,0,percent);
-					// 	var position = camera.localToWorld(zCamVec);
-					//
-					// 	mesh9.position.set(position.x, position.y, position.z);
-					//
-					// 	mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
-					// }
 
 
+						var zCamVec = new THREE.Vector3(0,0,-850);
+ 						var position = camera.localToWorld(zCamVec);
+
+ 						mesh9.position.set(position.x, position.y, position.z);
+
+						mesh9.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
 						// mesh10.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh11.morphTargetInfluences[0] = (1 + Math.sin(4 * time)) / 2;
 						// mesh12.morphTargetInfluences[0]= (1 + Math.sin(4 * time)) / 2;
