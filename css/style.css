@@ -1021,6 +1021,14 @@ ul.work li h3 {
   }
 }
 @media screen and (max-width: 760px) {
+  .mastermobile{
+    position: absolute;
+    padding-top: 15vh;
+    width: 100%;
+    z-index: 5;
+    transition:1s;
+    background-color: black;
+  }
   .description--preview h3 {
     font-size: 0.7em;
   }
