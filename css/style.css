@@ -941,7 +941,7 @@ button.action {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   font-size: 12px;
   border: 0px solid rgba(255, 255, 255, .25);
   border-radius: 100%;
