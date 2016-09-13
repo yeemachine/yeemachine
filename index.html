@@ -458,61 +458,10 @@ $('.height-fix').height(h);
 
 
 
-			$(window).load(function() {
-				/////////////resizes circle///////////////
-				// $(function() {
-				// 	var about = $('.infopage .about');
-				// 	var education = $('ul.education');
-				// 	var work = $('ul.work');
-				// 	var aboutwidth = about.width();
-				// 	var educationwidth = education.width();
-				// 	var workwidth = work.width();
-				//
-				//
-				// 	$('.infopage .about').css('height', aboutwidth);
-				// 	$('ul.education').css('height', educationwidth);
-				// 	$('ul.work').css('height', workwidth);
-				//
-				// });
-				//
-
-
-				var resizeTimeout;
-
-				$(window).resize(function() {
-					clearTimeout(resizeTimeout);
-					resizeTimeout = setTimeout(doneResizing, 500);
-				});
-
-				doneResizing(); //trigger resize handling code for initialization
-			});
-
-
-			function doneResizing() {
-
-				//////////resizes circle/////////
 
 
 
-				$(function() {
-					var about = $('.infopage .about');
-					var education = $('ul.education');
-					var work = $('ul.work');
-					var aboutwidth = about.width();
-					var educationwidth = education.width();
-					var workwidth = work.width();
 
-
-					$('.infopage .about').css('height', aboutwidth);
-					$('ul.education').css('height', educationwidth);
-					$('ul.work').css('height', workwidth);
-
-
-				});
-
-
-
-			}
 
 
 
