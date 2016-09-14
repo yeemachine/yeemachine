@@ -929,9 +929,10 @@ button.action {
 .link {
   color: red;
 }
+
 .infopage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -941,7 +942,7 @@ button.action {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   font-size: 12px;
   border: 0px solid rgba(255, 255, 255, .25);
   border-radius: 100%;
@@ -952,6 +953,12 @@ button.action {
   width: 85%;
   text-align: center;
   /*font-family: 'EamesCenturyModern-Thin';*/
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 ul.education {
   display: flex;
