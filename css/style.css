@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Michroma);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 @font-face {
   font-family: 'EamesCenturyModern-Black';
   src: url(fonts/EamesCenturyModern-Black.woff2);
@@ -28,7 +28,7 @@
   }
 }
 * {
-  font-family: "Michroma", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html {
   -webkit-tap-highlight-color: transparent;
