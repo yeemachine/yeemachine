@@ -1,4 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Michroma);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
+
+
+
 @font-face {
   font-family: 'EamesCenturyModern-Black';
   src: url(fonts/EamesCenturyModern-Black.woff2);
@@ -28,10 +33,13 @@
   }
 }
 * {
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Michroma", sans-serif;*/
+
 }
 html {
   -webkit-tap-highlight-color: transparent;
+  font-smooth: never;
+  -webkit-font-smoothing: antialiased;
 
 }
 div {
@@ -41,13 +49,13 @@ body {
   background-color: rgba(0,0,0,1);
   margin: 0px;
   color: white;
-  font-family: Monospace;
-  font-size: 9px;
-  text-align: center;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
   text-align: center;
   transition: 1s;
 }
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -107,7 +115,8 @@ ul {
   height: 90px;
   margin-right: 30px;
   margin-left: 30px;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
   border: 0px solid rgba(255, 255, 255, .25);
   border-radius: 100%;
   display: flex;
@@ -197,7 +206,7 @@ ul {
   text-align: left;
   padding-top: 5px;
   height: 30px;
-  font-size: 7px;
+  font-size: 8px;
   display: block;
   color: rgba(255, 255, 255, .5);
 }
@@ -210,6 +219,7 @@ ul {
   font-size: 8px;
 }
 .start {
+  font-family: "Michroma", sans-serif;
   cursor: pointer;
   position: fixed;
   z-index: 1;
@@ -563,6 +573,7 @@ iframe {
 }
 .metadesc span{
   color:red;
+  font-weight: 600;
 }
 p>em {
   color: #5D5D5D;
@@ -734,7 +745,6 @@ p>em {
 }
 .description--preview {
   cursor: default;
-  font-size: 1.5em;
   position: absolute;
   z-index: 999;
   left: 110%;
@@ -767,13 +777,13 @@ p>em {
   transform: translate3d(0, 0, 0);
 }
 .description--preview h3 {
-  font-weight: normal;
   margin: 0;
   text-align: right;
   z-index: 999;
+  font-weight: 600;
+
 }
 .description--preview p {
-  font-size: 0.65em;
   max-width: 100%;
   text-align: right;
   z-index: 999;
@@ -799,7 +809,6 @@ p>em {
   list-style: none;
 }
 .details ul li {
-  font-size: 0.5em;
   position: relative;
   display: inline-block;
   margin: 0 1em 0 0;
@@ -840,12 +849,11 @@ p>em {
   transition-delay: 0.6s;
 }
 .details ul li:first-child {
-  font-weight: bold;
+  font-weight: 600;
   color: #909090;
 }
 .icon {
   font-family: 'camera-icons';
-  font-weight: normal;
   font-style: normal;
   font-variant: normal;
   line-height: 1;
@@ -884,7 +892,6 @@ p>em {
 /* Close button */
 
 button.action {
-  font-size: 1.5em;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -959,6 +966,7 @@ button.action {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 15vh;
 }
 ul.education {
   display: flex;
@@ -970,7 +978,6 @@ ul.education {
   border: 0px dashed rgba(255, 255, 255, .25);
   background-color: transparent;
   border-radius: 100%;
-  margin-top: 30vh;
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
   -ms-transform-origin: center center;
@@ -981,15 +988,18 @@ ul.education {
   -ms-transform: rotate(-0deg);
   -o-transform: rotate(-0deg);
   transform: rotate(-0deg);
+  line-height: 8px;
 
 }
 ul.education li {
   /*font-family: 'EamesCenturyModern-Thin';*/
-  font-size: 8px
+  font-size: 10px
 }
 ul.education li h3 {
   /*font-family: 'EamesCenturyModern-Thin';*/
-  color: rgba(142, 108, 252, 1)
+  /*color: rgba(142, 108, 252, 1)*/
+  color: rgba(255, 255, 255, .5)
+
 }
 ul.work {
   display: flex;
@@ -998,7 +1008,6 @@ ul.work {
   text-align: center;
   width: 150px;
   padding: 0;
-  margin-top: 30vh;
   background-color: transparent;
   border: 0px dashed rgba(255, 255, 255, .25);
   border-radius: 100%;
@@ -1012,14 +1021,15 @@ ul.work {
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
+  line-height: 8px;
 }
 ul.work li {
   /*font-family: 'EamesCenturyModern-Thin';*/
-  font-size: 8px
+  font-size: 10px
 }
 ul.work li h3 {
   /*font-family: 'EamesCenturyModern-Thin';*/
-  color: rgba(142, 108, 252, 1)
+  color: rgba(255, 255, 255, .5)
 }
 @media screen and (min-width: 760px) and (max-width: 1050px) {
   ul.education {
@@ -1039,7 +1049,6 @@ ul.work li h3 {
     background-color: black;
   }
   .description--preview h3 {
-    font-size: 0.7em;
   }
   iframe {
     width: 80%;
@@ -1062,8 +1071,6 @@ ul.work li h3 {
     text-align: center;
   }
   ul.work li, ul.education li, .infopage .about, ul.work li h3, ul.education li h3 {
-    font-size: .9em;
-    ;
     text-align: center;
   }
   ul.education {
