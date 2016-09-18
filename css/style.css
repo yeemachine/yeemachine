@@ -954,15 +954,11 @@ button.action {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
   font-size: 12px;
   border: 0px solid rgba(255, 255, 255, .25);
   border-radius: 100%;
-  position: absolute;
-  left:25%;
 }
 .infopage .about p {
-  width: 85%;
   text-align: center;
   /*font-family: 'EamesCenturyModern-Thin';*/
 }
@@ -970,7 +966,6 @@ button.action {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10vh;
 }
 ul.education {
   display: flex;
@@ -1149,9 +1144,7 @@ ul.work li h3 {
     justify-content: center;
     background-color: transparent;
   }
-  .infopage .about {
-    width: 80%;
-  }
+  
   .class1{
     background-color: black;
   }
