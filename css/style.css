@@ -234,6 +234,8 @@ ul {
   align-items: center;
   justify-content: center;
   transition: 1s;
+  -webkit-font-smoothing: auto;
+
 
 }
 .start div {
@@ -1144,7 +1146,7 @@ ul.work li h3 {
     justify-content: center;
     background-color: transparent;
   }
-  
+
   .class1{
     background-color: black;
   }
