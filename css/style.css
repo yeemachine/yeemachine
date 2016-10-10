@@ -4,18 +4,7 @@
 
 
 
-@font-face {
-  font-family: 'EamesCenturyModern-Black';
-  src: url(fonts/EamesCenturyModern-Black.woff2);
-}
-@font-face {
-  font-family: 'EamesCenturyModern-Thin';
-  src: url(fonts/EamesCenturyModern-Thin.woff2);
-}
-@font-face {
-  font-family: 'EamesCenturyModern-Stencil';
-  src: url(fonts/EamesCenturyModern-Stencil.woff2);
-}
+
 @keyframes appear {
   from {
     opacity: 0;
