@@ -35,7 +35,9 @@
             width: 50vw;
             height: 50vw;
             background-color: rgba(232, 231, 221, 1);
+            box-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
             text-align: center;
+            z-index: 501
         }
 
         .education {
@@ -47,6 +49,8 @@
             height: 45vw;
             background-color: rgba(232, 231, 221, .8);
             text-align: center;
+            z-index: 500
+
         }
 
         .contact {
@@ -57,6 +61,8 @@
             width: 42vw;
             height: 42vw;
             background-color: rgba(232, 231, 221, 1);
+            box-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
+            z-index: 501;
             text-align: center;
         }
 
@@ -154,17 +160,22 @@
                 margin-left: 2vw;
             }
             .richardt {
-                width: 30vw;
+                width: 43vw;
                 font-size: calc(16px + .5vw);
                 font-weight: 600;
             }
             .educationt {
+              position: absolute;
                 width: 35vw;
                 font-size: calc(10px + .2vw);
                 font-weight: 300;
                 text-align: left;
+                right:26vw;
+
             }
             .contactt {
+              position: absolute;
+              right:0px;
                 width: calc(100vw/3);
                 font-size: calc(10px + .2vw);
                 text-align: left;
