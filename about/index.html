@@ -1,272 +1,245 @@
 <html>
+
 <head>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            position: relative;
+            overflow: hidden;
+            font-family: futura;
+        }
 
-  <style>
-  body {
-    position: relative;
-    overflow: hidden;
-    /*-webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);*/
-    font-family: futura;
-  }
-  body:before {
-  content: "";
-  position: absolute;
-  width: 300%;
-  height: 300%;
-  top: -9%;
-  left: -70%;
-  z-index: -1;
-  background: url('IMG_2314.jpg') 0 0 no-repeat;
-  -webkit-transform: rotate(2.5deg);
-  -moz-transform: rotate(2.5deg);
-  -ms-transform: rotate(2.5deg);
-  -o-transform: rotate(2.5deg);
-  transform: rotate(2.5deg);
-}
-.richard{
-  position: fixed;
-  border-radius: 50%;
-  bottom:-28vw;
-  left:-10vw;
-  width:50vw;
-  height: 50vw;
-  background-color: rgba(232,231,221,1);
-  text-align: center;
+        body:before {
+            content: "";
+            position: absolute;
+            width: 300%;
+            height: 300%;
+            top: -9%;
+            left: -70%;
+            z-index: -1;
+            background: url('IMG_2314.jpg') 0 0 no-repeat;
+            -webkit-transform: rotate(2.5deg);
+            -moz-transform: rotate(2.5deg);
+            -ms-transform: rotate(2.5deg);
+            -o-transform: rotate(2.5deg);
+            transform: rotate(2.5deg);
+            overflow: hidden;
 
-}
-.education{
-  position: fixed;
-  border-radius: 50%;
-  bottom:-29vw;
-  left:36vw;
-  width:45vw;
-  height: 45vw;
-  background-color: rgba(232,231,221,.8);
-  text-align: center;
+        }
 
+        .richard {
+            position: fixed;
+            border-radius: 50%;
+            bottom: -28vw;
+            left: -10vw;
+            width: 50vw;
+            height: 50vw;
+            background-color: rgba(232, 231, 221, 1);
+            text-align: center;
+        }
 
-}
-.contact{
-  position: fixed;
-  border-radius: 50%;
-  bottom:-28.5vw;
-  right:-6vw;
-  width:42vw;
-  height: 42vw;
-  background-color: rgba(232,231,221,1);
-  text-align: center;
+        .education {
+            position: fixed;
+            border-radius: 50%;
+            bottom: -29vw;
+            left: 36vw;
+            width: 45vw;
+            height: 45vw;
+            background-color: rgba(232, 231, 221, .8);
+            text-align: center;
+        }
 
+        .contact {
+            position: fixed;
+            border-radius: 50%;
+            bottom: -28.5vw;
+            right: -6vw;
+            width: 42vw;
+            height: 42vw;
+            background-color: rgba(232, 231, 221, 1);
+            text-align: center;
+        }
 
-}
-.dec1{
-  position: fixed;
-  border-radius: 50%;
-  top:-38vw;
-  left:53vw;
-  width:42vw;
-  height: 42vw;
-  background-color: rgba(232,231,221,1);
+        .dec1 {
+            position: fixed;
+            border-radius: 50%;
+            top: -38vw;
+            left: 53vw;
+            width: 42vw;
+            height: 42vw;
+            background-color: rgba(232, 231, 221, 1);
+        }
 
-}
-.dec2{
-  position: fixed;
-  border-radius: 50%;
-  top:-35vw;
-  right:-17vw;
-  width:45vw;
-  height: 45vw;
-  background-color: rgba(232,231,221,0.8);
+        .dec2 {
+            position: fixed;
+            border-radius: 50%;
+            top: -35vw;
+            right: -17vw;
+            width: 45vw;
+            height: 45vw;
+            background-color: rgba(232, 231, 221, 0.8);
+        }
 
-}
-footer{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  position: fixed;
-  bottom:2vw;
-  width: 100vw;
-  z-index: 999;
+        footer {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            position: fixed;
+            bottom: 2vw;
+            width: 100vw;
+            z-index: 999;
+        }
 
-}
-section{
-  bottom: 0vw;
-  width: 100%;
-  height: 100%;
-  color:white;
-  z-index: 998;
-  display: flex;
-  align-items: center;
-}
-p{
-  width: 40vw;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20vh;
-  margin-left: 38.5vw;
+        section {
+            bottom: 0vw;
+            width: 100%;
+            height: 100%;
+            color: white;
+            z-index: 998;
+            display: flex;
+            align-items: center;
+        }
 
-  font-size: calc(13px + 1vw);
-}
-h1{
-  font-size: calc(16px + .5vw);
-  margin: 0;
-  margin-left: 2vw;
-  border: 0;
-}
-.richardt{
-  width: 38.5vw;
-  font-size: calc(16px + .5vw);
-  font-weight: 600;
-}
-.educationt{
-  width: 40vw;
+        p {
+            width: 40vw;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20vh;
+            margin-left: 38.5vw;
+            font-size: calc(13px + 1vw);
+        }
 
-  font-size: calc(10px + .2vw);
-  font-weight: 300;
-  text-align: center;
+        h1 {
+            font-size: calc(16px + .5vw);
+            margin: 0;
+            margin-left: 2vw;
+            border: 0;
+        }
 
+        .richardt {
+            width: 38.5vw;
+            font-size: calc(16px + .5vw);
+            font-weight: 600;
+        }
 
-}
-.contactt{
-  width: 21.5vw;
+        .educationt {
+            width: 40vw;
+            font-size: calc(10px + .2vw);
+            font-weight: 300;
+            text-align: center;
+        }
 
-  font-size: calc(10px + .2vw);
-  text-align: left;
-}
-@media screen and (max-width: 600px) {
-  .dec1, .dec2{
-    display:none;
-  }
-  section{
-    justify-content: center;
-  }
-  p{
-    width: 80vw;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20vh;
-    margin-left: 0;
-  }
-  h1{
+        .contactt {
+            width: 21.5vw;
+            font-size: calc(10px + .2vw);
+            text-align: left;
+        }
 
-    margin-left: 2vw;
-
-  }
-  .richardt{
-    width: 30vw;
-    font-size: calc(16px + .5vw);
-    font-weight: 600;
-  }
-  .educationt{
-    width: 35vw;
-
-
-    font-size: calc(10px + .2vw);
-    font-weight: 300;
-    text-align: left;
-
-
-  }
-  .contactt{
-    width: calc(100vw/3);
-
-
-    font-size: calc(10px + .2vw);
-    text-align: left;
-  }
-
-  .richard{
-    position: fixed;
-    border-radius: 50%;
-    bottom:-28vw;
-    left:-10vw;
-    width:50vw;
-    height: 50vw;
-    background-color: rgba(232,231,221,1);
-    text-align: center;
-
-  }
-  .education{
-    position: fixed;
-    border-radius: 50%;
-    bottom:-28vw;
-    left:25vw;
-    width:50vw;
-    height: 50vw;
-    background-color: rgba(232,231,221,1);
-    text-align: center;
-
-
-  }
-  .contact{
-    position: fixed;
-    border-radius: 50%;
-    bottom:-28vw;
-    right:-10vw;
-    width:50vw;
-    height: 50vw;
-    background-color: rgba(232,231,221,1);
-    text-align: center;
-
-
-  }
-  .dec1{
-    position: fixed;
-    border-radius: 50%;
-    top:-38vw;
-    left:53vw;
-    width:42vw;
-    height: 42vw;
-    background-color: rgba(232,231,221,1);
-
-  }
-
-}
-
-  </style>
+        @media screen and (max-width: 600px) {
+            .dec1,
+            .dec2 {
+                display: none;
+            }
+            section {
+                justify-content: center;
+            }
+            p {
+                width: 80vw;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20vh;
+                margin-left: 0;
+            }
+            h1 {
+                margin-left: 2vw;
+            }
+            .richardt {
+                width: 30vw;
+                font-size: calc(16px + .5vw);
+                font-weight: 600;
+            }
+            .educationt {
+                width: 35vw;
+                font-size: calc(10px + .2vw);
+                font-weight: 300;
+                text-align: left;
+            }
+            .contactt {
+                width: calc(100vw/3);
+                font-size: calc(10px + .2vw);
+                text-align: left;
+            }
+            .richard {
+                position: fixed;
+                border-radius: 50%;
+                bottom: -28vw;
+                left: -10vw;
+                width: 50vw;
+                height: 50vw;
+                background-color: rgba(232, 231, 221, 1);
+                text-align: center;
+            }
+            .education {
+                position: fixed;
+                border-radius: 50%;
+                bottom: -28vw;
+                left: 25vw;
+                width: 50vw;
+                height: 50vw;
+                background-color: rgba(232, 231, 221, 1);
+                text-align: center;
+            }
+            .contact {
+                position: fixed;
+                border-radius: 50%;
+                bottom: -28vw;
+                right: -10vw;
+                width: 50vw;
+                height: 50vw;
+                background-color: rgba(232, 231, 221, 1);
+                text-align: center;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-  <div class="richard">
+    <div class="richard">
 
-  </div >
+    </div>
 
-  <div class="education">
+    <div class="education">
 
-  </div>
-  <div class="contact">
+    </div>
+    <div class="contact">
 
-  </div>
-  <div class='dec1'>
-  </div>
-  <div class='dec2' >
-  </div>
-  <footer>
-    <div class="richardt">
-      <h1>
+    </div>
+    <div class='dec1'>
+    </div>
+    <div class='dec2'>
+    </div>
+    <footer>
+        <div class="richardt">
+            <h1>
           Richard
         </h1>
-    </div>
-    <div class="educationt">
-      Cooper Union
-      <br>
-      BFA 2014-2018
+        </div>
+        <div class="educationt">
+            Cooper Union
+            <br> BFA 2014-2018
 
-    </div>
-    <div class="contactt">
-      rich@yeemachine.com
-      <br>
-      (408)-528-5260
-    </div>
-  </footer>
-  <section>
-    <p>
-    I am an content creator living in NYC and California. I experiment with static and dynamic mediums to satisfy the itch of content creation. I would love to make a game at some point in my life. I also watch other people play games.
-    </p>
-  </section>
+        </div>
+        <div class="contactt">
+            rich@yeemachine.com
+            <br> (408)-528-5260
+        </div>
+    </footer>
+    <section>
+        <p>
+            I am an content creator living in NYC and California. I experiment with static and dynamic mediums to satisfy the itch of content creation. I would love to make a game at some point in my life. I also watch other people play games.
+        </p>
+    </section>
 </body>
+
 </html>
