@@ -4,6 +4,11 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
     <style>
+    html{
+      -webkit-tap-highlight-color: transparent;
+      font-smooth: never;
+      -webkit-font-smoothing: antialiased;
+    }
         body {
             position: fixed;
             overflow: hidden;
@@ -30,6 +35,9 @@
         }
         a{
           text-decoration: none;
+          color: rgba(0,0,0,0.5);
+        }
+        a:hover{
           color:black;
         }
         .richard {
@@ -124,6 +132,7 @@
             margin-bottom: 20vh;
             margin-left: 38.5vw;
             font-size: calc(13px + 1vw);
+
         }
 
         h1 {
@@ -143,14 +152,20 @@
         .educationt {
             width: 40vw;
             font-size: calc(10px + .2vw);
-            font-weight: 300;
+            font-weight: 600;
             text-align: center;
+            color: rgba(0,0,0,0.3);
+
         }
 
         .contactt {
             width: 21.5vw;
             font-size: calc(10px + .2vw);
             text-align: left;
+            color: rgba(0,0,0,0.4);
+            font-weight: 600;
+
+
         }
 
         @media screen and (max-width: 600px) {
@@ -175,7 +190,6 @@
               position: absolute;
 
                 font-size: calc(16px + .5vw);
-                font-weight: 600;
                 left:2vw;
 
                 bottom: 2vw
@@ -185,7 +199,6 @@
               position: absolute;
                 width: 100vw;
                 font-size: calc(10px + .2vw);
-                font-weight: 300;
                 text-align: center;
                 bottom: 2vw
 
