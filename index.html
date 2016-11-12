@@ -20,15 +20,10 @@
     // line1.setAttribute("stroke","red");
 
 
-    $( line1 ).hover(
-    function() {
-      $( 'nav' ).html( $( "Tesla" ) );
-    }, function() {
-      $( 'nav' ).html( $( "" ) );
-    }
-  );
-
-
+    $( line1 ).mouseenter(function() {
+      $("nav").html("Tesla Timeline");})
+    $( line1 ).mouseleave(function() {
+        $("nav").html("")});
 
       };
 
