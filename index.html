@@ -8,16 +8,16 @@
     <script>
     window.onload=function() {
 
-    var svg = document.getElementById("logo");
-    var svgDoc = svg.contentDocument;
+    var svg = document.getElementById("svgObject");
+    var svgDoc = svgObject.contentDocument;
     var line1 = svgDoc.getElementById("link1");
-    $( ".tesla" ).hover(
-      function() {
-        console.log(on);
-      }, function() {
-        console.log(off);
-      }
-    );
+    // $( ".tesla" ).hover(
+    //   function() {
+    //     console.log(on);
+    //   }, function() {
+    //     console.log(off);
+    //   }
+    // );
     };
 
 
@@ -27,7 +27,7 @@
 
 <body>
   <!-- <object class="animate" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object> -->
-  <object class="animate" id="logo" type="image/svg+xml" data="logo2.svg">Your browser does not support SVGs</object>
+  <object class="animate" id="svgObject" type="image/svg+xml" data="logo2.svg">Your browser does not support SVGs</object>
   <nav></nav>
 
 
