@@ -7,6 +7,8 @@ nav{
   position: absolute;
   top:78vh;
   left:50vw;
+  width: 100px;
+  background-color: red;
   margin-left: 0vw;
   color:blue;
   position: absolute;
