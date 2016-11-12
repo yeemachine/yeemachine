@@ -8,13 +8,12 @@ opacity: 0;
 animation: dash2 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: auto;
-height: 80%;
+height: 95%;
 }
 .animate2 {
 opacity: 0;
 animation: dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
-width: auto;
 }
 
 /*.group:hover *{
@@ -88,4 +87,11 @@ opacity: 1;
 stroke-dasharray: 500;
 stroke-dashoffset: 0;
 }
+}
+@media screen and (max-width: 600px) {
+  .animate{
+    width: 90vw;
+  height: auto;
+}
+
 }
