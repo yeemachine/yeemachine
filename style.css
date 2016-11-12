@@ -36,6 +36,9 @@ animation-fill-mode: forwards;
 /*.group:hover *{
   stroke:red;
 }*/
+a{
+
+}
 .tesla:hover{
   stroke:#666;
   cursor: pointer;
@@ -45,7 +48,6 @@ animation-fill-mode: forwards;
   animation-fill-mode: forwards;*/
   stroke:purple;
 
-  cursor: pointer;
 
 }
 .sound:hover{
