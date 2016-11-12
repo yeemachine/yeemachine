@@ -4,9 +4,11 @@ body{
   justify-content: center
 }
 nav{
+  margin-left: 0vw;
+  color:blue;
   position: absolute;
-  top:0;
-  left:0;
+  transition: .5s;
+  z-index: 999;
 }
 .animate {
 opacity: 0;
