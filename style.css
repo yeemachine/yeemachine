@@ -4,11 +4,17 @@ body{
   justify-content: center
 }
 nav{
+  position: absolute;
+  top:78vh;
+  left:50vw;
   margin-left: 0vw;
   color:blue;
   position: absolute;
   transition: .5s;
   z-index: 999;
+  -ms-transform: rotate(-30deg); /* IE 9 */
+   -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+   transform: rotate(-30deg);
 }
 .animate {
 opacity: 0;
@@ -99,6 +105,22 @@ stroke-dashoffset: 0;
   .animate{
     width: 95vw;
   height: auto;
+}
+nav{
+  position: relative;
+  top:80vh;
+  left:0;
+  width: 100%;
+align-items: center;
+ text-align: center;
+  margin-left: 0vw;
+  color:blue;
+  position: absolute;
+  transition: .5s;
+  z-index: 999;
+  -ms-transform: rotate(0deg); /* IE 9 */
+   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+   transform: rotate(0deg);
 }
 
 }
