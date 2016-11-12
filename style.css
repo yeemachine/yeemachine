@@ -5,12 +5,11 @@ body{
 }
 nav{
   position: absolute;
-  top:78vh;
+  top:70vh;
   left:50vw;
-  width: 100px;
-  background-color: red;
+  width: 25vw;
   margin-left: 0vw;
-  color:blue;
+  color:white;
   position: absolute;
   transition: .5s;
   z-index: 999;
