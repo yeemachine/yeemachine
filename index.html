@@ -11,19 +11,24 @@
     var svg = document.getElementById("svgObject");
     var svgDoc = svgObject.contentDocument;
     var line1 = svgDoc.getElementById("link1");
+    var line2 = svgDoc.getElementById("link2");
+    var line3 = svgDoc.getElementById("link3");
+    var line4 = svgDoc.getElementById("link4");
+    var line5 = svgDoc.getElementById("link5");
+    var line6 = svgDoc.getElementById("link6");
 
-    line1.setAttribute("stroke","red");
+    // line1.setAttribute("stroke","red");
 
 
-    $( line1 ).mouseenter(
-      function() {
-        $("nav").html("Hello World");
-      }
-    )
-    $( line1 ).mouseleave( function() {
-        $("nav").html("")
-      }
-       );
+    $( line1 ).hover(
+    function() {
+      $( 'nav' ).html( $( "Tesla" ) );
+    }, function() {
+      $( 'nav' ).html( $( "" ) );
+    }
+  );
+
+
 
       };
 
