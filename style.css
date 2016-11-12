@@ -64,7 +64,7 @@ animation-fill-mode: forwards;
 
 }
 .mock:hover{
-  stroke:#e9e9de
+  stroke:#e9e9de;
   cursor: pointer;
 
 }
