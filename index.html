@@ -36,20 +36,35 @@
         $("nav").html("")});
 
     $( line4 ).mouseenter(function() {
-      $("nav").html("Vimeo");})
+      $("nav").html("Video");})
     $( line4 ).mouseleave(function() {
         $("nav").html("")});
 
     $( line5 ).mouseenter(function() {
       $("nav").html("The Old Richard");
       $("body").css("background-color", "black");
-      $("nav").css("color", "white");})
+      $("nav").css("color", "white");
+      $(".tesla").css("stroke", "black");
+      $(".watson").css("stroke", "black");
+      $(".sound").css("stroke", "black");
+      $(".vimeo").css("stroke", "black");
+      $(".mock").css("stroke", "black");
+    })
 
 
     $( line5 ).mouseleave(function() {
         $("nav").html("");
         $("body").css("background-color", "");
-        $("nav").css("color", "");})
+        $("nav").css("color", "");
+        $(".tesla").css("stroke", "");
+        $(".watson").css("stroke", "");
+        $(".sound").css("stroke", "");
+        $(".vimeo").css("stroke", "");
+        $(".mock").css("stroke", "");
+
+
+
+      })
 
 
     $( line6 ).mouseenter(function() {
