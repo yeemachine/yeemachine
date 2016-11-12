@@ -8,14 +8,13 @@ opacity: 0;
 animation: dash2 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: auto;
-height: 95%;
+height: 80%;
 }
 .animate2 {
 opacity: 0;
 animation: dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: auto;
-height: 100%;
 }
 
 /*.group:hover *{
@@ -38,6 +37,9 @@ height: 100%;
 .old:hover{
   stroke:red;
 
+}
+.mock:hover{
+  stroke:orange
 }
 
 .animatehex{
