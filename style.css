@@ -198,6 +198,7 @@ align-items: center;
   stroke:purple;
 }
 .watson:hover{
+  animation: none;
   stroke:black;
 }
 .sound{
@@ -206,6 +207,7 @@ align-items: center;
   stroke:#8afffe;
 }
 .sound:hover{
+  animation: none;
   stroke:black;
 }
 .vimeo{
