@@ -9,7 +9,6 @@ animation: dash2 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: auto;
 height: 95%;
-stroke:black
 }
 .animate2 {
 opacity: 0;
@@ -17,6 +16,28 @@ animation: dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: auto;
 height: 100%;
+}
+
+/*.group:hover *{
+  stroke:red;
+}*/
+.tesla:hover{
+  stroke:#666;
+}
+.watson:hover{
+  stroke:green;
+}
+.sound:hover{
+  stroke:blue;
+
+}
+.vimeo:hover{
+  stroke:purple;
+
+}
+.old:hover{
+  stroke:red;
+
 }
 
 .animatehex{
