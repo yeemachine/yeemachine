@@ -90,7 +90,7 @@ stroke-dashoffset: 0;
 }
 @media screen and (max-width: 600px) {
   .animate{
-    width: 90vw;
+    width: 100vw;
   height: auto;
 }
 
