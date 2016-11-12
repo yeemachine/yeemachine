@@ -216,12 +216,6 @@ align-items: center;
 .vimeo:hover{
   stroke:black;
 }
-.old{
-  stroke:red
-}
-.old:hover{
-  stroke:black;
-}
 .mock{
   stroke:#e9e9de
 }
