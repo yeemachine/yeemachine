@@ -51,7 +51,7 @@ a{
 
 }
 .sound:hover{
-  animation: colorsS 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation: colorsS 1.75s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
   stroke:#8afffe;
 
@@ -123,6 +123,7 @@ height: 20%;
   100% {
     stroke: #8afffe;
   }
+
 }
 @keyframes dash {
 0% {
