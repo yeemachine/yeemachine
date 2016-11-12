@@ -37,22 +37,24 @@ animation-fill-mode: forwards;
   stroke:#666;
 }
 .watson:hover{
-  stroke:green;
+  animation: colors 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
 }
 .sound:hover{
-  stroke:blue;
-
+  animation: colorsS 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
 }
 .vimeo:hover{
-  stroke:purple;
+  stroke:#44c536;
 
 }
 .old:hover{
   stroke:red;
+  
 
 }
 .mock:hover{
-  stroke:orange
+  stroke:#e9e9de
 }
 
 .animatehex{
@@ -67,6 +69,40 @@ animation-fill-mode: forwards;
 width: auto;
 animation-delay:.5s;
 height: 20%;
+}
+@keyframes colors {
+  0% {
+    stroke: black;
+  }
+  20% {
+    stroke: green;
+  }
+  40% {
+    stroke: yellow;
+  }
+  60% {
+    stroke: blue;
+  }
+  80% {
+    stroke: red;
+  }
+  100% {
+    stroke: purple;
+  }
+}
+@keyframes colorsS {
+  0% {
+    stroke: black;
+  }
+  33% {
+    stroke: #5710b6;
+  }
+  66% {
+    stroke: #4759db;
+  }
+  100% {
+    stroke: #8afffe;
+  }
 }
 @keyframes dash {
 0% {
