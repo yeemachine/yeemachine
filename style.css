@@ -183,41 +183,6 @@ align-items: center;
    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
    transform: rotate(0deg);
 }
-.tesla{
-  stroke:#666
-}
-.tesla:hover{
-  stroke:black;
-}
-.watson{
-  /*animation: colors 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
-  animation-fill-mode: forwards;*/
-  stroke:purple;
-}
-.watson:hover{
-  animation: none;
-  stroke:black;
-}
-.sound{
-  /*animation: colorsS 1.75s cubic-bezier(0.670, 0.005, 0.200, 1.000);
-  animation-fill-mode: forwards;*/
-  stroke:#8afffe;
-}
-.sound:hover{
-  animation: none;
-  stroke:black;
-}
-.vimeo{
-  stroke:#44c536
-}
-.vimeo:hover{
-  stroke:black;
-}
-.mock{
-  stroke:#e9e9de
-}
-.mock:hover{
-  stroke:black;
-}
+
 
 }
