@@ -98,19 +98,17 @@ animation-delay:.5s;
 height: 20%;
 }
 @keyframes colors {
+
   0% {
-    stroke: black;
-  }
-  20% {
     stroke: green;
   }
-  40% {
+  25% {
     stroke: yellow;
   }
-  60% {
+  50% {
     stroke: blue;
   }
-  80% {
+  75% {
     stroke: red;
   }
   100% {
@@ -118,13 +116,11 @@ height: 20%;
   }
 }
 @keyframes colorsS {
+
   0% {
-    stroke: black;
-  }
-  33% {
     stroke: #5710b6;
   }
-  66% {
+  50% {
     stroke: #4759db;
   }
   100% {
