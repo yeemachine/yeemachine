@@ -29,10 +29,11 @@
 
     $( line1 ).mouseenter(function() {
       $("nav").html("Tesla Timeline");
-    $("body").addClass("background");})
+    $("body").css("background-color","black");})
 
     $( line1 ).mouseleave(function() {
-        $("nav").html("")});
+        $("nav").html("");
+      $("body").css("background-color","");});
 
     $( line2 ).mouseenter(function() {
       $("nav").html("Watson X Wayback");})
