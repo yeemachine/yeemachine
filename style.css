@@ -3,6 +3,7 @@ body{
   align-items: center;
   justify-content: center;
   font-family: futura;
+  transition: 5s
 }
 svg{
 }
