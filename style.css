@@ -187,7 +187,7 @@ align-items: center;
   stroke:#666
 }
 .tesla:hover{
-  stroke:black;
+  stroke:#666;
 }
 .watson{
   /*animation: colors 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
@@ -196,7 +196,7 @@ align-items: center;
 }
 .watson:hover{
   animation: none;
-  stroke:black;
+  stroke:purple;
 }
 .sound{
   /*animation: colorsS 1.75s cubic-bezier(0.670, 0.005, 0.200, 1.000);
@@ -205,19 +205,19 @@ align-items: center;
 }
 .sound:hover{
   animation: none;
-  stroke:black;
+  stroke:#8afffe;
 }
 .vimeo{
   stroke:#44c536
 }
 .vimeo:hover{
-  stroke:black;
+  stroke:#44c536;
 }
 .mock{
   stroke:#e9e9de
 }
 .mock:hover{
-  stroke:black;
+  stroke:#e9e9de;
 }
 
 }
