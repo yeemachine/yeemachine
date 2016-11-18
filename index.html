@@ -22,6 +22,8 @@
     var line4 = svgDoc.getElementById("link4");
     var line5 = svgDoc.getElementById("link5");
     var line6 = svgDoc.getElementById("link6");
+    var line7 = svgDoc.getElementById("link7");
+
 
     // line1.setAttribute("stroke","red");
 
@@ -111,6 +113,15 @@
       $("body").css("transition","0s");
 });
 
+$( line7 ).mouseenter(function() {
+  $("nav").html("Facebook Hackathon");
+  $("body").css("background-color", "black");
+$("body").css("transition","")})
+$( line7 ).mouseleave(function() {
+    $("nav").html("");
+  $("body").css("background-color","");
+  $("body").css("transition","0s");
+});
 
 
 
