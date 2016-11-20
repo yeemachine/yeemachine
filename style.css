@@ -91,7 +91,7 @@ animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 }
 .animatehex:hover{
-  stroke:#3b5998;
+  stroke:#365899;
   cursor: pointer;
 }
 .animateheart{
