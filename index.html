@@ -115,10 +115,13 @@
 
 $( line7 ).mouseenter(function() {
   $("nav").html("Facebook Hackathon");
+  $(".descript").html("This is a facebook paragraph.");
   $("body").css("background-color", "black");
 $("body").css("transition","")})
 $( line7 ).mouseleave(function() {
     $("nav").html("");
+    $(".descript").html("");
+
   $("body").css("background-color","");
   $("body").css("transition","0s");
 });
@@ -138,6 +141,7 @@ $( line7 ).mouseleave(function() {
 
   <object class="animate" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
   <nav></nav>
+  <p class="descript">This is a test paragraph.</p>
 
 
 

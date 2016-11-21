@@ -23,6 +23,9 @@ nav{
    transform: rotate(-30deg);
    pointer-events: none;
 }
+.descript{
+  pointer-events: none;
+}
 .animate {
 opacity: 0;
 animation: dash2 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
