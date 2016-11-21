@@ -4,6 +4,7 @@ body{
   justify-content: center;
   font-family: futura, sans-serif;
   transition: 20s
+  background-color:white;
 }
 svg{
 }
