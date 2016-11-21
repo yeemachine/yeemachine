@@ -29,6 +29,8 @@ nav{
   position: fixed;
   top:0;
   left:0;
+  background-color: red;
+  opacity: .5;
   pointer-events: none;
 
 }
