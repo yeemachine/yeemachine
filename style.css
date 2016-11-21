@@ -23,15 +23,24 @@ nav{
    transform: rotate(-30deg);
    pointer-events: none;
 }
-.descript{
+container{
   width: 100vw;
   height: 100vh;
   position: fixed;
   top:0;
   left:0;
-  background-color: red;
-  opacity: .5;
+  background-color: transparent;
   pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: difference;
+
+}
+.descript{
+color:white;
+
 
 }
 .animate {
