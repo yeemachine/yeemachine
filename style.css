@@ -21,6 +21,7 @@ nav{
   -ms-transform: rotate(-30deg); /* IE 9 */
    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
    transform: rotate(-30deg);
+   pointer-events: none;
 }
 .animate {
 opacity: 0;
