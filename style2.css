@@ -83,7 +83,7 @@ input{
   width: inherit;
 }
 input:focus{
-    border-width: 0px 0px 2px 0px;
+     box-shadow:(0 0 5px red);
 }
 .animatedelay{
   opacity: 0;

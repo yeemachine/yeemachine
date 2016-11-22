@@ -48,7 +48,35 @@ $( logo ).click(function() {
 
 
     </script>
+    <script>
 
+
+
+
+       function initMap() {
+
+     var source = /** @type {!HTMLInputElement} */(
+         document.getElementById('in'));
+
+
+
+
+     var autocomplete = new google.maps.places.Autocomplete(source);
+  
+
+
+     autocomplete.addListener('place_changed', function() {
+       marker.setVisible(false);
+       var place = autocomplete.getPlace();
+       if (!place.geometry) {
+         window.alert("No details available for input: '" + place.name + "'");
+         return;
+       }
+
+     });
+   }
+
+     </script>
 </head>
 
 <body>
@@ -62,5 +90,7 @@ $( logo ).click(function() {
 
 
 </body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
+        async defer></script>
 
 </html>
