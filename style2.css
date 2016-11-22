@@ -55,10 +55,11 @@ height: 100vh;
 animation: scale .2s cubic-bezier(0.5, 0.5, 0.5, 0.5);
 animation-delay: 1s;
 animation-fill-mode: forwards;
+transition: .5s;
+
 }
 .animate:hover{
   transform: rotate(60deg);
-  transition: .5s;
 
 }
 .animate2 {
@@ -108,6 +109,15 @@ height: 20%;
 .background{
   animation: fadeblack 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
+}
+@keyframes red{
+  0%{
+    stroke: red
+  }
+  100%{
+    stroke: white
+
+  }
 }
 @keyframes appear{
   0%{
