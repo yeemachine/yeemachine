@@ -76,14 +76,15 @@ a{
 }
 input{
   background-color: black;
-  border-width: 0px 0px 2px 0px;
-
+  border:none;
+  border-bottom:solid white 2px;
   font-size: 2vw;
   color:white;
   width: inherit;
 }
-input:focus{
-     box-shadow:(0 0 5px red);
+#in:focus {
+  border-bottom:red solid 2px;
+    outline: none;
 }
 .animatedelay{
   opacity: 0;
