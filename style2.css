@@ -97,12 +97,16 @@ height: 20%;
   height: 100vh;
   position: fixed;
   left:25vw;
+  top:0;
+
   }
   100%{
     width: auto;
     height: 10vh;
     position: fixed;
     left:0;
+    top:0;
+
   }
 }
 @keyframes scaleM{
