@@ -3,8 +3,9 @@ body{
   align-items: center;
   justify-content: center;
   font-family: futura, sans-serif;
-  background-color:white;
+  background-color:black;
   margin:0;
+  color:white;
 }
 svg{
 }
@@ -71,7 +72,7 @@ a{
 
   animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
-  animation-delay:.2s;
+  animation-delay:.1s;
 }
 .animatehex{
 opacity: 0;
