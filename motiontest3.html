@@ -15,27 +15,24 @@
     <script>
     window.onload=function() {
     var svg = document.getElementById("svgObject");
-    var svgDoc = svgObject.contentDocument;
+    var svgDoc = svg.contentDocument;
     var logo = svgDoc.getElementById("logo");
     var heart = svgDoc.getElementById("heart");
 
 
 
 
-    // line1.setAttribute("stroke","red");
 
 
     $( logo ).mouseenter(function() {
       $(heart).css("stroke","red");
 
-      // $("nav").html("Tesla Timeline");
 
   })
 
     $( logo ).mouseleave(function() {
       $(heart).css("stroke","");
 
-        // $("nav").html("");
 
 });
 
