@@ -25,19 +25,21 @@ nav{
    transform: rotate(-30deg);
    pointer-events: none;
 }
+.controls{
+  opacity: 0;
+  animation: appear .5s cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
 container{
-  width: 100vw;
-  height: 100vh;
   position: fixed;
   top:0;
-  left:0;
-  background-color: transparent;
-  pointer-events: none;
+  left:10vh;
+  height: 10vh;
+  width:30vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  mix-blend-mode: exclusion;
 
 }
 .descript{
@@ -66,7 +68,17 @@ animation-fill-mode: forwards;
 a{
 
 }
+input{
+  background-color: black;
+  border-width: 0px 0px 2px 0px;
 
+  font-size: 2vw;
+  color:white;
+  width: inherit;
+}
+input:focus{
+    border-width: 0px 0px 2px 0px;
+}
 .animatedelay{
   opacity: 0;
 
@@ -91,6 +103,15 @@ height: 20%;
 .background{
   animation: fadeblack 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
+}
+@keyframes appear{
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+
+  }
 }
 @keyframes scale{
   0%{
