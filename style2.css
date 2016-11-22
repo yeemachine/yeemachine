@@ -114,6 +114,9 @@ height: 20%;
   0%{
     stroke: red
   }
+  50%{
+    stroke: red
+  }
   100%{
     stroke: white
 
