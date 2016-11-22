@@ -195,7 +195,7 @@ stroke-dashoffset: 5;
 }
 100% {
 opacity: 1;
-stroke-dasharray: 500;
+stroke-dasharray: 1000;
 stroke-dashoffset: 0;
 }
 }
