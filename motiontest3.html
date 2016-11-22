@@ -14,6 +14,9 @@
     <script src="jquery.min.js"></script>
     <script>
     window.onload=function() {
+
+      $(".animate").css("pointer-events","none")
+       setTimeout(function(){ $(".animate").css("pointer-events","");}, 1000);
     var svg = document.getElementById("svgObject");
     var svgDoc = svg.contentDocument;
     var logo = svgDoc.getElementById("logo");
@@ -37,6 +40,7 @@
 
 
 });
+
 
 
 $( logo ).click(function() {
