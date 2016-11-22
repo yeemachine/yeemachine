@@ -25,6 +25,16 @@ nav{
    transform: rotate(-30deg);
    pointer-events: none;
 }
+.pac-container{
+  background-color: black;
+}
+.pac-item-query{
+  color:white;
+
+}
+.pac-item:hover{
+  background-color: red;
+}
 .controls{
   opacity: 0;
   animation: appear .5s cubic-bezier(0.5, 0.5, 0.5, 0.5);
