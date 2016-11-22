@@ -42,6 +42,7 @@
 $( logo ).click(function() {
 
   $(heart).css("stroke","red");
+    $('input').html("");
 });
       };
 
@@ -62,7 +63,7 @@ $( logo ).click(function() {
 
 
      var autocomplete = new google.maps.places.Autocomplete(source);
-  
+
 
 
      autocomplete.addListener('place_changed', function() {
