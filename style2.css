@@ -56,6 +56,11 @@ animation: scale .2s cubic-bezier(0.5, 0.5, 0.5, 0.5);
 animation-delay: 1s;
 animation-fill-mode: forwards;
 }
+.animate:hover{
+  transform: rotate(60deg);
+  transition: .5s;
+
+}
 .animate2 {
 opacity: 0;
 animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
