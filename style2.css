@@ -32,8 +32,13 @@ nav{
   width: auto;
   height: 10vh;
   position: fixed;
+  transition: .5s;
   left:0;
   top:0;
+}
+.shadow:hover{
+  transform: rotate(60deg);
+
 }
 .pac-container{
   background-color: black;
