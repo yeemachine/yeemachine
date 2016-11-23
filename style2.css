@@ -28,19 +28,7 @@ nav{
 .hidden{
   display: none;
 }
-/*.shadow{
-  width: auto;
-  height: 10vh;
-  position: fixed;
-  transition: .5s;
-  left:0;
-  top:0;
-  z-index: 1;
-}
-.shadow:hover{
-  transform: rotate(60deg);
 
-}*/
 .pac-container{
   background-color: black;
 }
@@ -96,9 +84,16 @@ animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 }
 
-/*.group:hover{
-  display: none;
-}*/
+.group{
+}
+
+.move1{
+  fill:white;
+  transform: translate(20,2.5);
+}
+.move1:hover{
+  transform: translate(20,2.5);
+}
 a{
 
 }
