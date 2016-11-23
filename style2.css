@@ -28,6 +28,13 @@ nav{
 .hidden{
   display: none;
 }
+.shadow{
+  width: auto;
+  height: 10vh;
+  position: fixed;
+  left:0;
+  top:0;
+}
 .pac-container{
   background-color: black;
 }
