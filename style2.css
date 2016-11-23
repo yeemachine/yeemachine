@@ -35,6 +35,7 @@ nav{
   transition: .5s;
   left:0;
   top:0;
+  z-index: 1;
 }
 .shadow:hover{
   transform: rotate(60deg);
@@ -82,6 +83,7 @@ animation-delay: 1s;
 animation-fill-mode: forwards;
 transition: .5s;
 pointer-events: none;
+z-index: 99;
 
 }
 .animate:hover{
