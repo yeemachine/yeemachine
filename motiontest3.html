@@ -28,22 +28,28 @@
     //     $(".hidden").removeClass("hidden");
      //
     //   }, 1000);
+$( 'object' ).mouseenter(function() {
+  $(move1).css({"transform": "translate(0px, 20px)", "-ms-transform": "translate(0px, 20px)", "-webkit-transform":"translate(0px, 20px)"});
+
+});
+$( 'object' ).mouseleave(function() {
+  $(move1).css({"transform": "", "-ms-transform": "", "-webkit-transform":""});
+
+});
 
 
 
     $( shadow ).mouseenter(function() {
       console.log('test');
       $('.animatehex').css("animation","dash2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)");
-      $(move1).css({"transform": "translate(0px, 20px)", "-ms-transform": "translate(0px, 20px)", "-webkit-transform":"translate(0px, 20px)"});
 
 
 
-  })
+  });
 
     $( shadow ).mouseleave(function() {
       $(heart).css("stroke","");
       $('.animatehex').css("animation","");
-      $(move1).css({"transform": "", "-ms-transform": "", "-webkit-transform":""});
 
 
 
