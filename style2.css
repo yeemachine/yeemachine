@@ -25,6 +25,9 @@ nav{
    transform: rotate(-30deg);
    pointer-events: none;
 }
+.hidden{
+  display: none;
+}
 .pac-container{
   background-color: black;
 }
