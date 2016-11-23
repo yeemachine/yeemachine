@@ -19,6 +19,7 @@
     var svgDoc = svg.contentDocument;
     var logo = svgDoc.getElementById("logo");
     var heart = svgDoc.getElementById("heart");
+    var move1 = svgDoc.getElementsByClassName("move1");
 
 
     //  setTimeout(function(){
@@ -31,7 +32,7 @@
 
     $( logo ).mouseenter(function() {
       $('.animatehex').css("animation","dash2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)");
-      $('.move1').css("{transform: translate(0px, 20px); -ms-transform: translate(0px, 20px);-webkit-transform: translate(0px, 20px);}");
+      $(move1).css("{transform: translate(0px, 20px); -ms-transform: translate(0px, 20px);-webkit-transform: translate(0px, 20px);}");
 
 
 
@@ -40,7 +41,7 @@
     $( logo ).mouseleave(function() {
       $(heart).css("stroke","");
       $('.animatehex').css("animation","");
-      $('.move1').css("");
+      $(move1).css("");
 
 
 
