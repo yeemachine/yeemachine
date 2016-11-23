@@ -28,7 +28,7 @@ nav{
 .hidden{
   display: none;
 }
-.shadow{
+/*.shadow{
   width: auto;
   height: 10vh;
   position: fixed;
@@ -40,7 +40,7 @@ nav{
 .shadow:hover{
   transform: rotate(60deg);
 
-}
+}*/
 .pac-container{
   background-color: black;
 }
@@ -96,8 +96,8 @@ animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 }
 
-/*.group:hover *{
-  stroke:red;
+/*.group:hover{
+  display: none;
 }*/
 a{
 
