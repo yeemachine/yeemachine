@@ -85,6 +85,7 @@ animation-fill-mode: forwards;
 }
 
 .group{
+  display: none;
 }
 
 .move1{
@@ -133,6 +134,14 @@ height: 20%;
 .background{
   animation: fadeblack 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
+}
+@keyframes move1{
+  0%{
+  transform: translate(0,0);
+}
+100%{
+  transition: translate(0,20)
+}
 }
 @keyframes red{
   0%{
