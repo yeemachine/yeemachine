@@ -31,7 +31,7 @@
 
     $( logo ).mouseenter(function() {
       $('.animatehex').css("animation","dash2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)");
-      $('.move1').css("animation","move 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)");
+      $('.move1').css("{transform: translate(0px, 20px); -ms-transform: translate(0px, 20px);-webkit-transform: translate(0px, 20px);}");
 
 
 
@@ -40,6 +40,8 @@
     $( logo ).mouseleave(function() {
       $(heart).css("stroke","");
       $('.animatehex').css("animation","");
+      $('.move1').css("");
+
 
 
 

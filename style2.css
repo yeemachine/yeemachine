@@ -75,7 +75,7 @@ z-index: 99;
 
 }
 .animate:hover{
-  transform: rotate(60deg);
+  /*transform: rotate(60deg);*/
 
 }
 .animate2 {
@@ -90,11 +90,11 @@ animation-fill-mode: forwards;
 
 .move1{
   fill:white;
-  transform: translate(20,2.5);
 }
 .move1:hover{
-  transform: translate(20,2.5);
-}
+  transform: translate(0px, 20px);
+  -ms-transform: translate(0px, 20px);
+  -webkit-transform: translate(0px, 20px);}
 a{
 
 }
