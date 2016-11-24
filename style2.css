@@ -26,9 +26,9 @@ transform: translate(0,0);
 
 }
 50%{
-  -ms-transform:translate(0,30px);
-  -webkit-transform:translate(0,30px);
-  transform: translate(0,30px);
+  -ms-transform:translate(0,25px);
+  -webkit-transform:translate(0,25px);
+  transform: translate(0,25px);
 
 }
 100%{
@@ -66,9 +66,9 @@ transform: translate(0,0);
 
 }
 50%{
-  -ms-transform:translate(0,-30px);
-  -webkit-transform:translate(0,-30px);
-  transform: translate(0,-30px);
+  -ms-transform:translate(0,-25px);
+  -webkit-transform:translate(0,-25px);
+  transform: translate(0,-25px);
 
 }
 100%{
