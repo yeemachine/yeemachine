@@ -243,6 +243,9 @@ animation-fill-mode: forwards;
   fill:red;
   animation: move1 1s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;
 animation-fill-mode: forwards;
+-ms-transform:translate(0,20);
+-webkit-transform:translate(0,20);
+transform: translate(0,20);
 }
 .move1:hover{
   transform: translate(0px, 20px);
