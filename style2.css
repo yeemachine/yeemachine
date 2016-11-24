@@ -1,3 +1,154 @@
+@keyframes move1{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+50%{
+  -ms-transform:translate(0,20);
+  -webkit-transform:translate(0,20);
+  transition: translate(0,20);
+
+}
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+}
+@keyframes red{
+  0%{
+    stroke: red
+  }
+  50%{
+    stroke: red
+  }
+  100%{
+    stroke: black
+
+  }
+}
+@keyframes appear{
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+
+  }
+}
+@keyframes scale{
+  0%{
+  width: auto;
+  height: 100vh;
+  position: fixed;
+  left:25vw;
+  top:0;
+
+  }
+  100%{
+    width: auto;
+    height: 10vh;
+    position: fixed;
+    left:0;
+    top:0;
+    pointer-events: all;
+
+
+  }
+}
+@keyframes scaleM{
+  0%{
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  left:0vw;
+  top:25vw;
+  }
+  100%{
+    width: 10vw;
+    height: auto;
+    position: fixed;
+    left:0;
+    top:0;
+  }
+}
+@keyframes fadeblack{
+  0% {
+    background-color: white
+  }
+  100%{
+    background-color: black;
+  }
+}
+@keyframes colors {
+
+  0% {
+    stroke: green;
+  }
+  25% {
+    stroke: yellow;
+  }
+  50% {
+    stroke: blue;
+  }
+  75% {
+    stroke: red;
+  }
+  100% {
+    stroke: purple;
+  }
+}
+@keyframes colorsS {
+
+  0% {
+    stroke: #5710b6;
+  }
+  50% {
+    stroke: #4759db;
+  }
+  100% {
+    stroke: #8afffe;
+  }
+
+}
+@keyframes dash {
+0% {
+opacity: 1;
+stroke-dasharray: 2000;
+stroke-dashoffset: 2000;
+}
+50% {
+opacity: 1;
+stroke-dasharray: 1000;
+stroke-dashoffset: 5;
+}
+100% {
+opacity: 1;
+stroke-dasharray: 500;
+stroke-dashoffset: 0;
+}
+}
+@keyframes dash2 {
+0% {
+opacity: 1;
+stroke-dasharray: 10;
+stroke-dashoffset: 100;
+}
+50% {
+opacity: 1;
+stroke-dasharray: 500;
+stroke-dashoffset: 5;
+}
+100% {
+opacity: 1;
+stroke-dasharray: 1000;
+stroke-dashoffset: 0;
+}
+}
+
 body{
   display: flex;
   align-items: center;
@@ -137,153 +288,7 @@ height: 20%;
   animation: fadeblack 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
 }
-@keyframes move1{
-  0%{
-  transform: translate(0,0);
-  -ms-transform:translate(0,0);
-  -webkit-transform:translate(0,0);
-}
-50%{
-  transition: translate(0,20);
-  -ms-transform:translate(0,20);
-  -webkit-transform:translate(0,20);
-}
-100%{
-transform: translate(0,0);
--ms-transform:translate(0,0);
--webkit-transform:translate(0,0);
-}
-}
-@keyframes red{
-  0%{
-    stroke: red
-  }
-  50%{
-    stroke: red
-  }
-  100%{
-    stroke: black
 
-  }
-}
-@keyframes appear{
-  0%{
-    opacity: 0
-  }
-  100%{
-    opacity: 1
-
-  }
-}
-@keyframes scale{
-  0%{
-  width: auto;
-  height: 100vh;
-  position: fixed;
-  left:25vw;
-  top:0;
-
-  }
-  100%{
-    width: auto;
-    height: 10vh;
-    position: fixed;
-    left:0;
-    top:0;
-    pointer-events: all;
-
-
-  }
-}
-@keyframes scaleM{
-  0%{
-  width: 100vw;
-  height: auto;
-  position: fixed;
-  left:0vw;
-  top:25vw;
-  }
-  100%{
-    width: 10vw;
-    height: auto;
-    position: fixed;
-    left:0;
-    top:0;
-  }
-}
-@keyframes fadeblack{
-  0% {
-    background-color: white
-  }
-  100%{
-    background-color: black;
-  }
-}
-@keyframes colors {
-
-  0% {
-    stroke: green;
-  }
-  25% {
-    stroke: yellow;
-  }
-  50% {
-    stroke: blue;
-  }
-  75% {
-    stroke: red;
-  }
-  100% {
-    stroke: purple;
-  }
-}
-@keyframes colorsS {
-
-  0% {
-    stroke: #5710b6;
-  }
-  50% {
-    stroke: #4759db;
-  }
-  100% {
-    stroke: #8afffe;
-  }
-
-}
-@keyframes dash {
-0% {
-opacity: 1;
-stroke-dasharray: 2000;
-stroke-dashoffset: 2000;
-}
-50% {
-opacity: 1;
-stroke-dasharray: 1000;
-stroke-dashoffset: 5;
-}
-100% {
-opacity: 1;
-stroke-dasharray: 500;
-stroke-dashoffset: 0;
-}
-}
-@keyframes dash2 {
-0% {
-opacity: 1;
-stroke-dasharray: 10;
-stroke-dashoffset: 100;
-}
-50% {
-opacity: 1;
-stroke-dasharray: 500;
-stroke-dashoffset: 5;
-}
-100% {
-opacity: 1;
-stroke-dasharray: 1000;
-stroke-dashoffset: 0;
-}
-}
 @media screen and (max-width: 600px) {
   .animate{
     width: 100vw;
