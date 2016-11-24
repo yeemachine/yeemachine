@@ -32,7 +32,30 @@
     //     $(".hidden").removeClass("hidden");
      //
     //   }, 1000);
-$(svgDoc ).mouseenter(function() {
+// $(svgDoc ).mouseenter(function() {
+//   $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+//   $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+//   // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+//   $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+//   $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+//   $(logo).css({"display":"none"});
+//   console.log('svgmouseover');
+//
+//
+// });
+// $( svgDoc ).mouseleave(function() {
+//   $(move1).css({"animation":"","animation-delay":""});
+//   $(move2).css({"animation":"",});
+//   // $(move3).css({"animation":"",});
+//   $(move4).css({"animation":"",});
+//   $(move5).css({"animation":"","animation-delay":""});
+//   $(logo).css({"display":""});
+//
+//
+// });
+
+
+$('#in').mouseenter(function() {
   $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
   $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
   // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
@@ -43,32 +66,13 @@ $(svgDoc ).mouseenter(function() {
 
 
 });
-$( svgDoc ).mouseleave(function() {
+$('#in').mouseleave(function() {
   $(move1).css({"animation":"","animation-delay":""});
   $(move2).css({"animation":"",});
   // $(move3).css({"animation":"",});
   $(move4).css({"animation":"",});
   $(move5).css({"animation":"","animation-delay":""});
   $(logo).css({"display":""});
-
-
-});
-
-
-
-    $( shadow ).mouseenter(function() {
-      console.log('test');
-      $('.animatehex').css("animation","dash2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)");
-
-
-
-  });
-
-    $( shadow ).mouseleave(function() {
-      $(heart).css("stroke","");
-      $('.animatehex').css("animation","");
-
-
 
 
 });
