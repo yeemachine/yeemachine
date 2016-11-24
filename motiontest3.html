@@ -21,6 +21,10 @@
     var shadow = svgDoc.getElementById("shadow");
     var heart = svgDoc.getElementById("heart");
     var move1 = svgDoc.getElementById("move1");
+    var move2 = svgDoc.getElementById("move2");
+    var move3 = svgDoc.getElementById("move3");
+    var move4 = svgDoc.getElementById("move4");
+    var move5 = svgDoc.getElementById("move5");
 
 
     //  setTimeout(function(){
@@ -29,11 +33,11 @@
      //
     //   }, 1000);
 $(svgDoc ).mouseenter(function() {
-  $(move1).css({"animation":"move1 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)", "animation-iteration-count":"infinite"});
+  $(move1,move2,move3,move4,move5 ).css({"animation":"move1 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)", "animation-iteration-count":"infinite"});
 
 });
 $( svgDoc ).mouseleave(function() {
-  $(move1).css({"animation":"", "animation-iteration-count":""});
+  $(move1,move2,move3,move4,move5).css({"animation":"", "animation-iteration-count":""});
 
 });
 
