@@ -138,9 +138,18 @@ height: 20%;
 @keyframes move1{
   0%{
   transform: translate(0,0);
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+}
+50%{
+  transition: translate(0,20)
+  -ms-transform:translate(0,20);
+  -webkit-transform:translate(0,20);
 }
 100%{
-  transition: translate(0,20)
+transform: translate(0,0);
+-ms-transform:translate(0,0);
+-webkit-transform:translate(0,0);
 }
 }
 @keyframes red{
