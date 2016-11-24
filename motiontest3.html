@@ -33,11 +33,11 @@
      //
     //   }, 1000);
 $(svgDoc ).mouseenter(function() {
-  $(move1,move2,move3,move4,move5 ).css({"animation":"move1 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)", "animation-iteration-count":"infinite"});
+  $("move1,move2,move3,move4,move5" ).css({"animation":"move1 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)", "animation-iteration-count":"infinite"});
 
 });
 $( svgDoc ).mouseleave(function() {
-  $(move1,move2,move3,move4,move5).css({"animation":"", "animation-iteration-count":""});
+  $("move1,move2,move3,move4,move5").css({"animation":"", "animation-iteration-count":""});
 
 });
 
