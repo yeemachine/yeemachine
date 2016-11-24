@@ -38,6 +38,8 @@ $(svgDoc ).mouseenter(function() {
   // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
   $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
   $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+  $(".group").css({"display":"none"});
+
 
 });
 $( svgDoc ).mouseleave(function() {
@@ -46,6 +48,8 @@ $( svgDoc ).mouseleave(function() {
   // $(move3).css({"animation":"",});
   $(move4).css({"animation":"",});
   $(move5).css({"animation":"","animation-delay":""});
+  $(".group").css({"display":""});
+
 
 });
 
