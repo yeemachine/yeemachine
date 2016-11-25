@@ -53,8 +53,9 @@
 //
 //
 // });
-if($("input,textarea").is(":focus")){
-//input and text area has focus
+var x = document.getElementById("in");
+if (document.hasFocus()) {
+
 
 $('#in').mouseenter(function() {
   $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
@@ -82,11 +83,9 @@ $('#in').mouseleave(function() {
 
 
 });
-
 }
-else{
-//no focus for input and textarea
-}  
+else {
+}
 
     };
 
