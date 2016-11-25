@@ -260,6 +260,13 @@ align-items: center;
    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
    transform: rotate(0deg);
 }
+.largecontainer{
+  flex-direction: column;
+}
+.halfcontainer{
+  width: auto;
+  height: 50vh;
+}
 /*.tesla{
   stroke:#666
 }
