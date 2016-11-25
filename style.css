@@ -117,7 +117,7 @@ opacity: 1;
   position: fixed;
   width: 0;
   height: 50px;
-  background-color:red;
+  background-color:#666;
   z-index: 9999;
   mix-blend-mode: exclusion;
   transition: .5s;
