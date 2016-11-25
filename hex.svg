@@ -9,18 +9,13 @@
 
 
 <g class="group">
-	<polygon points="43.088,52.378 43.088,92.457 77.797,112.494 112.508,92.457 112.508,52.378 77.797,32.336 "/>
-	<path d="M132.442,33.197l-48-27.715c-4.113-2.375-9.179-2.375-13.291,0L23.153,33.197c-4.111,2.374-6.644,6.761-6.644,11.509v55.425
-		c0,4.748,2.533,9.136,6.645,11.51l47.999,27.709c2.056,1.187,4.35,1.779,6.644,1.779c2.294,0,4.589-0.593,6.645-1.779l48-27.709
-		c4.111-2.374,6.645-6.762,6.645-11.51V44.705C139.086,39.958,136.553,35.571,132.442,33.197z M125.797,100.13l-48,27.709
-		L29.799,100.13V44.705L77.797,16.99l48,27.715V100.13z"/>
 
-	<!-- <polygon fill="#000000" fill-opacity="1" stroke="none" stroke-width="26.579" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	<polygon fill="#ffffff" fill-opacity="1" stroke="none" stroke-width="26.579" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		77.797,127.839 29.799,100.13 29.799,44.705 77.797,16.99 125.797,44.705 125.797,100.13 "/>
 
 
-<polygon id="link7" class="animatehex" fill="none" stroke="#000000" stroke-width="26.579" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-	77.797,127.839 29.799,100.13 29.799,44.705 77.797,16.99 125.797,44.705 125.797,100.13 "/> -->
+<polygon id="link7" class="animatehex" fill="none" stroke="#ffffff" stroke-width="26.579" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	77.797,127.839 29.799,100.13 29.799,44.705 77.797,16.99 125.797,44.705 125.797,100.13 "/>
 </g>
 
 
