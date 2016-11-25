@@ -40,9 +40,11 @@ nav{
   mix-blend-mode: exclusion;
 }
 .blend{
-  mix-blend-mode: exclusion;
+
+  background-color: transparent;
+
 }
-.titlecontainer{
+.largecontainer{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -54,23 +56,24 @@ nav{
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  mix-blend-mode: exclusion;
 
   z-index: 999;
 
 }
-.containers{
+.halfcontainer{
   width: 50vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.full{
-  color: black;
+.description{
+  color: white;
   display: block;
 
 }
-.descript{
+.title{
 color:white;
 font-size:5vw;
 
