@@ -53,7 +53,7 @@
 
     $( line2 ).mouseenter(function() {
       $(".title").html("Watson X Wayback");
-      $(line6).css({"animation":"blink 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":"1s"});
+      $(line6).css({"animation":"blink 1s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
 
       $(".description").html("Mashup between IBM Watson's tone analyzer and Wayback Machine's internet archive. Users can input their desired websites and track a company's linguistic tone over time. Apple's support page is used as an initial example.");
 
@@ -62,6 +62,8 @@
 })
     $( line2 ).mouseleave(function() {
       $(".title").html("");
+      $(line6).css({"animation":"","animation-delay":""});
+
       $(".description").html("");
         // $("nav").html("");
 
