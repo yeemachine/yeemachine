@@ -2,9 +2,9 @@
 
 
 100%{
-  -ms-transform:rotate(300deg);
-  -webkit-transform:rotate(300deg);
-transform: rotate(300deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+transform: rotate(360deg);
 
 }
 }
@@ -88,7 +88,10 @@ transform: translate(0,0);
 
 }
 }
+#link7{
+  transform-origin: center;
 
+}
 body{
   display: flex;
   align-items: center;
