@@ -375,7 +375,9 @@ stroke-dashoffset: 0;
 body{
   flex-direction: column;
 }
-
+h1{
+  width: 80%;
+}
 nav{
   position: relative;
   top:80vh;
