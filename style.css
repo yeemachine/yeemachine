@@ -61,8 +61,15 @@ nav{
   z-index: 999;
 
 }
-.halfcontainer{
-  width: 50vw;
+.halfcontainer1{
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.halfcontainer2{
+  width: 40vw;
   display: flex;
   flex-direction: row;
   align-items: center;
