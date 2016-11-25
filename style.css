@@ -274,7 +274,15 @@ align-items: center;
 .largecontainer{
   flex-direction: column;
 }
-.halfcontainer{
+.spacer{
+  height: 50vh;
+  width: 100%;
+}
+.halfcontainer1{
+  width: auto;
+  height: 50vh;
+}
+.halfcontainer2{
   width: auto;
   height: 50vh;
 }
