@@ -55,9 +55,14 @@ nav{
   z-index: 999;
 
 }
-.full{
-  position: absolute;
+.containers{
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
 .descript{
 color:white;
 font-size:5vw;
