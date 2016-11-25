@@ -220,7 +220,7 @@ a{
 
 }
 .old:hover{
-  stroke:red;
+  stroke:rgba(0,0,0,0);
   cursor: pointer;
 
 
