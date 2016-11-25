@@ -4,6 +4,7 @@ body{
   justify-content: center;
   font-family: futura, sans-serif;
   background-color:white;
+  border: 0;
 }
 svg{
 }
@@ -47,8 +48,8 @@ font-size:5vw;
 .animate {
 opacity: 1;
 animation-fill-mode: forwards;
-width: auto;
-height: 95vh;
+width: 50vw;
+height: auto;
 }
 .animate2 {
 opacity: 0;
@@ -202,11 +203,13 @@ stroke-dashoffset: 0;
 }
 @media screen and (max-width: 600px) {
   .animate{
-    width: 95vw;
-  height: auto;
+    width: auto;
+  height: 45vh;
 }
 body{
+  flex-direction: column;
 }
+
 nav{
   position: relative;
   top:80vh;
