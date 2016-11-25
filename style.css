@@ -125,6 +125,19 @@ opacity: 1;
 
 
 }
+.timelineanim{
+  opacity: 1;
+  position: fixed;
+  width: 0;
+  left:0;
+  height: 25vh;
+  background-color:#666;
+  z-index: 9999;
+  mix-blend-mode: lighten;
+  transition: .5s;
+
+
+}
 body{
   display: flex;
   align-items: center;
