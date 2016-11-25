@@ -462,6 +462,7 @@ align-items: center;
    transform: rotate(0deg);
 }
 .largecontainer{
+  pointer-events: none;
   flex-direction: column;
 }
 .spacer{
