@@ -13,15 +13,19 @@ transform: rotate(360deg);
 
 }
 }
-@keyframes stop{
+@keyframes blink{
 
-100%{
-  -ms-transform:rotate(0deg);
-  -webkit-transform:rotate(0deg);
-transform: rotate(0deg);
+0%{
+  opacity:0
 
 }
+50%{
+  opacity: 1
+}
+100%{
+  opacity:0
 
+}
 }
 @keyframes movedown{
   0%{
