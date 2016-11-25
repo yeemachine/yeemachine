@@ -23,6 +23,9 @@
     var line5 = svgDoc.getElementById("link5");
     var line6 = svgDoc.getElementById("link6");
     var line7 = svgDoc.getElementById("link7");
+    
+    var logo = svgDoc.getElementById("logo");
+
     var move1 = svgDoc.getElementById("move1");
     var move2 = svgDoc.getElementById("move2");
     var move3 = svgDoc.getElementById("move3");
@@ -90,6 +93,12 @@
 
       // $("nav").html("The Old Richard");
       $("body").css("background-color", "black");
+      $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+      $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+      // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+      $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+      $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+      $(logo).css({"display":"none"});
 
     })
 
@@ -99,6 +108,13 @@
 
         // $("nav").html("");
         $("body").css("background-color", "");
+
+        $(move1).css({"animation":"","animation-delay":""});
+        $(move2).css({"animation":"",});
+        // $(move3).css({"animation":"",});
+        $(move4).css({"animation":"",});
+        $(move5).css({"animation":"","animation-delay":""});
+        $(logo).css({"display":""});
 
 
 
