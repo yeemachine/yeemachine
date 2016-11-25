@@ -40,6 +40,7 @@
 
       // $("nav").html("Tesla Timeline");
       $(".description").html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.");
+      $(".timeline").css("width", "100vw");
 
 
   })
@@ -47,6 +48,8 @@
     $( line1 ).mouseleave(function() {
       $(".title").html("");
       $(".description").html("");
+      $(".timeline").css("width", "");
+
         // $("nav").html("");
 
 });
@@ -191,7 +194,6 @@ $( line7 ).mouseleave(function() {
 
 <body>
   <!-- <object class="animate" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object> -->
-
   <object class="animate" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
 
 
@@ -209,6 +211,7 @@ $( line7 ).mouseleave(function() {
   </div>
   </container>
 
+  <div class="timeline"></div>
 
 
 
