@@ -128,7 +128,7 @@ opacity: 1;
 .timelineanim{
   opacity: 1;
   position: fixed;
-  width: 0;
+  width: 60vw;
   left:0;
   height: 25vh;
   background-color:#666;
