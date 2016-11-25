@@ -238,7 +238,7 @@ stroke-dashoffset: 0;
 @media screen and (max-width: 600px) {
   .animate{
     width: auto;
-  height: 45vh;
+  height: 50vh;
 }
 body{
   flex-direction: column;
