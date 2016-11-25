@@ -39,6 +39,9 @@ nav{
   justify-content: center;
   mix-blend-mode: exclusion;
 }
+.blend{
+  mix-blend-mode: exclusion;
+}
 .titlecontainer{
   width: 100vw;
   height: 100vh;
@@ -51,7 +54,7 @@ nav{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: exclusion;
+
   z-index: 999;
 
 }
@@ -62,7 +65,11 @@ nav{
   align-items: center;
   justify-content: center;
 }
+.full{
+  color: black;
+  display: block;
 
+}
 .descript{
 color:white;
 font-size:5vw;
