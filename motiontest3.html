@@ -53,8 +53,8 @@
 //
 //
 // });
-var x = document.getElementById("in");
-if (document.hasFocus()) {
+$('input').on("focus", function(){
+   //do some stuff
 
 
 $('#in').mouseenter(function() {
@@ -80,12 +80,8 @@ $('#in').mouseleave(function() {
   $(logo).css({"display":""});
   $(svg).css({"transform": ""});
 
-
-
 });
-}
-else {
-}
+});
 
     };
 
