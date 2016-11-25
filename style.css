@@ -13,6 +13,16 @@ transform: rotate(360deg);
 
 }
 }
+@keyframes stop{
+
+100%{
+  -ms-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+transform: rotate(0deg);
+
+}
+
+}
 @keyframes movedown{
   0%{
     -ms-transform:translate(0,0);
