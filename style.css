@@ -95,7 +95,7 @@ transform: translate(0,0);
 }
 #link7{
   transform-origin: center;
-  animation:rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
 
 }
 body{
