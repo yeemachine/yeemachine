@@ -186,18 +186,25 @@ height: 20%;
 }
 @keyframes slide{
   0%{
+    opacity: 0;
     width: 0
   }
   100%{
+    opacity: 1;
+
     width: 40vw
   }
 }
 @keyframes slideM{
   0%{
+    opacity: 0;
+
     height: 0
   }
   100%{
-    height: 50vh
+    opacity: 1;
+
+    height: 40vh
   }
 }
 @keyframes colors {
@@ -300,13 +307,17 @@ align-items: center;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
+.description{
+  text-align: center;
+  width: 80%;
+}
 .halfcontainer1{
-  width: auto;
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
 }
 .halfcontainer2{
-  width: auto;
-  height: 50vh;
+  width: 100%;
+  height: 40vh;
 }
 /*.tesla{
   stroke:#666
