@@ -89,7 +89,7 @@ nav{
 }
 .title{
 color:white;
-font-size:5vw;
+font-size:calc(18px + 4vw);
 
 
 }
