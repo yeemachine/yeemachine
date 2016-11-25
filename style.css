@@ -74,6 +74,9 @@ nav{
   width: 50%;
 
 }
+.spacer{
+  width: 40vw;
+}
 .title{
 color:white;
 font-size:5vw;
