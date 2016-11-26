@@ -35,20 +35,28 @@
     var link = svgDoc.getElementsByClassName("link");
 
 
-
-
+    var pTags = $( "link" );
+// $( "button" ).click(function() {
+//   if ( pTags.parent().is( "a" ) ) {
+//     pTags.unwrap();
+//   } else {
+//     pTags.wrap( "<a></a>" );
+//   }
+// });
 
 
     $(window).resize(function() {
           // This will fire each time the window is resized:
           if($(window).width() >= 600) {
               // if larger or equal
-            
-
+              $(hidelink).show();
           } else {
               // if smaller
-              if ( link.parent().is( "a" ) ) {
-                link.unwrap();
+              // $(hidelink).hide();
+              if ( pTags.parent().is( "a" ) ) {
+                pTags.unwrap();
+              } else {
+                pTags.wrap( "<a></a>" );
               }
           }
       }).resize();
