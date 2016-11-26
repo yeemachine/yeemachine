@@ -477,6 +477,11 @@ h1{
   width: 80%;
   text-align: center;
 }
+a{
+  text-align: center;
+  color:white;
+  text-decoration: none;
+}
 nav{
   position: relative;
   top:80vh;
