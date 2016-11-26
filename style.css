@@ -472,6 +472,10 @@ stroke-dashoffset: 0;
   .animate{
     width: auto;
   height: 50vh;
+
+}
+.hidelink:active{
+  pointer-events: none;
 }
 body{
   flex-direction: column;
