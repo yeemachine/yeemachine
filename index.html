@@ -33,9 +33,10 @@
     var move5 = svgDoc.getElementById("move5");
     var hidelink = svgDoc.getElementsByClassName("hidelink");
 
-    var cnt = $(hidelink).contents();
-    $(hidelink).replaceWith(cnt);
-    // line1.setAttribute("stroke","red");
+    var aTags = $( "a" );
+
+    aTags.unwrap();
+
 
     $(window).resize(function() {
           // This will fire each time the window is resized:
