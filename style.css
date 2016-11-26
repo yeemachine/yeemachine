@@ -139,6 +139,9 @@ opacity: 1;
 
 }
 a{
+  text-align: left;
+  color:white;
+  text-decoration: none;
 }
 
 .timeline{
@@ -478,7 +481,7 @@ h1{
   text-align: center;
 }
 a{
-  text-align: center;
+  text-align: left;
   color:white;
   text-decoration: none;
 }
