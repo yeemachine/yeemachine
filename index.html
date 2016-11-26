@@ -31,21 +31,43 @@
     var move3 = svgDoc.getElementById("move3");
     var move4 = svgDoc.getElementById("move4");
     var move5 = svgDoc.getElementById("move5");
-    var hidelink = svgDoc.getElementsByClassName("hidelink");
+    var hidelink1 = svgDoc.getElementsByClassName("hidelink1");
+    var hidelink2 = svgDoc.getElementsByClassName("hidelink2");
+    var hidelink3 = svgDoc.getElementsByClassName("hidelink3");
+    var hidelink4 = svgDoc.getElementsByClassName("hidelink4");
+    var hidelink5 = svgDoc.getElementsByClassName("hidelink5");
+    var hidelink6 = svgDoc.getElementsByClassName("hidelink6");
+    var hidelink7 = svgDoc.getElementsByClassName("hidelink7");
 
-    var cnt = $(hidelink).contents();
-    // line1.setAttribute("stroke","red");
 
-    // $(window).resize(function() {
-    //       // This will fire each time the window is resized:
-    //       if($(window).width() >= 600) {
-    //           // if larger or equal
-    //       } else {
-    //           // if smaller
-    //           $(hidelink).replaceWith(cnt);
-    //
-    //       }
-    //   }).resize();
+    var cnt1 = $(hidelink1).contents();
+    var cnt2 = $(hidelink2).contents();
+    var cnt3 = $(hidelink3).contents();
+    var cnt4 = $(hidelink4).contents();
+    var cnt5 = $(hidelink5).contents();
+    var cnt6 = $(hidelink6).contents();
+    var cnt7 = $(hidelink7).contents();
+
+    $(window).resize(function() {
+          // This will fire each time the window is resized:
+          if($(window).width() >= 600) {
+              // if larger or equal
+          } else {
+              // if smaller
+              $(hidelink1).replaceWith(cnt1);
+              $(hidelink2).replaceWith(cnt2);
+
+              $(hidelink3).replaceWith(cnt3);
+
+              $(hidelink4).replaceWith(cnt4);
+              $(hidelink5).replaceWith(cnt5);
+              $(hidelink6).replaceWith(cnt6);
+              $(hidelink7).replaceWith(cnt7);
+
+
+
+          }
+      }).resize();
 
 
 
