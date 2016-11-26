@@ -189,6 +189,20 @@
                 $(".title").hide().html("Tesla Timeline").fadeIn("500");
                 $(".description").hide().html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link' xlink:href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn("500");
                 $(".timeline").attr("class", "timelineanim");
+                $(line1).css({"animation":"","animation-delay":""});
+                $(line2).css("animation","");
+                $(line3).css({"animation":"","animation-delay":""});
+                $(line4).css({"animation":"","animation-delay":""});
+                $(line5).css({"animation":"","animation-delay":""});
+                $(line6).css({"animation":"","animation-delay":""});
+                $(line7).css({"animation":"","animation-delay":""});
+                $("body").css("background-color", "");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                // $(move3).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
             })
 
               $( line2 ).click(function() {
@@ -240,7 +254,7 @@
             $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
             $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
             })
-            
+
 
           }
       }).resize();
