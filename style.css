@@ -510,7 +510,7 @@ align-items: center;
   animation-delay: 1s;
 }
 .description{
-  text-align: center;
+  text-align: left;
   width: 80%;
 }
 .halfcontainer1{
