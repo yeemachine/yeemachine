@@ -145,6 +145,7 @@ a{
   text-align: left;
   color:white;
   text-decoration: none;
+  pointer-events: all;
 }
 
 .timeline{
