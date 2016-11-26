@@ -557,7 +557,7 @@ align-items: center;
 
 
 }
-svg a:active {
+svg:active {
 	pointer-events: none;
 }
 
