@@ -474,9 +474,9 @@ stroke-dashoffset: 0;
   height: 50vh;
 
 }
-.hidelink:active{
+/*.hidelink:active{
   pointer-events: none;
-}
+}*/
 body{
   flex-direction: column;
   overflow-y: scroll;
