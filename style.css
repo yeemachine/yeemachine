@@ -138,6 +138,8 @@ transform: translate(0,0);
 opacity: 1;
 
 }
+a{
+}
 
 .timeline{
   opacity: 1;
@@ -181,6 +183,7 @@ h1{
   color:white;
   width: 50%;
   font-size:26px;
+  pointer-events: all;
 
 }
 svg{
@@ -290,6 +293,7 @@ animation-fill-mode: forwards;
 a{
 
 }
+
 .tesla:hover{
   stroke:#666;
   cursor: pointer;
@@ -467,6 +471,7 @@ stroke-dashoffset: 0;
 }
 body{
   flex-direction: column;
+  overflow-y: scroll;
 }
 h1{
   width: 80%;
@@ -539,6 +544,8 @@ align-items: center;
 
 
 }
-
+svg a:active {
+	pointer-events: none;
+}
 
 }
