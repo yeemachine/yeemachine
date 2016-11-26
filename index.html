@@ -34,17 +34,16 @@
     var hidelink = svgDoc.getElementsByClassName("hidelink");
 
     var cnt = $(hidelink).contents();
-    $(hidelink).replaceWith(cnt);
     // line1.setAttribute("stroke","red");
 
     $(window).resize(function() {
           // This will fire each time the window is resized:
           if($(window).width() >= 600) {
               // if larger or equal
-              $(hidelink).show();
           } else {
               // if smaller
-              $(hidelink).hide();
+              $(hidelink).replaceWith(cnt);
+
           }
       }).resize();
 
