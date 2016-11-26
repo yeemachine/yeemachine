@@ -138,14 +138,11 @@ transform: translate(0,0);
 opacity: 1;
 
 }
-h3{
-  pointer-events: all;
-}
+
 a{
   text-align: left;
   color:white;
   text-decoration: none;
-  pointer-events: all;
 }
 
 .timeline{
@@ -561,8 +558,8 @@ align-items: center;
 
 
 }
-svg:active {
+/*svg:active {
 	pointer-events: none;
-}
+}*/
 
 }
