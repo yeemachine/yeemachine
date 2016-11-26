@@ -487,7 +487,7 @@ a{
   text-decoration: none;
 
 }
-.link a:active{
+a:active{
   pointer-events: all;
 }
 nav{
@@ -558,7 +558,7 @@ align-items: center;
 
 
 }
-svg:active {
+svg a:active {
 	pointer-events: none;
 }
 
