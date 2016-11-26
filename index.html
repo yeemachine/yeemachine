@@ -51,10 +51,10 @@
 
 
     $( line1 ).mouseenter(function() {
-      $(".title").html("Tesla Timeline").fadeIn('slow');
+      $(".title").hide().html("Tesla Timeline").fadeIn("slow");
 
       // $("nav").html("Tesla Timeline");
-      $(".description").html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link' xlink:href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn('slow');
+      $(".description").html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link' xlink:href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>");
       $(".timeline").attr("class", "timelineanim");
 
 
@@ -71,7 +71,7 @@
 });
 
     $( line2 ).mouseenter(function() {
-      $(".title").html("Watson X Wayback").fadeIn('slow');
+      $(".title").html("Watson X Wayback");
       $(line1).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".2s"});
       $(line3).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".3s"});
       $(line4).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".1s"});
@@ -99,7 +99,7 @@
 });
 
     $( line3 ).mouseenter(function() {
-      $(".title").html("Soundscape".fadeIn('slow'));
+      $(".title").html("Soundscape");
       $(".description").html("An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships. Uses three.js<br><a  class='link' xlink:href='http://richyee.com/sound/'><h3>GO</h3></a>");
       $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
       $(line7).attr('class', 'facebook');
