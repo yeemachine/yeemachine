@@ -31,8 +31,23 @@
     var move3 = svgDoc.getElementById("move3");
     var move4 = svgDoc.getElementById("move4");
     var move5 = svgDoc.getElementById("move5");
+    var hidelink = svgDoc.getElementsByClassName("hidelink");
+
 
     // line1.setAttribute("stroke","red");
+
+    $(window).resize(function() {
+          // This will fire each time the window is resized:
+          if($(window).width() >= 600) {
+              // if larger or equal
+              $(hidelink).show();
+          } else {
+              // if smaller
+              $(hidelink).hide();
+          }
+      }).resize();
+
+
 
 
     $( line1 ).mouseenter(function() {
