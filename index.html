@@ -172,12 +172,14 @@ $( line7 ).mouseenter(function() {
   // $(".title").html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app. ");
   $(".title").html("Facebook Hackathon");
   $(".description").html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app.");
-
+  $(line1).css("animation","dash 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
 })
 $( line7 ).mouseleave(function() {
     // $("nav").html("");
     $(".title").html("");
     $(".description").html("");
+    $(line1).css("animation","");
+
 
 
 
