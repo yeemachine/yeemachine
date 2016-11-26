@@ -486,7 +486,7 @@ a{
   text-decoration: none;
 
 }
-a:active{
+.link a:active{
   pointer-events: all;
 }
 nav{
