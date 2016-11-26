@@ -558,8 +558,5 @@ align-items: center;
 
 
 }
-svg a:active {
-	pointer-events: none;
-}
 
 }
