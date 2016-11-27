@@ -554,9 +554,9 @@ align-items: center;
 }
 .timeline{
   opacity: 1;
-  position: fixed;
+  position: absolute;
   width: 0;
-  bottom:17vh;
+  top:57.5vh;
   left:0;
   height: 25vh;
   background-color:#666;
@@ -568,10 +568,10 @@ align-items: center;
 }
 .timelineanim{
   opacity: 1;
-  position: fixed;
+  position: absolute;
   width: 100vw;
   left:0;
-  bottom:17vh;
+  top:57.5vh;
   height: 25vh;
   background-color:#666;
   z-index: 9999;
