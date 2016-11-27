@@ -39,6 +39,21 @@ transform: rotate(360deg);
 
 }
 }
+@keyframes stop{
+
+0%{
+  -ms-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+transform: rotate(0deg);
+
+}
+100%{
+  -ms-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+transform: rotate(0deg);
+
+}
+}
 @keyframes blink{
 
 0%{
