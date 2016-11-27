@@ -16,6 +16,14 @@
     window.onunload = function(){};
 
     window.onload=function() {
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      var h = $('body').height();
+      $('body').height(h);
+      $('.timeline').css('top', (h*.575));
+
+    }
+  });
     var svg = document.getElementById("svgObject");
     var svgDoc = svgObject.contentDocument;
     var line1 = svgDoc.getElementById("link1");
