@@ -554,7 +554,7 @@ align-items: center;
 }
 .timeline{
   opacity: 1;
-  position: absolute;
+  position: fixed;
   width: 0;
   top:57.5vh;
   left:0;
@@ -568,7 +568,7 @@ align-items: center;
 }
 .timelineanim{
   opacity: 1;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   left:0;
   top:57.5vh;
