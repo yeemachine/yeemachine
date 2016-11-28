@@ -2,8 +2,9 @@
 
 html {
   -webkit-tap-highlight-color: transparent;
-
   font-weight: normal;
+  font-smooth: never;
+ -webkit-font-smoothing: antialiased;
 }
 @keyframes trainN {
   0% {
