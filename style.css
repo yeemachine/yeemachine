@@ -212,7 +212,7 @@ h1{
   font-size:26px;
   pointer-events: all;
   display: none;
-
+  font-weight: normal;
 }
 svg{
 }
