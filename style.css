@@ -1,7 +1,6 @@
 html {
   -webkit-tap-highlight-color: transparent;
-  font-smooth: never;
-  -webkit-font-smoothing: antialiased;
+
   font-weight: normal;
 }
 @keyframes trainN {
