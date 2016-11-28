@@ -164,7 +164,18 @@ a{
   color:white;
   text-decoration: none;
 }
-
+.info{
+  display: none;
+  position: fixed;
+  bottom:5vh;
+  left:10vw;
+  color:white;
+  width: 100vw;
+  pointer-events: all;
+}
+.info a:hover{
+  text-decoration: underline;
+}
 .timeline{
   opacity: 1;
   position: fixed;

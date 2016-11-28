@@ -56,7 +56,7 @@
     var cnt5 = $(hidelink5).contents();
     var cnt6 = $(hidelink6).contents();
     var cnt7 = $(hidelink7).contents();
-    setTimeout(function(){   $(".largecontainer").css("pointer-events", "none");$("h1").css("display", "block");}, 1500);
+    setTimeout(function(){   $(".largecontainer").css("pointer-events", "none");$("h1").css("display", "block");$(".info").css("display", "block")}, 1500);
 
 
     // $(window).resize(function() {
@@ -122,7 +122,7 @@
               $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
               $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
               $(logo).css({"opacity":"0"});
-              $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users.<br><a class='link'  href='http://richyee.com'><h3>GO</h3></a> ").fadeIn("500");
+              $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users. Not optimized for Safari yet.<br><a class='link'  href='http://richyee.com'><h3>GO</h3></a> ").fadeIn("500");
             })
             $( line5 ).mouseleave(function() {
               $("h1").html("Yee Machine Projects");
@@ -363,6 +363,8 @@
     <div class="halfcontainer2">
       <h1>Yee Machine Projects</h1>
     <p class="description"></p>
+    <div class="info">Cooper Union 2014-2018<br><a href="mailto:rich@yeemachine.com" target="_top">rich@yeemachine.com</a>
+    </div>
   </div>
     <div class="halfcontainer1">
     <p class="title"></p>
