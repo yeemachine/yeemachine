@@ -6,6 +6,21 @@ html {
   font-smooth: never;
  -webkit-font-smoothing: antialiased;
 }
+@keyframes progbar{
+  0%{
+    width: 0vw;
+    background-color: white;
+
+  }
+  50%{
+    background-color: white;
+  }
+
+  100%{
+    width: 100vw;
+    background-color: red;
+  }
+}
 @keyframes trainN {
   0% {
   opacity: 1;
@@ -99,9 +114,9 @@ transform: rotate(0deg);
 
 }
 50%{
-  -ms-transform:translate(0,10px);
-  -webkit-transform:translate(0,10px);
-  transform: translate(0,10px);
+  -ms-transform:translate(0,3.9px);
+  -webkit-transform:translate(0,3.9px);
+  transform: translate(0,3.9px);
 
 }
 100%{
@@ -137,11 +152,12 @@ transform: translate(0,0);
     -webkit-transform:translate(0,0);
   transform: translate(0,0);
 
+
 }
 50%{
-  -ms-transform:translate(0,-10px);
-  -webkit-transform:translate(0,-10px);
-  transform: translate(0,-10px);
+  -ms-transform:translate(0,-3.9px);
+  -webkit-transform:translate(0,-3.9px);
+  transform: translate(0,-3.9px);
 
 }
 100%{
@@ -181,12 +197,41 @@ opacity: 1;
 
 
 }
+.x{
+  display: none;
+  transform-origin: center;
+  animation: rotateCC 1s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+}
+.wave{
+  /*animation: moveup 5s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;*/
+}
+.wave2{
+  /*animation: movedown 5s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;*/
+}
+.progress{
+  mix-blend-mode:exclusion;
+  position: fixed;
+  top:0;
+  left:0;
+  animation: progbar 10s  cubic-bezier(0.5, 0.5, 0.5, .5);
+  animation-fill-mode: forwards;
+  height: 2vh;
+  background-color: black;
+}
+.advgear{
+  transform-origin: center;
+  animation: rotateCC 2s infinite cubic-bezier(0.5, 0.5, 0.5, .5);
+  animation-fill-mode: forwards;
+}
 #gear{
   animation: rotateCC 2s infinite cubic-bezier(0.5, 0.5, 0.5, .5);
   animation-fill-mode: forwards;
 }
 #gear_1_{
-  animation: rotateC 2s infinite cubic-bezier(0.5, 0.5, 0.5, .5);
+  animation: rotateC 4s infinite cubic-bezier(0.5, 0.5, 0.5, .5);
   animation-fill-mode: forwards;
 }
 #gear_2_{
