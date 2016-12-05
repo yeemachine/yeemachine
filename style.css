@@ -169,11 +169,11 @@ a{
 }
 .info{
   display: none;
-  position: fixed;
+  position: absolute;
   bottom:5vh;
   left:10vw;
   color:white;
-  width: 100vw;
+  width: 90vw;
   pointer-events: all;
 }
 .info a:hover{
@@ -181,7 +181,7 @@ a{
 }
 .timeline{
   opacity: 1;
-  position: fixed;
+  position: absolute;
   width: 0;
   top:37.5vh;
   left:40vw;
@@ -196,7 +196,7 @@ a{
 }
 .timelineanim{
   opacity: 1;
-  position: fixed;
+  position: absolute;
   width: 60vw;
   left:40vw;
   top:37.5vh;
@@ -211,14 +211,30 @@ a{
 
 }
 body{
+
+  font-family: 'Open Sans', sans-serif;
+  border: 0;
+  margin: 0;
+  transition: .5s;
+  overflow-x: hidden;
+}
+.page1{
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
-  background-color:white;
   border: 0;
   margin: 0;
   transition: .5s;
+  height: 100vh;
+  width: 100vw;
+}
+.page2{
+  background-color:blue;
+  position: absolute;
+  top:100vh;
+  height: 100vh;
+  width: 100vw;
 }
 h1{
   color:white;
@@ -249,7 +265,7 @@ nav{
 .descriptcontainer{
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top:0;
   left:0;
   background-color: transparent;
@@ -268,7 +284,7 @@ nav{
 .largecontainer{
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top:0;
   left:0;
   background-color: transparent;
@@ -516,7 +532,9 @@ stroke-dashoffset: 0;
 }*/
 body{
   flex-direction: column;
-  overflow-y: scroll;
+}
+.page1{
+  flex-direction: column;
 }
 h1{
   width: 80%;
@@ -574,7 +592,7 @@ align-items: center;
 }
 .timeline{
   opacity: 1;
-  position: fixed;
+  position: absolute;
   width: 0;
   top:57.5vh;
   left:0;
@@ -588,7 +606,7 @@ align-items: center;
 }
 .timelineanim{
   opacity: 1;
-  position: fixed;
+  position: absolute;
   width: 100vw;
   left:0;
   top:57.5vh;
