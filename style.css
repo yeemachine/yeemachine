@@ -168,13 +168,15 @@ a{
   text-decoration: none;
 }
 .info{
-  display: none;
   position: absolute;
   bottom:5vh;
   left:10vw;
-  color:white;
+  color:black;
   width: 90vw;
   pointer-events: all;
+}
+.info a{
+  color:black
 }
 .info a:hover{
   text-decoration: underline;
@@ -529,8 +531,13 @@ stroke-dashoffset: 0;
 /*.hidelink:active{
   pointer-events: none;
 }*/
+html{
+  overflow-x: hidden;
+}
 body{
+  position: relative;
   flex-direction: column;
+overflow-x: hidden;
 }
 .page1{
   flex-direction: column;
