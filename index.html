@@ -13,8 +13,12 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script>
-      $(window).scroll(function() {
 
+
+      $(window).scroll(function() {
+        var svg2 = document.getElementById("svgObject2");
+        var svgDoc2 = svgObject2.contentDocument;
+        var squiggle = svgDoc2.getElementsByClassName("squiggle");
         var mn = $('h1');
         var hdr = $('.page1').height();
         var gdr = $('.page2').height();
@@ -26,17 +30,22 @@
         if (isMobile.matches) {
           console.log('works');
 
-          if ($(this).scrollTop() > (hdr * .8) && windowPosY < (hdr + (gdr))) {
+          if ($(this).scrollTop() > (hdr * .55) && windowPosY < (hdr + (gdr))) {
 
             console.log('please');
 
-            $(mn).css({"position": "fixed","top":"0","left":"0","color":""});
+            $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
             $('body').css({'background-color':'','color':''})
             $("h1").html("Yee Machine Projects");
+            $(".description").html("");
+
+            $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, 0.5)","animation-delay":".5s"});
 
           }
-          if ($(this).scrollTop() < (hdr * .8) && windowPosY) {
+          if ($(this).scrollTop() < (hdr * .55) && windowPosY) {
             $(mn).css({"position": "","top":"","left":"","color":""});
+            $(squiggle).css({"animation":"","animation-delay":""});
+
         }
         }else {
         if ($(this).scrollTop() > (hdr * .4) && windowPosY < (hdr + (gdr))) {
@@ -45,10 +54,13 @@
           $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
           $('body').css({'background-color':'','color':''})
           $("h1").html("Yee Machine Projects");
+          $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, 0.5)","animation-delay":".5s"});
 
         }
         if ($(this).scrollTop() < (hdr * .4) && windowPosY) {
           $(mn).css({"position": "","top":"","left":"","color":""});
+          $(squiggle).css({"animation":"","animation-delay":""});
+
         }
 
         }

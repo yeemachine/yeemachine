@@ -256,6 +256,10 @@ h1{
 }
 svg{
 }
+.squiggle{
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 nav{
   position: absolute;
   top:72vh;
@@ -528,6 +532,19 @@ stroke-dasharray: 500;
 stroke-dashoffset: 0;
 }
 }
+@keyframes dash3 {
+  0% {
+  opacity: 1;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 100;
+  }
+
+  100% {
+  opacity: 1;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 5;
+  }
+  }
 @media screen and (max-width: 600px) {
   .animate{
     width: auto;
