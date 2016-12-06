@@ -540,11 +540,13 @@ body{
 overflow-x: hidden;
 }
 .page1{
-  flex-direction: column;
+  flex-direction: column-reverse;
+
 }
 h1{
   width: 80%;
   text-align: center;
+  
 }
 a{
   text-align: center;
@@ -573,7 +575,7 @@ align-items: center;
 }
 .largecontainer{
   pointer-events: none;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 .spacer{
   width: 100%;
@@ -589,18 +591,18 @@ align-items: center;
 }
 .halfcontainer1{
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   flex-direction: column;
 }
 .halfcontainer2{
   width: 100%;
-  height: 40vh;
+  height: 30vh;
 }
 .timeline{
   opacity: 1;
   position: absolute;
   width: 0;
-  top:57.5vh;
+  top:17.5vh;
   left:0;
   height: 25vh;
   background-color:#666;
@@ -615,7 +617,7 @@ align-items: center;
   position: absolute;
   width: 100vw;
   left:0;
-  top:57.5vh;
+  top:17.5vh;
   height: 25vh;
   background-color:#666;
   z-index: 9999;

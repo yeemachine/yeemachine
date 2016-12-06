@@ -13,6 +13,43 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script>
+      $(window).scroll(function() {
+
+        var mn = $('h1');
+        var hdr = $('.page1').height();
+        var gdr = $('.page2').height();
+
+
+        var windowPosY = $(this).scrollTop();
+
+        var isMobile = window.matchMedia("only screen and (max-width: 1000px)");
+        if (isMobile.matches) {
+          console.log('works');
+
+          if ($(this).scrollTop() > (hdr * .1) && windowPosY < (hdr + (gdr))) {
+
+            console.log('please');
+
+            $(mn).css({"position": "fixed","top":"0","left":"10vw"});
+          }
+          if ($(this).scrollTop() < (hdr * .1) && windowPosY) {
+            $(mn).css({"position": "","top":"","left":""});
+        }
+        }else {
+        if ($(this).scrollTop() > (hdr * .45) && windowPosY < (hdr + (gdr))) {
+
+
+          $(mn).css({"position": "fixed","top":"0","left":"10vw"});
+        }
+        if ($(this).scrollTop() < (hdr * .45) && windowPosY) {
+          $(mn).css({"position": "","top":"","left":""});
+        }
+
+        }
+
+      });
+    </script>
+    <script>
       (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function() {
