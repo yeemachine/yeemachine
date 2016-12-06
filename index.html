@@ -31,6 +31,9 @@
             console.log('please');
 
             $(mn).css({"position": "fixed","top":"0","left":"0","color":""});
+            $('body').css({'background-color':'','color':''})
+            $("h1").html("Yee Machine Projects");
+
           }
           if ($(this).scrollTop() < (hdr * .8) && windowPosY) {
             $(mn).css({"position": "","top":"","left":"","color":""});
@@ -40,6 +43,9 @@
 
 
           $(mn).css({"position": "fixed","top":"0","left":"10%","color":""});
+          $('body').css({'background-color':'','color':''})
+          $("h1").html("Yee Machine Projects");
+
         }
         if ($(this).scrollTop() < (hdr * .45) && windowPosY) {
           $(mn).css({"position": "","top":"","left":"","color":""});
@@ -168,18 +174,21 @@
 
             $( line5 ).mouseenter(function() {
               $("h1").hide().html("Graphic Design").fadeIn("500");
-              $("body").css("background-color", "black");
+              $("body").css({"background-color": "black","color":"white"});
+              $("a").css("color","white");
+
               $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
               $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
               // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
               $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
               $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
               $(logo).css({"opacity":"0"});
-              $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users. Not optimized for Safari yet.<br><a class='link'  href='http://richyee.com'><h3>GO</h3></a> ").fadeIn("500");
+              $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users. Not optimized for Safari yet.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
             })
             $( line5 ).mouseleave(function() {
               $("h1").html("Yee Machine Projects");
-                $("body").css("background-color", "");
+                $("body").css({"background-color": "","color":""});
+                $("a").css("color","");
                 $(move1).css({"animation":"","animation-delay":""});
                 $(move2).css({"animation":"",});
                 // $(move3).css({"animation":"",});
@@ -339,7 +348,7 @@
                 $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
                 $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
                 $(logo).css({"opacity":"0"});
-                $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users.<br><a class='link'  href='http://richyee.com'><h3>GO</h3></a> ").fadeIn("500");
+                $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
                 $(line1).css({"animation":"","animation-delay":""});
                 $(line2).css("animation","");
                 $(line3).css({"animation":"","animation-delay":""});
@@ -348,6 +357,8 @@
                 $(line6).css({"animation":"","animation-delay":""});
                 $(line7).css({"animation":"stop 1s linear","animation-delay":""});
                 $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","white");
+
               })
 
               $( line6 ).click(function() {

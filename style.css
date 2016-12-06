@@ -164,8 +164,8 @@ opacity: 1;
 }
 
 a{
+  color:black;
   text-align: left;
-  color:white;
   text-decoration: none;
 }
 .info{
@@ -218,7 +218,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   border: 0;
   margin: 0;
-  transition: .5s;
+  transition: .2s;
   overflow-x: hidden;
   background-color: white;
 }
@@ -245,7 +245,6 @@ body{
   width: 100%;
 }
 h1{
-  color:white;
   width: 50%;
   font-size:26px;
   pointer-events: all;
@@ -261,7 +260,6 @@ nav{
   width: 40vh;
   font-size: 4vh;
   margin-left: 0vw;
-  color:white;
   position: absolute;
   transition: .5s;
   z-index: 999;
@@ -282,7 +280,6 @@ nav{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: exclusion;
 }
 .blend{
 
@@ -300,7 +297,6 @@ nav{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: exclusion;
 pointer-events: all;
 
   z-index: 999;
@@ -321,7 +317,6 @@ pointer-events: all;
   justify-content: center;
 }
 .description{
-  color: white;
   display: block;
   width: 50%;
   margin: 0;
@@ -336,7 +331,6 @@ pointer-events: all;
   animation-delay: 1s;
 }
 .title{
-color:white;
 font-size:calc(18px + 4vw);
 
 
@@ -544,7 +538,6 @@ html{
 body{
   position: relative;
   flex-direction: column;
-  overflow-y: hidden;
 }
 .page1{
   flex-direction: column-reverse;
@@ -558,7 +551,6 @@ h1{
 }
 a{
   text-align: center;
-  color:white;
   text-decoration: none;
 
 }
@@ -573,7 +565,6 @@ nav{
 align-items: center;
  text-align: center;
   margin-left: 0vw;
-  color:white;
   position: absolute;
   transition: .5s;
   z-index: 999;
@@ -636,10 +627,8 @@ align-items: center;
 }
 .info{
 
-  color:black;
 
 }
 .info a{
-  color: black;
 }
 }
