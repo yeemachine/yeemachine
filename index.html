@@ -26,20 +26,20 @@
         if (isMobile.matches) {
           console.log('works');
 
-          if ($(this).scrollTop() > (hdr * .1) && windowPosY < (hdr + (gdr))) {
+          if ($(this).scrollTop() > (hdr * .8) && windowPosY < (hdr + (gdr))) {
 
             console.log('please');
 
-            $(mn).css({"position": "fixed","top":"0","left":"10vw","color":"black"});
+            $(mn).css({"position": "fixed","top":"0","left":"0","color":""});
           }
-          if ($(this).scrollTop() < (hdr * .1) && windowPosY) {
+          if ($(this).scrollTop() < (hdr * .8) && windowPosY) {
             $(mn).css({"position": "","top":"","left":"","color":""});
         }
         }else {
         if ($(this).scrollTop() > (hdr * .45) && windowPosY < (hdr + (gdr))) {
 
 
-          $(mn).css({"position": "fixed","top":"0","left":"10vw","color":"black"});
+          $(mn).css({"position": "fixed","top":"0","left":"10%","color":""});
         }
         if ($(this).scrollTop() < (hdr * .45) && windowPosY) {
           $(mn).css({"position": "","top":"","left":"","color":""});
