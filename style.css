@@ -259,6 +259,7 @@ svg{
 .squiggle{
   opacity: 0;
   animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 nav{
   position: absolute;
@@ -344,6 +345,7 @@ font-size:calc(18px + 4vw);
 }
 .animate {
 opacity: 1;
+animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: 50vw;
 height: auto;
@@ -400,15 +402,15 @@ a{
 
 }
 .animatedelay{
-  opacity: 0;
+  opacity: 1;
 
-  animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  /*animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
-  animation-delay:.2s;
+  animation-delay:.2s;*/
 }
 .animatehex{
 opacity: 1;
-animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-iteration-count: 1;
 animation-fill-mode: forwards;
 }
@@ -416,9 +418,10 @@ animation-fill-mode: forwards;
   stroke:#3b5998;
   cursor: pointer;
 }
+
 .animateheart{
 opacity: 0;
-animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: auto;
 animation-delay:.5s;
@@ -515,6 +518,8 @@ stroke-dasharray: 500;
 stroke-dashoffset: 0;
 }
 }
+
+
 @keyframes dash2 {
 0% {
 opacity: 1;
