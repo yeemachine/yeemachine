@@ -219,6 +219,7 @@ body{
   margin: 0;
   transition: .5s;
   overflow-x: hidden;
+  background-color: white;
 }
 .page1{
   display: flex;
@@ -546,7 +547,7 @@ overflow-x: hidden;
 h1{
   width: 80%;
   text-align: center;
-  
+
 }
 a{
   text-align: center;
