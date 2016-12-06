@@ -39,15 +39,15 @@
             $(mn).css({"position": "","top":"","left":"","color":""});
         }
         }else {
-        if ($(this).scrollTop() > (hdr * .45) && windowPosY < (hdr + (gdr))) {
+        if ($(this).scrollTop() > (hdr * .4) && windowPosY < (hdr + (gdr))) {
 
 
-          $(mn).css({"position": "fixed","top":"0","left":"10%","color":""});
+          $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
           $('body').css({'background-color':'','color':''})
           $("h1").html("Yee Machine Projects");
 
         }
-        if ($(this).scrollTop() < (hdr * .45) && windowPosY) {
+        if ($(this).scrollTop() < (hdr * .4) && windowPosY) {
           $(mn).css({"position": "","top":"","left":"","color":""});
         }
 
@@ -174,7 +174,6 @@
 
             $( line5 ).mouseenter(function() {
               $("h1").hide().html("Graphic Design").fadeIn("500");
-              $("body").css({"background-color": "black","color":"white"});
               $("a").css("color","white");
 
               $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
@@ -184,10 +183,11 @@
               $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
               $(logo).css({"opacity":"0"});
               $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users. Not optimized for Safari yet.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
+              $("body").css({"background-color": "black","color":"white"});
+
             })
             $( line5 ).mouseleave(function() {
               $("h1").html("Yee Machine Projects");
-                $("body").css({"background-color": "","color":""});
                 $("a").css("color","");
                 $(move1).css({"animation":"","animation-delay":""});
                 $(move2).css({"animation":"",});
@@ -196,6 +196,8 @@
                 $(move5).css({"animation":"","animation-delay":""});
                 $(logo).css({"opacity":""});
               $(".description").html("");
+              $("body").css({"background-color": "","color":""});
+
               })
             $( line6 ).mouseenter(function() {
               $("h1").hide().html("Web Exercise").fadeIn("500");
@@ -257,6 +259,8 @@
                 $(move4).css({"animation":"",});
                 $(move5).css({"animation":"","animation-delay":""});
                 $(logo).css({"opacity":""});
+                $("body").css("color","");
+
               })
               $( line1 ).click(function() {
                 $("h1").hide().html("Tesla Timeline").fadeIn("500");
@@ -275,6 +279,8 @@
                 $(move4).css({"animation":"",});
                 $(move5).css({"animation":"","animation-delay":""});
                 $(logo).css({"opacity":""});
+                $("body").css("color","");
+
             })
 
               $( line2 ).click(function() {
@@ -296,6 +302,7 @@
                 $(move5).css({"animation":"","animation-delay":""});
                 $(logo).css({"opacity":""});
                 $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
 
             })
 
@@ -318,6 +325,8 @@
                 $(move5).css({"animation":"","animation-delay":""});
                 $(logo).css({"opacity":""});
                 $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
+
             })
 
               $( line4 ).click(function() {
@@ -337,6 +346,8 @@
                 $(move5).css({"animation":"","animation-delay":""});
                 $(logo).css({"opacity":""});
                 $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
+
             })
 
               $( line5 ).click(function() {
@@ -378,6 +389,8 @@
                 $(move5).css({"animation":"","animation-delay":""});
                 $(logo).css({"opacity":""});
                 $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
+
             })
 
             $( line7 ).click(function() {
@@ -398,6 +411,8 @@
             $(move5).css({"animation":"","animation-delay":""});
             $(logo).css({"opacity":""});
             $(".timelineanim").attr("class", "timeline");
+            $("body").css("color","");
+
             })
 
 
