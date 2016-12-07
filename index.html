@@ -82,6 +82,12 @@
       ga('send', 'pageview');
     </script>
     <script>
+
+    $(window).on('beforeunload', function() {
+				$(window).scrollTop(0);
+			});
+
+
     window.onunload = function(){};
 
     window.onload=function() {
