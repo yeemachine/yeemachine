@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+    font-family: yeehex;
+    src: url(YeeHex.woff);
+}
+@font-face {
+    font-family: yeehex0;
+    src: url(YeeHex0.woff);
+}
+
 
 html {
   -webkit-tap-highlight-color: transparent;
@@ -462,6 +471,14 @@ height: 20%;
   100%{
     background-color: black;
   }
+}
+@keyframes fade{
+  0% {
+opacity: 0
+ }
+  100%{
+opacity: 1
+ }
 }
 @keyframes pointer{
   0%{

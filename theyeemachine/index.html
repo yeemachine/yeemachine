@@ -13,6 +13,24 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script>
+    var showText = function (target, message, index, interval) {
+    if (index < message.length) {
+      $(target).html(message[index++]);
+      setTimeout(function () { showText(target, message, index, interval); }, interval);
+    }
+    if (index >= message.length){
+          index = 0;
+  }
+  }
+
+  $(function () {
+
+    showText("#msg", "abcdefghijklmnopqrstuvwxyz1234567890", 0, 150);
+
+  });
+
+    </script>
+    <script>
 
 
       $(window).scroll(function() {
@@ -40,6 +58,7 @@
         var windowPosY = $(this).scrollTop();
 
         var isMobile = window.matchMedia("only screen and (max-width: 600px)");
+
         if (isMobile.matches) {
           console.log('works');
 
@@ -76,7 +95,7 @@
           $("h1").html("Yee Fit");
 
           $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.670, 0.005, 0.200, 1.000)","animation-delay":".5s","animation-fill-mode": "forwards"});
-
+          $('#msg').css({"animation":"fade 1s cubic-bezier(0.670, 0.005, 0.200, 1.000)","animation-fill-mode": "forwards","animation-delay":"1s"})
         }
         if ($(this).scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
 
@@ -493,11 +512,9 @@
   <!-- <object class="animate" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object> -->
   <object class="animate" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
 
-
   <!-- <object class="animate" id="svgObject2" type="image/svg+xml" data="hex.svg">Your browser does not support SVGs</object> -->
 
 
-  <nav></nav>
   <container class="largecontainer">
     <div class="halfcontainer2">
       <h1>The Yee Machine</h1>
@@ -515,14 +532,16 @@
 <container class="page2">
   <object class="animate2" id="svgObject2" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
 
-  </div>
 </container>
 <container class="page3">
   <object class="animate2" id="svgObject3" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
 
+</container>
+<container class="page3.5" style="position:absolute;top:300vh;width:100vw;height:100vh">
+  <div style="position:absolute;top:0;right:0vw;width:60vw;height:100vh;display:flex;flex-direction:row;align-items:center;justify-content:center"><div style="opacity:0;font-family:'yeehex0';font-size:47vw;color:blue;text-align:center;background-color:transparent;pointer-events:none" id="msg"/>hi</div>
   </div>
 </container>
-<container class="page4">
+<container class="page4" style="top:400vh">
   <object class="animate2" id="svgObject4" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
   <div class="info">Cooper Union 2014-2018<br><a href="mailto:rich@yeemachine.com" target="_top">rich@yeemachine.com</a>
   </div>

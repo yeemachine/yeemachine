@@ -13,16 +13,30 @@
 
   <link rel="stylesheet" href="style3.css">
     <script src="jquery.min.js"></script>
+    <script>
+    var showText = function (target, message, index, interval) {
+    if (index < message.length) {
+      $(target).html(message[index++]);
+      setTimeout(function () { showText(target, message, index, interval); }, interval);
+    }
+    if (index >= message.length){
+          index = 0;
+  }
+  }
+
+  $(function () {
+
+    showText("#msg", "abcdefghijklmnopqrstuvwxyz1234567890", 0, 150);
+
+  });
+
+    </script>
   <style>
   </style>
 </head>
 
-<body>
-  <object class="animate" id="svgObject" type="image/svg+xml" data="advancedgear.svg">Your browser does not support SVGs</object>
-
-
-
-
+<body style="background-color:white">
+  <div style="height:100%;width:100%;display:flex;flex-direction:row;justify-content:center;align-items:center"><div style="font-size:80vh;color:blue;text-align:center" id="msg"/></div>
 </body>
 
 
