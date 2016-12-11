@@ -60,11 +60,9 @@
         var isMobile = window.matchMedia("only screen and (max-width: 600px)");
 
         if (isMobile.matches) {
-          console.log('works');
 
           if ($(this).scrollTop() > (p1 * .55) && windowPosY < (p1 + (p2))) {
 
-            console.log('please');
 
             $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
             $('body').css({'background-color':'','color':''})
@@ -92,7 +90,7 @@
         if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2 + p3)) {
 
 
-          $("h1").html("Yee Fit");
+          $("h1").html("Heart");
 
           $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
           // $('#msg').css({"animation":"fade 1s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-fill-mode": "forwards","animation-delay":"1s"})
@@ -269,18 +267,21 @@
               $(line5).css({"stroke":"blue"});
               $(alphabet).css({"fill":"blue"});
         })
+        $( line3 ).mouseleave(function() {
+          $("h1").html("The Yee Machine");
+          $(".description").html("");
+
+            $(logo).css({"opacity":""});
+            $(line5).css({"stroke":""});
+            $(alphabet).css({"fill":""});
+    });
         $( line3 ).click(function() {
+
           $('body').animate({scrollTop: (p1+p2+p3)}, 500);
 
-        });
-            $( line3 ).mouseleave(function() {
-              $("h1").html("The Yee Machine");
-              $(".description").html("");
 
-                $(logo).css({"opacity":""});
-                $(line5).css({"stroke":""});
-                $(alphabet).css({"fill":""});
         });
+
             $( line4 ).mouseenter(function() {
               $("h1").hide().html("Transit").fadeIn("500");
               $(".description").hide().html("A data crowdsourced transit app for NYC subways that is more accurate than the official MTA updates. Expansion to other regions in progress.").fadeIn("500");
