@@ -214,7 +214,7 @@
           if($(window).width() >= 600) {
             $( line1 ).mouseenter(function() {
               $("h1").hide().html("Stocks").fadeIn("500");
-              $(".description").hide().html("A reimagining of a stock market app with an emphasis on finding which stocks are most stable").fadeIn("500");
+              $(".description").hide().html("A reimagining of a stock market app with an emphasis on finding which stocks are most stable.").fadeIn("500");
               $(".timeline").attr("class", "timelineanim");
               $(line7).css({"stroke":"#666"});
               $(line5).css({"stroke":"#666"});
@@ -235,11 +235,10 @@
         });
             $( line2 ).mouseenter(function() {
               $("h1").hide().html("Heart").fadeIn("500");
-              $(line1).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".2s"});
-              $(line3).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".3s"});
-              $(line4).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".1s"});
+              $(line2).css({"animation":"dash 1.5s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".3s"});
+
+              $(line3).css({"animation":"dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".3s"});
               $(line5).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
-              $(line6).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".5s"});
               $(line5).attr('class', 'old');
               $(line6).attr('class', 'sound');
               $(".description").hide().html("A multidevice platform that lets you monitor your heartbeat and compare during different states of motion.").fadeIn("500");
@@ -253,11 +252,9 @@
         });
             $( line2 ).mouseleave(function() {
               $("h1").html("The Yee Machine");
-              $(line1).css({"animation":"","animation-delay":""});
+              $(line2).css({"animation":"","animation-delay":""});
               $(line3).css({"animation":"","animation-delay":""});
-              $(line4).css({"animation":"","animation-delay":""});
               $(line5).css({"animation":"","animation-delay":""});
-              $(line6).css({"animation":"","animation-delay":""});
               $(".description").html("");
               $(line7).css({"stroke":""});
               $(line5).css({"stroke":""});
@@ -266,7 +263,7 @@
 
             $( line3 ).mouseenter(function() {
               $("h1").hide().html("Clock").fadeIn("500");
-              $(".description").hide().html("A world clock app with integrated weather forecast that can be used to easily compare global differences").fadeIn("500");
+              $(".description").hide().html("A world clock app with integrated weather forecast that can be used to easily compare global differences.").fadeIn("500");
 
               $(logo).css({"opacity":"0"});
               $(line5).css({"stroke":"blue"});
@@ -303,54 +300,54 @@
               $(line5).css({"stroke":""});
         });
 
+
             $( line5 ).mouseenter(function() {
-              $("h1").hide().html("Translate").fadeIn("500");
-              $("a").css("color","white");
-
-              $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-              $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-              // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-              $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-              $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-              $(logo).css({"opacity":"0"});
-              $(".description").hide().html("A translator app that will notify you when an accurate translation cannot be made").fadeIn("500");
-              $("body").css({"background-color": "black","color":"white"});
-
-            })
-            $( line5 ).mouseleave(function() {
-              $("h1").html("The Yee Machine");
-                $("a").css("color","");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                // $(move3).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-              $(".description").html("");
-              $("body").css({"background-color": "","color":""});
-
-              })
-            $( line6 ).mouseenter(function() {
-              $("h1").hide().html("Web Exercise").fadeIn("500");
-              $(".description").hide().html("A quick example of a personal promotion website.<br><a href='https://yeemachine.github.io/websitemockup/'><h3>GO</h3></a>").fadeIn("500");
+              $("h1").hide().html("About").fadeIn("500");
+              $(".description").hide().html("A quick look at the development of Yee Machine.").fadeIn("500");
               $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-              $(line7).css({"stroke":"#8afffe"});
-              $(line5).css({"stroke":"#8afffe"});
+              $(line7).css({"stroke":"yellow"});
+              $(line5).css({"stroke":"yellow"});
 
 
         })
-            $( line6 ).mouseleave(function() {
+            $( line5 ).mouseleave(function() {
               $("h1").html("The Yee Machine");
               $(".description").html("");
                 $(line7).css({"animation":"stop 1s linear","animation-delay":""});
                 $(line7).css({"stroke":""});
                 $(line5).css({"stroke":""});
 
-
-
-
-
         });
+        $( line6 ).mouseenter(function() {
+          $("h1").hide().html("Translate").fadeIn("500");
+          $("a").css("color","white");
+
+          $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+          $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+          // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+          $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+          $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+          $(logo).css({"opacity":"0"});
+          $(".description").hide().html("A translator app that will notify you when an accurate translation cannot be made.").fadeIn("500");
+          $("body").css({"background-color": "black","color":"white"});
+          $(line5).css({"stroke":"transparent"});
+
+        })
+        $( line6 ).mouseleave(function() {
+          $("h1").html("The Yee Machine");
+            $("a").css("color","");
+            $(move1).css({"animation":"","animation-delay":""});
+            $(move2).css({"animation":"",});
+            // $(move3).css({"animation":"",});
+            $(move4).css({"animation":"",});
+            $(move5).css({"animation":"","animation-delay":""});
+            $(logo).css({"opacity":""});
+          $(".description").html("");
+          $("body").css({"background-color": "","color":""});
+          $(line5).css({"stroke":""});
+
+
+          })
 
 
 

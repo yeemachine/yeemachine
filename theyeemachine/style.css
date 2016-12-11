@@ -419,7 +419,7 @@ a{
 }
 .sound:hover{
 
-  stroke:#8afffe;
+  stroke:yellow;
 
   cursor: pointer;
 
