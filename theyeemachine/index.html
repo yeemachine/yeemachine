@@ -188,7 +188,7 @@
 
         $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
         $('body').css({'background-color':'','color':''})
-        $("h1").html("The Yee Machine");
+        $("h1").html("Stocks");
         $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s", "animation-fill-mode": "forwards"});
 
       }
@@ -203,7 +203,7 @@
       if ($(this).scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
 
 
-        $("h1").html("Yee Market");
+        $("h1").html("Clock");
 
         $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
 
@@ -236,12 +236,17 @@
           });
 
             $( line1 ).mouseleave(function() {
-              $("h1").html("The Yee Machine");
               $(".description").html("");
               $(".timelineanim").attr("class", "timeline");
               $(line7).css({"stroke":""});
               $(line5).css({"stroke":""});
+              if ($('body').scrollTop() > (p1*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+                $("h1").html("Stocks");
 
+              }else{
+                $("h1").html("The Yee Machine");
+
+              }
         });
             $( line2 ).mouseenter(function() {
               $("h1").hide().html("Heart").fadeIn("500");
@@ -291,7 +296,7 @@
             $(line5).css({"stroke":""});
             $(alphabet).css({"fill":""});
             if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
-              $("h1").html("Yee Market");
+              $("h1").html("Clock");
 
             }else{
               $("h1").html("The Yee Machine");
