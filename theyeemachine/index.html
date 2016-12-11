@@ -213,8 +213,8 @@
           // This will fire each time the window is resized:
           if($(window).width() >= 600) {
             $( line1 ).mouseenter(function() {
-              $("h1").hide().html("Tesla Timeline").fadeIn("500");
-              $(".description").hide().html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link'  href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn("500");
+              $("h1").hide().html("Stocks").fadeIn("500");
+              $(".description").hide().html("A reimagining of a stock market app with an emphasis on finding which stocks are most stable").fadeIn("500");
               $(".timeline").attr("class", "timelineanim");
               $(line7).css({"stroke":"#666"});
               $(line5).css({"stroke":"#666"});
@@ -235,14 +235,14 @@
         });
             $( line2 ).mouseenter(function() {
               $("h1").hide().html("Heart").fadeIn("500");
-              $(line1).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".2s"});
-              $(line3).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".3s"});
-              $(line4).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".1s"});
+              $(line1).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".2s"});
+              $(line3).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".3s"});
+              $(line4).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".1s"});
               $(line5).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
-              $(line6).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".4s"});
+              $(line6).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".5s"});
               $(line5).attr('class', 'old');
               $(line6).attr('class', 'sound');
-              $(".description").hide().html("A multidevice platform that lets you record your heartbeat and compare during different states of motion.").fadeIn("500");
+              $(".description").hide().html("A multidevice platform that lets you monitor your heartbeat and compare during different states of motion.").fadeIn("500");
               $(line7).css({"stroke":"red"});
               $(line5).css({"stroke":"red"});
 
@@ -265,8 +265,8 @@
         });
 
             $( line3 ).mouseenter(function() {
-              $("h1").hide().html("World Clock").fadeIn("500");
-              $(".description").hide().html("A clock app with integrated weather forecast that can be used to easily compare global differences").fadeIn("500");
+              $("h1").hide().html("Clock").fadeIn("500");
+              $(".description").hide().html("A world clock app with integrated weather forecast that can be used to easily compare global differences").fadeIn("500");
 
               $(logo).css({"opacity":"0"});
               $(line5).css({"stroke":"blue"});
@@ -285,10 +285,8 @@
                 $(alphabet).css({"fill":""});
         });
             $( line4 ).mouseenter(function() {
-              $("h1").hide().html("Video Works").fadeIn("500");
-              $(".description").hide().html("A collection of video projects done during 2015-2016.<br><a  class='link'  href='https://vimeo.com/user44076957'><h3>GO</h3></a>").fadeIn("500");
-              $("h1").hide().html("Facebook Hackathon").fadeIn("500");
-              $(".description").hide().html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app.<br><a href='https://yeemachine.github.io/railways.fish/'><h3>GO</h3></a>").fadeIn("500");
+              $("h1").hide().html("Transit").fadeIn("500");
+              $(".description").hide().html("A data crowdsourced transit app for NYC subways that is more accurate than the official MTA updates. Expansion to other regions in progress.").fadeIn("500");
               $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
               $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
               $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
@@ -306,7 +304,7 @@
         });
 
             $( line5 ).mouseenter(function() {
-              $("h1").hide().html("Graphic Design").fadeIn("500");
+              $("h1").hide().html("Translate").fadeIn("500");
               $("a").css("color","white");
 
               $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
@@ -315,7 +313,7 @@
               $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
               $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
               $(logo).css({"opacity":"0"});
-              $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users. Not optimized for Safari yet.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
+              $(".description").hide().html("A translator app that will notify you when an accurate translation cannot be made").fadeIn("500");
               $("body").css({"background-color": "black","color":"white"});
 
             })
