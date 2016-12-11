@@ -33,84 +33,7 @@
     <script>
 
 
-      $(window).scroll(function() {
-        var svg2 = document.getElementById("svgObject2");
-        var svgDoc2 = svgObject2.contentDocument;
-        var squiggle = svgDoc2.getElementsByClassName("squiggle");
 
-        var svg3 = document.getElementById("svgObject3");
-        var svgDoc3 = svgObject3.contentDocument;
-        var squiggle2 = svgDoc3.getElementsByClassName("squiggle");
-
-        var svg4 = document.getElementById("svgObject4");
-        var svgDoc4 = svgObject4.contentDocument;
-        var squiggle3 = svgDoc4.getElementsByClassName("squiggle");
-
-
-        var mn = $('h1');
-        var p1 = $('.page1').height();
-        var p2 = $('.page2').height();
-        var p3 = $('.page3').height();
-        var p4 = $('.page4').height();
-
-
-
-        var windowPosY = $(this).scrollTop();
-
-        var isMobile = window.matchMedia("only screen and (max-width: 600px)");
-
-        if (isMobile.matches) {
-
-          if ($(this).scrollTop() > (p1 * .55) && windowPosY < (p1 + (p2))) {
-
-
-            $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
-            $('body').css({'background-color':'','color':''})
-            $("h1").html("The Yee Machine");
-            $(".description").html("");
-
-            $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-
-          }
-
-          if ($(this).scrollTop() < (p1 * .55) && windowPosY) {
-            $(mn).css({"position": "","top":"","left":"","color":""});
-
-        }
-        }else {
-        if ($(this).scrollTop() > (p1 * .4) && windowPosY < (p1 + (p2))) {
-
-
-          $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
-          $('body').css({'background-color':'','color':''})
-          $("h1").html("The Yee Machine");
-          $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s", "animation-fill-mode": "forwards"});
-
-        }
-        if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2 + p3)) {
-
-
-          $("h1").html("Heart");
-
-          $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-          // $('#msg').css({"animation":"fade 1s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-fill-mode": "forwards","animation-delay":"1s"})
-        }
-        if ($(this).scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
-
-
-          $("h1").html("Yee Market");
-
-          $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-
-        }
-        if ($(this).scrollTop() < (p1 * .4) && windowPosY) {
-          $(mn).css({"position": "","top":"","left":"","color":""});
-
-        }
-
-        }
-
-      });
     </script>
     <script>
       (function(i, s, o, g, r, a, m) {
@@ -187,6 +110,29 @@
     var p2 = $('.page2').height();
     var p3 = $('.page3').height();
 
+
+
+
+    var svg2 = document.getElementById("svgObject2");
+    var svgDoc2 = svgObject2.contentDocument;
+    var squiggle = svgDoc2.getElementsByClassName("squiggle");
+
+    var svg3 = document.getElementById("svgObject3");
+    var svgDoc3 = svgObject3.contentDocument;
+    var squiggle2 = svgDoc3.getElementsByClassName("squiggle");
+
+    var svg4 = document.getElementById("svgObject4");
+    var svgDoc4 = svgObject4.contentDocument;
+    var squiggle3 = svgDoc4.getElementsByClassName("squiggle");
+
+
+    var mn = $('h1');
+    var p1 = $('.page1').height();
+    var p2 = $('.page2').height();
+    var p3 = $('.page3').height();
+    var p4 = $('.page4').height();
+
+
     var showText = function (target, message, index, interval) {
     if (index < message.length) {
       $(target).text(message[index++]);
@@ -205,6 +151,72 @@
 
 
     setTimeout(function(){   $(".largecontainer").css("pointer-events", "none");$("h1").css("display", "block")}, 1500);
+
+
+
+
+    $(window).scroll(function() {
+
+
+
+
+      var windowPosY = $(this).scrollTop();
+
+      var isMobile = window.matchMedia("only screen and (max-width: 600px)");
+
+      if (isMobile.matches) {
+
+        if ($(this).scrollTop() > (p1 * .55) && windowPosY < (p1 + (p2))) {
+
+
+          $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
+          $('body').css({'background-color':'','color':''})
+          $("h1").html("The Yee Machine");
+          $(".description").html("");
+
+          $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
+        }
+
+        if ($(this).scrollTop() < (p1 * .55) && windowPosY) {
+          $(mn).css({"position": "","top":"","left":"","color":""});
+
+      }
+      }else {
+      if ($(this).scrollTop() > (p1 * .4) && windowPosY < (p1 + (p2))) {
+
+
+        $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
+        $('body').css({'background-color':'','color':''})
+        $("h1").html("The Yee Machine");
+        $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s", "animation-fill-mode": "forwards"});
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2 + p3)) {
+
+
+        $("h1").html("Heart");
+
+        $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+        // $('#msg').css({"animation":"fade 1s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-fill-mode": "forwards","animation-delay":"1s"})
+      }
+      if ($(this).scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+
+
+        $("h1").html("Yee Market");
+
+        $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
+      }
+      if ($(this).scrollTop() < (p1 * .4) && windowPosY) {
+        $(mn).css({"position": "","top":"","left":"","color":""});
+
+      }
+
+      }
+
+    });
+
 
 
     // $(window).resize(function() {
@@ -249,14 +261,19 @@
 
         });
             $( line2 ).mouseleave(function() {
-              $("h1").html("The Yee Machine");
               $(line2).css({"animation":"","animation-delay":""});
               $(line3).css({"animation":"","animation-delay":""});
               $(line5).css({"animation":"","animation-delay":""});
               $(".description").html("");
               $(line7).css({"stroke":""});
               $(line5).css({"stroke":""});
+              if ($('body').scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+                $("h1").html("Heart");
 
+              }else{
+                $("h1").html("The Yee Machine");
+
+              }
         });
 
             $( line3 ).mouseenter(function() {
@@ -268,12 +285,18 @@
               $(alphabet).css({"fill":"blue"});
         })
         $( line3 ).mouseleave(function() {
-          $("h1").html("The Yee Machine");
           $(".description").html("");
 
             $(logo).css({"opacity":""});
             $(line5).css({"stroke":""});
             $(alphabet).css({"fill":""});
+            if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+              $("h1").html("Yee Market");
+
+            }else{
+              $("h1").html("The Yee Machine");
+
+            }
     });
         $( line3 ).click(function() {
 
