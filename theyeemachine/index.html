@@ -13,21 +13,21 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script>
-    var showText = function (target, message, index, interval) {
-    if (index < message.length) {
-      $(target).html(message[index++]);
-      setTimeout(function () { showText(target, message, index, interval); }, interval);
-    }
-    if (index >= message.length){
-          index = 0;
-  }
-  }
-
-  $(function () {
-
-    showText("#msg", " yee machine", 0, 150);
-
-  });
+  //   var showText = function (target, message, index, interval) {
+  //   if (index < message.length) {
+  //     $(target).html(message[index++]);
+  //     setTimeout(function () { showText(target, message, index, interval); }, interval);
+  //   }
+  //   if (index >= message.length){
+  //         index = 0;
+  // }
+  // }
+  //
+  // $(function () {
+  //
+  //   showText("#msg", " yee machine", 0, 150);
+  //
+  // });
 
     </script>
     <script>
@@ -156,6 +156,8 @@
     var line5 = svgDoc.getElementById("link5");
     var line6 = svgDoc.getElementById("link6");
     var line7 = svgDoc.getElementById("link7");
+    var alphabet = svgDoc.getElementById("alphabet");
+
 
     var logo = svgDoc.getElementById("logo");
 
@@ -173,6 +175,7 @@
     var hidelink7 = svgDoc.getElementsByClassName("hidelink7");
 
 
+
     var cnt1 = $(hidelink1).contents();
     var cnt2 = $(hidelink2).contents();
     var cnt3 = $(hidelink3).contents();
@@ -185,6 +188,24 @@
     var p1 = $('.page1').height();
     var p2 = $('.page2').height();
     var p3 = $('.page3').height();
+
+    var showText = function (target, message, index, interval) {
+    if (index < message.length) {
+      $(target).text(message[index++]);
+      setTimeout(function () { showText(target, message, index, interval); }, interval);
+    }
+    if (index >= message.length){
+          index = 0;
+  }
+  }
+
+  $(function () {
+
+    showText(alphabet, " yee machine", 0, 150);
+
+  });
+
+
     setTimeout(function(){   $(".largecontainer").css("pointer-events", "none");$("h1").css("display", "block")}, 1500);
 
 
@@ -293,17 +314,19 @@
             $( line6 ).mouseenter(function() {
               $("h1").hide().html("Web Exercise").fadeIn("500");
               $(".description").hide().html("A quick example of a personal promotion website.<br><a href='https://yeemachine.github.io/websitemockup/'><h3>GO</h3></a>").fadeIn("500");
-              $('#msg').css({"opacity":"1"});
               $(logo).css({"opacity":"0"});
               $(line5).css({"stroke":"blue"});
+              $(alphabet).css({"fill":"blue"});
+
 
         })
             $( line6 ).mouseleave(function() {
               $("h1").html("The Yee Machine");
               $(".description").html("");
-              $('#msg').css({"opacity":"0"});
               $(logo).css({"opacity":""});
               $(line5).css({"stroke":""});
+              $(alphabet).css({"fill":""});
+
 
 
 
@@ -521,8 +544,7 @@
   <div class="spacer"></div>
   <!-- <object class="animate" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object> -->
   <object class="animate" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
-  <div style="pointer-events:none;position:absolute;top:0;right:0vw;width:60vw;height:100vh;display:flex;flex-direction:row;align-items:center;justify-content:center"><div style="opacity:0;font-family:'yeehex0';font-size:46.5vw;color:blue;text-align:center;background-color:transparent;pointer-events:none;margin-left:.5vw;margin-bottom:.6vw;" id="msg"/>hi</div>
-  </div>
+  
   <!-- <object class="animate" id="svgObject2" type="image/svg+xml" data="hex.svg">Your browser does not support SVGs</object> -->
 
 

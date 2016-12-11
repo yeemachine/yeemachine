@@ -68,6 +68,6 @@
 74.393,99.552 77.778,101.506 81.164,99.552 "/>
 </a>
 
-
+<text style="pointer-events:none" id="alphabet" transform="matrix(1 0 0 1 16.4675 115.8752)" fill="transparent" font-family="'YeeHex'" font-size="145"></text>
 
 </svg>
