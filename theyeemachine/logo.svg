@@ -43,7 +43,7 @@
 </a>
 
 <a class="hidelink3">
-<polyline id="link3" class="sound link" fill="none" stroke="#000000" stroke-width="8.4699" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+<polyline id="link3" class="link" fill="none" stroke="#000000" stroke-width="8.4699" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 	31.761,73.242 47.06,82.073 62.354,73.242 77.636,82.066 92.931,73.233 108.224,82.064 123.518,73.233 "/>
 </a>
 
@@ -55,7 +55,7 @@
 
 
 	<a class="hidelink6">
-<polyline id="link6" class="mock animatedelay link" fill="none" stroke="#000000" stroke-width="8.4699" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline id="link6" class="sound animatedelay link" fill="none" stroke="#000000" stroke-width="8.4699" stroke-linecap="round" stroke-miterlimit="10" points="
 	89.687,94.629 93.074,92.676 93.074,92.676 93.074,92.676 108.365,101.503 123.661,92.673 "/>
 </a>
 <a class="hidelink7">

@@ -216,6 +216,9 @@
               $("h1").hide().html("Tesla Timeline").fadeIn("500");
               $(".description").hide().html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link'  href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn("500");
               $(".timeline").attr("class", "timelineanim");
+              $(line7).css({"stroke":"#666"});
+              $(line5).css({"stroke":"#666"});
+
           })
           $( line1 ).click(function() {
             $('body').animate({scrollTop: p1}, 500);
@@ -226,6 +229,9 @@
               $("h1").html("The Yee Machine");
               $(".description").html("");
               $(".timelineanim").attr("class", "timeline");
+              $(line7).css({"stroke":""});
+              $(line5).css({"stroke":""});
+
         });
             $( line2 ).mouseenter(function() {
               $("h1").hide().html("Watson X Wayback").fadeIn("500");
@@ -235,8 +241,11 @@
               $(line5).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
               $(line6).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".4s"});
               $(line5).attr('class', 'old');
-              $(line6).attr('class', 'facebook');
+              $(line6).attr('class', 'sound');
               $(".description").hide().html("Mashup between IBM Watson's tone analyzer and Wayback Machine's internet archive. Users can input their desired websites and track a company's linguistic tone over time. Apple's support page is used as an initial example.<br><a  class='link'  href='http://watsonwayback.com'><h3>GO</h3></a>").fadeIn("500");
+              $(line7).css({"stroke":"red"});
+              $(line5).css({"stroke":"red"});
+
         })
         $( line2 ).click(function() {
           $('body').animate({scrollTop: (p1+ p2)}, 500);
@@ -250,13 +259,18 @@
               $(line5).css({"animation":"","animation-delay":""});
               $(line6).css({"animation":"","animation-delay":""});
               $(".description").html("");
+              $(line7).css({"stroke":""});
+              $(line5).css({"stroke":""});
+
         });
 
             $( line3 ).mouseenter(function() {
               $("h1").hide().html("Soundscape").fadeIn("500");
               $(".description").hide().html("An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships. Uses three.js<br><a  class='link'  href='http://richyee.com/sound/'><h3>GO</h3></a>").fadeIn("500");
-              $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-              $(line7).attr('class', 'facebook');
+
+              $(logo).css({"opacity":"0"});
+              $(line5).css({"stroke":"blue"});
+              $(alphabet).css({"fill":"blue"});
         })
         $( line3 ).click(function() {
           $('body').animate({scrollTop: (p1+p2+p3)}, 500);
@@ -265,7 +279,10 @@
             $( line3 ).mouseleave(function() {
               $("h1").html("The Yee Machine");
               $(".description").html("");
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+
+                $(logo).css({"opacity":""});
+                $(line5).css({"stroke":""});
+                $(alphabet).css({"fill":""});
         });
             $( line4 ).mouseenter(function() {
               $("h1").hide().html("Video Works").fadeIn("500");
@@ -275,6 +292,8 @@
               $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
               $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
               $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+              $(line7).css({"stroke":"#44c536"});
+              $(line5).css({"stroke":"#44c536"});
         })
             $( line4 ).mouseleave(function() {
               $("h1").html("The Yee Machine");
@@ -282,6 +301,8 @@
               $(line1).css("animation","");
               $(line2).css("animation","");
               $(line3).css("animation","");
+              $(line7).css({"stroke":""});
+              $(line5).css({"stroke":""});
         });
 
             $( line5 ).mouseenter(function() {
@@ -314,18 +335,19 @@
             $( line6 ).mouseenter(function() {
               $("h1").hide().html("Web Exercise").fadeIn("500");
               $(".description").hide().html("A quick example of a personal promotion website.<br><a href='https://yeemachine.github.io/websitemockup/'><h3>GO</h3></a>").fadeIn("500");
-              $(logo).css({"opacity":"0"});
-              $(line5).css({"stroke":"blue"});
-              $(alphabet).css({"fill":"blue"});
+              $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+              $(line7).css({"stroke":"#8afffe"});
+              $(line5).css({"stroke":"#8afffe"});
 
 
         })
             $( line6 ).mouseleave(function() {
               $("h1").html("The Yee Machine");
               $(".description").html("");
-              $(logo).css({"opacity":""});
-              $(line5).css({"stroke":""});
-              $(alphabet).css({"fill":""});
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $(line7).css({"stroke":""});
+                $(line5).css({"stroke":""});
+
 
 
 
@@ -544,7 +566,7 @@
   <div class="spacer"></div>
   <!-- <object class="animate" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object> -->
   <object class="animate" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
-  
+
   <!-- <object class="animate" id="svgObject2" type="image/svg+xml" data="hex.svg">Your browser does not support SVGs</object> -->
 
 
