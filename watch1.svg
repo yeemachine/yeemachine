@@ -15,12 +15,12 @@
 <polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,349.271 68.356,349.271 99.785,349.271 131.188,349.254 162.62,331.107 194.046,349.249 225.476,349.271 "/>
 <rect x="72.004" y="289.476" fill="none" width="120.643" height="84.69"/>
-<text transform="matrix(1 0 0 1 98.0596 333.498)" fill="#FFFFFF" font-family="'AGBK'" font-size="59.4912">60</text>
+<text class="text" transform="matrix(1 0 0 1 98.0596 333.498)" fill="#FFFFFF" font-family="'AGBK'" font-size="59.4912">60</text>
 <polyline style='animation:blink 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' fill="none" stroke="#FFFFFF" stroke-width="12.7086" stroke-linecap="round" stroke-miterlimit="10" points="
 	127.243,263.054 132.322,265.987 137.402,263.054 "/>
 
 <rect x="-43.276" y="156.86" fill="none" width="252.545" height="84.691"/>
-<text transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'AGBK'" font-size="17.3516">0.5mph</text>
+<text class="text" transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'AGBK'" font-size="17.3516">0.5mph</text>
 </g>
 <g id="layer2" style='animation:blink 20s cubic-bezier(0.90, 0.005, 0.20, 1.000) infinite;animation-delay:.3s'>
 <path d="M227.378,336.798c0,12.565-9.012,22.755-20.125,22.755H50.435c-11.114,0-20.126-10.189-20.126-22.755V154.76
@@ -32,11 +32,11 @@
 <polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,349.271 68.356,349.271 99.785,349.271 131.188,349.254 162.62,331.107 194.046,349.249 225.476,349.271 "/>
 <rect x="72.004" y="289.476" fill="none" width="120.643" height="84.69"/>
-<text transform="matrix(1 0 0 1 80.9263 333.498)" fill="#FFFFFF" font-family="'AGBK'" font-size="59.4912">120</text>
+<text class="text" transform="matrix(1 0 0 1 80.9263 333.498)" fill="#FFFFFF" font-family="'AGBK'" font-size="59.4912">120</text>
 <polyline id="heart2" style='animation:blink .5s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' fill="none" stroke="#ED1C24" stroke-width="12.7086" stroke-linecap="round" stroke-miterlimit="10" points="
 	127.243,263.054 132.322,265.987 137.402,263.054 "/>
 <rect x="-43.276" y="156.86" fill="none" width="252.545" height="84.691"/>
-<text transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'AGBK'" font-size="17.3516">3.5mph</text>
+<text class="text" transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'futura'" font-size="17.3516">3.5mph</text>
 <polyline id="abnormal" style='animation:dash 1s cubic-bezier(0.670, 0.0005, 1, 1) infinite;animation-delay:.3s' fill="none" stroke="#ED1C24" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	36.419,204.533 68.778,222.636 100.097,204.533 131.394,222.619 162.712,204.533 194.028,222.615 225.352,204.533 "/>
 </g>
