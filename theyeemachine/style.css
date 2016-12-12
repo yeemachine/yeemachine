@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
-    font-family: yeehex;
-    src: url(YeeHex.woff);
+    font-family: 'yeehex';
+    src: url(YeeHex.woff) format('woff');
 }
 @font-face {
-    font-family: yeehex0;
-    src: url(YeeHex0.woff);
+    font-family: 'yeehex0';
+    src: url(YeeHex0.woff) format('woff');
 }
 @font-face {
-    font-family: AGBK;
-    src: url(ITCAvantGardeStd-Bk.woff);
+    font-family: 'AGBK';
+    src: url(ITCAvantGardeStd-Bk.woff) format('woff');
 }
 
 
@@ -682,21 +682,7 @@ a{
 a:active{
   pointer-events: all;
 }
-nav{
-  position: relative;
-  top:80vh;
-  left:0;
-  width: 100%;
-align-items: center;
- text-align: center;
-  margin-left: 0vw;
-  position: absolute;
-  transition: .5s;
-  z-index: 999;
-  -ms-transform: rotate(0deg); /* IE 9 */
-   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-   transform: rotate(0deg);
-}
+
 .largecontainer{
   pointer-events: none;
   flex-direction: column-reverse;
