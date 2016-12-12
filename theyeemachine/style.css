@@ -235,6 +235,9 @@ body{
   overflow-x: hidden;
   background-color: white;
 }
+#heart{
+height: 80vh;
+}
 .page1{
   display: flex;
   align-items: center;
@@ -255,8 +258,19 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-  position: absolute;
-  top:100vh;
+
+  height: 100vh;
+  width: 100%;
+}
+.page22{
+  border: 0;
+  margin: 0;
+  padding: 0;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
   height: 100vh;
   width: 100%;
 }
@@ -268,8 +282,19 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-  position: absolute;
-  top:200vh;
+
+  height: 100vh;
+  width: 100%;
+}
+.page33{
+  border: 0;
+  margin: 0;
+  padding: 0;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
   height: 100vh;
   width: 100%;
 }
@@ -281,8 +306,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-  position: absolute;
-  top:300vh;
+
   height: 100vh;
   width: 100%;
 }
@@ -388,7 +412,7 @@ animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: 50vw;
 height: auto;
-margin-right: 5vw;
+margin-right: 0;
 
 }
 .animate2 {
@@ -549,22 +573,37 @@ opacity: 1
 }
 @keyframes dash {
 0% {
-opacity: 1;
+  opacity: 1;
 stroke-dasharray: 2000;
 stroke-dashoffset: 2000;
 }
 50% {
-opacity: 1;
+  opacity: 1;
+
 stroke-dasharray: 1000;
 stroke-dashoffset: 5;
 }
 100% {
-opacity: 1;
+  opacity: 1;
+
 stroke-dasharray: 500;
 stroke-dashoffset: 0;
 }
 }
-
+@keyframes dashphone {
+0% {
+stroke-dasharray: 2000;
+stroke-dashoffset: 2000;
+}
+50% {
+stroke-dasharray: 1000;
+stroke-dashoffset: 5;
+}
+100% {
+stroke-dasharray: 500;
+stroke-dashoffset: 0;
+}
+}
 
 @keyframes dash2 {
 0% {

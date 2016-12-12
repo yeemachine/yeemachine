@@ -102,20 +102,18 @@ transform: rotate(0deg);
 }
 @keyframes blink{
 
-0%{
-opacity: 0
-}
-5%{
-opacity: 1
-}
+  0%{
+    opacity:0
 
-95%{
-opacity: 1
-}
-100%{
-opacity: 0
-}
-}
+  }
+  50%{
+    opacity: 1
+  }
+  100%{
+    opacity:0
+
+  }
+  }
 @keyframes movedown{
   0%{
     -ms-transform:translate(0,0);
@@ -741,17 +739,14 @@ height: 20%;
 }
 @keyframes dash {
 0% {
-opacity: 1;
 stroke-dasharray: 2000;
 stroke-dashoffset: 2000;
 }
 50% {
-opacity: 1;
 stroke-dasharray: 1000;
 stroke-dashoffset: 5;
 }
 100% {
-opacity: 1;
 stroke-dasharray: 500;
 stroke-dashoffset: 0;
 }
