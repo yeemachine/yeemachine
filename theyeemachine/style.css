@@ -286,6 +286,17 @@ align-items: center;
   height: 100vh;
   width: 100%;
 }
+.blurb{
+  width: 100vw;
+  height: 200vh;
+  font-size: 5vh;
+  overflow-wrap: break-word;
+ word-wrap: break-word;
+ font-family: 'yeehex';
+ overflow:hidden;
+ pointer-events: none;
+
+}
 .page33{
   border: 0;
   margin: 0;
