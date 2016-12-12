@@ -229,7 +229,7 @@ a{
 }
 body{
 
-  font-family: 'AGBK', sans-serif;
+  font-family: 'AGBK';
   border: 0;
   margin: 0;
   transition: .2s;
@@ -243,7 +243,7 @@ height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'AGBK', sans-serif;
+  font-family: 'AGBK';
   border: 0;
   margin: 0;
   padding: 0;
