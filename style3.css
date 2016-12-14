@@ -195,6 +195,73 @@ transform: translate(0,0);
 
 }
 }
+@keyframes clockmove{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+23%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+25%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+48%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+50%{
+  -ms-transform:translate(-477.5px,0px);
+  -webkit-transform:translate(-477.5px,0px);
+  transform: translate(-477.5px,0px);
+
+}
+73%{
+  -ms-transform:translate(-477.5px,0px);
+  -webkit-transform:translate(-477.5px,0px);
+  transform: translate(-477.5px,0px);
+
+}
+75%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+98%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+
+}
+#cities{
+  transform-origin: center;
+  animation: clockmove 12s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+}
+/*#new_york{
+  transform-origin: center;
+  animation: clockmove 1s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+}*/
 #link7{
   transform-origin: center;
 opacity: 1;

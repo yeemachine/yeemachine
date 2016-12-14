@@ -175,6 +175,63 @@ transform: translate(0,0);
 
 }
 }
+@keyframes clockmove{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+23%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+25%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+48%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+50%{
+  -ms-transform:translate(-477.5px,0px);
+  -webkit-transform:translate(-477.5px,0px);
+  transform: translate(-477.5px,0px);
+
+}
+73%{
+  -ms-transform:translate(-477.5px,0px);
+  -webkit-transform:translate(-477.5px,0px);
+  transform: translate(-477.5px,0px);
+
+}
+75%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+98%{
+  -ms-transform:translate(-239px,0px);
+  -webkit-transform:translate(-239px,0px);
+  transform: translate(-239px,0px);
+
+}
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+
+}
 #link7{
   transform-origin: center;
 opacity: 1;
@@ -327,6 +384,26 @@ align-items: center;
 
   height: 100vh;
   width: 100%;
+}
+.page44{
+  border: 0;
+  margin: 0;
+  padding: 0;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+#clock{
+ height: 80vh;
+}
+#cities{
+  transform-origin: center;
+  animation: clockmove 12s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
 }
 h1{
   width: 50%;
