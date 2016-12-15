@@ -13,29 +13,6 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script>
-  //   var showText = function (target, message, index, interval) {
-  //   if (index < message.length) {
-  //     $(target).html(message[index++]);
-  //     setTimeout(function () { showText(target, message, index, interval); }, interval);
-  //   }
-  //   if (index >= message.length){
-  //         index = 0;
-  // }
-  // }
-  //
-  // $(function () {
-  //
-  //   showText("#msg", " yee machine", 0, 150);
-  //
-  // });
-
-    </script>
-    <script>
-
-
-
-    </script>
-    <script>
       (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function() {
@@ -206,26 +183,44 @@
       if ($(this).scrollTop() > (p1 + p2*1.45) && windowPosY < (p1 + p2*2.75)) {
 
         $("h1").css("color","");
-        $("h1").html("Heart");
+        $("h1").html("Stocks");
       }
       if ($(this).scrollTop() > (p1 + p2*2.75) && windowPosY < (p1 + p2*3.75)) {
+        $("h1").css("color","");
+
+
+        $("h1").html("Heart");
+
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*3.75) && windowPosY < (p1 + p2*4.75)) {
+        $("h1").css("color","");
 
 
         $("h1").html("Clock");
 
 
       }
-      if ($(this).scrollTop() > (p1 + p2*3.75) && windowPosY < (p1 + p2*4.75)) {
+      if ($(this).scrollTop() > (p1 + p2*4.75) && windowPosY < (p1 + p2*5.75)) {
 
+        $("h1").css("color","");
 
         $("h1").html("Transit");
 
 
       }
-      if ($(this).scrollTop() > (p1 + p2*4.75) && windowPosY < (p1 + p2*5.75)) {
+      if ($(this).scrollTop() > (p1 + p2*5.75) && windowPosY < (p1 + p2*7.5)) {
 
+        $("h1").css("color","");
 
         $("h1").html("Tone");
+
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*7.5) && windowPosY) {
+
+
+        $("h1").css("color","transparent");
 
 
       }
@@ -252,7 +247,7 @@
 
           })
           $( line1 ).click(function() {
-            $('body').animate({scrollTop: p1}, 500);
+            $('body').animate({scrollTop: (p1 + (p2*2))}, 500);
 
           });
 
@@ -282,7 +277,7 @@
 
         })
         $( line2 ).click(function() {
-          $('body').animate({scrollTop: (p1 + (p2*2))}, 500);
+          $('body').animate({scrollTop: (p1 + (p2*3))}, 500);
 
         });
             $( line2 ).mouseleave(function() {
@@ -305,11 +300,11 @@
               $(".description").hide().html("A world clock app with integrated weather forecast that can be used to easily compare global differences.").fadeIn("500");
 
               $(logo).css({"opacity":"0"});
-              $(line5).css({"stroke":"blue"});
-              $(alphabet).css({"fill":"blue"});
+              $(line5).css({"stroke":"#418CCB"});
+              $(alphabet).css({"fill":"#418CCB"});
         })
         $( line3 ).click(function() {
-          $('body').animate({scrollTop: (p1 + (p2*3))}, 500);
+          $('body').animate({scrollTop: (p1 + (p2*4))}, 500);
 
         });
         $( line3 ).mouseleave(function() {
@@ -333,11 +328,11 @@
               $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
               $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
               $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
-              $(line7).css({"stroke":"#44c536"});
-              $(line5).css({"stroke":"#44c536"});
+              $(line7).css({"stroke":"#00933C"});
+              $(line5).css({"stroke":"#00933C"});
         })
         $( line4 ).click(function() {
-          $('body').animate({scrollTop: (p1 + (p2*4))}, 500);
+          $('body').animate({scrollTop: (p1 + (p2*5))}, 500);
 
         });
             $( line4 ).mouseleave(function() {
@@ -359,18 +354,27 @@
             $( line5 ).mouseenter(function() {
               $("h1").hide().html("About").fadeIn("500");
               $(".description").hide().html("A quick look at the development of Yee Machine.").fadeIn("500");
-              $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-              $(line7).css({"stroke":"yellow"});
-              $(line5).css({"stroke":"yellow"});
+              $(line7).css({"animation":"rotate 5s cubic-bezier(0.5, 0.5, 0.5, .5) infinite","animation-delay":""});
+              $(line7).css({"stroke":"black"});
+              $(line5).css({"stroke":"black"});
 
 
         })
+        $( line5 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*8.5))}, 500);
+
+        });
             $( line5 ).mouseleave(function() {
-              $("h1").html("The Yee Machine");
               $(".description").html("");
                 $(line7).css({"animation":"stop 1s linear","animation-delay":""});
                 $(line7).css({"stroke":""});
                 $(line5).css({"stroke":""});
+                if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+
+                }else{
+                  $("h1").html("The Yee Machine");
+
+                }
 
         });
         $( line6 ).mouseenter(function() {
@@ -389,7 +393,7 @@
 
         })
         $( line6 ).click(function() {
-          $('body').animate({scrollTop: (p1 + (p2*5))}, 500);
+          $('body').animate({scrollTop: (p1 + (p2*6))}, 500);
 
         });
         $( line6 ).mouseleave(function() {
@@ -657,6 +661,10 @@
 
 </container>
 <container class="page2">
+  <object class="" id="stocks" type="image/svg+xml" data="stocks.svg">Your browser does not support SVGs</object>
+<div class="textblockcontainerR"><p>A data crowdsourced transit app for NYC subways that is more accurate than the official MTA updates. Expansion to other regions in progress.</p></div>
+</container>
+<container class="page2">
   <object class="" id="heart" type="image/svg+xml" data="watch1.svg">Your browser does not support SVGs</object>
   <div class="textblockcontainerR"><p>A multidevice platform that lets you monitor your heartbeat and compare during different states of motion.</p></div>
 </container>
@@ -689,6 +697,9 @@
   <object class="animate2" id="svgObject5" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
   <div class="info">Cooper Union 2014-2018<br><a href="mailto:rich@yeemachine.com" target="_top">rich@yeemachine.com</a>
   </div>
+</container>
+<container class="page3">
+<div class="about"><p>A translator app that will notify you when an accurate translation cannot be made.</p></div>
 </container>
 
 

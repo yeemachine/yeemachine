@@ -429,40 +429,6 @@ transform: translate(0,0);
 }
 
 }
-@keyframes stockmove{
-  0%{
-    -ms-transform:translate(0,0);
-    -webkit-transform:translate(0,0);
-  transform: translate(0,0);
-
-}
-45%{
-  -ms-transform:translate(0,0);
-  -webkit-transform:translate(0,0);
-transform: translate(0,0);
-
-}
-50%{
-  -ms-transform:translate(-248px,0px);
-  -webkit-transform:translate(-248px,0px);
-  transform: translate(-248px,0px);
-
-}
-95%{
-  -ms-transform:translate(-248px,0px);
-  -webkit-transform:translate(-248px,0px);
-  transform: translate(-248px,0px);
-
-}
-
-100%{
-  -ms-transform:translate(0,0);
-  -webkit-transform:translate(0,0);
-transform: translate(0,0);
-
-}
-
-}
 #link7{
   transform-origin: center;
 opacity: 1;
@@ -555,18 +521,6 @@ align-items: center;
   height: 100vh;
   width: 100%;
 }
-.page3{
-  border: 0;
-  margin: 0;
-  padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-
-  height: 50vh;
-  width: 100%;
-}
 .textblockcontainerR{
   width: 30vw;
   margin-left: 10vw;
@@ -574,9 +528,6 @@ align-items: flex-start;
 .textblockcontainerL{
   width: 30vw;
   margin-right: 10vw;
-}
-.about{
-  width: 30vw;
 }
 .blurb{
   width: 120%;
@@ -622,11 +573,6 @@ align-items: center;
   animation: tonemove 6s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
 }
-#stockcontainer{
-  transform-origin: center;
-  animation: stockmove 6s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
-  animation-fill-mode: forwards;
-}
 .tonemove1{
 animation: moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
 }
@@ -668,17 +614,11 @@ animation: smoveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
-h1{
-  width: 50%;
-  font-size:26px;
-  pointer-events: all;
-  display: none;
-  font-weight: bold;
-}
+
 svg{
 }
 .squiggle{
-  opacity: 0;
+  opacity: 1;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -786,44 +726,12 @@ width: 100%;
 a{
 
 }
-.link:hover{
+#logo{
   cursor: pointer;
 }
-.tesla:hover{
-  stroke:#666;
-  cursor: pointer;
-}
-.watson:hover{
-  stroke:red;
-  cursor: pointer;
-
-
-}
-.sound:hover{
-
-  stroke:yellow;
-
-  cursor: pointer;
-
-}
-.vimeo:hover{
-  stroke:#00933C;
-  cursor: pointer;
-
-
-}
-.old:hover{
-  stroke:rgba(0,0,0,0);
-  cursor: pointer;
 
 
 
-}
-.mock:hover{
-  stroke:#e9e9de;
-  cursor: pointer;
-
-}
 .animatedelay{
   opacity: 1;
 
@@ -883,7 +791,7 @@ opacity: 1
   100%{
     opacity: 1;
 
-    width: 40%
+    width: 45%
   }
 }
 @keyframes slideM{
@@ -1015,12 +923,7 @@ body{
 .page2{
   flex-direction: column;
 }
-h1{
-  left:0;
-  width: 100%;
-  text-align: center;
 
-}
 a{
   text-align: center;
   text-decoration: none;
