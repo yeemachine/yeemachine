@@ -48,8 +48,8 @@
 
 body {
 	font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-	color: black;
-	background: white;
+	color: white;
+	background: black;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-y: scroll;
@@ -88,7 +88,6 @@ align-items: center;
 	overflow: hidden;
 	width: 0;
 	height: 0;
-	pointer-events: none;
 }
 .squiggle{
   opacity: 1;
@@ -101,6 +100,7 @@ opacity: 1;
 animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: 100%;
+z-index: 999;
 }
 .blurb{
   width: 120%;
@@ -132,7 +132,7 @@ align-items: center;
 /* Header */
 
 .codrops-header {
-	padding: 0em 1em 4em;
+	padding: 4em 1em 4em;
 	text-align: center;
 }
 

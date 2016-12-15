@@ -14,22 +14,40 @@
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/style1.css" />
+	<script src="js/jquery.min.js"></script>
 
 	<script src="js/modernizr-custom.js"></script>
+	<script>
+	$(window).on('beforeunload', function() {
+			$(window).scrollTop(0);
+		});
+		window.onload=function() {
+
+		var svg = document.getElementById("svgObject");
+		var svgDoc = svgObject.contentDocument;
+
+		var line5 = svgDoc.getElementById("link5");
+		var line8 = svgDoc.getElementById("link8");
+		$( line8 ).mouseenter(function() {
+
+			$(line5).css({"stroke":"red"});
+
+
+	})
+
+		$( line8 ).mouseleave(function() {
+			$(line5).css({"stroke":""});
+
+
+		})
+}
+
+</script>
 </head>
 
 <body class="demo-1">
-	<container class="blurbcontainer">
-	  <p class="blurb">
-	    theyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachine
-	  </p>
-	</container>
-	<container class="page2">
-		<object class="animate2" id="svgObject2" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
 
-	</container>
 
-	</container>
 	<div class="container">
 		<header class="codrops-header">
 			<object class="" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
@@ -42,58 +60,8 @@
 		<div class="content">
 			<div class="grid">
 				<div class="grid__item" data-size="1280x853">
-					<a href="img/original/1.jpg" class="img-wrap"><img src="img/thumbs/1.jpg" alt="img01" />
+					<a href="img/original/0.jpg" class="img-wrap"><img src="img/thumbs/0.jpg" alt="img01" />
 						<div class="description description--grid">Assemblage</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="958x1280">
-					<a href="img/original/2.jpg" class="img-wrap"><img src="img/thumbs/2.jpg" alt="img02" />
-						<div class="description description--grid">Demesne</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="837x1280">
-					<a href="img/original/3.jpg" class="img-wrap"><img src="img/thumbs/3.jpg" alt="img03" />
-						<div class="description description--grid">Felicity</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="1280x961">
-					<a href="img/original/4.jpg" class="img-wrap"><img src="img/thumbs/4.jpg" alt="img04" />
-						<div class="description description--grid">Propinquity</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="1280x1131">
-					<a href="img/original/5.jpg" class="img-wrap"><img src="img/thumbs/5.jpg" alt="img05" />
-						<div class="description description--grid">Ephemeral</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="1280x857">
-					<a href="img/original/6.jpg" class="img-wrap"><img src="img/thumbs/6.jpg" alt="img06" />
-						<div class="description description--grid">Surreptitious</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="1280x1280">
-					<a href="img/original/7.jpg" class="img-wrap"><img src="img/thumbs/7.jpg" alt="img07" />
-						<div class="description description--grid">Scintilla</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="1280x853">
-					<a href="img/original/8.jpg" class="img-wrap"><img src="img/thumbs/8.jpg" alt="img08" />
-						<div class="description description--grid">Vestigial</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="865x1280">
-					<a href="img/original/9.jpg" class="img-wrap"><img src="img/thumbs/9.jpg" alt="img09" />
-						<div class="description description--grid">Zephyr</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="1280x1280">
-					<a href="img/original/10.jpg" class="img-wrap"><img src="img/thumbs/10.jpg" alt="img10" />
-						<div class="description description--grid">Desideratum</div>
-					</a>
-				</div>
-				<div class="grid__item" data-size="1280x850">
-					<a href="img/original/11.jpg" class="img-wrap"><img src="img/thumbs/11.jpg" alt="img11" />
-						<div class="description description--grid">Quixotic</div>
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x853">
@@ -107,12 +75,17 @@
 					</a>
 				</div>
 				<div class="grid__item" data-size="837x1280">
-					<a href="img/original/3.jpg" class="img-wrap"><img src="img/thumbs/3.jpg" alt="img03" />
+					<a href="img/original/3.png" class="img-wrap"><img src="img/thumbs/3.png" alt="img03" />
 						<div class="description description--grid">Felicity</div>
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x961">
 					<a href="img/original/4.jpg" class="img-wrap"><img src="img/thumbs/4.jpg" alt="img04" />
+						<div class="description description--grid">Propinquity</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x961">
+					<a href="img/original/usage.png" class="img-wrap"><img src="img/thumbs/usage.png" alt="img04" />
 						<div class="description description--grid">Propinquity</div>
 					</a>
 				</div>
@@ -122,7 +95,7 @@
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x857">
-					<a href="img/original/6.jpg" class="img-wrap"><img src="img/thumbs/6.jpg" alt="img06" />
+					<a href="img/original/6.png" class="img-wrap"><img src="img/thumbs/6.png" alt="img06" />
 						<div class="description description--grid">Surreptitious</div>
 					</a>
 				</div>
@@ -132,25 +105,26 @@
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x853">
-					<a href="img/original/8.jpg" class="img-wrap"><img src="img/thumbs/8.jpg" alt="img08" />
+					<a href="img/original/12.jpg" class="img-wrap"><img src="img/thumbs/12.jpg" alt="img08" />
 						<div class="description description--grid">Vestigial</div>
 					</a>
 				</div>
 				<div class="grid__item" data-size="865x1280">
-					<a href="img/original/9.jpg" class="img-wrap"><img src="img/thumbs/9.jpg" alt="img09" />
+					<a href="img/original/9.png" class="img-wrap"><img src="img/thumbs/9.png" alt="img09" />
 						<div class="description description--grid">Zephyr</div>
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x1280">
-					<a href="img/original/10.jpg" class="img-wrap"><img src="img/thumbs/10.jpg" alt="img10" />
+					<a href="img/original/10.png" class="img-wrap"><img src="img/thumbs/10.png" alt="img10" />
 						<div class="description description--grid">Desideratum</div>
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x850">
-					<a href="img/original/11.jpg" class="img-wrap"><img src="img/thumbs/11.jpg" alt="img11" />
+					<a href="img/original/11.png" class="img-wrap"><img src="img/thumbs/11.png" alt="img11" />
 						<div class="description description--grid">Quixotic</div>
 					</a>
 				</div>
+
 			</div>
 			<!-- /grid -->
 			<div class="preview">
