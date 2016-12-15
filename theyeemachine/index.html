@@ -125,6 +125,9 @@
     var svgDoc4 = svgObject4.contentDocument;
     var squiggle3 = svgDoc4.getElementsByClassName("squiggle");
 
+    var svg5 = document.getElementById("svgObject5");
+    var svgDoc5 = svgObject5.contentDocument;
+    var squiggle4 = svgDoc5.getElementsByClassName("squiggle");
 
     var mn = $('h1');
     var p1 = $('.page1').height();
@@ -174,7 +177,7 @@
           $("h1").html("The Yee Machine");
           $(".description").html("");
 
-          $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
 
         }
 
@@ -188,24 +191,42 @@
 
         $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
         $('body').css({'background-color':'','color':''})
-        $("h1").html("Stocks");
-        $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s", "animation-fill-mode": "forwards"});
+        $("h1").html("The Yee Machine");
+        $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
 
       }
-      if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2 + p3)) {
+      if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2*2)) {
 
-
-        $("h1").html("Heart");
+        $("h1").css("color","transparent");
 
         $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-        // $('#msg').css({"animation":"fade 1s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-fill-mode": "forwards","animation-delay":"1s"})
+        $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+        $(squiggle4).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
       }
-      if ($(this).scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+      if ($(this).scrollTop() > (p1 + p2*1.45) && windowPosY < (p1 + p2*2.75)) {
+
+        $("h1").css("color","");
+        $("h1").html("Heart");
+      }
+      if ($(this).scrollTop() > (p1 + p2*2.75) && windowPosY < (p1 + p2*3.75)) {
 
 
         $("h1").html("Clock");
 
-        $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*3.75) && windowPosY < (p1 + p2*4.75)) {
+
+
+        $("h1").html("Transit");
+
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*4.75) && windowPosY < (p1 + p2*5.75)) {
+
+
+        $("h1").html("Tone");
+
 
       }
       if ($(this).scrollTop() < (p1 * .4) && windowPosY) {
@@ -261,7 +282,7 @@
 
         })
         $( line2 ).click(function() {
-          $('body').animate({scrollTop: (p1+ p2)}, 500);
+          $('body').animate({scrollTop: (p1 + (p2*2))}, 500);
 
         });
             $( line2 ).mouseleave(function() {
@@ -287,6 +308,10 @@
               $(line5).css({"stroke":"blue"});
               $(alphabet).css({"fill":"blue"});
         })
+        $( line3 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*3))}, 500);
+
+        });
         $( line3 ).mouseleave(function() {
           $(".description").html("");
 
@@ -301,12 +326,6 @@
 
             }
     });
-        $( line3 ).click(function() {
-
-          $('body').animate({scrollTop: (p1+p2+p3)}, 500);
-
-
-        });
 
             $( line4 ).mouseenter(function() {
               $("h1").hide().html("Transit").fadeIn("500");
@@ -317,14 +336,23 @@
               $(line7).css({"stroke":"#44c536"});
               $(line5).css({"stroke":"#44c536"});
         })
+        $( line4 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*4))}, 500);
+
+        });
             $( line4 ).mouseleave(function() {
-              $("h1").html("The Yee Machine");
               $(".description").html("");
               $(line1).css("animation","");
               $(line2).css("animation","");
               $(line3).css("animation","");
               $(line7).css({"stroke":""});
               $(line5).css({"stroke":""});
+              if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+
+              }else{
+                $("h1").html("The Yee Machine");
+
+              }
         });
 
 
@@ -360,8 +388,11 @@
           $(line5).css({"stroke":"transparent"});
 
         })
+        $( line6 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*5))}, 500);
+
+        });
         $( line6 ).mouseleave(function() {
-          $("h1").html("The Yee Machine");
             $("a").css("color","");
             $(move1).css({"animation":"","animation-delay":""});
             $(move2).css({"animation":"",});
@@ -372,7 +403,12 @@
           $(".description").html("");
           $("body").css({"background-color": "","color":""});
           $(line5).css({"stroke":""});
+          if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
 
+          }else{
+            $("h1").html("The Yee Machine");
+
+          }
 
           })
 
@@ -610,31 +646,49 @@
   <object class="animate2" id="svgObject2" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
 
 </container>
-<container class="page22">
-  <object class="animate" id="heart" type="image/svg+xml" data="watch1.svg">Your browser does not support SVGs</object>
-
-</container>
-<container class="page3">
-  <object class="animate2" id="svgObject3" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
-
-</container>
-<container class="page33">
+<container class="blurbcontainer">
   <p class="blurb">
     theyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachine
   </p>
-  <!-- <p class="blurb">
-    696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969
-  </p> -->
+
 </container>
-<container class="page4" style="top:400vh">
-  <object class="animate2" id="svgObject4" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
-  <div class="info">Cooper Union 2014-2018<br><a href="mailto:rich@yeemachine.com" target="_top">rich@yeemachine.com</a>
-  </div>
+<container class="page2">
+  <object class="animate2" id="svgObject3" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
+
 </container>
-<container class="page44">
+<container class="page2">
+  <object class="animate" id="heart" type="image/svg+xml" data="watch1.svg">Your browser does not support SVGs</object>
+
+</container>
+<container class="page2">
   <object class="animate" id="clock" type="image/svg+xml" data="clock.svg">Your browser does not support SVGs</object>
 
 </container>
+
+<container class="page2">
+  <object class="animate" id="railways" type="image/svg+xml" data="railways.svg">Your browser does not support SVGs</object>
+</container>
+<container class="page2">
+  <object class="animate" id="tone" type="image/svg+xml" data="tone.svg">Your browser does not support SVGs</object>
+
+</container>
+<container class="page2">
+  <object class="animate2" id="svgObject4" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
+
+</container>
+<container class="blurbcontainer">
+  <p class="blurb">
+    696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969
+  </p>
+
+</container>
+<container class="page2">
+  <object class="animate2" id="svgObject5" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
+  <div class="info">Cooper Union 2014-2018<br><a href="mailto:rich@yeemachine.com" target="_top">rich@yeemachine.com</a>
+  </div>
+</container>
+
+
 
 
 </body>

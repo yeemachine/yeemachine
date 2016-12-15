@@ -51,6 +51,31 @@ html {
     stroke-dashoffset: 100;
     }
     }
+    @keyframes dashsouth {
+    0% {
+    opacity: 1;
+    stroke-dasharray: 6;
+    stroke-dashoffset: 100;
+    }
+
+    100% {
+    opacity: 1;
+    stroke-dasharray: 6;
+    stroke-dashoffset: 52;
+    }
+    }
+    @keyframes dashnorth {
+      0% {
+      opacity: 1;
+      stroke-dasharray: 6;
+      stroke-dashoffset: 52;
+      }
+    100% {
+    opacity: 1;
+    stroke-dasharray: 6;
+    stroke-dashoffset: 100;
+    }
+    }
 @keyframes rotate{
 
 0%{
@@ -94,11 +119,30 @@ transform: rotate(0deg);
   opacity:0
 
 }
-}@keyframes transition{
+}
+@keyframes watchfade {
+  0%{
+    opacity:0
+
+  }
+  40%{
+    opacity:0
+
+  }
+  50%{
+    opacity: 1
+  }
+  90%{
+    opacity: 1
+  }
+  100%{
+    opacity:0
+  }
+}
+@keyframes transition{
 
 0%{
   opacity:0
-
 }
 10%{
   opacity: 1
@@ -111,7 +155,6 @@ transform: rotate(0deg);
 }
 100%{
   opacity:0
-
 }
 }
 @keyframes movedown{
@@ -194,6 +237,107 @@ transform: translate(0,0);
 
 }
 }
+@keyframes smovedown{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+50%{
+  -ms-transform:translate(0,2.5px);
+  -webkit-transform:translate(0,2.5px);
+  transform: translate(0,2.5px);
+
+}
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+}
+@keyframes smovedown2{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+50%{
+  -ms-transform:translate(0,6.25px);
+  -webkit-transform:translate(0,6.25px);
+  transform: translate(0,6.25px);
+
+}
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+}
+@keyframes smoveup{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+50%{
+  -ms-transform:translate(0,-2.5px);
+  -webkit-transform:translate(0,-2.5px);
+  transform: translate(0,-2.5px);
+
+}
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+}
+@keyframes smoveup2{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+50%{
+  -ms-transform:translate(0,-6.25px);
+  -webkit-transform:translate(0,-6.25px);
+  transform: translate(0,-6.25px);
+
+}
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+}
+@keyframes scrubber{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+45%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+100%{
+  -ms-transform:translate(120px,0);
+  -webkit-transform:translate(120px,0);
+  transform: translate(120px,0);
+
+}
+
+}
 @keyframes clockmove{
   0%{
     -ms-transform:translate(0,0);
@@ -249,6 +393,40 @@ transform: translate(0,0);
 transform: translate(0,0);
 
 }
+}
+
+@keyframes tonemove{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+45%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
+50%{
+  -ms-transform:translate(-242px,0px);
+  -webkit-transform:translate(-242px,0px);
+  transform: translate(-242px,0px);
+
+}
+95%{
+  -ms-transform:translate(-242px,0px);
+  -webkit-transform:translate(-242px,0px);
+  transform: translate(-242px,0px);
+
+}
+
+100%{
+  -ms-transform:translate(0,0);
+  -webkit-transform:translate(0,0);
+transform: translate(0,0);
+
+}
 
 }
 #link7{
@@ -264,7 +442,7 @@ a{
 }
 .info{
   position: absolute;
-  bottom:5vh;
+  top:880vh;
   left:10vw;
   color:black;
   width: 90%;
@@ -317,7 +495,7 @@ body{
   background-color: white;
 }
 #heart{
-height: 80vh;
+height: 50vh;
 }
 .page1{
   display: flex;
@@ -343,42 +521,20 @@ align-items: center;
   height: 100vh;
   width: 100%;
 }
-.page22{
-  border: 0;
-  margin: 0;
-  padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
 
-  height: 100vh;
-  width: 100%;
-}
-.page3{
-  border: 0;
-  margin: 0;
-  padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-  height: 100vh;
-  width: 100%;
-}
 .blurb{
   width: 120%;
-  height: 200vh;
+  height: 100vh;
   font-size: 40px;
   overflow-wrap: break-word;
  word-wrap: break-word;
  font-family: 'yeehex';
  pointer-events: none;
 overflow: hidden;
+line-height: 31px;
 
 }
-.page33{
+.blurbcontainer{
   border: 0;
   margin: 0;
   padding: 0;
@@ -387,37 +543,58 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 
-  height: 100vh;
+  height: 0vh;
   width: 100vw;
   pointer-events: none;
 
 }
-.page4{
-  border: 0;
-  margin: 0;
-  padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-  height: 100vh;
-  width: 100%;
-}
-.page44{
-  border: 0;
-  margin: 0;
-  padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-  height: 100vh;
-  width: 100vw;
+#railways{
+  height: 80vh;
 }
 #clock{
  height: 80vh;
+}
+#tone{
+  height: 80vh;
+}
+.scrubber{
+  animation: scrubber 6s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
+}
+#tonecontainer{
+  transform-origin: center;
+  animation: tonemove 6s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+  animation-fill-mode: forwards;
+}
+.tonemove1{
+animation: moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+}
+.tonemove2{
+  animation: moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
+}
+.tonemove4{
+  animation: movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
+}
+.tonemove5{
+  animation: movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
+}
+.tonemove11{
+animation: smoveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+}
+.tonemove22{
+  animation: smoveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
+}
+.tonemove44{
+  animation: smovedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
+}
+.tonemove55{
+  animation: smovedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite
+
 }
 #citiestop{
   opacity: 0;
@@ -536,7 +713,7 @@ margin-right: 0;
 
 }
 .animate2 {
-opacity: 0;
+opacity: 1;
 animation: dash 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 width: 100%;
