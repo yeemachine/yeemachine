@@ -427,7 +427,7 @@ align-items: center;
 #cities{
   transform-origin: center;
   animation: clockmove 12s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
-  animation-delay: 2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 h1{
