@@ -1,43 +1,43 @@
-<?xml-stylesheet type="text/css" href="style.css"?>
+<?xml-stylesheet type="text/css" href="style3.css"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="285.667px" height="492px" viewBox="-12 0 285.667 492" enable-background="new -12 0 285.667 492" xml:space="preserve">
+	 width="273.666px" height="492px" viewBox="0 0 273.666 492" enable-background="new 0 0 273.666 492" xml:space="preserve">
 	 <g id="layer1">
 <path d="M227.378,336.798c0,12.565-9.012,22.755-20.125,22.755H50.435c-11.114,0-20.126-10.189-20.126-22.755V154.76
 	c0-12.565,9.012-22.755,20.126-22.755h156.819c11.113,0,20.125,10.19,20.125,22.755V336.798z"/>
-<polyline style='animation:dashphone 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,222.949 68.356,222.949 99.785,222.949 131.188,222.932 162.62,204.784 194.046,222.928 225.476,222.949 "/>
-<polyline style='animation:dashphone 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,264.52 68.356,264.52 99.785,264.52 131.188,264.504 162.62,246.354 194.046,264.501 225.476,264.52 "/>
-<polyline style='animation:dashphone 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,305.264 68.356,305.264 99.785,305.264 131.188,305.246 162.62,287.099 194.046,305.241 225.476,305.264 "/>
-<polyline style='animation:dashphone 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,349.271 68.356,349.271 99.785,349.271 131.188,349.254 162.62,331.107 194.046,349.249 225.476,349.271 "/>
 <rect x="72.004" y="289.476" fill="none" width="120.643" height="84.69"/>
-<text transform="matrix(1 0 0 1 98.0596 333.498)" fill="#FFFFFF" font-family="'AGBK',helvetica,sans-serif" font-size="59.4912">60</text>
+<text class="text" transform="matrix(1 0 0 1 98.0596 333.498)" fill="#FFFFFF" font-family="'AGBK'" font-size="59.4912">60</text>
 <polyline style='animation:blink 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' fill="none" stroke="#FFFFFF" stroke-width="12.7086" stroke-linecap="round" stroke-miterlimit="10" points="
 	127.243,263.054 132.322,265.987 137.402,263.054 "/>
 
 <rect x="-43.276" y="156.86" fill="none" width="252.545" height="84.691"/>
-<text transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'AGBK',helvetica,sans-serif" font-size="17.3516">0.5mph</text>
+<text class="text" transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'AGBK'" font-size="17.3516">0.5mph</text>
 </g>
-<g id="layer2" style='animation:watchfade 10s cubic-bezier(0.5, 0.5, 0.5, .5) infinite;animation-delay:.3s'>
+<g id="layer2" style='animation:blink 20s cubic-bezier(0.90, 0.005, 0.20, 1.000) infinite;animation-delay:.3s'>
 <path d="M227.378,336.798c0,12.565-9.012,22.755-20.125,22.755H50.435c-11.114,0-20.126-10.189-20.126-22.755V154.76
 	c0-12.565,9.012-22.755,20.126-22.755h156.819c11.113,0,20.125,10.19,20.125,22.755V336.798z"/>
-<polyline style='animation:dashphone 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,264.52 68.356,264.52 99.785,264.52 131.188,264.504 162.62,246.354 194.046,264.501 225.476,264.52 "/>
-<polyline style='animation:dashphone 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,305.264 68.356,305.264 99.785,305.264 131.188,305.246 162.62,287.099 194.046,305.241 225.476,305.264 "/>
-<polyline style='animation:dashphone 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<polyline style='animation:dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	35.886,349.271 68.356,349.271 99.785,349.271 131.188,349.254 162.62,331.107 194.046,349.249 225.476,349.271 "/>
 <rect x="72.004" y="289.476" fill="none" width="120.643" height="84.69"/>
-<text transform="matrix(1 0 0 1 80.9263 333.498)" fill="#FFFFFF" font-family="'AGBK',helvetica,sans-serif" font-size="59.4912">120</text>
+<text class="text" transform="matrix(1 0 0 1 80.9263 333.498)" fill="#FFFFFF" font-family="'AGBK'" font-size="59.4912">120</text>
 <polyline id="heart2" style='animation:blink .5s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite;animation-delay:.3s' fill="none" stroke="#ED1C24" stroke-width="12.7086" stroke-linecap="round" stroke-miterlimit="10" points="
 	127.243,263.054 132.322,265.987 137.402,263.054 "/>
 <rect x="-43.276" y="156.86" fill="none" width="252.545" height="84.691"/>
-<text transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'AGBK',helvetica,sans-serif" font-size="17.3516">3.5mph</text>
-<polyline id="abnormal" style='animation:dashphone 1s cubic-bezier(0.670, 0.0005, 1, 1) infinite;animation-delay:.3s' fill="none" stroke="#ED1C24" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
+<text class="text" transform="matrix(1 0 0 1 50.7402 169.7002)" fill="#FFFFFF" font-family="'futura'" font-size="17.3516">3.5mph</text>
+<polyline id="abnormal" style='animation:dash 1s cubic-bezier(0.670, 0.0005, 1, 1) infinite;animation-delay:.3s' fill="none" stroke="#ED1C24" stroke-width="17.4043" stroke-linecap="round" stroke-miterlimit="10" points="
 	36.419,204.533 68.778,222.636 100.097,204.533 131.394,222.619 162.712,204.533 194.028,222.615 225.352,204.533 "/>
 </g>
 <g>
@@ -1532,7 +1532,7 @@ QAwie7Uj7Uwytr5SYqBNeY4uOJPSlpLQ+HG1VWa5aSa5M8FjJlod8In8Od33LSyoKTQbqRo0vRI1
 aFJs2RCABoJ8lXEyFWn98JAGOzsSZuQwxbnOoZEoo+HG76CbAgxMxAZfkbaOE1vlECUG0+ln9K7Y
 qmt+TAAM1DzM8MkTEsGptAlA5dqpHJp+QdsD2LIhWyisB2VBzcgMEtNFaA5PdELfyGH+ergcoFTV
 4OFgoKM1KlKTPbSxOLQEtbAYSxlERYJyrH/n1W3LLa9V4vELhheb15qBGBS5W04YKfPti2ZhJqsh
-GxNxwInwRV/ngplIjf+6Luf6pKhAgBkoFCI00EykqgUPtnbo4upKN5hTA5Zj1sW5bn3A0gdcZgY+
+GxNxwInwRV/ngplIjf+6Luf6pKh'AGBK'oFCI00EykqgUPtnbo4upKN5hTA5Zj1sW5bn3A0gdcZgY+
 x1x3yo7OGQmqvMyAnBOVaGloptmlJALMAGYagpmM0xQ2mSfH2WT0M2hKyXp9UrHc9f38onqwZUMA
 Gmjm2jm5pkuWe9wMm8Lv4SQkYPR7A10tmKyuusEgJ8I5VqSX2AtHwInEmWz64DWpZMFQ05y9GktJ
 gJmaMJN1+HCRkbsW/x1zslsb2A/3f786RmPVq1rfPYzdDw0mIQANNHftXrtOmweHJJwgoOyPZBpq
@@ -1777,7 +1777,7 @@ KQTb9hLADMHJBM1RsGVDENRGYb2744KTqZpgy24GZgi27EYEJxMEAWggS3AylYcZQoPJRmCG4GRq
 BGbgZIIgAM3KCk6m+jBDaDAJmGkRzKDBJARBKwszaDBZHWZgy24EamDLbghmzCUiMxAErS7MwMk0
 LdQAZqBWQQ1gBoIaFlxOHYEZgpMJmqPgZIIgqGtC+Lj9MLMBmKkmOJmagRmCkwmCIAAN1JT293Yv
 ADPVYIbQYLIRmCEk/9YWbNkQBKCBLMGWXRVm0GASMNMOmIEtG4KglZVaYjLLTFBFmIGTqRGogZOp
-IZgxl4AZCIJWF2YePHw0UBv2SFWoAcxAgBkIgiDADARBTUENYAaC5izYtlsCM+pSCOGqy4P9vTH2
+IZgxl4AZCIJWF2YePHw0UBv2SFWoAcx'AGBK'IgiDADARBTUENYAaC5izYtlsCM+pSCOGqy4P9vTH2
 CjRLwZYNQdCyCWvlLZBxMgFmSgq27GZghmDLbkRwMkEQgAaypEAGMFMOZggNJhuBGYKTqRGYgZMJ
 gtohLDktQMESk4rMYG9MBzOEBpOAmRbBDBpMQhCAZmVhRso1UIOoDGBmnlDDADOAGQiCoNowAydT
 HaiBLRtqFdRgmQmCWiREaOYIM+oSyb/QvAQnEwRBqyQkBQNmWik4mZqBGYKTCYIgAA3UlGDLrg4z

@@ -13,59 +13,6 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script>
-
-
-      $(window).scroll(function() {
-        var svg2 = document.getElementById("svgObject2");
-        var svgDoc2 = svgObject2.contentDocument;
-        var squiggle = svgDoc2.getElementsByClassName("squiggle");
-        var mn = $('h1');
-        var hdr = $('.page1').height();
-        var gdr = $('.page2').height();
-
-
-        var windowPosY = $(this).scrollTop();
-
-        var isMobile = window.matchMedia("only screen and (max-width: 600px)");
-        if (isMobile.matches) {
-          console.log('works');
-
-          if ($(this).scrollTop() > (hdr * .55) && windowPosY < (hdr + (gdr))) {
-
-            console.log('please');
-
-            $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
-            $('body').css({'background-color':'','color':''})
-            $("h1").html("Yee Machine Projects");
-            $(".description").html("");
-
-            $(squiggle).css({"animation":"dash 5s cubic-bezier(0.670, 0.005, 0.200, 1.000)","animation-delay":".5s","animation-fill-mode": "forwards"});
-
-          }
-          if ($(this).scrollTop() < (hdr * .55) && windowPosY) {
-            $(mn).css({"position": "","top":"","left":"","color":""});
-
-        }
-        }else {
-        if ($(this).scrollTop() > (hdr * .4) && windowPosY < (hdr + (gdr))) {
-
-
-          $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
-          $('body').css({'background-color':'','color':''})
-          $("h1").html("Yee Machine Projects");
-          $(squiggle).css({"animation":"dash 5s cubic-bezier(0.670, 0.005, 0.200, 1.000)","animation-delay":".5s", "animation-fill-mode": "forwards"});
-
-        }
-        if ($(this).scrollTop() < (hdr * .4) && windowPosY) {
-          $(mn).css({"position": "","top":"","left":"","color":""});
-
-        }
-
-        }
-
-      });
-    </script>
-    <script>
       (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function() {
@@ -107,6 +54,8 @@
     var line5 = svgDoc.getElementById("link5");
     var line6 = svgDoc.getElementById("link6");
     var line7 = svgDoc.getElementById("link7");
+    var alphabet = svgDoc.getElementById("alphabet");
+
 
     var logo = svgDoc.getElementById("logo");
 
@@ -124,6 +73,7 @@
     var hidelink7 = svgDoc.getElementsByClassName("hidelink7");
 
 
+
     var cnt1 = $(hidelink1).contents();
     var cnt2 = $(hidelink2).contents();
     var cnt3 = $(hidelink3).contents();
@@ -131,104 +81,341 @@
     var cnt5 = $(hidelink5).contents();
     var cnt6 = $(hidelink6).contents();
     var cnt7 = $(hidelink7).contents();
+
+
+    var p1 = $('.page1').height();
+    var p2 = $('.page2').height();
+    var p3 = $('.page3').height();
+
+
+
+
+    var svg2 = document.getElementById("svgObject2");
+    var svgDoc2 = svgObject2.contentDocument;
+    var squiggle = svgDoc2.getElementsByClassName("squiggle");
+
+    var svg3 = document.getElementById("svgObject3");
+    var svgDoc3 = svgObject3.contentDocument;
+    var squiggle2 = svgDoc3.getElementsByClassName("squiggle");
+
+    var svg4 = document.getElementById("svgObject4");
+    var svgDoc4 = svgObject4.contentDocument;
+    var squiggle3 = svgDoc4.getElementsByClassName("squiggle");
+
+    var svg5 = document.getElementById("svgObject5");
+    var svgDoc5 = svgObject5.contentDocument;
+    var squiggle4 = svgDoc5.getElementsByClassName("squiggle");
+
+    var mn = $('h1');
+    var p1 = $('.page1').height();
+    var p2 = $('.page2').height();
+    var p3 = $('.page3').height();
+    var p4 = $('.page4').height();
+
+
+    var showText = function (target, message, index, interval) {
+    if (index < message.length) {
+      $(target).text(message[index++]);
+      setTimeout(function () { showText(target, message, index, interval); }, interval);
+    }
+    if (index >= message.length){
+          index = 0;
+  }
+  }
+
+  $(function () {
+
+    showText(alphabet, "abcdefghijklmnopqrstuvwxyz123456790", 0, 150);
+
+  });
+
+
     setTimeout(function(){   $(".largecontainer").css("pointer-events", "none");$("h1").css("display", "block")}, 1500);
+
+
+
+
+    $(window).scroll(function() {
+
+
+
+
+      var windowPosY = $(this).scrollTop();
+
+      var isMobile = window.matchMedia("only screen and (max-width: 600px)");
+
+      if (isMobile.matches) {
+
+        if ($(this).scrollTop() > (p1 * .55) && windowPosY < (p1 + (p2))) {
+
+
+          $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
+          $('body').css({'background-color':'','color':''})
+          $("h1").html("The Yee Machine");
+          $(".description").html("");
+
+
+
+        }
+
+        if ($(this).scrollTop() < (p1 * .55) && windowPosY) {
+          $(mn).css({"position": "","top":"","left":"","color":""});
+
+      }
+      }else {
+      if ($(this).scrollTop() > (p1 * .4) && windowPosY < (p1 + (p2))) {
+
+
+        $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
+        $('body').css({'background-color':'','color':''})
+        $("h1").html("The Yee Machine");
+        $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2*2)) {
+
+        $("h1").css("color","transparent");
+
+        $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+        $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+        $(squiggle4).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+      }
+      if ($(this).scrollTop() > (p1 + p2*1.45) && windowPosY < (p1 + p2*2.75)) {
+
+        $("h1").css("color","");
+        $("h1").html("Stocks");
+      }
+      if ($(this).scrollTop() > (p1 + p2*2.75) && windowPosY < (p1 + p2*3.75)) {
+        $("h1").css("color","");
+
+
+        $("h1").html("Heart");
+
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*3.75) && windowPosY < (p1 + p2*4.75)) {
+        $("h1").css("color","");
+
+
+        $("h1").html("Clock");
+
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*4.75) && windowPosY < (p1 + p2*5.75)) {
+
+        $("h1").css("color","");
+
+        $("h1").html("Transit");
+
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*5.75) && windowPosY < (p1 + p2*7.5)) {
+
+        $("h1").css("color","");
+
+        $("h1").html("Tone");
+
+
+      }
+      if ($(this).scrollTop() > (p1 + p2*7.5) && windowPosY) {
+
+
+        $("h1").css("color","transparent");
+
+
+      }
+      if ($(this).scrollTop() < (p1 * .4) && windowPosY) {
+        $(mn).css({"position": "","top":"","left":"","color":""});
+
+      }
+
+      }
+
+    });
+
 
 
     // $(window).resize(function() {
           // This will fire each time the window is resized:
           if($(window).width() >= 600) {
             $( line1 ).mouseenter(function() {
-              $("h1").hide().html("Tesla Timeline").fadeIn("500");
-              $(".description").hide().html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link'  href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn("500");
+              $("h1").hide().html("Stocks").fadeIn("500");
+              $(".description").hide().html("A reimagining of a stock market app with an emphasis on finding which stocks are most stable.").fadeIn("500");
               $(".timeline").attr("class", "timelineanim");
+              $(line7).css({"stroke":"#666"});
+              $(line5).css({"stroke":"#666"});
+
           })
+          $( line1 ).click(function() {
+            $('body').animate({scrollTop: (p1 + (p2*2))}, 500);
+
+          });
+
             $( line1 ).mouseleave(function() {
-              $("h1").html("Yee Machine Projects");
               $(".description").html("");
               $(".timelineanim").attr("class", "timeline");
+              $(line7).css({"stroke":""});
+              $(line5).css({"stroke":""});
+              if ($('body').scrollTop() > (p1*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+                $("h1").html("Stocks");
+
+              }else{
+                $("h1").html("The Yee Machine");
+
+              }
         });
             $( line2 ).mouseenter(function() {
-              $("h1").hide().html("Watson X Wayback").fadeIn("500");
-              $(line1).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".2s"});
-              $(line3).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".3s"});
-              $(line4).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".1s"});
+              $("h1").hide().html("Heart").fadeIn("500");
+
+              $(line3).css({"animation":"dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":".3s"});
               $(line5).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
-              $(line6).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".4s"});
               $(line5).attr('class', 'old');
-              $(line6).attr('class', 'facebook');
-              $(".description").hide().html("Mashup between IBM Watson's tone analyzer and Wayback Machine's internet archive. Users can input their desired websites and track a company's linguistic tone over time. Apple's support page is used as an initial example.<br><a  class='link'  href='http://watsonwayback.com'><h3>GO</h3></a>").fadeIn("500");
+              $(line6).attr('class', 'sound');
+              $(".description").hide().html("A multidevice platform that lets you monitor your heartbeat and compare during different states of motion.").fadeIn("500");
+              $(line7).css({"stroke":"red"});
+              $(line5).css({"stroke":"red"});
+
         })
+        $( line2 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*3))}, 500);
+
+        });
             $( line2 ).mouseleave(function() {
-              $("h1").html("Yee Machine Projects");
-              $(line1).css({"animation":"","animation-delay":""});
               $(line3).css({"animation":"","animation-delay":""});
-              $(line4).css({"animation":"","animation-delay":""});
               $(line5).css({"animation":"","animation-delay":""});
-              $(line6).css({"animation":"","animation-delay":""});
               $(".description").html("");
+              $(line7).css({"stroke":""});
+              $(line5).css({"stroke":""});
+              if ($('body').scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+                $("h1").html("Heart");
+
+              }else{
+                $("h1").html("The Yee Machine");
+
+              }
         });
 
             $( line3 ).mouseenter(function() {
-              $("h1").hide().html("Soundscape").fadeIn("500");
-              $(".description").hide().html("An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships. Uses three.js<br><a  class='link'  href='http://richyee.com/sound/'><h3>GO</h3></a>").fadeIn("500");
-              $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+              $("h1").hide().html("Clock").fadeIn("500");
+              $(".description").hide().html("A world clock app with integrated weather forecast that can be used to easily compare global differences.").fadeIn("500");
+
+              $(logo).css({"opacity":"0"});
+              $(line5).css({"stroke":"#418CCB"});
+              $(alphabet).css({"fill":"#418CCB"});
         })
-            $( line3 ).mouseleave(function() {
-              $("h1").html("Yee Machine Projects");
-              $(".description").html("");
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+        $( line3 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*4))}, 500);
+
         });
+        $( line3 ).mouseleave(function() {
+          $(".description").html("");
+
+            $(logo).css({"opacity":""});
+            $(line5).css({"stroke":""});
+            $(alphabet).css({"fill":""});
+            if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+              $("h1").html("Clock");
+
+            }else{
+              $("h1").html("The Yee Machine");
+
+            }
+    });
+
             $( line4 ).mouseenter(function() {
-              $("h1").hide().html("Video Works").fadeIn("500");
-              $(".description").hide().html("A collection of video projects done during 2015-2016.<br><a  class='link'  href='https://vimeo.com/user44076957'><h3>GO</h3></a>").fadeIn("500");
+              $("h1").hide().html("Transit").fadeIn("500");
+              $(".description").hide().html("A data crowdsourced transit app for NYC subways that is more accurate than the official MTA updates. Expansion to other regions in progress.").fadeIn("500");
+              $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+              $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+              $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+              $(line7).css({"stroke":"#00933C"});
+              $(line5).css({"stroke":"#00933C"});
         })
-            $( line4 ).mouseleave(function() {
-              $("h1").html("Yee Machine Projects");
-              $(".description").html("");
+        $( line4 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*5))}, 500);
+
         });
+            $( line4 ).mouseleave(function() {
+              $(".description").html("");
+              $(line1).css("animation","");
+              $(line2).css("animation","");
+              $(line3).css("animation","");
+              $(line7).css({"stroke":""});
+              $(line5).css({"stroke":""});
+              if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+
+              }else{
+                $("h1").html("The Yee Machine");
+
+              }
+        });
+
 
             $( line5 ).mouseenter(function() {
-              $("h1").hide().html("Graphic Design").fadeIn("500");
-              $("a").css("color","white");
+              $("h1").hide().html("About").fadeIn("500");
+              $(".description").hide().html("A quick look at the development of Yee Machine.").fadeIn("500");
+              $(line7).css({"animation":"rotate 5s cubic-bezier(0.5, 0.5, 0.5, .5) infinite","animation-delay":""});
+              $(line7).css({"stroke":"black"});
+              $(line5).css({"stroke":"black"});
 
-              $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-              $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-              // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-              $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-              $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-              $(logo).css({"opacity":"0"});
-              $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users. Not optimized for Safari yet.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
-              $("body").css({"background-color": "black","color":"white"});
 
-            })
-            $( line5 ).mouseleave(function() {
-              $("h1").html("Yee Machine Projects");
-                $("a").css("color","");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                // $(move3).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-              $(".description").html("");
-              $("body").css({"background-color": "","color":""});
-
-              })
-
-        $( line6 ).mouseenter(function() {
-          $("h1").hide().html("Facebook Hackathon").fadeIn("500");
-          $(".description").hide().html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app.<br><a href='https://yeemachine.github.io/railways.fish/'><h3>GO</h3></a>").fadeIn("500");
-          $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
-          $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
-          $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
         })
-        $( line6 ).mouseleave(function() {
-            $("h1").html("Yee Machine Projects");
-            $(".description").html("");
-            $(line1).css("animation","");
-            $(line2).css("animation","");
-            $(line3).css("animation","");
+        $( line5 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*8.5))}, 500);
+
         });
+            $( line5 ).mouseleave(function() {
+              $(".description").html("");
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $(line7).css({"stroke":""});
+                $(line5).css({"stroke":""});
+                if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+
+                }else{
+                  $("h1").html("The Yee Machine");
+
+                }
+
+        });
+        $( line6 ).mouseenter(function() {
+          $("h1").hide().html("Translate").fadeIn("500");
+          $("a").css("color","white");
+
+          $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+          $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+          // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+          $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+          $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+          $(logo).css({"opacity":"0"});
+          $(".description").hide().html("A translator app that will notify you when an accurate translation cannot be made.").fadeIn("500");
+          $("body").css({"background-color": "black","color":"white"});
+          $(line5).css({"stroke":"transparent"});
+
+        })
+        $( line6 ).click(function() {
+          $('body').animate({scrollTop: (p1 + (p2*6))}, 500);
+
+        });
+        $( line6 ).mouseleave(function() {
+            $("a").css("color","");
+            $(move1).css({"animation":"","animation-delay":""});
+            $(move2).css({"animation":"",});
+            // $(move3).css({"animation":"",});
+            $(move4).css({"animation":"",});
+            $(move5).css({"animation":"","animation-delay":""});
+            $(logo).css({"opacity":""});
+          $(".description").html("");
+          $("body").css({"background-color": "","color":""});
+          $(line5).css({"stroke":""});
+          if ($('body').scrollTop() > (p1 + p2+ p3*.45) && windowPosY < (p1 + p2 + p3+ p4)) {
+
+          }else{
+            $("h1").html("The Yee Machine");
+
+          }
+
+          })
+
 
 
 
@@ -250,7 +437,7 @@
 
 
               $( 'body' ).click(function() {
-                $("h1").html("Yee Machine Projects");
+                $("h1").html("The Yee Machine");
                 $(".description").html("");
                 $(".timelineanim").attr("class", "timeline");
                 $(line1).css({"animation":"","animation-delay":""});
@@ -319,6 +506,7 @@
                 $("h1").hide().html("Soundscape").fadeIn("500");
                 $(".description").hide().html("An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships. Uses three.js<br><a  class='link'  href='http://richyee.com/sound/'><h3>GO</h3></a>").fadeIn("500");
                 $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+                $(line7).attr('class', 'facebook');
                 $(line1).css({"animation":"","animation-delay":""});
                 $(line2).css("animation","");
                 $(line3).css({"animation":"","animation-delay":""});
@@ -379,9 +567,28 @@
 
               })
 
+              $( line6 ).click(function() {
+                $("h1").hide().html("Web Exercise").fadeIn("500");
+                $(".description").hide().html("A quick example of a personal promotion website.<br><a href='https://yeemachine.github.io/websitemockup/'><h3>GO</h3></a>").fadeIn("500");
+                $(line1).css({"animation":"","animation-delay":""});
+                $(line2).css("animation","");
+                $(line3).css({"animation":"","animation-delay":""});
+                $(line4).css({"animation":"","animation-delay":""});
+                $(line5).css({"animation":"","animation-delay":""});
+                $(line6).css({"animation":"","animation-delay":""});
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $("body").css("background-color", "");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
+                $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
 
+            })
 
-            $( line6 ).click(function() {
+            $( line7 ).click(function() {
             $("h1").hide().html("Facebook Hackathon").fadeIn("500");
             $(".description").hide().html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app.<br><a href='https://yeemachine.github.io/railways.fish/'><h3>GO</h3></a>").fadeIn("500");
             $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
@@ -422,14 +629,12 @@
   <!-- <object class="animate" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object> -->
   <object class="animate" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
 
-
   <!-- <object class="animate" id="svgObject2" type="image/svg+xml" data="hex.svg">Your browser does not support SVGs</object> -->
 
 
-  <nav></nav>
   <container class="largecontainer">
     <div class="halfcontainer2">
-      <h1>Yee Machine Projects</h1>
+      <h1>The Yee Machine</h1>
     <p class="description"></p>
 
   </div>
@@ -443,9 +648,60 @@
 </container>
 <container class="page2">
   <object class="animate2" id="svgObject2" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
+
+</container>
+<container class="blurbcontainer">
+  <p class="blurb">
+    theyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachine
+  </p>
+
+</container>
+<container class="page2">
+  <object class="animate2" id="svgObject3" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
+
+</container>
+<container class="page2">
+  <object class="" id="stocks" type="image/svg+xml" data="stocks.svg">Your browser does not support SVGs</object>
+<div class="textblockcontainerR"><p>A data crowdsourced transit app for NYC subways that is more accurate than the official MTA updates. Expansion to other regions in progress.</p></div>
+</container>
+<container class="page2">
+  <object class="" id="heart" type="image/svg+xml" data="watch1.svg">Your browser does not support SVGs</object>
+  <div class="textblockcontainerR"><p>A multidevice platform that lets you monitor your heartbeat and compare during different states of motion.</p></div>
+</container>
+<container class="page2">
+  <div class="textblockcontainerL"><p>A world clock app with integrated weather forecast that can be used to easily compare global differences.</p></div>
+  <object class="" id="clock" type="image/svg+xml" data="clock.svg">Your browser does not support SVGs</object>
+
+</container>
+
+<container class="page2">
+  <object class="" id="railways" type="image/svg+xml" data="railways.svg">Your browser does not support SVGs</object>
+<div class="textblockcontainerR"><p>A data crowdsourced transit app for NYC subways that is more accurate than the official MTA updates. Expansion to other regions in progress.</p></div>
+</container>
+<container class="page2">
+  <div class="textblockcontainerL"><p>A translator app that will notify you when an accurate translation cannot be made.</p></div>
+  <object class="" id="tone" type="image/svg+xml" data="tone.svg">Your browser does not support SVGs</object>
+
+</container>
+<container class="page2">
+  <object class="animate2" id="svgObject4" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
+
+</container>
+<container class="blurbcontainer">
+  <p class="blurb">
+    696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969
+  </p>
+
+</container>
+<container class="page2">
+  <object class="animate2" id="svgObject5" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
   <div class="info">Cooper Union 2014-2018<br><a href="mailto:rich@yeemachine.com" target="_top">rich@yeemachine.com</a>
   </div>
 </container>
+<container class="page3">
+<div class="about"><p>A translator app that will notify you when an accurate translation cannot be made.</p></div>
+</container>
+
 
 
 
