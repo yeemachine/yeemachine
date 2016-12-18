@@ -1008,12 +1008,48 @@ body{
   position: relative;
   flex-direction: column;
 }
+h1{
+  color:black;
+  height: 10vh;
+  width: 100vw;
+  z-index: 0;
+}
 .page1{
   flex-direction: column-reverse;
 
 }
 .page2{
   flex-direction: column;
+}
+.divider{
+  z-index: 9999;
+}
+.textblockcontainerR{
+  width: 80vw;
+  margin-left: 0;
+  margin-top: 5vh;
+}
+.textblockcontainerL{
+  width: 80vw;
+  margin-right: 0;
+  margin-top: 5vh;
+
+}
+.mobileswitch{
+  flex-direction: column-reverse;
+}
+#stocks{
+  height: 60vh;
+
+}
+#railways{
+  height: 60vh;
+}
+#clock{
+ height: 60vh;
+}
+#tone{
+  height: 60vh;
 }
 h1{
   left:0;

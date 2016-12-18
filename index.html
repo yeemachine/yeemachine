@@ -152,9 +152,64 @@
           $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
           $('body').css({'background-color':'','color':''})
           $("h1").html("The Yee Machine");
-          $(".description").html("");
+          $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
 
 
+        }
+        if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2*2)) {
+
+          $("h1").css("color","transparent");
+
+          $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+          $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+          $(squiggle4).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+        }
+        if ($(this).scrollTop() > (p1 + p2*1.45) && windowPosY < (p1 + p2*2.75)) {
+
+          $("h1").css("color","");
+          $("h1").html("Stocks");
+        }
+        if ($(this).scrollTop() > (p1 + p2*2.75) && windowPosY < (p1 + p2*3.75)) {
+          $("h1").css("color","");
+
+
+          $("h1").html("Heart");
+
+
+        }
+        if ($(this).scrollTop() > (p1 + p2*3.75) && windowPosY < (p1 + p2*4.75)) {
+          $("h1").css("color","");
+
+
+          $("h1").html("Clock");
+
+
+        }
+        if ($(this).scrollTop() > (p1 + p2*4.75) && windowPosY < (p1 + p2*5.75)) {
+
+          $("h1").css("color","");
+
+          $("h1").html("Transit");
+
+
+        }
+        if ($(this).scrollTop() > (p1 + p2*5.75) && windowPosY < (p1 + p2*7.5)) {
+
+          $("h1").css("color","");
+
+          $("h1").html("Tone");
+
+
+        }
+        if ($(this).scrollTop() > (p1 + p2*7.5) && windowPosY) {
+
+
+          $("h1").css("color","transparent");
+
+
+        }
+        if ($(this).scrollTop() < (p1 * .4) && windowPosY) {
+          $(mn).css({"position": "","top":"","left":"","color":""});
 
         }
 
@@ -162,6 +217,7 @@
           $(mn).css({"position": "","top":"","left":"","color":""});
 
       }
+
       }else {
       if ($(this).scrollTop() > (p1 * .4) && windowPosY < (p1 + (p2))) {
 
@@ -423,194 +479,6 @@
 
 
               // if larger or equal
-          } else {
-              // if smaller
-              $(hidelink1).replaceWith(cnt1);
-              $(hidelink2).replaceWith(cnt2);
-
-              $(hidelink3).replaceWith(cnt3);
-
-              $(hidelink4).replaceWith(cnt4);
-              $(hidelink5).replaceWith(cnt5);
-              $(hidelink6).replaceWith(cnt6);
-              $(hidelink7).replaceWith(cnt7);
-
-
-              $( 'body' ).click(function() {
-                $("h1").html("The Yee Machine");
-                $(".description").html("");
-                $(".timelineanim").attr("class", "timeline");
-                $(line1).css({"animation":"","animation-delay":""});
-                $(line2).css("animation","");
-                $(line3).css({"animation":"","animation-delay":""});
-                $(line4).css({"animation":"","animation-delay":""});
-                $(line5).css({"animation":"","animation-delay":""});
-                $(line6).css({"animation":"","animation-delay":""});
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
-                $("body").css("background-color", "");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                // $(move3).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-                $("body").css("color","");
-
-              })
-              $( line1 ).click(function() {
-                $("h1").hide().html("Tesla Timeline").fadeIn("500");
-                $(".description").hide().html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link'  href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn("500");
-                $(".timeline").attr("class", "timelineanim");
-                $(line1).css({"animation":"","animation-delay":""});
-                $(line2).css("animation","");
-                $(line3).css({"animation":"","animation-delay":""});
-                $(line4).css({"animation":"","animation-delay":""});
-                $(line5).css({"animation":"","animation-delay":""});
-                $(line6).css({"animation":"","animation-delay":""});
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
-                $("body").css("background-color", "");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-                $("body").css("color","");
-
-            })
-
-              $( line2 ).click(function() {
-                $("h1").hide().html("Watson X Wayback").fadeIn("500");
-                $(line1).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".2s"});
-                $(line3).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".3s"});
-                $(line4).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".1s"});
-                $(line5).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
-                $(line6).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".4s"});
-                $(line5).attr('class', 'old');
-                $(line6).attr('class', 'mock');
-                $(".description").hide().html("Mashup between IBM Watson's tone analyzer and Wayback Machine's internet archive. Users can input their desired websites and track a company's linguistic tone over time. Apple's support page is used as an initial example.<br><a  class='link'  href='http://watsonwayback.com'><h3>GO</h3></a>").fadeIn("500");
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
-                $(line2).css("animation","");
-                $("body").css("background-color", "");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-                $(".timelineanim").attr("class", "timeline");
-                $("body").css("color","");
-
-            })
-
-
-              $( line3 ).click(function() {
-                $("h1").hide().html("Soundscape").fadeIn("500");
-                $(".description").hide().html("An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships. Uses three.js<br><a  class='link'  href='http://richyee.com/sound/'><h3>GO</h3></a>").fadeIn("500");
-                $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-                $(line7).attr('class', 'facebook');
-                $(line1).css({"animation":"","animation-delay":""});
-                $(line2).css("animation","");
-                $(line3).css({"animation":"","animation-delay":""});
-                $(line4).css({"animation":"","animation-delay":""});
-                $(line5).css({"animation":"","animation-delay":""});
-                $(line6).css({"animation":"","animation-delay":""});
-                $("body").css("background-color", "");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-                $(".timelineanim").attr("class", "timeline");
-                $("body").css("color","");
-
-            })
-
-              $( line4 ).click(function() {
-                $("h1").hide().html("Video Works").fadeIn("500");
-                $(".description").hide().html("A collection of video projects done during 2015-2016.<br><a  class='link'  href='https://vimeo.com/user44076957'><h3>GO</h3></a>").fadeIn("500");
-                $(line1).css({"animation":"","animation-delay":""});
-                $(line2).css("animation","");
-                $(line3).css({"animation":"","animation-delay":""});
-                $(line4).css({"animation":"","animation-delay":""});
-                $(line5).css({"animation":"","animation-delay":""});
-                $(line6).css({"animation":"","animation-delay":""});
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
-                $("body").css("background-color", "");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-                $(".timelineanim").attr("class", "timeline");
-                $("body").css("color","");
-
-            })
-
-              $( line5 ).click(function() {
-                $("h1").hide().html("Graphic Design").fadeIn("500");
-                $("body").css("background-color", "black");
-                $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-                $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-                // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-                $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
-                $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
-                $(logo).css({"opacity":"0"});
-                $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
-                $(line1).css({"animation":"","animation-delay":""});
-                $(line2).css("animation","");
-                $(line3).css({"animation":"","animation-delay":""});
-                $(line4).css({"animation":"","animation-delay":""});
-                $(line5).css({"animation":"","animation-delay":""});
-                $(line6).css({"animation":"","animation-delay":""});
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
-                $(".timelineanim").attr("class", "timeline");
-                $("body").css("color","white");
-
-              })
-
-              $( line6 ).click(function() {
-                $("h1").hide().html("Web Exercise").fadeIn("500");
-                $(".description").hide().html("A quick example of a personal promotion website.<br><a href='https://yeemachine.github.io/websitemockup/'><h3>GO</h3></a>").fadeIn("500");
-                $(line1).css({"animation":"","animation-delay":""});
-                $(line2).css("animation","");
-                $(line3).css({"animation":"","animation-delay":""});
-                $(line4).css({"animation":"","animation-delay":""});
-                $(line5).css({"animation":"","animation-delay":""});
-                $(line6).css({"animation":"","animation-delay":""});
-                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
-                $("body").css("background-color", "");
-                $(move1).css({"animation":"","animation-delay":""});
-                $(move2).css({"animation":"",});
-                $(move4).css({"animation":"",});
-                $(move5).css({"animation":"","animation-delay":""});
-                $(logo).css({"opacity":""});
-                $(".timelineanim").attr("class", "timeline");
-                $("body").css("color","");
-
-            })
-
-            $( line7 ).click(function() {
-            $("h1").hide().html("Facebook Hackathon").fadeIn("500");
-            $(".description").hide().html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app.<br><a href='https://yeemachine.github.io/railways.fish/'><h3>GO</h3></a>").fadeIn("500");
-            $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
-            $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
-            $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
-
-            $(line4).css({"animation":"","animation-delay":""});
-            $(line5).css({"animation":"","animation-delay":""});
-            $(line6).css({"animation":"","animation-delay":""});
-            $(line7).css({"animation":"stop 1s linear","animation-delay":""});
-            $("body").css("background-color", "");
-            $(move1).css({"animation":"","animation-delay":""});
-            $(move2).css({"animation":"",});
-            $(move4).css({"animation":"",});
-            $(move5).css({"animation":"","animation-delay":""});
-            $(logo).css({"opacity":""});
-            $(".timelineanim").attr("class", "timeline");
-            $("body").css("color","");
-
-            })
-
-
           }
       // }).resize();
 
@@ -646,17 +514,17 @@
 
   <div class="timeline"></div>
 </container>
-<container class="page2">
+<container class="page2 divider">
   <object class="animate2" id="svgObject2" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
 
 </container>
-<container class="blurbcontainer">
+<container class="blurbcontainer divider">
   <p class="blurb">
     theyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachinetheyeemachine
   </p>
 
 </container>
-<container class="page2">
+<container class="page2 divider">
   <object class="animate2" id="svgObject3" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
 
 </container>
@@ -664,36 +532,35 @@
   <object class="" id="stocks" type="image/svg+xml" data="stocks.svg">Your browser does not support SVGs</object>
 <div class="textblockcontainerR"><p>Keep track of your portfolio and compare it with the rest of the market. STOCKS weeds out risky shares to keep your investments nice and stable.</p></div>
 </container>
-<container class="page2">
+<container class="page2 mobileswitch">
+  <div class="textblockcontainerL"><p>Monitor your heart when you work out or when you rest. HEART is a multi-device platform geared towards a healthy lifestyle. Our app will notify you when you are working too hard and encourage you on your slower days.</p></div>
   <object class="" id="heart" type="image/svg+xml" data="watch1.svg">Your browser does not support SVGs</object>
-  <div class="textblockcontainerR"><p>Monitor your heart when you work out or when you rest. HEART is a multi-device platform geared towards a healthy lifestyle. Our app will notify you when you are working too hard and encourage you on your slower days.</p></div>
 </container>
 <container class="page2">
-  <div class="textblockcontainerL"><p>CLOCK is both a world clock and a weather app. We aim to aid frequent travelers of the time and weather wherever they want to go. </p></div>
   <object class="" id="clock" type="image/svg+xml" data="clock.svg">Your browser does not support SVGs</object>
+  <div class="textblockcontainerR"><p>CLOCK is both a world clock and a weather app. We aim to aid frequent travelers of the time and weather wherever they want to go. </p></div>
 
 </container>
 
-<container class="page2">
+<container class="page2 mobileswitch">
+  <div class="textblockcontainerL"><p>TRANSIT is our solution to the problem of unreliable MTA subway updates. By installing low cost beacons on and in the train stations, we are able to create a crowd-sourced network that allows for near instant notifications of delays and other traffic. We hope to expand this to other transportation methods. <a style="text-decoration:underline"href="https://yeemachine.github.io/railways.fish/">Demoed at the 2016 Facebook Global Hackathon.</a></p></div>
   <object class="" id="railways" type="image/svg+xml" data="railways.svg">Your browser does not support SVGs</object>
-<div class="textblockcontainerR"><p>TRANSIT is our solution to the problem of unreliable MTA subway updates. By installing low cost beacons on and in the train stations, we are able to create a crowd-sourced network that allows for near instant notifications of delays and other traffic. We hope to expand this to other transportation methods. <a style="text-decoration:underline"href="https://yeemachine.github.io/railways.fish/">Demoed at the 2016 Facebook Global Hackathon.</a></p></div>
 </container>
 <container class="page2">
-  <div class="textblockcontainerL"><p>TONE is a speech analyzer that aims to help amateurs and veterans alike in public speaking. It listens to the cadence and modulations in the voice to give a general report on the emotions conveyed. Includes playback and storage functionality as well. </p></div>
   <object class="" id="tone" type="image/svg+xml" data="tone.svg">Your browser does not support SVGs</object>
-
+  <div class="textblockcontainerR"><p>TONE is a speech analyzer that aims to help amateurs and veterans alike in public speaking. It listens to the cadence and modulations in the voice to give a general report on the emotions conveyed. Includes playback and storage functionality as well. </p></div>
 </container>
-<container class="page2">
+<container class="page2 divider">
   <object class="animate2" id="svgObject4" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
 
 </container>
-<container class="blurbcontainer">
+<container class="blurbcontainer divider">
   <p class="blurb">
     696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969
   </p>
 
 </container>
-<container class="page2">
+<container class="page2 divider">
   <object class="animate2" id="svgObject5" type="image/svg+xml" data="squiggle.svg">Your browser does not support SVGs</object>
   <div class="info">Cooper Union 2014-2018<br><a href="mailto:rich@yeemachine.com" target="_top">rich@yeemachine.com</a>
   </div>
