@@ -1077,6 +1077,9 @@ a:active{
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
+.squiggle{
+  opacity: 1;
+}
 .description{
   text-align: left;
   width: 80%;
