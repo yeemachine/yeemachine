@@ -24,35 +24,35 @@
 			<rect x="35.31" y="195.063" fill="#272525" width="245.453" height="21.78"/>
 			<rect x="35.31" y="261.887" fill="#919395" width="245.453" height="21.781"/>
 			<rect x="38.799" y="85.271" fill="none" width="20.084" height="11.784"/>
-			<text transform="matrix(1 0 0 1 41.1724 94.0625)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">1D</text>
+			<text transform="matrix(1 0 0 1 41.1724 94.0625)" fill="#272525" font-family="'AGBK'" font-size="11.8798">1D</text>
 			<rect x="43.76" y="175.313" fill="none" width="76.636" height="11.785"/>
-			<text transform="matrix(1 0 0 1 43.7603 184.1045)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">DOW J</text>
+			<text transform="matrix(1 0 0 1 43.7603 184.1045)" fill="#272525" font-family="'AGBK'" font-size="11.8798">DOW J</text>
 			<rect x="139.224" y="175.313" fill="none" width="76.632" height="11.785"/>
-			<text transform="matrix(1 0 0 1 161.0918 184.1045)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">19,614.81</text>
+			<text transform="matrix(1 0 0 1 161.0918 184.1045)" fill="#272525" font-family="'AGBK'" font-size="11.8798">19,614.81</text>
 			<rect x="137.946" y="237.188" fill="none" width="76.627" height="11.784"/>
-			<text transform="matrix(1 0 0 1 166.6514 245.9785)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">5,417.36</text>
+			<text transform="matrix(1 0 0 1 166.6514 245.9785)" fill="#272525" font-family="'AGBK'" font-size="11.8798">5,417.36</text>
 			<rect x="137.946" y="310.275" fill="none" width="76.627" height="11.784"/>
-			<text transform="matrix(1 0 0 1 166.6514 319.0664)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">2,246.19</text>
+			<text transform="matrix(1 0 0 1 166.6514 319.0664)" fill="#272525" font-family="'AGBK'" font-size="11.8798">2,246.19</text>
 			<rect x="234.362" y="175.313" fill="none" width="76.637" height="11.785"/>
-			<text transform="matrix(1 0 0 1 234.3623 184.1045)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">+ 65.19</text>
+			<text transform="matrix(1 0 0 1 234.3623 184.1045)" fill="#272525" font-family="'AGBK'" font-size="11.8798">+ 65.19</text>
 			<rect x="234.362" y="237.188" fill="none" width="76.637" height="11.784"/>
-			<text transform="matrix(1 0 0 1 234.3623 245.9785)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">+ 23.59</text>
+			<text transform="matrix(1 0 0 1 234.3623 245.9785)" fill="#272525" font-family="'AGBK'" font-size="11.8798">+ 23.59</text>
 			<rect x="234.362" y="310.275" fill="none" width="76.637" height="11.784"/>
-			<text transform="matrix(1 0 0 1 234.3623 319.0664)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">+  4.84</text>
+			<text transform="matrix(1 0 0 1 234.3623 319.0664)" fill="#272525" font-family="'AGBK'" font-size="11.8798">+  4.84</text>
 			<rect x="43.76" y="237.188" fill="none" width="76.636" height="11.784"/>
-			<text transform="matrix(1 0 0 1 43.7603 245.9785)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">NASDAQ</text>
+			<text transform="matrix(1 0 0 1 43.7603 245.9785)" fill="#272525" font-family="'AGBK'" font-size="11.8798">NASDAQ</text>
 			<rect x="43.76" y="310.275" fill="none" width="76.636" height="11.784"/>
-			<text transform="matrix(1 0 0 1 43.7603 319.0664)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">S&amp;P 500</text>
+			<text transform="matrix(1 0 0 1 43.7603 319.0664)" fill="#272525" font-family="'AGBK'" font-size="11.8798">S&amp;P 500</text>
 			<rect x="75.243" y="85.271" fill="none" width="20.082" height="11.784"/>
-			<text transform="matrix(1 0 0 1 76.4038 94.0625)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">1W</text>
+			<text transform="matrix(1 0 0 1 76.4038 94.0625)" fill="#272525" font-family="'AGBK'" font-size="11.8798">1W</text>
 			<rect x="111.686" y="85.271" fill="none" width="20.085" height="11.784"/>
-			<text transform="matrix(1 0 0 1 112.8008 94.0625)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">1M</text>
+			<text transform="matrix(1 0 0 1 112.8008 94.0625)" fill="#272525" font-family="'AGBK'" font-size="11.8798">1M</text>
 			<rect x="148.128" y="85.271" fill="none" width="20.082" height="11.784"/>
-			<text transform="matrix(1 0 0 1 149.2417 94.0625)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">3M</text>
+			<text transform="matrix(1 0 0 1 149.2417 94.0625)" fill="#272525" font-family="'AGBK'" font-size="11.8798">3M</text>
 			<rect x="184.569" y="85.271" fill="none" width="20.082" height="11.784"/>
-			<text transform="matrix(1 0 0 1 185.6826 94.0625)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">6M</text>
+			<text transform="matrix(1 0 0 1 185.6826 94.0625)" fill="#272525" font-family="'AGBK'" font-size="11.8798">6M</text>
 			<rect x="221.015" y="85.271" fill="none" width="20.086" height="11.784"/>
-			<text transform="matrix(1 0 0 1 224.1611 94.0625)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8798">1Y</text>
+			<text transform="matrix(1 0 0 1 224.1611 94.0625)" fill="#272525" font-family="'AGBK'" font-size="11.8798">1Y</text>
 			<rect x="257.46" y="85.271" fill="none" width="20.084" height="11.784"/>
 			<text transform="matrix(1 0 0 1 259.9883 94.0625)" fill="#272525" font-family="'ITCAvantGardeStd-Bold'" font-size="11.8798">2Y</text>
 			<rect x="41.407" y="195.063" fill="red" width="1.379" height="21.78"/>
@@ -94,17 +94,17 @@
 		<g>
 			<rect x="281.843" y="72.648" fill="#FFFFFF" width="247.849" height="443.113"/>
 			<rect x="286.304" y="85.291" fill="none" width="20.111" height="11.8"/>
-			<text transform="matrix(1 0 0 1 288.6807 94.0938)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">1D</text>
+			<text transform="matrix(1 0 0 1 288.6807 94.0938)" fill="#272525" font-family="'AGBK'" font-size="11.8966">1D</text>
 			<rect x="322.8" y="85.291" fill="none" width="20.111" height="11.8"/>
-			<text transform="matrix(1 0 0 1 323.9629 94.0938)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">1W</text>
+			<text transform="matrix(1 0 0 1 323.9629 94.0938)" fill="#272525" font-family="'AGBK'" font-size="11.8966">1W</text>
 			<rect x="359.294" y="85.291" fill="none" width="20.113" height="11.8"/>
-			<text transform="matrix(1 0 0 1 360.4102 94.0938)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">1M</text>
+			<text transform="matrix(1 0 0 1 360.4102 94.0938)" fill="#272525" font-family="'AGBK'" font-size="11.8966">1M</text>
 			<rect x="395.79" y="85.291" fill="none" width="20.111" height="11.8"/>
-			<text transform="matrix(1 0 0 1 396.9053 94.0938)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">3M</text>
+			<text transform="matrix(1 0 0 1 396.9053 94.0938)" fill="#272525" font-family="'AGBK'" font-size="11.8966">3M</text>
 			<rect x="432.286" y="85.291" fill="none" width="20.111" height="11.8"/>
-			<text transform="matrix(1 0 0 1 433.4014 94.0938)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">6M</text>
+			<text transform="matrix(1 0 0 1 433.4014 94.0938)" fill="#272525" font-family="'AGBK'" font-size="11.8966">6M</text>
 			<rect x="468.78" y="85.291" fill="none" width="20.113" height="11.8"/>
-			<text transform="matrix(1 0 0 1 471.9307 94.0938)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">1Y</text>
+			<text transform="matrix(1 0 0 1 471.9307 94.0938)" fill="#272525" font-family="'AGBK'" font-size="11.8966">1Y</text>
 			<rect x="505.276" y="85.291" fill="none" width="20.113" height="11.8"/>
 			<text transform="matrix(1 0 0 1 507.8086 94.0938)" fill="#272525" font-family="'ITCAvantGardeStd-Bold'" font-size="11.8966">2Y</text>
 			<g>
@@ -247,11 +247,11 @@
 			</g>
 			<rect x="281.843" y="472.403" fill="#FFFFFF" width="247.849" height="42.439"/>
 			<rect x="297.409" y="489.678" fill="none" width="76.742" height="11.801"/>
-			<text transform="matrix(1 0 0 1 297.4092 498.4814)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">DOW J</text>
+			<text transform="matrix(1 0 0 1 297.4092 498.4814)" fill="#272525" font-family="'AGBK'" font-size="11.8966">DOW J</text>
 			<rect x="386.872" y="489.678" fill="none" width="76.744" height="11.801"/>
-			<text transform="matrix(1 0 0 1 408.7744 498.4814)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">19,614.81</text>
+			<text transform="matrix(1 0 0 1 408.7744 498.4814)" fill="#272525" font-family="'AGBK'" font-size="11.8966">19,614.81</text>
 			<rect x="482.147" y="489.678" fill="none" width="76.744" height="11.801"/>
-			<text transform="matrix(1 0 0 1 482.1475 498.4814)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.8966">+ 65.19</text>
+			<text transform="matrix(1 0 0 1 482.1475 498.4814)" fill="#272525" font-family="'AGBK'" font-size="11.8966">+ 65.19</text>
 			<line fill="none" stroke="#272525" stroke-miterlimit="10" x1="281.843" y1="472.403" x2="529.691" y2="472.403"/>
 		</g>
 	</g>

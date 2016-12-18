@@ -1723,19 +1723,19 @@
 				<line fill="none" stroke="#272525" stroke-width="2.8099" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="402.03" y1="423.306" x2="402.03" y2="429.188"/>
 		</g>
 		<rect x="196.581" y="226.299" fill="none" width="71.639" height="21.998"/>
-		<text transform="matrix(1 0 0 1 196.5806 235.1787)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">New York</text>
+		<text transform="matrix(1 0 0 1 196.5806 235.1787)" fill="#272525" font-family="'AGBK'" font-size="11.9999">New York</text>
 		<rect x="257.166" y="259.002" fill="none" width="71.64" height="21.998"/>
-		<text transform="matrix(1 0 0 1 257.1665 267.8809)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">+1day</text>
+		<text transform="matrix(1 0 0 1 257.1665 267.8809)" fill="#272525" font-family="'AGBK'" font-size="11.9999">+1day</text>
 		<rect x="257.166" y="290.707" fill="none" width="71.64" height="21.997"/>
-		<text transform="matrix(1 0 0 1 257.1665 299.5859)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">+1day</text>
+		<text transform="matrix(1 0 0 1 257.1665 299.5859)" fill="#272525" font-family="'AGBK'" font-size="11.9999">+1day</text>
 		<rect x="196.581" y="171.67" fill="none" width="215.624" height="48.867"/>
-		<text transform="matrix(1 0 0 1 196.5806 194.9785)" fill="#CFD0D2" font-family="'ITCAvantGardeStd-Bk'" font-size="31.4998">add a city</text>
+		<text transform="matrix(1 0 0 1 196.5806 194.9785)" fill="#CFD0D2" font-family="'AGBK'" font-size="31.4998">add a city</text>
 		<rect x="196.581" y="258.501" fill="none" width="104.639" height="21.998"/>
-		<text transform="matrix(1 0 0 1 196.5806 267.3799)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">Beijing</text>
+		<text transform="matrix(1 0 0 1 196.5806 267.3799)" fill="#272525" font-family="'AGBK'" font-size="11.9999">Beijing</text>
 		<rect x="196.581" y="290.707" fill="none" width="56.141" height="21.997"/>
-		<text transform="matrix(1 0 0 1 196.5806 299.5859)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">Tokyo</text>
+		<text transform="matrix(1 0 0 1 196.5806 299.5859)" fill="#272525" font-family="'AGBK'" font-size="11.9999">Tokyo</text>
 		<rect x="196.581" y="322.913" fill="none" width="85.42" height="21.997"/>
-		<text transform="matrix(1 0 0 1 196.5806 331.792)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">San Francsico</text>
+		<text transform="matrix(1 0 0 1 196.5806 331.792)" fill="#272525" font-family="'AGBK'" font-size="11.9999">San Francsico</text>
 
 			<polyline fill="#418CCB" stroke="#418CCB" stroke-width="2.8209" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 			361.201,261.177 361.201,267.061 361.201,267.06 366.293,270 371.388,267.06 371.388,261.177 366.293,258.236 361.201,261.177 	"/>
@@ -1820,11 +1820,11 @@
 
 			<line fill="none" stroke="#272525" stroke-width="2.7979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="371.62" y1="326.588" x2="376.695" y2="329.517"/>
 		<rect x="196.581" y="355.952" fill="none" width="104.639" height="21.997"/>
-		<text transform="matrix(1 0 0 1 196.5806 364.8311)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">Dubai</text>
+		<text transform="matrix(1 0 0 1 196.5806 364.8311)" fill="#272525" font-family="'AGBK'" font-size="11.9999">Dubai</text>
 		<rect x="196.581" y="388.158" fill="none" width="56.141" height="21.997"/>
-		<text transform="matrix(1 0 0 1 196.5806 397.0361)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">San Jose</text>
+		<text transform="matrix(1 0 0 1 196.5806 397.0361)" fill="#272525" font-family="'AGBK'" font-size="11.9999">San Jose</text>
 		<rect x="196.581" y="420.364" fill="none" width="85.42" height="21.996"/>
-		<text transform="matrix(1 0 0 1 196.5806 429.2441)" fill="#272525" font-family="'ITCAvantGardeStd-Bk'" font-size="11.9999">Scranton</text>
+		<text transform="matrix(1 0 0 1 196.5806 429.2441)" fill="#272525" font-family="'AGBK'" font-size="11.9999">Scranton</text>
 
 			<polyline fill="#F8DC39" stroke="#F8DC39" stroke-width="2.8209" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 			361.201,358.628 361.201,364.512 361.201,364.511 366.293,367.451 371.388,364.511 371.388,358.628 366.293,355.688
