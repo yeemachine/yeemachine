@@ -10,9 +10,9 @@
 @font-face {
     font-family: 'AGBK';
     src:
-	     url('ITCAvantGardeStd-Bk.woff') format('woff'),
-	     url('ITCAvantGardeStd-Bk.ttf')  format('truetype'),
-	     url('ITCAvantGardeStd-Bk.svg') format('svg');
+	     url('AGBK.woff') format('woff'),
+	     url('AGBK.ttf')  format('truetype'),
+	     url('AGBK.svg') format('svg');
 
 }
 
