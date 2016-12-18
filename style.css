@@ -1121,8 +1121,11 @@ a:active{
 
 
 }
+.about{
+  width: 80vw;
+  text-align: center;
+}
 .info{
-
 
 }
 .info a{
