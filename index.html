@@ -149,69 +149,60 @@
         if ($(this).scrollTop() > (p1 * .55) && windowPosY < (p1 + (p2))) {
 
 
-          $(mn).css({"position": "fixed","top":"5%","left":"0","color":"","width":"100%"});
-          $('body').css({'background-color':'','color':''})
-          $("h1").html("The Yee Machine");
+
           $(squiggle).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
 
 
         }
         if ($(this).scrollTop() > (p1 + p2*.45) && windowPosY < (p1 + p2*2)) {
 
-          $("h1").css("color","transparent");
-          $(mn).css({"position": "fixed","top":"5%","left":"0","width":"30%"});
+
 
           $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-          $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-          $(squiggle4).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
         }
         if ($(this).scrollTop() > (p1 + p2*1.45) && windowPosY < (p1 + p2*2.75)) {
 
-          $("h1").css("color","");
-          $("h1").html("Stocks");
         }
         if ($(this).scrollTop() > (p1 + p2*2.75) && windowPosY < (p1 + p2*3.75)) {
-          $("h1").css("color","");
 
 
-          $("h1").html("Heart");
 
 
         }
         if ($(this).scrollTop() > (p1 + p2*3.75) && windowPosY < (p1 + p2*4.75)) {
-          $("h1").css("color","");
 
 
-          $("h1").html("Clock");
 
 
         }
         if ($(this).scrollTop() > (p1 + p2*4.75) && windowPosY < (p1 + p2*5.75)) {
 
-          $("h1").css("color","");
 
-          $("h1").html("Transit");
 
 
         }
         if ($(this).scrollTop() > (p1 + p2*5.75) && windowPosY < (p1 + p2*7.5)) {
 
-          $("h1").css("color","");
 
-          $("h1").html("Tone");
+
+
+        }
+        if ($(this).scrollTop() > (p1 + p2*6.75) && windowPosY ) {
+
+          $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
 
 
         }
         if ($(this).scrollTop() > (p1 + p2*7.5) && windowPosY) {
 
 
-          $("h1").css("color","transparent");
+          $(squiggle4).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
 
 
         }
 
         if ($(this).scrollTop() < (p1 * .55) && windowPosY) {
-          $(mn).css({"position": "","top":"","left":"","color":"","width":"100%"});
 
       }
 
@@ -230,8 +221,6 @@
         $("h1").css("color","transparent");
 
         $(squiggle2).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-        $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
-        $(squiggle4).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
       }
       if ($(this).scrollTop() > (p1 + p2*1.45) && windowPosY < (p1 + p2*2.75)) {
 
@@ -270,10 +259,18 @@
 
 
       }
+      if ($(this).scrollTop() > (p1 + p2*6.75) && windowPosY ) {
+
+        $(squiggle3).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
+
+
+      }
       if ($(this).scrollTop() > (p1 + p2*7.5) && windowPosY) {
 
 
         $("h1").css("color","transparent");
+        $(squiggle4).css({"animation":"dash 5s cubic-bezier(0.5, 0.5, 0.5, .5)","animation-delay":".5s","animation-fill-mode": "forwards"});
 
 
       }
