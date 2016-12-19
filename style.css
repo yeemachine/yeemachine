@@ -522,6 +522,7 @@ a{
 body{
 
   font-family: 'AGBK';
+  font-weight: normal;
   border: 0;
   margin: 0;
   transition: .2s;
@@ -673,7 +674,7 @@ h1{
   font-size:26px;
   pointer-events: all;
   display: none;
-  font-weight: bold;
+  font-weight: normal;
 }
 svg{
 }
