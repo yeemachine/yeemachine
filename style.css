@@ -463,12 +463,26 @@ transform: translate(0,0);
 }
 
 }
+@keyframes appear{
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
+}
 #link7{
   transform-origin: center;
 opacity: 1;
 
 }
+#ways{
+  opacity: 0;
+  animation: appear 2s cubic-bezier(0.670, 0.005, 0.200, 1.000) ;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 
+}
 a{
   color:black;
   text-align: left;

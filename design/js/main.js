@@ -1,13 +1,4 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2015, Codrops
- * http://www.codrops.com
- */
+
 ;(function(window) {
 
 	'use strict';
@@ -106,7 +97,7 @@
 		// init masonry after all images are loaded
 		imagesLoaded( this.gridEl, function() {
 			// initialize masonry
-			new Masonry(self.gridEl, {
+			var masonry = new Masonry(self.gridEl, {
 				itemSelector: '.grid__item',
 				isFitWidth : true
 			});
@@ -118,6 +109,22 @@
 			self._setOriginal();
 			// create the clone image and append it to the DOM
 			self._setClone();
+
+
+			masonry.on( 'layoutComplete', function() {
+				 $('body').trigger('gridfx-loaded', [self]);
+
+
+
+
+
+
+
+			 });
+
+
+
+
 		});
 	};
 
@@ -176,6 +183,7 @@
 		var gridImg = item.querySelector('img'),
 			gridImgOffset = gridImg.getBoundingClientRect();
 
+
 		// index of current item
 		this.current = this.items.indexOf(item);
 
@@ -188,7 +196,7 @@
 		// set the clone image
 		this._setClone(gridImg.src, {
 			width : gridImg.offsetWidth,
-			height : gridImg.offsetHeight,
+			height : gridImg.offsetHeight ,
 			left : gridImgOffset.left,
 			top : gridImgOffset.top
 		});
@@ -353,5 +361,8 @@
 	};
 
 	window.GridFx = GridFx;
+
+
+
 
 })(window);

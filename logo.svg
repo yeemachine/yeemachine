@@ -69,5 +69,18 @@
 </a>
 
 <text style="pointer-events:none" id="alphabet" transform="matrix(1 0 0 1 16.4675 115.8752)" fill="transparent" font-family="'YeeHex'" font-size="145"></text>
-
+<g id="ways">
+	<rect x="62.004" y="32.582" fill="none" width="15" height="12.833"/>
+	<text class="ways" transform="matrix(1 0 0 1 62.0002 34.8005)" fill="#FFFFFF" font-family="'ITCAvantGardeStd-Bk'" font-size="3">1</text>
+	<rect x="118.48" y="58.538" fill="none" width="15" height="12.833"/>
+	<text class="ways" transform="matrix(1 0 0 1 118.4783 60.7576)" fill="#FFFFFF" font-family="'ITCAvantGardeStd-Bk'" font-size="3">2</text>
+	<rect x="35.29" y="78.535" fill="none" width="15" height="12.834"/>
+	<text class="ways" transform="matrix(1 0 0 1 35.2864 80.7561)" fill="#FFFFFF" font-family="'ITCAvantGardeStd-Bk'" font-size="3">3</text>
+	<rect x="46.655" y="102.931" fill="none" width="15" height="12.834"/>
+	<text class="ways" transform="matrix(1 0 0 1 46.6506 105.1477)" fill="#FFFFFF" font-family="'ITCAvantGardeStd-Bk'" font-size="3">4</text>
+	<rect x="93.719" y="102.84" fill="none" width="15" height="12.834"/>
+	<text class="ways" transform="matrix(1 0 0 1 106.9861 105.0569)" fill="#FFFFFF" font-family="'ITCAvantGardeStd-Bk'" font-size="3">5</text>
+	<rect x="63.552" y="118.308" fill="none" width="15.001" height="12.834"/>
+	<text class="ways" transform="matrix(1 0 0 1 76.823 120.5217)" fill="#FFFFFF" font-family="'ITCAvantGardeStd-Bk'" font-size="3">6</text>
+</g>
 </svg>
