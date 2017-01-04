@@ -59,13 +59,13 @@ body {
 
 a {
 	outline: none;
-	color: #77d45b;
+	color: #999;
 	text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	color: #fff;
+	color: red;
 }
 
 button:focus {
@@ -220,7 +220,7 @@ align-items: center;
 }
 
 .codrops-demos a.current-demo {
-	color: #fff;
+	color: red;
 }
 
 

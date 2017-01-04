@@ -52,10 +52,15 @@
 		<header class="codrops-header">
 			<object class="" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
 
-			<h1>Process <span>An assortment of steps</span></h1>
+			<h1>Graphic Design</h1>
 			<nav class="codrops-demos">
-
-			</nav>
+					<a href="index.html">Demo 1</a>
+					<a href="index2.html">Demo 2</a>
+					<a class="current-demo" href="index3.html">Demo 3</a>
+					<a href="index4.html">Demo 4</a>
+					<a href="index5.html">Demo 5</a>
+					<a href="index6.html">Demo 6</a>
+				</nav>
 		</header>
 		<div class="content">
 			<div class="grid">
@@ -115,12 +120,17 @@
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x1280">
-					<a href="img/original/12.png" class="img-wrap"><img src="img/original/12.png" alt="img10" />
+					<a href="img/original/12.jpg" class="img-wrap"><img src="img/original/12.jpg" alt="img10" />
 						<div class="description description--grid">Poster 1</div>
 					</a>
 				</div>
 				<div class="grid__item" data-size="1280x850">
 					<a href="img/original/13.png" class="img-wrap"><img src="img/original/13.png" alt="img11" />
+						<div class="description description--grid">Poster 2</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x850">
+					<a href="img/original/14.png" class="img-wrap"><img src="img/original/14.png" alt="img11" />
 						<div class="description description--grid">Poster 2</div>
 					</a>
 				</div>
@@ -235,7 +245,7 @@
 							el.style.transition = 'opacity .4s, transform .4s';
 							el.style.WebkitTransform = 'scale3d(1,1,1)';
 							el.style.transform = 'scale3d(1,1,1)';
-							el.style.opacity = 1;
+							el.style.opacity = '';
 
 							onEndTransition(el, function() {
 								el.style.transition = 'none';
