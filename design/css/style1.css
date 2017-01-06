@@ -51,15 +51,20 @@
 .img-wrap img {
 	display: block;
 	max-width: 100%;
+	z-index: 1;
 }
 .gridtext{
 position: absolute;
 width: 100%;
 text-align: center;
 left: 0%;
-opacity: 0;
+opacity: 1;
 top: 40%;
+-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	z-index: 0;
 }
+
 .preview {
 	position: fixed;
 	z-index: 1000;
