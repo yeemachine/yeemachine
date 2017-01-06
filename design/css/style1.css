@@ -57,7 +57,7 @@ position: absolute;
 width: 100%;
 text-align: center;
 left: 0%;
-
+opacity: 0;
 top: 40%;
 }
 .preview {

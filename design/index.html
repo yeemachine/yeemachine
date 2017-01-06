@@ -42,10 +42,16 @@
 		})
 		$('.grid__item').mouseenter(function() {
 
-			$('.gridtext').css({"color":"red"});
+			$('.gridtext').css({"opacity":"1"});
 
 
 	})
+	$('.grid__item').mouseleave(function() {
+
+		$('.gridtext').css({"opacity":"0"});
+
+
+})
 }
 
 </script>

@@ -104,7 +104,7 @@ z-index: 999;
 }
 .blurb{
   width: 120%;
-  height: 50vh;
+  height: 100vh;
   font-size: 40px;
   overflow-wrap: break-word;
  word-wrap: break-word;
@@ -112,7 +112,6 @@ z-index: 999;
  pointer-events: none;
 overflow: hidden;
 line-height: 31px;
-margin-bottom: 55vh;
 color:rgba(40,40,40,1);
 
 }
