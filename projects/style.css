@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@font-face {
+    font-family: 'yeehex';
+    src: url(YeeHex.woff) format('woff');
+}
 html {
   -webkit-tap-highlight-color: transparent;
   font-weight: normal;
@@ -215,18 +218,20 @@ a{
 }
 body{
 
-  font-family: 'Open Sans', sans-serif;
-  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;  border: 0;
   margin: 0;
   transition: .2s;
   overflow-x: hidden;
   background-color: white;
+  font-size:10vw;
 }
 .page1{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
   border: 0;
   margin: 0;
   padding: 0;
@@ -550,6 +555,75 @@ stroke-dashoffset: 0;
   stroke-dashoffset: 5;
   }
   }
+
+
+.folded>p:nth-child(even), .folded>.line:nth-child(even){
+  -webkit-transform: skew(60deg,-30deg) scaley(.66667) !important;
+  transform: skew(60deg,-30deg) scaley(.66667) !important;
+}
+
+.folded>p, .folded>.line{
+overflow: hidden !important;
+font-size: 1em !important;
+margin: -1px 0 !important;
+white-space: nowrap !important;
+height: .8em !important;
+
+
+text-align: left;
+text-transform: uppercase;
+
+    font-weight: bold;
+font-style: normal;
+-webkit-font-kerning: normal;
+font-kerning: normal;
+-webkit-transform: translate3d(0,0,0);
+letter-spacing: -0.025em;
+margin-top: -12%;
+}
+
+.folded>p:nth-child(odd), .folded>.line:nth-child(odd){
+  -webkit-transform: skew(0deg,-30deg) scaley(1.33333) !important;
+transform: skew(0deg,-30deg) scaley(1.33333) !important;
+}
+
+.folded>p:nth-child(2), .folded>.line:nth-child(2){
+  position: relative !important;
+   left: .46em !important;
+
+}
+.folded>p:nth-child(3), .folded>.line:nth-child(3){
+  position: relative !important;
+    left: .92em !important;
+}
+.folded>p:nth-child(4), .folded>.line:nth-child(4){
+  position: relative !important;
+    left: 1.38em !important;
+}
+
+.folded.processed>.line>*{
+  font-size: 1em !important;
+margin: 0;
+white-space: nowrap !important;
+overflow: hidden !important;
+}
+
+.folded>p>*, .folded>.line>*{
+line-height: .8em !important;
+    height: .8em !important;
+}
+
+p.yee{
+  transition: .5s;
+}
+
+p.yeeshadow{
+  transition: 0.5s;
+}
+p.yee:hover{
+}
+
+
 @media screen and (max-width: 600px) {
   .animate{
     width: auto;
