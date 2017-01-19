@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
+    <script src="typed.js"></script>
     <script>
 
       $(window).scroll(function() {
@@ -110,11 +111,15 @@
         $( ".timeline1" ).mouseenter(function() {
           $(".timeline").css("margin-top", "-0.4em");
           $(".blue1").css("color", "red");
+          $("#svgObject5").css("display", "block");
+
 
       })
       $( ".timeline1" ).mouseleave(function() {
         $(".timeline").css("margin-top", "-.8em");
         $(".blue1").css("color", "");
+        $("#svgObject5").css("display", "");
+
 
       })
       $( ".space1" ).mouseenter(function() {
@@ -134,11 +139,15 @@
     $( ".watson1" ).mouseenter(function() {
       $(".watson").css("margin-top", "-0.4em");
       $(".blue3").css("color", "red");
+      $(".emotions").css("opacity", "1");
+
 
   })
   $( ".watson1" ).mouseleave(function() {
     $(".watson").css("margin-top", "-.8em");
     $(".blue3").css("color", "");
+    $(".emotions").css("opacity", "");
+
 
   })
   $( ".railways1" ).mouseenter(function() {
@@ -203,6 +212,26 @@ $("#svgObject").css("display", "");
 
 
     </script>
+    <script>
+  $(function() {
+    $(".element").typed({
+      strings: ["anger", "disgust","fear","joy","sadness"],
+      typeSpeed: 7,
+      showCursor: false,
+      loop:true
+    });
+
+  });
+  /* Open when someone clicks on the span element */
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+</script>
     <style>
     .projects{
       /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 40vw 100vh, 0% 100vh);
@@ -238,8 +267,11 @@ $("#svgObject").css("display", "");
   <object class="animate" id="svgObject2" style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw"type="image/svg+xml" data="sound.svg">Your browser does not support SVGs</object>
   <object class="animate" id="svgObject3" style="position:fixed;left:50vw;top:50vh;margin-top:-15vw;margin-left:-15vw;width:30vw"type="image/svg+xml" data="spacex.svg">Your browser does not support SVGs</object>
   <object class="animate" id="svgObject4" style="position:fixed;left:50vw;top:50vh;margin-top:-20vw;margin-left:-20vw;width:40vw"type="image/svg+xml" data="map.svg">Your browser does not support SVGs</object>
+  <object class="animate" id="svgObject5" style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw"type="image/svg+xml" data="tesla.svg">Your browser does not support SVGs</object>
 
-  <div class="element flipthis-highlight"><p class="glitch"data-text="Click to Begin">Click to Begin</p></div>
+  <div style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw;height:20vw;display:flex;align-items:center;justify-content:center"><p class="glitch"data-text="Click to Begin">Click to Begin</p></div>
+  <div class="emotions" style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw;height:20vw;display:flex;align-items:center;justify-content:center"><p class="element"data-text="Click to Begin">Click to Begin</p></div>
+
 </container>
 <container class="page2">
 

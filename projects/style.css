@@ -82,6 +82,21 @@ transform: rotate(0deg);
 
 }
 }
+@keyframes moveright{
+  0%{
+    -ms-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+  transform: translate(0,0);
+
+}
+100%{
+  -ms-transform:translate(139.12px,0px);
+  -webkit-transform:translate(139.12px,0px);
+  transform: translate(139.12px,0px);
+
+}
+
+}
 @keyframes movedown{
   0%{
     -ms-transform:translate(0,0);
@@ -162,6 +177,7 @@ transform: translate(0,0);
 
 }
 }
+
 #link7{
   transform-origin: center;
 opacity: 1;
@@ -857,6 +873,21 @@ p.yee:hover{
   clip: rect(0, 100px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
   animation-delay: 1s;
+}
+.emotions{
+color: black;
+position: relative;
+width: 150px;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size: 10vw;
+font-weight: bold;
+opacity: 0;
+text-transform: uppercase;
+
 }
 @media screen and (max-width: 600px) {
   .animate{
