@@ -95,23 +95,33 @@
           if($(window).width() >= 600) {
 
             $( ".nav" ).mouseenter(function() {
-
-              // $(".projects").css("background-color", "rgba(255,255,255,.8)");
-              $(".right").css({"filter": "blur(10px)","-webkit-filter": "blur(10px)","opacity":".2"});
+              $(".page1, .page3").css({"filter": "blur(10px)","-webkit-filter": "blur(10px)","opacity":".2"});
 
 
           })
           $( ".nav" ).mouseleave(function() {
-
-            // $(".projects").css("background-color", "");
-            $(".right").css({"filter": "","-webkit-filter": "","opacity":""});
-
+            $(".page1, .page3").css({"filter": "","-webkit-filter": "","opacity":""});
+            $(".description").html("")
 
           })
+          $( ".left" ).mouseenter(function() {
+
+            $(".graphic").css("margin-top", "-.8em");
+            $(".red1").css("color", "");
+
+        })
+        $( ".left" ).mouseleave(function() {
+          $(".graphic").css("margin-top", "-0.4em");
+          $(".red1").css("color", "blue");
+
+        })
+
+
         $( ".timeline1" ).mouseenter(function() {
           $(".timeline").css("margin-top", "-0.4em");
           $(".blue1").css("color", "red");
           $("#svgObject5").css("display", "block");
+          $(".description").hide().html("This is something about Tesla").fadeIn("100")
 
 
       })
@@ -126,6 +136,7 @@
         $(".space").css("margin-top", "-0.4em");
         $(".blue2").css("color", "red");
         $("#svgObject3").css("display", "block");
+        $(".description").hide().html("This is something about SpaceX").fadeIn("100")
 
 
     })
@@ -140,6 +151,7 @@
       $(".watson").css("margin-top", "-0.4em");
       $(".blue3").css("color", "red");
       $(".emotions").css("opacity", "1");
+      $(".description").hide().html("This is something about WatsonXWayback").fadeIn("100")
 
 
   })
@@ -154,6 +166,7 @@
     $(".railways").css("margin-top", "-0.4em");
     $(".blue4").css("color", "red");
     $("#svgObject4").css("display", "block");
+    $(".description").hide().html("Front-end mockup of a transit app to solve the problem of unreliable MTA subway updates. By installing low cost beacons on and in the train stations, crowd-sourced data would allow for near instant notifications of delays and traffic. Demoed at the 2016 Facebook Global Hackathon.").fadeIn("100")
 
 
 })
@@ -169,6 +182,7 @@ $( ".sound1" ).mouseenter(function() {
   $(".blue5").css("color", "red");
   $("#svgObject2").css("display", "block");
   $(".glitch").css("opacity", "1");
+  $(".description").hide().html("This is something about SoundScape").fadeIn("100")
 
 
 
@@ -185,6 +199,7 @@ $( ".yee1" ).mouseenter(function() {
   $(".yee").css("margin-top", "-0.4em");
   $(".blue6").css("color", "red");
   $("#svgObject").css("display", "block");
+  $(".description").hide().html("This is something about YeeMachine").fadeIn("100")
 
 })
 $( ".yee1" ).mouseleave(function() {
@@ -264,19 +279,20 @@ $("#svgObject").css("display", "");
 </container>
 <container class="projects">
   <object class="animate" id="svgObject" style="position:fixed;left:50vw;top:50vh;margin-top:-12.5vw;margin-left:-12.5vw;" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
-  <object class="animate" id="svgObject2" style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw"type="image/svg+xml" data="sound.svg">Your browser does not support SVGs</object>
+  <object class="animate" id="svgObject2" style="position:fixed;left:50vw;top:50vh;margin-top:-7.5vw;margin-left:-7.5vw;width:15vw"type="image/svg+xml" data="sound.svg">Your browser does not support SVGs</object>
   <object class="animate" id="svgObject3" style="position:fixed;left:50vw;top:50vh;margin-top:-15vw;margin-left:-15vw;width:30vw"type="image/svg+xml" data="spacex.svg">Your browser does not support SVGs</object>
   <object class="animate" id="svgObject4" style="position:fixed;left:50vw;top:50vh;margin-top:-20vw;margin-left:-20vw;width:40vw"type="image/svg+xml" data="map.svg">Your browser does not support SVGs</object>
   <object class="animate" id="svgObject5" style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw"type="image/svg+xml" data="tesla.svg">Your browser does not support SVGs</object>
 
   <div style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw;height:20vw;display:flex;align-items:center;justify-content:center"><p class="glitch"data-text="Click to Begin">Click to Begin</p></div>
-  <div class="emotions" style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw;height:20vw;display:flex;align-items:center;justify-content:center"><p class="element"data-text="Click to Begin">Click to Begin</p></div>
+  <div class="emotions" style="position:fixed;left:0vw;top:50vh;margin-top:-10vw;width:100vw;height:20vw;display:flex;align-items:center;justify-content:center"><p >[ <span class="element"></span> ]</p></div>
+  <div class="description" style="position:fixed;right:3.6vw;top:50vh;margin-top:-10vw;margin-left:0vw;width:15vw;height:20vw;display:flex;align-items:center;justify-content:flex-start;font-size:12px;"><p></p></div>
 
 </container>
 <container class="page2">
 
   <container style="display:flex;flex-direction:column;align-items:flex-start;margin-top:-10vw">
-  <h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -2vw 0  0 7vw">
+  <h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -2vw 0  0 7vw;">
     <a href="https://yeemachine.github.io/teslatimeline/" target="_blank" class="line timeline1" ><p class="yeehover timeline" style="margin-top:-0.8em">&nbsp</p><p class="blue1">Tesla Timeline</p></a>
     <div class="line"><p class="yeehover timeline" style="margin-top:-0.8em">Tesla Timeline</p></div>
 
@@ -302,6 +318,19 @@ $("#svgObject").css("display", "");
   <div class="line"><p class="yeehover yee" style="margin-top:-0.8em">Yee machine</p></div>
 </h3>
 </container>
+</container>
+<container class="page3">
+
+  <a href="http://yeemachine.com/design" target="_blank" class="logo folded left processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: 10vw 50vw 28vw 5vw;">
+
+    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">&nbsp</p><p class="red red1">Assorted</p></div>
+    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">Assorted</p><p class="red red1">Graphic</p></div>
+    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">Graphic</p><p class="red red1">Design</p></div></div>
+    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">Design</p></div>
+
+  </a>
+</container>
+<container class="page3">
 </container>
 
 
