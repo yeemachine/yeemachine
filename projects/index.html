@@ -14,7 +14,6 @@
     <script src="jquery.min.js"></script>
     <script>
 
-
       $(window).scroll(function() {
 
         var mn = $('h1');
@@ -25,6 +24,9 @@
         var windowPosY = $(this).scrollTop();
 
         var isMobile = window.matchMedia("only screen and (max-width: 600px)");
+
+
+
         if (isMobile.matches) {
 
 
@@ -84,20 +86,107 @@
 
     }
 
+    var hdr = $('.page1').height();
 
+    $('body').animate({scrollTop: (hdr*.13)}, 500);
     // $(window).resize(function() {
           // This will fire each time the window is resized:
           if($(window).width() >= 600) {
 
+            $( ".nav" ).mouseenter(function() {
 
-        $( ".line" ).mouseenter(function() {
+              $(".projects").css("background-color", "rgba(255,255,255,.8)");
+              $(".right").css({"filter": "blur(10px)","-webkit-filter": "blur(10px)"});
+
+
+          })
+          $( ".nav" ).mouseleave(function() {
+
+            $(".projects").css("background-color", "");
+            $(".right").css({"filter": "","-webkit-filter": ""});
+
+
+          })
+        $( ".timeline1" ).mouseenter(function() {
+          $(".timeline").css("margin-top", "-0.4em");
+          $(".blue1").css("color", "red");
 
       })
-      $( ".line" ).mouseleave(function() {
-
-
+      $( ".timeline1" ).mouseleave(function() {
+        $(".timeline").css("margin-top", "-.8em");
+        $(".blue1").css("color", "");
 
       })
+      $( ".space1" ).mouseenter(function() {
+        $(".space").css("margin-top", "-0.4em");
+        $(".blue2").css("color", "red");
+        $("#svgObject3").css("display", "block");
+
+
+    })
+    $( ".space1" ).mouseleave(function() {
+      $(".space").css("margin-top", "-.8em");
+      $(".blue2").css("color", "");
+      $("#svgObject3").css("display", "");
+
+
+    })
+    $( ".watson1" ).mouseenter(function() {
+      $(".watson").css("margin-top", "-0.4em");
+      $(".blue3").css("color", "red");
+
+  })
+  $( ".watson1" ).mouseleave(function() {
+    $(".watson").css("margin-top", "-.8em");
+    $(".blue3").css("color", "");
+
+  })
+  $( ".railways1" ).mouseenter(function() {
+    $(".railways").css("margin-top", "-0.4em");
+    $(".blue4").css("color", "red");
+    $("#svgObject4").css("display", "block");
+
+
+})
+$( ".railways1" ).mouseleave(function() {
+  $(".railways").css("margin-top", "-.8em");
+  $(".blue4").css("color", "");
+  $("#svgObject4").css("display", "");
+
+
+})
+$( ".sound1" ).mouseenter(function() {
+  $(".sound").css("margin-top", "-0.4em");
+  $(".blue5").css("color", "red");
+  $("#svgObject2").css("display", "block");
+  $(".glitch").css("opacity", "1");
+
+
+
+})
+$( ".sound1" ).mouseleave(function() {
+$(".sound").css("margin-top", "-.8em");
+$(".blue5").css("color", "");
+$("#svgObject2").css("display", "");
+$(".glitch").css("opacity", "");
+
+
+})
+$( ".yee1" ).mouseenter(function() {
+  $(".yee").css("margin-top", "-0.4em");
+  $(".blue6").css("color", "red");
+  $("#svgObject").css("display", "block");
+
+})
+$( ".yee1" ).mouseleave(function() {
+$(".yee").css("margin-top", "-.8em");
+$(".blue6").css("color", "");
+$("#svgObject").css("display", "");
+
+
+})
+
+
 
 
 
@@ -114,13 +203,29 @@
 
 
     </script>
+    <style>
+    .projects{
+      /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 40vw 100vh, 0% 100vh);
+      clip-path: polygon(0 0, 100% 0, 100% 30vh, 40vw 100vh, 0% 100vh);
+      clip-path:  url("#clip-shape");
+      -webkit-clip-path: url("#clip-shape");*/
+
+    }
+    </style>
 </head>
 
 <body>
+  <svg width="0" height="0">
+  <defs>
+    <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
+      <polygon points="0 0, 1 0, 1 .3, .4 1, 0 1" />
+    </clipPath>
+  </defs>
+  </svg>
 
 <container class="page1">
 
-<h3 class="logo folded processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="padding: 300.363px 250.784px 306.559px 68.8px;">
+<h3 class="logo folded right processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="padding: 28vw 15vw 28vw 5vw;">
   <div class="line"><p class="yeeshadow" style="margin-top:-0.8em">&nbsp</p><p class="red">Yee</p></div>
   <div class="line"><p class="yeeshadow" style="margin-top:-0.8em">Yee</p><p class="red">Machine</p></div>
   <div class="line"><p class="yeeshadow" style="margin-top:-0.8em">Machine</p><p class="red">Projects</p></div></div>
@@ -128,8 +233,45 @@
 
 </h3>
 </container>
-<container class="page2">
+<container class="projects">
+  <object class="animate" id="svgObject" style="position:fixed;left:50vw;top:50vh;margin-top:-12.5vw;margin-left:-12.5vw;" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
+  <object class="animate" id="svgObject2" style="position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw"type="image/svg+xml" data="sound.svg">Your browser does not support SVGs</object>
+  <object class="animate" id="svgObject3" style="position:fixed;left:50vw;top:50vh;margin-top:-15vw;margin-left:-15vw;width:30vw"type="image/svg+xml" data="spacex.svg">Your browser does not support SVGs</object>
+  <object class="animate" id="svgObject4" style="position:fixed;left:50vw;top:50vh;margin-top:-20vw;margin-left:-20vw;width:40vw"type="image/svg+xml" data="map.svg">Your browser does not support SVGs</object>
+
+  <div class="element flipthis-highlight"><p class="glitch"data-text="Click to Begin">Click to Begin</p></div>
 </container>
+<container class="page2">
+
+  <container style="display:flex;flex-direction:column;align-items:flex-start;margin-top:-10vw">
+  <h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -2vw 0  0 7vw">
+    <a href="https://yeemachine.github.io/teslatimeline/" target="_blank" class="line timeline1" ><p class="yeehover timeline" style="margin-top:-0.8em">&nbsp</p><p class="blue1">Tesla Timeline</p></a>
+    <div class="line"><p class="yeehover timeline" style="margin-top:-0.8em">Tesla Timeline</p></div>
+
+  </h3>
+  <h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -.5vw 0 0 7vw;left:-4vw;">
+    <a href="https://vimeo.com/196500130" target="_blank" class="line space1"><p class="yeehover space" style="margin-top:-0.8em">&nbsp</p><p class="blue2">spacex proto</p></div></a>
+    <div class="line"><p class="yeehover space" style="margin-top:-0.8em">spacex proto</p></div>
+  </h3>
+  <h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -.5vw 0 0 7vw;left:-8vw;">
+    <a href="http://watsonwayback.com" target="_blank" class="line watson1"><p class="yeehover watson" style="margin-top:-0.8em">&nbsp</p><p class="blue3">watson wayback</p></div></a>
+    <div class="line"><p class="yeehover watson" style="margin-top:-0.8em">watson wayback</p></div>
+  </h3>
+  <h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -.5vw 0 0 7vw;left:-12vw;">
+    <a href="https://yeemachine.github.io/railways.fish/" target="_blank" class="line railways1"><p class="yeehover railways" style="margin-top:-0.8em">&nbsp</p><p class="blue4">railways hack</p></div></a>
+    <div class="line"><p class="yeehover railways" style="margin-top:-0.8em">railways hack</p></div>
+  </h3>
+<h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -.5vw 0 0 7vw;left:-16vw;">
+  <a href="http://richyee.com/" target="_blank" class="line sound1"><p class="yeehover sound" style="margin-top:-0.8em">&nbsp</p><p class="blue5">Sound! Scape</p></div></a>
+  <div class="line"><p class="yeehover sound" style="margin-top:-0.8em">Sound! Scape</p></div>
+</h3>
+<h3 class="logo folded nav processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -.5vw 0 0 7vw;left:-20vw;">
+  <a href="http://yeemachine.com" target="_blank" class="line yee1"><p class="yeehover yee" style="margin-top:-0.8em">&nbsp</p><p class="blue6">Yee machine</p></div></a>
+  <div class="line"><p class="yeehover yee" style="margin-top:-0.8em">Yee machine</p></div>
+</h3>
+</container>
+</container>
+
 
 
 

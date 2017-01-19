@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(https://fonts.googleapis.com/css?family=Michroma);
+
 @font-face {
     font-family: 'yeehex';
     src: url(YeeHex.woff) format('woff');
@@ -167,55 +169,12 @@ opacity: 1;
 }
 
 a{
-  color:black;
-  text-align: left;
-  text-decoration: none;
+display: block;
+color: black;
+text-decoration: none;
 }
-.info{
-  position: absolute;
-  bottom:5vh;
-  left:10vw;
-  color:black;
-  width: 90%;
-  pointer-events: all;
-}
-.info a{
-  color:black
-}
-.info a:hover{
-  text-decoration: underline;
-}
-.timeline{
-  opacity: 1;
-  position: absolute;
-  width: 0;
-  top:37.5vh;
-  left:40vw;
-  height: 25vh;
-  background-color:#666;
-  z-index: 9999;
-  mix-blend-mode: lighten;
-  transition: .5s;
-  pointer-events: none;
 
 
-}
-.timelineanim{
-  opacity: 1;
-  position: absolute;
-  width: 60vw;
-  left:40vw;
-  top:37.5vh;
-  height: 25vh;
-  background-color:#666;
-  z-index: 9999;
-  mix-blend-mode: lighten;
-  transition: .5s;
-  pointer-events: none;
-
-
-
-}
 body{
 
   font-family: -apple-system, BlinkMacSystemFont,
@@ -244,13 +203,33 @@ body{
   margin: 0;
   padding: 0;
 display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-  position: absolute;
-  top:100vh;
-  height: 100vh;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-end;
+  position: fixed;
+  top:90vh;
+  height: 0vh;
   width: 100%;
+}
+.projects{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  background-color: rgba(255,255,255,0);
+  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 40vw 100vh, 0% 100vh);
+  clip-path: polygon(0 0, 100% 0, 100% 30vh, 40vw 100vh, 0% 100vh);*/
+  transition: .5s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+
+}
+.projects:before{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 h1{
   width: 50%;
@@ -352,8 +331,11 @@ font-size:calc(18px + 4vw);
 opacity: 1;
 animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
-width: 50vw;
+width: 25vw;
 height: auto;
+display: none;
+
+
 }
 .animate2 {
 opacity: 0;
@@ -416,6 +398,12 @@ a{
 .animatehex{
 opacity: 1;
 animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+.animatecircle{
+opacity: 1;
+animation: dashcircle 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-iteration-count: 1;
 animation-fill-mode: forwards;
 }
@@ -523,7 +511,24 @@ stroke-dasharray: 500;
 stroke-dashoffset: 0;
 }
 }
+@keyframes dashcircle {
+0% {
+opacity: 1;
+stroke-dasharray: 2000;
+stroke-dashoffset: 2000;
+}
+50% {
+opacity: 1;
+stroke-dasharray: 1000;
+stroke-dashoffset: 5;
+}
+100% {
+opacity: 1;
+stroke-dasharray: 500;
+stroke-dashoffset: 0;
+}
 
+}
 
 @keyframes dash2 {
 0% {
@@ -557,9 +562,42 @@ stroke-dashoffset: 0;
   }
 
 
-.folded>p:nth-child(even), .folded>.line:nth-child(even){
+.right>p:nth-child(even), .right>.line:nth-child(even){
   -webkit-transform: skew(60deg,-30deg) scaley(.66667) !important;
   transform: skew(60deg,-30deg) scaley(.66667) !important;
+}
+.left>p:nth-child(even), .left>.line:nth-child(even){
+  -webkit-transform: skew(-60deg,30deg) scaley(.66667) !important;
+  transform: skew(-60deg,30deg) scaley(.66667) !important;
+}
+.nav>p:nth-child(odd), .nav>.line:nth-child(odd){
+  transform: scaley(1.1) !important;
+
+}
+.nav>p:nth-child(even), .nav>.line:nth-child(even){
+  transform: skew(30deg,0deg) scaley(.9) !important;
+      left: .2em;
+      position: relative;
+}
+
+
+.left{
+  font-size: 2vw;
+  width: 20vw;
+  margin-left: -15vw;
+  position: relative;
+}
+.nav{
+  font-size: 2vw;
+  margin-left: -15vw;
+  position: relative;
+  z-index: 999;
+}
+.rightsmall{
+  font-size: 2.5vw;
+  width: 20vw;
+  margin-left: -15vw;
+
 }
 
 .folded>p, .folded>.line{
@@ -582,23 +620,47 @@ letter-spacing: -0.025em;
 margin-top: -12%;
 }
 
-.folded>p:nth-child(odd), .folded>.line:nth-child(odd){
+.right>p:nth-child(odd), .right>.line:nth-child(odd){
   -webkit-transform: skew(0deg,-30deg) scaley(1.33333) !important;
 transform: skew(0deg,-30deg) scaley(1.33333) !important;
 }
+.left>p:nth-child(odd), .left>.line:nth-child(odd){
+  -webkit-transform: skew(0deg,30deg) scaley(1.33333) !important;
+transform: skew(0deg,30deg) scaley(1.33333) !important;
+}
 
-.folded>p:nth-child(2), .folded>.line:nth-child(2){
+.right>p:nth-child(2), .right>.line:nth-child(2){
   position: relative !important;
    left: .46em !important;
 
 }
-.folded>p:nth-child(3), .folded>.line:nth-child(3){
+.right>p:nth-child(3), .right>.line:nth-child(3){
   position: relative !important;
     left: .92em !important;
 }
-.folded>p:nth-child(4), .folded>.line:nth-child(4){
+.right>p:nth-child(4), .right>.line:nth-child(4){
   position: relative !important;
     left: 1.38em !important;
+}
+.left>p:nth-child(1), .left>.line:nth-child(1){
+   text-align: left;
+
+
+}
+.left>p:nth-child(2), .left>.line:nth-child(2){
+  position: relative !important;
+   /*right: .46em !important;*/
+   text-align: left;
+
+
+}
+.left>p:nth-child(3), .left>.line:nth-child(3){
+  position: relative !important;
+    right: .92em !important;
+}
+.left>p:nth-child(4), .left>.line:nth-child(4){
+  position: relative !important;
+    right: 1.38em !important;
 }
 
 .folded.processed>.line>*{
@@ -620,10 +682,182 @@ p.yee{
 p.yeeshadow{
   transition: 0.5s;
 }
+p.yeehover{
+  transition: 0.5s;
+}
 p.yee:hover{
 }
-
-
+@keyframes noise-anim {
+  0% {
+    clip: rect(0px, 9999px, 5px, 0);
+  }
+  5% {
+    clip: rect(1px, 9999px, 96px, 0);
+  }
+  10% {
+    clip: rect(52px, 9999px, 20px, 0);
+  }
+  15% {
+    clip: rect(73px, 9999px, 92px, 0);
+  }
+  20% {
+    clip: rect(95px, 9999px, 89px, 0);
+  }
+  25% {
+    clip: rect(20px, 9999px, 94px, 0);
+  }
+  30% {
+    clip: rect(8px, 9999px, 39px, 0);
+  }
+  35% {
+    clip: rect(12px, 9999px, 21px, 0);
+  }
+  40% {
+    clip: rect(66px, 9999px, 55px, 0);
+  }
+  45% {
+    clip: rect(49px, 9999px, 90px, 0);
+  }
+  50% {
+    clip: rect(77px, 9999px, 6px, 0);
+  }
+  55% {
+    clip: rect(84px, 9999px, 72px, 0);
+  }
+  60% {
+    clip: rect(67px, 9999px, 94px, 0);
+  }
+  65% {
+    clip: rect(66px, 9999px, 63px, 0);
+  }
+  70% {
+    clip: rect(53px, 9999px, 29px, 0);
+  }
+  75% {
+    clip: rect(4px, 9999px, 98px, 0);
+  }
+  80% {
+    clip: rect(3px, 9999px, 73px, 0);
+  }
+  85% {
+    clip: rect(79px, 9999px, 58px, 0);
+  }
+  90% {
+    clip: rect(68px, 9999px, 73px, 0);
+  }
+  95% {
+    clip: rect(50px, 9999px, 76px, 0);
+  }
+  100% {
+    clip: rect(7px, 9999px, 30px, 0);
+  }
+}
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(73px, 9999px, 30px, 0);
+  }
+  5% {
+    clip: rect(77px, 9999px, 40px, 0);
+  }
+  10% {
+    clip: rect(56px, 9999px, 66px, 0);
+  }
+  15% {
+    clip: rect(72px, 9999px, 68px, 0);
+  }
+  20% {
+    clip: rect(53px, 9999px, 87px, 0);
+  }
+  25% {
+    clip: rect(84px, 9999px, 49px, 0);
+  }
+  30% {
+    clip: rect(10px, 9999px, 26px, 0);
+  }
+  35% {
+    clip: rect(42px, 9999px, 10px, 0);
+  }
+  40% {
+    clip: rect(99px, 9999px, 6px, 0);
+  }
+  45% {
+    clip: rect(41px, 9999px, 42px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 71px, 0);
+  }
+  55% {
+    clip: rect(39px, 9999px, 46px, 0);
+  }
+  60% {
+    clip: rect(70px, 9999px, 43px, 0);
+  }
+  65% {
+    clip: rect(17px, 9999px, 49px, 0);
+  }
+  70% {
+    clip: rect(27px, 9999px, 26px, 0);
+  }
+  75% {
+    clip: rect(11px, 9999px, 63px, 0);
+  }
+  80% {
+    clip: rect(83px, 9999px, 9px, 0);
+  }
+  85% {
+    clip: rect(82px, 9999px, 16px, 0);
+  }
+  90% {
+    clip: rect(15px, 9999px, 47px, 0);
+  }
+  95% {
+    clip: rect(72px, 9999px, 88px, 0);
+  }
+  100% {
+    clip: rect(24px, 9999px, 22px, 0);
+  }
+}
+.glitch {
+  color: white;
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Michroma", sans-serif;
+  font-size: 12px;
+  opacity: 0;
+}
+.glitch:before {
+  content: attr(data-text);
+  margin-left: 30px;
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 100px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+  animation-delay: 1s;
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  margin-left: 21px;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 100px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+  animation-delay: 1s;
+}
 @media screen and (max-width: 600px) {
   .animate{
     width: auto;
@@ -650,8 +884,6 @@ h1{
 
 }
 a{
-  text-align: center;
-  text-decoration: none;
 
 }
 a:active{
@@ -699,38 +931,8 @@ align-items: center;
   height: 40vh;
   justify-content: flex-start;
 }
-.timeline{
-  opacity: 1;
-  position: absolute;
-  width: 0;
-  top:17.5vh;
-  left:0;
-  height: 25vh;
-  background-color:#666;
-  z-index: 9999;
-  mix-blend-mode: lighten;
-  transition: .5s;
 
 
-}
-.timelineanim{
-  opacity: 1;
-  position: absolute;
-  width: 100%;
-  left:0;
-  top:17.5vh;
-  height: 25vh;
-  background-color:#666;
-  z-index: 9999;
-  mix-blend-mode: lighten;
-  transition: .5s;
 
 
-}
-.info{
-
-
-}
-.info a{
-}
 }

@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="155.068px" height="147.145px" viewBox="0 0 155.068 147.145" enable-background="new 0 0 155.068 147.145"
+	 xml:space="preserve">
+	 <line class="animatehex" id="_x38_THCANAL-8THSPRING-E" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-miterlimit="10" x1="71.142" y1="122.815" x2="71.142" y2="140.63"/>
+	 <line class="animatehex" id="_x38_THSPRING-8THW4-E" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-miterlimit="10" x1="71.142" y1="93.593" x2="71.142" y2="122.815"/>
+	 <path class="animatehex" id="_x38_THW4-8TH14-A" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	 	M2.832,65.282L2.832,65.282c0,11.729,9.503,21.193,21.194,21.193h32.803c3.896,0,7.078,3.182,7.078,7.078l0,0l0.039,0.039v29.222
+	 	v17.815"/>
+	 <path class="animatehex" id="_x38_THW4-8TH14-C" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	 	M6.449,65.323L6.449,65.323c0,9.779,7.952,17.732,17.734,17.732h32.843c5.805,0,10.497,4.692,10.497,10.497l0,0l0.041,0.04v29.222
+	 	v17.815"/>
+	 <path style="animation: trainS 2s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;" id="_x38_THW4-8TH14-E" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	 	M10.028,65.323L10.028,65.323c0,7.871,6.363,14.232,14.234,14.232h32.884c7.753,0,14.036,6.282,14.036,14.037l0,0"/>
+	 <circle id="_x38_THW4E" cx="71.142" cy="93.593" r="1.392"/>
+	 <circle id="_x38_TH14E" cx="10.028" cy="65.323" r="1.392"/>
+	 <path style="animation: trainS 2s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;" id="_x36_THLAFAYETTE-6THW4-B" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	 	M74.72,93.593L74.72,93.593c0,11.489,9.304,20.793,20.796,20.793h56.698"/>
+	 <line class="animatehex" id="_x36_THW4-6TH34-B" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-miterlimit="10" x1="74.72" y1="7.906" x2="74.72" y2="93.593"/>
+	 <path class="animatehex" id="_x36_THW4-6TH34-D" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-miterlimit="10" d="
+	 	M78.177,7.906v85.688l0,0c0,9.622,7.796,17.413,17.416,17.413h56.621"/>
+	 <path class="animatehex" id="_x36_TH23-6TH34-F" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-miterlimit="10" d="
+	 	M81.598,7.906v29.106v28.271v28.311l0,0c0,7.753,6.282,14.033,14.036,14.033h56.58"/>
+	 <path class="animatehex" id="_x36_TH23-6TH34-M" fill="none" stroke="#000000" stroke-width="2.7833" stroke-linecap="round" stroke-miterlimit="10" d="
+	 	M85.018,7.906v29.106v28.271v28.311l0,0c0,5.964,4.85,10.813,10.813,10.813h56.383"/>
+	 <circle id="_x36_THLAFAYETTEB" cx="152.216" cy="114.347" r="1.393"/>
+	 <circle id="_x36_THW4B" cx="74.72" cy="93.593" r="1.392"/>
+	 <circle id="_x36_TH34D" cx="78.177" cy="7.906" r="1.392"/>
+	 <circle id="_x36_TH34F" cx="81.598" cy="7.906" r="1.392"/>
+	 <circle id="_x36_TH34M" cx="85.018" cy="7.906" r="1.392"/>
+</svg>
