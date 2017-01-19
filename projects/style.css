@@ -577,7 +577,9 @@ stroke-dashoffset: 0;
   }
   }
 
-
+.right{
+  transition: .5s;
+}
 .right>p:nth-child(even), .right>.line:nth-child(even){
   -webkit-transform: skew(60deg,-30deg) scaley(.66667) !important;
   transform: skew(60deg,-30deg) scaley(.66667) !important;

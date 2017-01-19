@@ -96,15 +96,15 @@
 
             $( ".nav" ).mouseenter(function() {
 
-              $(".projects").css("background-color", "rgba(255,255,255,.8)");
-              $(".right").css({"filter": "blur(10px)","-webkit-filter": "blur(10px)"});
+              // $(".projects").css("background-color", "rgba(255,255,255,.8)");
+              $(".right").css({"filter": "blur(10px)","-webkit-filter": "blur(10px)","opacity":".2"});
 
 
           })
           $( ".nav" ).mouseleave(function() {
 
-            $(".projects").css("background-color", "");
-            $(".right").css({"filter": "","-webkit-filter": ""});
+            // $(".projects").css("background-color", "");
+            $(".right").css({"filter": "","-webkit-filter": "","opacity":""});
 
 
           })
