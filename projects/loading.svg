@@ -1,0 +1,62 @@
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="120px" height="30px" viewBox="0 0 120 30" enable-background="new 0 0 120 30" xml:space="preserve">
+   <style type="text/css" media="screen">
+       <![CDATA[
+       @keyframes dash {
+       0% {
+       opacity:.5;
+       transform:scale(1);
+       }
+       50% {
+       opacity:1;
+      transform:scale(2);
+       }
+       100% {
+       opacity:.5;
+       transform:scale(1);
+       }
+       }
+       @keyframes dashR {
+       0% {
+       opacity:1;
+       transform:scale(1);
+       }
+       50% {
+       opacity:.5;
+      transform:scale(.5);
+       }
+       100% {
+       opacity:1;
+       transform:scale(1);
+       }
+       }
+       .smallheart {
+       transform-origin: center;
+           animation: dash .8s infinite cubic-bezier(0.5, 0.5, 0.5, .5);
+           animation-fill-mode: forwards;
+
+       }
+       .bigheart {
+       transform-origin: center;
+           animation: dashR .8s infinite cubic-bezier(0.5, 0.5, 0.5, .5);
+           animation-fill-mode: forwards;
+
+       }
+
+       ]]>
+   </style>
+<polyline class="smallheart" fill="none" stroke="#000000" stroke-width="8.367" stroke-linecap="round" stroke-miterlimit="10" points="
+	56.655,15.024 59.999,16.954 63.344,15.024 ">
+
+</polyline>
+<polyline class="bigheart" fill="none" stroke="#000000" stroke-width="16.3688" stroke-linecap="round" stroke-miterlimit="10" points="
+	8.458,13.179 15,16.954 21.542,13.179 ">
+</polyline>
+<polyline class="bigheart" fill="none" stroke="#000000" stroke-width="16.3688" stroke-linecap="round" stroke-miterlimit="10" points="
+	98.457,13.179 104.999,16.954 111.541,13.179 ">
+</polyline>
+
+</svg>

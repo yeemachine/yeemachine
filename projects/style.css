@@ -238,7 +238,7 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: flex-end;
   position: relative;
-  height: 100vh;
+  height: 0vh;
   width: 100%;
   z-index: 0;
   transition: .25s;
@@ -582,7 +582,9 @@ stroke-dashoffset: 0;
   stroke-dashoffset: 5;
   }
   }
-
+.title{
+  pointer-events: none;
+}
 .right{
   transition: .5s;
 }
