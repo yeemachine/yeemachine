@@ -348,11 +348,7 @@ pointer-events: all;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
-.title{
-font-size:calc(18px + 4vw);
 
-
-}
 .animate {
 opacity: 1;
 animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
@@ -671,6 +667,10 @@ transform: skew(0deg,30deg) scaley(1.33333) !important;
   position: relative !important;
     left: 1.38em !important;
 }
+.right>p:nth-child(5), .right>.line:nth-child(5){
+  position: relative !important;
+    left: 1.84em !important;
+}
 .left>p:nth-child(1), .left>.line:nth-child(1){
    text-align: left;
 
@@ -715,6 +715,16 @@ p.yeehover{
   transition: 0.5s;
 }
 p.yee:hover{
+}
+.supporting{
+  font-size: 5vw;
+  margin-left: -15vw;
+  position: relative;
+  transition: .5s;
+}
+.contactC{
+  font-size: 2.5vw;
+
 }
 @keyframes noise-anim {
   0% {

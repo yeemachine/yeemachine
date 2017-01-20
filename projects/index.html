@@ -104,17 +104,24 @@
             $(".description").html("")
 
           })
-          $( ".left" ).mouseenter(function() {
+          $( ".design " ).mouseenter(function() {
 
             $(".graphic").css("margin-top", "-.8em");
-            $(".red1").css("color", "");
 
         })
-        $( ".left" ).mouseleave(function() {
+        $( ".design " ).mouseleave(function() {
           $(".graphic").css("margin-top", "-0.4em");
-          $(".red1").css("color", "blue");
 
         })
+        $( ".contactC " ).mouseenter(function() {
+
+          $(".contact").css("margin-top", "-.8em");
+
+      })
+      $( ".contactC " ).mouseleave(function() {
+        $(".contact").css("margin-top", "-0.4em");
+
+      })
 
 
         $( ".timeline1" ).mouseenter(function() {
@@ -269,7 +276,7 @@ $("#svgObject").css("display", "");
 
 <container class="page1">
 
-<h3 class="logo folded right processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="padding: 28vw 15vw 28vw 5vw;">
+<h3 class="logo folded right processed title flipthis-highlight" data-max_flow="3" data-max_lines="3" style="padding: 28vw 15vw 28vw 5vw;">
   <div class="line"><p class="yeeshadow" style="margin-top:-0.8em">&nbsp</p><p class="red">Yee</p></div>
   <div class="line"><p class="yeeshadow" style="margin-top:-0.8em">Yee</p><p class="red">Machine</p></div>
   <div class="line"><p class="yeeshadow" style="margin-top:-0.8em">Machine</p><p class="red">Projects</p></div></div>
@@ -321,16 +328,23 @@ $("#svgObject").css("display", "");
 </container>
 <container class="page3">
 
-  <a href="http://yeemachine.com/design" target="_blank" class="logo folded left processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: 10vw 50vw 28vw 5vw;">
+  <a href="http://yeemachine.com/design" target="_blank" class="logo folded left supporting design processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: 15vw 50vw 28vw 5vw;">
 
-    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">&nbsp</p><p class="red red1">Assorted</p></div>
-    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">Assorted</p><p class="red red1">Graphic</p></div>
-    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">Graphic</p><p class="red red1">Design</p></div></div>
+    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">&nbsp</p><p class="red red1">Graphic</p></div>
+    <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">Graphic</p><p class="red red1">Design</p></div>
     <div class="line"><p class="yeeshadow graphic" style="margin-top:-0.8em">Design</p></div>
 
   </a>
 </container>
 <container class="page3">
+  <a href="http://yeemachine.com/design" target="_blank" class="logo folded left supporting contactC processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="margin: -20vw 60vw 28vw 5vw;">
+
+    <div class="line"><p class="yeeshadow contact" style="margin-top:-0.8em">&nbsp</p><p class="red red2">Contact</p></div>
+    <div class="line"><p class="yeeshadow contact" style="margin-top:-0.8em">Contact</p><p class="red red2">rich@yee</p></div>
+    <div class="line"><p class="yeeshadow contact" style="margin-top:-0.8em">rich@yee</p><p class="red red2">machine.com</p></div>
+    <div class="line"><p class="yeeshadow contact" style="margin-top:-0.8em">machine.com</p></div>
+
+  </a>
 </container>
 
 
