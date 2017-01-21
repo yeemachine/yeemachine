@@ -274,7 +274,7 @@ align-items: flex-end;
   top:0;
 }
 .flipthis-highlight{
-  outline:none;
+  outline:transparent;
 }
 #svgObject{
   /*position:fixed;left:50vw;top:50vh;margin-top:-12.5vw;margin-left:-12.5vw;*/
