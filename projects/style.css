@@ -257,6 +257,7 @@ align-items: flex-end;
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  z-index: 950
 
 }
 

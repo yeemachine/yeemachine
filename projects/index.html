@@ -125,13 +125,15 @@
           if($(window).width() >= 600) {
 
             $( ".nav" ).mouseenter(function() {
-              $(".page1, .page3").css({"filter": "blur(10px)","-webkit-filter": "blur(10px)","opacity":".2"});
+              $(".page1, .page3").css({"filter": "blur(10px)","-webkit-filter": "blur(5px)","opacity":".05"});
 
 
 
           })
           $( ".nav" ).mouseleave(function() {
             $(".page1, .page3").css({"filter": "","-webkit-filter": "","opacity":""});
+            $(".projects").css({"background-color": ""});
+
             $(".description").html("")
 
           })
