@@ -13,9 +13,8 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script src="typed.js"></script>
-
-    <script>
-    var DEBUG_MODE = false; // Set this value to false for production
+<script>
+var DEBUG_MODE = true; // Set this value to false for production
 
 if(typeof(console) === 'undefined') {
     console = {}
@@ -25,6 +24,9 @@ if(!DEBUG_MODE || typeof(console.log) === 'undefined') {
     // FYI: Firebug might get cranky...
     console.log = console.error = console.info = console.debug = console.warn = console.trace = console.dir = console.dirxml = console.group = console.groupEnd = console.time = console.timeEnd = console.assert = console.profile = function() {};
 }
+</script>
+    <script>
+
       $(window).scroll(function() {
 
         var mn = $('h1');
