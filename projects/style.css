@@ -259,9 +259,35 @@ align-items: flex-end;
   pointer-events: none;
 
 }
-.projects:before{
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
+
+.mobilepage{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#svgObject{
+  /*position:fixed;left:50vw;top:50vh;margin-top:-12.5vw;margin-left:-12.5vw;*/
+}
+#svgObject2{
+  /*position:fixed;left:50vw;top:50vh;margin-top:-7.5vw;margin-left:-7.5vw;width:15vw*/
+  width: 15vw
+}
+#svgObject3{
+  /*position:fixed;left:50vw;top:50vh;margin-top:-15vw;margin-left:-15vw;width:30vw*/
+}
+#svgObject4{
+  /*position:fixed;left:50vw;top:50vh;margin-top:-20vw;margin-left:-20vw;width:40vw*/
+width: 40vw;
+}
+#svgObject5{
+  /*position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw*/
+}
+#svgObject6{
+  /*position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw;height:20vw;*/
 }
 h1{
   width: 50%;
@@ -927,9 +953,9 @@ font-size: 3vw;
 }
 @media screen and (max-width: 600px) {
   .animate{
-    width: auto;
-  height: 50vh;
-
+    height: auto;
+  width: 80vw;
+display: block;
 }
 /*.hidelink:active{
   pointer-events: none;
@@ -943,6 +969,9 @@ body{
 .page1{
   flex-direction: column-reverse;
 
+}
+.page2{
+  display: none;
 }
 h1{
   left:0;
@@ -995,7 +1024,42 @@ align-items: center;
   justify-content: flex-start;
 }
 
+.projects{
+  width:inherit ;
+  height:inherit ;
+  position: relative;
+  background-color: rgba(255,255,255,0);
+  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 40vw 100vh, 0% 100vh);
+  clip-path: polygon(0 0, 100% 0, 100% 30vh, 40vw 100vh, 0% 100vh);*/
+  transition: .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 
-
+}
+.mobilepage{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#svgObject2{
+  width: 80vw
+}
+#svgObject4{
+  width: 80vw
+}
+.emotions{
+  opacity: 1;
+  position: relative;
+}
+.glitch{
+  opacity: 1;
+}
 
 }
