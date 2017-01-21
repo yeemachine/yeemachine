@@ -154,7 +154,7 @@
         $( ".timeline1" ).mouseenter(function() {
           $(".timeline").css("margin-top", "-0.4em");
           $(".blue1").css("color", "red");
-          $("#svgObject5").css("display", "inline");
+          $("#svgObject5").css("opacity", "1");
           $(".description p").hide().html("This is something about Tesla").fadeIn("100")
 
 
@@ -162,7 +162,7 @@
       $( ".timeline1" ).mouseleave(function() {
         $(".timeline").css("margin-top", "-.8em");
         $(".blue1").css("color", "");
-        $("#svgObject5").css("display", "none");
+        $("#svgObject5").css("opacity", "0");
 
 
       });
