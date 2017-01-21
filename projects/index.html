@@ -134,7 +134,7 @@
             $(".page1, .page3").css({"filter": "","-webkit-filter": "","opacity":""});
             $(".projects").css({"background-color": ""});
 
-            $(".description").html("")
+            $(".description p").html("")
 
           })
           $( ".design " ).mouseenter(function() {
@@ -147,10 +147,12 @@
         $( ".contactC " ).mouseenter(function() {
 
           $(".red2").css("color", "red");
+          $(".yeeshadow2").css("margin-top", "-0.8em");
 
       })
       $( ".contactC " ).mouseleave(function() {
         $(".red2").css("color", "blue");
+        $(".yeeshadow2").css("margin-top", "-0.4em");
 
       })
 
@@ -159,7 +161,7 @@
           $(".timeline").css("margin-top", "-0.4em");
           $(".blue1").css("color", "red");
           $("#svgObject5").css("display", "block");
-          $(".description").hide().html("This is something about Tesla").fadeIn("100")
+          $(".description p").hide().html("This is something about Tesla").fadeIn("100")
 
 
       })
@@ -174,7 +176,7 @@
         $(".space").css("margin-top", "-0.4em");
         $(".blue2").css("color", "red");
         $("#svgObject3").css("display", "block");
-        $(".description").hide().html("This is something about SpaceX").fadeIn("100")
+        $(".description p").hide().html("This is something about SpaceX").fadeIn("100")
 
 
     })
@@ -189,7 +191,7 @@
       $(".watson").css("margin-top", "-0.4em");
       $(".blue3").css("color", "red");
       $(".emotions").css("opacity", "1");
-      $(".description").hide().html("This is something about WatsonXWayback").fadeIn("100")
+      $(".description p").hide().html("This is something about WatsonXWayback").fadeIn("100")
 
 
   })
@@ -204,7 +206,7 @@
     $(".railways").css("margin-top", "-0.4em");
     $(".blue4").css("color", "red");
     $("#svgObject4").css("display", "block");
-    $(".description").hide().html("Front-end mockup of a transit app to solve the problem of unreliable MTA subway updates. By installing low cost beacons on and in the train stations, crowd-sourced data would allow for near instant notifications of delays and traffic. Demoed at the 2016 Facebook Global Hackathon.").fadeIn("100")
+    $(".description p").hide().html("Front-end mockup of a transit app to solve the problem of unreliable MTA subway updates. By installing low cost beacons on and in the train stations, crowd-sourced data would allow for near instant notifications of delays and traffic. Demoed at the 2016 Facebook Global Hackathon.").fadeIn("100")
 
 
 })
@@ -220,7 +222,7 @@ $( ".sound1" ).mouseenter(function() {
   $(".blue5").css("color", "red");
   $("#svgObject2").css("display", "block");
   $(".glitch").css("opacity", "1");
-  $(".description").hide().html("This is something about SoundScape").fadeIn("100")
+  $(".description p").hide().html("This is something about SoundScape").fadeIn("100")
 
 
 
@@ -237,7 +239,7 @@ $( ".yee1" ).mouseenter(function() {
   $(".yee").css("margin-top", "-0.4em");
   $(".blue6").css("color", "red");
   $("#svgObject").css("display", "block");
-  $(".description").hide().html("This is something about YeeMachine").fadeIn("100")
+  $(".description p").hide().html("This is something about YeeMachine").fadeIn("100")
 
 })
 $( ".yee1" ).mouseleave(function() {
@@ -251,7 +253,7 @@ $( ".graphic1" ).mouseenter(function() {
   $(".graphic").css("margin-top", "-0.4em");
   $(".blue7").css("color", "red");
   $("#svgObject6").css("display", "block");
-  $(".description").hide().html("This is something about YeeMachine").fadeIn("100")
+  $(".description p").hide().html("This is something about YeeMachine").fadeIn("100")
 
 })
 $( ".graphic1" ).mouseleave(function() {
@@ -361,7 +363,7 @@ $("#svgObject6").css("display", "");
 <div class="mobiledesc"><h3>Hello</h3><p>This is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a test</p></div>
 </div>
 
-  <div class="description" style="position:fixed;right:3.6vw;top:50vh;margin-top:-10vw;margin-left:0vw;width:15vw;height:20vw;display:flex;align-items:center;justify-content:flex-start;font-size:12px;"><p></p></div>
+  <div class="description" style="position:fixed;right:3.6vw;top:42.5vh;margin-top:-10vw;margin-left:0vw;width:15vw;height:20vw;display:flex;align-items:flex-end;justify-content:flex-start;font-size:16px;"><p></p></div>
 
 </container>
 <container class="page2">
@@ -403,8 +405,8 @@ $("#svgObject6").css("display", "");
 
   <a href="mailto:rich@yeemachine.com" target="_blank" class="logo folded right supporting contactC processed flipthis-highlight" data-max_flow="3" data-max_lines="3" >
 
-    <div class="line"><p class="yeeshadow contact" style="margin-top:-0.8em">&nbsp</p><p class="red red2">Contact</p></div>
-    <div class="line"><p class="yeeshadow contact" style="margin-top:-0.8em">Contact</p></div>
+    <div class="line"><p class="yeeshadow yeeshadow2 contact" style="margin-top:-0.8em">&nbsp</p><p class="red red2">Contact</p></div>
+    <div class="line"><p class="yeeshadow yeeshadow2 contact" style="margin-top:-0.8em">Contact</p></div>
 
 
   </a>
