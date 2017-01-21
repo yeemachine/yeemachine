@@ -15,10 +15,14 @@
     <script src="typed.js"></script>
 
     <script>
-    if(typeof(console) === 'undefined') {
-    var console = {};
-    console.log = console.error = console.info = console.debug = console.warn = console.trace = console.dir = console.dirxml = console.group = console.groupEnd = console.time = console.timeEnd = console.assert = console.profile = function() {};
-}
+    (function (original) {
+    console.enableLogging = function () {
+        console.log = original;
+    };
+    console.disableLogging = function () {
+        console.log = function () {};
+    };
+})(console.log);
       $(window).scroll(function() {
 
         var mn = $('h1');
