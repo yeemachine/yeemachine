@@ -270,6 +270,7 @@ align-items: flex-end;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  left:0;
 }
 #svgObject{
   /*position:fixed;left:50vw;top:50vh;margin-top:-12.5vw;margin-left:-12.5vw;*/
