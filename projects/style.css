@@ -754,6 +754,9 @@ p.yee:hover{
   font-size: 2.5vw;
 
 }
+.mobiledesc{
+  display: none
+}
 @keyframes noise-anim {
   0% {
     clip: rect(0px, 9999px, 5px, 0);
@@ -884,6 +887,16 @@ p.yee:hover{
     clip: rect(24px, 9999px, 22px, 0);
   }
 }
+#glitchcontainer{
+  position:absolute;
+  left:50vw;
+  top:50vh;
+  margin-top:-10vw;
+  margin-left:-100px;
+  width:200px;
+  height:20vw;
+  display:flex;align-items:center;justify-content:center
+}
 .glitch {
   color: white;
   position: relative;
@@ -928,7 +941,8 @@ p.yee:hover{
 .emotions{
 color: black;
 position: relative;
-width: 150px;
+width: 100vw;
+height: 20vw
 margin: 0 auto;
 display: flex;
 flex-direction: row;
@@ -940,6 +954,7 @@ opacity: 0;
 text-transform: uppercase;
 
 }
+
 .description{
 color: black;
 position: relative;
@@ -1054,6 +1069,16 @@ align-items: center;
 #svgObject4{
   width: 80vw
 }
+#glitchcontainer{
+  position:absolute;
+  left:50vw;
+  top:30vw;
+  margin-top:0vw;
+  margin-left:-100px;
+  width:200px;
+  height:20vw;
+  display:flex;align-items:center;justify-content:center
+}
 .emotions{
   opacity: 1;
   position: relative;
@@ -1061,5 +1086,10 @@ align-items: center;
 .glitch{
   opacity: 1;
 }
-
+.mobiledesc{
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  width: 80vw;
+}
 }
