@@ -154,7 +154,7 @@
         $( ".timeline1" ).mouseenter(function() {
           $(".timeline").css("margin-top", "-0.4em");
           $(".blue1").css("color", "red");
-          // $("#svgObject5").css("display", "block");
+          $("#svgObject5").css("display", "block");
           $(".description p").hide().html("This is something about Tesla").fadeIn("100")
 
 
@@ -162,7 +162,7 @@
       $( ".timeline1" ).mouseleave(function() {
         $(".timeline").css("margin-top", "-.8em");
         $(".blue1").css("color", "");
-        // $("#svgObject5").css("display", "");
+        $("#svgObject5").css("display", "");
 
 
       });
@@ -319,7 +319,7 @@ $("#svgObject6").css("display", "");
 </container>
 <container class="projects">
   <div class="mobilepage">
-    <object class="animate" id="svgObject5" type="image/svg+xml" data="tesla.svg">Your browser does not support SVGs</object>
+    <object class="animate" id="svgObject5" type="image/svg+xml" data="tesla.svg" style="display:none">Your browser does not support SVGs</object>
     <div class="mobiledesc"><h3>Hello</h3><p>This is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a testThis is a test</p></div>
     </div>
   <div class="mobilepage">
