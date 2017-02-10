@@ -598,13 +598,13 @@ align-items: flex-start;
 .blurb{
   width: 120%;
   height: 100vh;
-  font-size: 2.6vw;
+  font-size: calc(30px + 2.6vw);
   overflow-wrap: break-word;
  word-wrap: break-word;
  font-family: 'yeehex';
  pointer-events: none;
 overflow: hidden;
-line-height: 2vw;
+line-height: calc(22.5px + 2vw);
 
 }
 .blurbcontainer{
