@@ -1,0 +1,460 @@
+<html>
+
+<head>
+  <title>The Yee Machine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script>
+
+
+      $(window).scroll(function() {
+        var svg2 = document.getElementById("svgObject2");
+        var svgDoc2 = svgObject2.contentDocument;
+        var squiggle = svgDoc2.getElementsByClassName("squiggle");
+        var mn = $('h1');
+        var hdr = $('.page1').height();
+        var gdr = $('.page2').height();
+
+
+        var windowPosY = $(this).scrollTop();
+
+        var isMobile = window.matchMedia("only screen and (max-width: 600px)");
+        if (isMobile.matches) {
+          console.log('works');
+
+          if ($(this).scrollTop() > (hdr * .55) && windowPosY < (hdr + (gdr))) {
+
+            console.log('please');
+
+            $(mn).css({"position": "fixed","top":"5%","left":"0","color":""});
+            $('body').css({'background-color':'','color':''})
+            $("h1").html("Yee Machine Projects");
+            $(".description").html("");
+
+            $(squiggle).css({"animation":"dash 5s cubic-bezier(0.670, 0.005, 0.200, 1.000)","animation-delay":".5s","animation-fill-mode": "forwards"});
+
+          }
+          if ($(this).scrollTop() < (hdr * .55) && windowPosY) {
+            $(mn).css({"position": "","top":"","left":"","color":""});
+
+        }
+        }else {
+        if ($(this).scrollTop() > (hdr * .4) && windowPosY < (hdr + (gdr))) {
+
+
+          $(mn).css({"position": "fixed","top":"5%","left":"10%","color":""});
+          $('body').css({'background-color':'','color':''})
+          $("h1").html("Yee Machine Projects");
+          $(squiggle).css({"animation":"dash 5s cubic-bezier(0.670, 0.005, 0.200, 1.000)","animation-delay":".5s", "animation-fill-mode": "forwards"});
+
+        }
+        if ($(this).scrollTop() < (hdr * .4) && windowPosY) {
+          $(mn).css({"position": "","top":"","left":"","color":""});
+
+        }
+
+        }
+
+      });
+    </script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-83985733-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+
+    $(window).on('beforeunload', function() {
+				$(window).scrollTop(0);
+			});
+
+
+    window.onunload = function(){};
+
+    window.onload=function() {
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      var h = $('body').height();
+      $('body').height(h);
+      $('.timeline').css('top', (h*.575));
+
+    }
+    var svg = document.getElementById("svgObject");
+    var svgDoc = svgObject.contentDocument;
+    var line1 = svgDoc.getElementById("link1");
+    var line2 = svgDoc.getElementById("link2");
+    var line3 = svgDoc.getElementById("link3");
+    var line4 = svgDoc.getElementById("link4");
+    var line5 = svgDoc.getElementById("link5");
+    var line6 = svgDoc.getElementById("link6");
+    var line7 = svgDoc.getElementById("link7");
+
+    var logo = svgDoc.getElementById("logo");
+
+    var move1 = svgDoc.getElementById("move1");
+    var move2 = svgDoc.getElementById("move2");
+    var move3 = svgDoc.getElementById("move3");
+    var move4 = svgDoc.getElementById("move4");
+    var move5 = svgDoc.getElementById("move5");
+    var hidelink1 = svgDoc.getElementsByClassName("hidelink1");
+    var hidelink2 = svgDoc.getElementsByClassName("hidelink2");
+    var hidelink3 = svgDoc.getElementsByClassName("hidelink3");
+    var hidelink4 = svgDoc.getElementsByClassName("hidelink4");
+    var hidelink5 = svgDoc.getElementsByClassName("hidelink5");
+    var hidelink6 = svgDoc.getElementsByClassName("hidelink6");
+    var hidelink7 = svgDoc.getElementsByClassName("hidelink7");
+
+
+    var cnt1 = $(hidelink1).contents();
+    var cnt2 = $(hidelink2).contents();
+    var cnt3 = $(hidelink3).contents();
+    var cnt4 = $(hidelink4).contents();
+    var cnt5 = $(hidelink5).contents();
+    var cnt6 = $(hidelink6).contents();
+    var cnt7 = $(hidelink7).contents();
+    setTimeout(function(){   $(".largecontainer").css("pointer-events", "none");$("h1").css("display", "block")}, 1500);
+
+
+    // $(window).resize(function() {
+          // This will fire each time the window is resized:
+          if($(window).width() >= 600) {
+            $( line1 ).mouseenter(function() {
+              $("h1").hide().html("Tesla Timeline").fadeIn("500");
+              $(".description").hide().html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link'  href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn("500");
+              $(".timeline").attr("class", "timelineanim");
+          })
+            $( line1 ).mouseleave(function() {
+              $("h1").html("Yee Machine Projects");
+              $(".description").html("");
+              $(".timelineanim").attr("class", "timeline");
+        });
+            $( line2 ).mouseenter(function() {
+              $("h1").hide().html("Watson X Wayback").fadeIn("500");
+              $(line1).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".2s"});
+              $(line3).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".3s"});
+              $(line4).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".1s"});
+              $(line5).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
+              $(line6).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".4s"});
+              $(line5).attr('class', 'old');
+              $(line6).attr('class', 'facebook');
+              $(".description").hide().html("Mashup between IBM Watson's tone analyzer and Wayback Machine's internet archive. Users can input their desired websites and track a company's linguistic tone over time. Apple's support page is used as an initial example.<br><a  class='link'  href='http://watsonwayback.com'><h3>GO</h3></a>").fadeIn("500");
+        })
+            $( line2 ).mouseleave(function() {
+              $("h1").html("Yee Machine Projects");
+              $(line1).css({"animation":"","animation-delay":""});
+              $(line3).css({"animation":"","animation-delay":""});
+              $(line4).css({"animation":"","animation-delay":""});
+              $(line5).css({"animation":"","animation-delay":""});
+              $(line6).css({"animation":"","animation-delay":""});
+              $(".description").html("");
+        });
+
+            $( line3 ).mouseenter(function() {
+              $("h1").hide().html("Soundscape").fadeIn("500");
+              $(".description").hide().html("An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships. Uses three.js<br><a  class='link'  href='http://richyee.com/sound/'><h3>GO</h3></a>").fadeIn("500");
+              $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+        })
+            $( line3 ).mouseleave(function() {
+              $("h1").html("Yee Machine Projects");
+              $(".description").html("");
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+        });
+            $( line4 ).mouseenter(function() {
+              $("h1").hide().html("Video Works").fadeIn("500");
+              $(".description").hide().html("A collection of video projects done during 2015-2016.<br><a  class='link'  href='https://vimeo.com/user44076957'><h3>GO</h3></a>").fadeIn("500");
+        })
+            $( line4 ).mouseleave(function() {
+              $("h1").html("Yee Machine Projects");
+              $(".description").html("");
+        });
+
+            $( line5 ).mouseenter(function() {
+              $("h1").hide().html("Graphic Design").fadeIn("500");
+              $("a").css("color","white");
+
+              $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+              $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+              // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+              $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+              $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+              $(logo).css({"opacity":"0"});
+              $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users. Not optimized for Safari yet.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
+              $("body").css({"background-color": "black","color":"white"});
+
+            })
+            $( line5 ).mouseleave(function() {
+              $("h1").html("Yee Machine Projects");
+                $("a").css("color","");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                // $(move3).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
+              $(".description").html("");
+              $("body").css({"background-color": "","color":""});
+
+              })
+
+        $( line6 ).mouseenter(function() {
+          $("h1").hide().html("Facebook Hackathon").fadeIn("500");
+          $(".description").hide().html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app.<br><a href='https://yeemachine.github.io/railways.fish/'><h3>GO</h3></a>").fadeIn("500");
+          $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+          $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+          $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+        })
+        $( line6 ).mouseleave(function() {
+            $("h1").html("Yee Machine Projects");
+            $(".description").html("");
+            $(line1).css("animation","");
+            $(line2).css("animation","");
+            $(line3).css("animation","");
+        });
+
+
+
+
+
+
+              // if larger or equal
+          } else {
+              // if smaller
+              $(hidelink1).replaceWith(cnt1);
+              $(hidelink2).replaceWith(cnt2);
+
+              $(hidelink3).replaceWith(cnt3);
+
+              $(hidelink4).replaceWith(cnt4);
+              $(hidelink5).replaceWith(cnt5);
+              $(hidelink6).replaceWith(cnt6);
+              $(hidelink7).replaceWith(cnt7);
+
+
+              $( 'body' ).click(function() {
+                $("h1").html("Yee Machine Projects");
+                $(".description").html("");
+                $(".timelineanim").attr("class", "timeline");
+                $(line1).css({"animation":"","animation-delay":""});
+                $(line2).css("animation","");
+                $(line3).css({"animation":"","animation-delay":""});
+                $(line4).css({"animation":"","animation-delay":""});
+                $(line5).css({"animation":"","animation-delay":""});
+                $(line6).css({"animation":"","animation-delay":""});
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $("body").css("background-color", "");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                // $(move3).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
+                $("body").css("color","");
+
+              })
+              $( line1 ).click(function() {
+                $("h1").hide().html("Tesla Timeline").fadeIn("500");
+                $(".description").hide().html("A playful mockup on this hypothetical scenario: Tesla's achievements are on the same level as defining momements in Universal History.<br><a  class='link'  href='https://yeemachine.github.io/teslatimeline/'><h3>GO</h3></a>").fadeIn("500");
+                $(".timeline").attr("class", "timelineanim");
+                $(line1).css({"animation":"","animation-delay":""});
+                $(line2).css("animation","");
+                $(line3).css({"animation":"","animation-delay":""});
+                $(line4).css({"animation":"","animation-delay":""});
+                $(line5).css({"animation":"","animation-delay":""});
+                $(line6).css({"animation":"","animation-delay":""});
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $("body").css("background-color", "");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
+                $("body").css("color","");
+
+            })
+
+              $( line2 ).click(function() {
+                $("h1").hide().html("Watson X Wayback").fadeIn("500");
+                $(line1).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".2s"});
+                $(line3).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".3s"});
+                $(line4).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".1s"});
+                $(line5).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":""});
+                $(line6).css({"animation":"blink .5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite","animation-delay":".4s"});
+                $(line5).attr('class', 'old');
+                $(line6).attr('class', 'mock');
+                $(".description").hide().html("Mashup between IBM Watson's tone analyzer and Wayback Machine's internet archive. Users can input their desired websites and track a company's linguistic tone over time. Apple's support page is used as an initial example.<br><a  class='link'  href='http://watsonwayback.com'><h3>GO</h3></a>").fadeIn("500");
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $(line2).css("animation","");
+                $("body").css("background-color", "");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
+                $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
+
+            })
+
+
+              $( line3 ).click(function() {
+                $("h1").hide().html("Soundscape").fadeIn("500");
+                $(".description").hide().html("An in-browser monumental soundscape remembering the voices of anthropomorphic WWII battleships. Uses three.js<br><a  class='link'  href='http://richyee.com/sound/'><h3>GO</h3></a>").fadeIn("500");
+                $(line7).css({"animation":"rotate 3s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+                $(line1).css({"animation":"","animation-delay":""});
+                $(line2).css("animation","");
+                $(line3).css({"animation":"","animation-delay":""});
+                $(line4).css({"animation":"","animation-delay":""});
+                $(line5).css({"animation":"","animation-delay":""});
+                $(line6).css({"animation":"","animation-delay":""});
+                $("body").css("background-color", "");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
+                $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
+
+            })
+
+              $( line4 ).click(function() {
+                $("h1").hide().html("Video Works").fadeIn("500");
+                $(".description").hide().html("A collection of video projects done during 2015-2016.<br><a  class='link'  href='https://vimeo.com/user44076957'><h3>GO</h3></a>").fadeIn("500");
+                $(line1).css({"animation":"","animation-delay":""});
+                $(line2).css("animation","");
+                $(line3).css({"animation":"","animation-delay":""});
+                $(line4).css({"animation":"","animation-delay":""});
+                $(line5).css({"animation":"","animation-delay":""});
+                $(line6).css({"animation":"","animation-delay":""});
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $("body").css("background-color", "");
+                $(move1).css({"animation":"","animation-delay":""});
+                $(move2).css({"animation":"",});
+                $(move4).css({"animation":"",});
+                $(move5).css({"animation":"","animation-delay":""});
+                $(logo).css({"opacity":""});
+                $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","");
+
+            })
+
+              $( line5 ).click(function() {
+                $("h1").hide().html("Graphic Design").fadeIn("500");
+                $("body").css("background-color", "black");
+                $(move1).css({"animation":"moveup2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+                $(move2).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+                // $(move3).css({"animation":"moveup 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+                $(move4).css({"animation":"movedown 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite",});
+                $(move5).css({"animation":"movedown2 1s cubic-bezier(0.670, 0.005, 0.200, 1.000) infinite","animation-delay":""});
+                $(logo).css({"opacity":"0"});
+                $(".description").hide().html("Graphic Design portfolio on my old website. It has an earlier version of my soundscape project incorporated into the design which is a bit heavy for most users.<br><a class='link'  href='http://richyee.com'><h3 style='color:white'>GO</h3></a> ").fadeIn("500");
+                $(line1).css({"animation":"","animation-delay":""});
+                $(line2).css("animation","");
+                $(line3).css({"animation":"","animation-delay":""});
+                $(line4).css({"animation":"","animation-delay":""});
+                $(line5).css({"animation":"","animation-delay":""});
+                $(line6).css({"animation":"","animation-delay":""});
+                $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+                $(".timelineanim").attr("class", "timeline");
+                $("body").css("color","white");
+
+              })
+
+
+
+            $( line6 ).click(function() {
+            $("h1").hide().html("Facebook Hackathon").fadeIn("500");
+            $(".description").hide().html("For the 2016 Facebook Hackathon, we envisioned a system that would drastically improve the transit experience of subways by crowdsourcing transit data collected from low powered beacons and funneling that into a companion app.<br><a href='https://yeemachine.github.io/railways.fish/'><h3>GO</h3></a>").fadeIn("500");
+            $(line1).css("animation","trainN 2s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+            $(line2).css("animation","trainN 4s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+            $(line3).css("animation","trainN 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+
+            $(line4).css({"animation":"","animation-delay":""});
+            $(line5).css({"animation":"","animation-delay":""});
+            $(line6).css({"animation":"","animation-delay":""});
+            $(line7).css({"animation":"stop 1s linear","animation-delay":""});
+            $("body").css("background-color", "");
+            $(move1).css({"animation":"","animation-delay":""});
+            $(move2).css({"animation":"",});
+            $(move4).css({"animation":"",});
+            $(move5).css({"animation":"","animation-delay":""});
+            $(logo).css({"opacity":""});
+            $(".timelineanim").attr("class", "timeline");
+            $("body").css("color","");
+
+            })
+
+
+          }
+      // }).resize();
+
+
+
+      };
+
+
+
+    </script>
+</head>
+
+<body>
+  <container class="page1">
+  <div class="spacer"></div>
+  <!-- <object class="animate" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object> -->
+  <object class="animate" id="svgObject" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
+
+
+  <!-- <object class="animate" id="svgObject2" type="image/svg+xml" data="hex.svg">Your browser does not support SVGs</object> -->
+
+
+  <nav></nav>
+  <container class="largecontainer">
+    <div class="halfcontainer2">
+      <h1>Yee Machine Projects</h1>
+    <p class="description"></p>
+
+  </div>
+    <div class="halfcontainer1">
+    <p class="title"></p>
+    </div>
+
+  </container>
+
+  <div class="timeline"></div>
+</container>
+<container class="page2">
+
+</container>
+<container class="page2">
+
+<h3 class="logo folded processed flipthis-highlight" data-max_flow="3" data-max_lines="3" style="padding: 277.363px 250.784px 306.559px 68.8px;">
+  <div class="line"><p> </p><p class="brown">Yee</p><p class="">Architects</p><p class="dark">Habits</p></div>
+  <div class="line"><p class="brown">Yee</p><p class="">Machine</p><p class="dark">Habits</p><p class="dark">form</p></div>
+  <div class="line"><p>Machine</p><p class="dark"> </p><p class="dark">form</p><p class="dark">Habitats</p></div>
+</h3>
+</container>
+
+
+
+</body>
+
+</html>

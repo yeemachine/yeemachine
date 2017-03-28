@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "yeemachine-fc409"
+    "default": "yeemachine-fc409",
+    "dev": "yeemachine-fc409"
   }
 }
