@@ -155,7 +155,7 @@ $(".sound").css("margin-top", "-0.4em");
 $(".blue5").css("color", "red");
 $("#svgObject2").css("display", "block");
 $(".glitch").css("opacity", "1");
-$(".description p").hide().html("An in-browser soundscape populated with found and recorded voice samples. The environment changes according to different times of day. Use the 'WASD' keys and mouse to explore.").fadeIn("100");
+$(".description p").hide().html("An in-browser soundscape populated with found and recorded voice samples using three.js. Use the 'WASD' keys and mouse to explore. Press space to shoot.").fadeIn("100");
 
 
 
@@ -172,7 +172,7 @@ $( ".yee1" ).mouseenter(function() {
 $(".yee").css("margin-top", "-0.4em");
 $(".blue6").css("color", "red");
 $("#svgObject").css("display", "block");
-$(".description p").hide().html("Personal branding project that explores what my visual identity would be as an app designer. Projects displayed on the site are a mix of completed and concept-stage works.").fadeIn("100")
+$(".description p").hide().html("Exploring what it means to brand oneself, the projects displayed on this page are a mix of completed and concept works.").fadeIn("100")
 
 });
 $( ".yee1" ).mouseleave(function() {
@@ -186,7 +186,7 @@ $( ".graphic1" ).mouseenter(function() {
 $(".graphic").css("margin-top", "-0.4em");
 $(".blue7").css("color", "red");
 $("#svgObject6").css("display", "block");
-$(".description p").hide().html("A collection of assorted graphic design work consisting of posters, icons, and logos.").fadeIn("100")
+$(".description p").hide().html("An assortment of graphic design work consisting of posters, icons, and logos.").fadeIn("100")
 });
 $( ".graphic1" ).mouseleave(function() {
 $(".graphic").css("margin-top", "-.8em");
