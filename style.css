@@ -198,11 +198,11 @@ text-decoration: none;
 
 body{
 
-  /*font-family: -apple-system, BlinkMacSystemFont,
+  font-family: -apple-system, BlinkMacSystemFont,
       "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans",
-      "Droid Sans", "Helvetica Neue", sans-serif;  */
-font-family:'alex';
+      "Droid Sans", "Helvetica Neue", sans-serif;  
+/*font-family:'alex';*/
       border: 0;
   margin: 0;
   transition: .2s;
