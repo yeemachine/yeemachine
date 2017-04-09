@@ -5,6 +5,10 @@
     font-family: 'yeehex';
     src: url(YeeHex.woff) format('woff');
 }
+@font-face {
+    font-family: 'alex';
+    src: url(NayAug.woff) format('woff');
+}
 html {
   -webkit-tap-highlight-color: transparent;
   font-weight: normal;
@@ -194,10 +198,12 @@ text-decoration: none;
 
 body{
 
-  font-family: -apple-system, BlinkMacSystemFont,
+  /*font-family: -apple-system, BlinkMacSystemFont,
       "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans",
-      "Droid Sans", "Helvetica Neue", sans-serif;  border: 0;
+      "Droid Sans", "Helvetica Neue", sans-serif;  */
+font-family:'alex';
+      border: 0;
   margin: 0;
   transition: .2s;
   overflow-x: hidden;
