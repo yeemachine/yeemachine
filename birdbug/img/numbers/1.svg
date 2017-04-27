@@ -9,7 +9,7 @@
 		<line id="one_1_" fill="none" stroke="#000000" stroke-width="20.7495" stroke-linecap="round" stroke-miterlimit="10" x1="143.667" y1="243.786" x2="143.667" y2="50.666"/>
 </g>
 <g id="_x31__20_" class="birdbug">
-	<path id="one_2_"  fill="none" stroke="#000000" stroke-width="19.7571" stroke-linecap="round" stroke-miterlimit="10" d="
+	<path id="one_2_"  fill="none" stroke="black" stroke-width="19.7571" stroke-linecap="round" stroke-miterlimit="10" d="
 		M120.198,120.34c-26.005-5.982-70.78-2.804-75.682,24.068c-3.703,20.246,22.944,36.17,46.894,30.209
 		c25.727-6.41,39.124-23.426,58.943-36.492c18.405-12.157,41.691-22.526,66.264-19.573c22.752,2.697,32.576,20.022,23.201,36.226
 		c-11.771,20.591-47,23.255-68.961,11.591"/>

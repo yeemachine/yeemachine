@@ -12,11 +12,11 @@
 		<line id="three_869_" fill="none" stroke="#000000" stroke-width="20.7491" stroke-linecap="round" stroke-miterlimit="10" x1="165.616" y1="243.781" x2="165.616" y2="50.665"/>
 </g>
 <g id="_x32__12_" class="birdbug">
-	<path id="two_112_" fill="none" stroke="#000000" stroke-width="20.1553" stroke-linecap="round" stroke-miterlimit="10" d="
+	<path id="two_112_" fill="none" stroke="black" stroke-width="20.1553" stroke-linecap="round" stroke-miterlimit="10" d="
 		M120.031,139.864c-26.572-6.125-72.207-2.859-77.25,24.544c-3.755,20.645,23.429,36.9,47.862,30.832
 		c26.244-6.52,39.913-23.92,60.15-37.25c18.734-12.384,42.491-22.985,67.579-19.971c23.209,2.772,33.209,20.451,23.667,36.98
 		c-12.008,21.002-47.946,23.711-70.373,11.834"/>
 
-		<line id="one_121_" fill="none" stroke="#000000" stroke-width="20.1553" stroke-linecap="round" stroke-miterlimit="10" x1="42.431" y1="97.92" x2="245.643" y2="97.92"/>
+		<line id="one_121_" fill="none" stroke="black" stroke-width="20.1553" stroke-linecap="round" stroke-miterlimit="10" x1="42.431" y1="97.92" x2="245.643" y2="97.92"/>
 </g>
 </svg>

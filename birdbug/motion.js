@@ -81,6 +81,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "red"
+        });
     });
     $("#one").mouseleave(function() {
         $(oneB).css({
@@ -93,6 +96,9 @@ window.onload = function() {
         $("#one").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -108,6 +114,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "#ff5500"
+        });
     });
     $("#two").mouseleave(function() {
         $(twoB).css({
@@ -119,6 +128,9 @@ window.onload = function() {
         $("#two").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
     $("#three").mouseenter(function() {
@@ -133,6 +145,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "#ffa200"
+        });
     });
     $("#three").mouseleave(function() {
         $(threeB).css({
@@ -144,6 +159,9 @@ window.onload = function() {
         $("#three").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -159,6 +177,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "ffde00"
+        });
     });
     $("#four").mouseleave(function() {
         $(fourB).css({
@@ -170,6 +191,9 @@ window.onload = function() {
         $("#four").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -185,6 +209,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "b4ff00"
+        });
     });
     $("#five").mouseleave(function() {
         $(fiveB).css({
@@ -196,6 +223,9 @@ window.onload = function() {
         $("#five").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -214,6 +244,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "00ff30"
+        });
     });
     $("#six").mouseleave(function() {
         $(sixB).css({
@@ -226,6 +259,9 @@ window.onload = function() {
         $("#six").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
     $("#seven").mouseenter(function() {
@@ -240,6 +276,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "00ffae"
+        });
     });
     $("#seven").mouseleave(function() {
         $(sevenB).css({
@@ -251,6 +290,9 @@ window.onload = function() {
         $("#seven").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
     $("#eight").mouseenter(function() {
@@ -265,6 +307,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "00fcff"
+        });
     });
     $("#eight").mouseleave(function() {
         $(eightB).css({
@@ -276,6 +321,9 @@ window.onload = function() {
         $("#eight").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -291,6 +339,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "0072ff"
+        });
     });
     $("#nine").mouseleave(function() {
         $(nineB).css({
@@ -302,6 +353,9 @@ window.onload = function() {
         $("#nine").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -317,6 +371,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "a800ff"
+        });
     });
     $("#ten").mouseleave(function() {
         $(tenB).css({
@@ -328,6 +385,9 @@ window.onload = function() {
         $("#ten").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -350,6 +410,10 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+
+        $("body").css({
+            "background-color": "#c10000"
+        });
     });
     $("#eleven").mouseleave(function() {
         $(elevenB).css({
@@ -362,6 +426,9 @@ window.onload = function() {
         $("#eleven").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
     $("#twelve").mouseenter(function() {
@@ -376,6 +443,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "#c24100"
+        });
     });
     $("#twelve").mouseleave(function() {
         $(twelveB).css({
@@ -387,6 +457,9 @@ window.onload = function() {
         $("#twelve").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
     $("#thirteen").mouseenter(function() {
@@ -401,6 +474,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "d78900"
+        });
     });
     $("#thirteen").mouseleave(function() {
         $(thirteenB).css({
@@ -412,6 +488,9 @@ window.onload = function() {
         $("#thirteen").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -427,6 +506,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "ddc000"
+        });
     });
     $("#fourteen").mouseleave(function() {
         $(fourteenB).css({
@@ -438,6 +520,9 @@ window.onload = function() {
         $("#fourteen").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -453,6 +538,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "97d501"
+        });
     });
     $("#fifteen").mouseleave(function() {
         $(fifteenB).css({
@@ -464,6 +552,9 @@ window.onload = function() {
         $("#fifteen").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -482,6 +573,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "00c625"
+        });
     });
     $("#sixteen").mouseleave(function() {
         $(sixteenB).css({
@@ -494,6 +588,9 @@ window.onload = function() {
         $("#sixteen").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
     $("#seventeen").mouseenter(function() {
@@ -508,6 +605,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "00d491"
+        });
     });
     $("#seventeen").mouseleave(function() {
         $(seventeenB).css({
@@ -519,6 +619,9 @@ window.onload = function() {
         $("#seventeen").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
     $("#eighteen").mouseenter(function() {
@@ -533,6 +636,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "00c4c6"
+        });
     });
     $("#eighteen").mouseleave(function() {
         $(eighteenB).css({
@@ -544,6 +650,9 @@ window.onload = function() {
         $("#eighteen").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -559,6 +668,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "025bca"
+        });
     });
     $("#nineteen").mouseleave(function() {
         $(nineteenB).css({
@@ -570,6 +682,9 @@ window.onload = function() {
         $("#nineteen").addClass("fade");
         $(".fade").css({
             "opacity": ""
+        });
+        $("body").css({
+            "background-color": ""
         });
     });
 
@@ -585,6 +700,9 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ".1"
         });
+        $("body").css({
+            "background-color": "7e01be"
+        });
     });
     $("#twenty").mouseleave(function() {
         $(twentyB).css({
@@ -597,70 +715,77 @@ window.onload = function() {
         $(".fade").css({
             "opacity": ""
         });
+        $("body").css({
+            "background-color": ""
+        });
     });
 
 
     $(oneDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
+      // $(".stroke, .stroke2").css({"opacity": "0"});
+      $(".strokebox2").css({"display": "flex"});
+
     });
 
-
-    $(twoDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(threeDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(fourDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(fiveDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(sixDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(sevenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(eightDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(nineDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(tenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(elevenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(twelveDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(thirteenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(fourteenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(fifteenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(sixteenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(seventeenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(eighteenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(nineteenDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
-    });
-    $(twentyDoc).click(function() {
-      $(".stroke, .stroke2").css({"opacity": "0"});
+    // $(twoDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(threeDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(fourDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(fiveDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(sixDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(sevenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(eightDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(nineDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(tenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(elevenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(twelveDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(thirteenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(fourteenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(fifteenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(sixteenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(seventeenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(eighteenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(nineteenDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    // $(twentyDoc).click(function() {
+    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    // });
+    $('.strokebox2').click(function() {
+      $(".strokebox2").css({"display": ""});
     });
 
 }
