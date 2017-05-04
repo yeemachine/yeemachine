@@ -1,7 +1,7 @@
 window.onload = function() {
     var strokeDoc = strokecount.contentDocument;
     var strokeB = strokeDoc.getElementsByClassName("birdbug");
-    var strokeBA = strokeDoc.getElementById("one_2_");
+    var strokeRA = strokeDoc.getElementById("one_1_");
     var strokeR = strokeDoc.getElementsByClassName("roman");
 
     var oneDoc = one.contentDocument;
@@ -71,17 +71,22 @@ window.onload = function() {
     var twentyDoc = twenty.contentDocument;
     var twentyB = twentyDoc.getElementsByClassName("birdbug");
     var twentyR = twentyDoc.getElementsByClassName("roman");
-
+    $(strokeB).css({
+        "display": "block",
+    });
+    $(strokeR).css({
+        "display": "none",
+    });
     $("#strokecount").mouseenter(function() {
-        $(strokeB).css({
+        $(strokeR).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
             "stroke":"#ffffff"
         });
-        // $(strokeBA).css({
+        // $(strokeRA).css({
         //     "stroke":"#ffffff"
         // });
-        $(strokeR).css({
+        $(strokeB).css({
             "display": "none",
         });
         $('.page2').css({
@@ -90,11 +95,11 @@ window.onload = function() {
     });
     $("#strokecount").mouseleave(function() {
         $(strokeB).css({
-            "display": "",
+            "display": "block",
             "animation": ""
         });
         $(strokeR).css({
-            "display": ""
+            "display": "none"
         });
         $('.page2').css({
           "background-color":""
@@ -809,9 +814,11 @@ window.onload = function() {
       // $(".strokebox2").css({"display": "flex"});
     });
     $(twoDoc).click(function() {
+      $(".backtostroke").html("<object class='stroke' id='strokecount' type='image/svg+xml' data='img/numbers/2.svg' ></object>");
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-
+      $(".strokebox2").css({"width": "90vw","justify-content":"center"});
       $('#two').attr('status','clicked');
+      $(".page2").css({"opacity": "1","pointer-events":"auto"});
       // $(".strokebox2").css({"display": "flex"});
 
     });
@@ -887,12 +894,17 @@ window.onload = function() {
 
     $('.stroke3').click(function() {
       $( ".demodisappear" ).toggleClass( 'disappear' );
-
+      $('.demodisappear').attr('status','click1');
+      $( ".demodisappear" ).addClass( 'click1' );
+      $(".strokebox2").css({"width": "","flex-direction":"column"});
 
       $(".vector").css({"width": "40vw","opacity":'1'});
       $(".raster").css({"width": "40vw","opacity":'1'});
-      $(".strokebox2").css({"width": "","flex-direction":"column"});
+
+
     });
+
+
 
 
 
