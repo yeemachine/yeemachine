@@ -1,6 +1,5 @@
 window.onload = function() {
 
-
     var strokeDoc = strokecount.contentDocument;
     var strokeB = strokeDoc.getElementsByClassName("birdbug");
     var strokeR = strokeDoc.getElementsByClassName("roman");
