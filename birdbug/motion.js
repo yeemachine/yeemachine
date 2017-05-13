@@ -130,132 +130,132 @@ window.onload = function() {
     var twentyB = twentyDoc.getElementsByClassName("birdbug");
     var twentyR = twentyDoc.getElementsByClassName("roman");
     $(strokeB).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB2).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB3).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB4).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB5).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB6).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB7).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB8).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB9).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB10).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB11).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB12).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB13).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB14).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB15).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB16).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB17).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB18).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB19).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeB20).css({
-        "display": "block",
+      "opacity": "1",
     });
     $(strokeR).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR2).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR3).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR4).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR5).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR6).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR7).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR8).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR9).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR10).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR11).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR12).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR13).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR14).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR15).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR16).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR17).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR18).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR19).css({
-        "display": "none",
+      "opacity": "0",
     });
     $(strokeR20).css({
-        "display": "none",
+      "opacity": "0",
     });
     $("#strokecount").mouseenter(function() {
         $(strokeR).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page2').css({
           "background-color":"white"
@@ -263,10 +263,10 @@ window.onload = function() {
     });
     $("#strokecount").mouseleave(function() {
         $(strokeB).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page2').css({
@@ -276,11 +276,11 @@ window.onload = function() {
     });
     $("#strokecount2").mouseenter(function() {
         $(strokeR2).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB2).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page3').css({
           "background-color":"white"
@@ -288,10 +288,10 @@ window.onload = function() {
     });
     $("#strokecount2").mouseleave(function() {
         $(strokeB2).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR2).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page3').css({
@@ -301,11 +301,11 @@ window.onload = function() {
     });
     $("#strokecount3").mouseenter(function() {
         $(strokeR3).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB3).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page4').css({
           "background-color":"white"
@@ -313,10 +313,10 @@ window.onload = function() {
     });
     $("#strokecount3").mouseleave(function() {
         $(strokeB3).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR3).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page4').css({
@@ -326,11 +326,11 @@ window.onload = function() {
     });
     $("#strokecount4").mouseenter(function() {
         $(strokeR4).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB4).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page5').css({
           "background-color":"white"
@@ -338,10 +338,10 @@ window.onload = function() {
     });
     $("#strokecount4").mouseleave(function() {
         $(strokeB4).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR4).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page5').css({
@@ -350,11 +350,11 @@ window.onload = function() {
     });
     $("#strokecount5").mouseenter(function() {
         $(strokeR5).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB5).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page6').css({
           "background-color":"white"
@@ -362,10 +362,10 @@ window.onload = function() {
     });
     $("#strokecount5").mouseleave(function() {
         $(strokeB5).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR5).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page6').css({
@@ -374,11 +374,11 @@ window.onload = function() {
     });
     $("#strokecount6").mouseenter(function() {
         $(strokeR6).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB6).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page7').css({
           "background-color":"white"
@@ -386,10 +386,10 @@ window.onload = function() {
     });
     $("#strokecount6").mouseleave(function() {
         $(strokeB6).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR6).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page7').css({
@@ -398,11 +398,11 @@ window.onload = function() {
     });
     $("#strokecount7").mouseenter(function() {
         $(strokeR7).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB7).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page8').css({
           "background-color":"white"
@@ -410,10 +410,10 @@ window.onload = function() {
     });
     $("#strokecount7").mouseleave(function() {
         $(strokeB7).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR7).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page8').css({
@@ -422,11 +422,11 @@ window.onload = function() {
     });
     $("#strokecount8").mouseenter(function() {
         $(strokeR8).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB8).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page9').css({
           "background-color":"white"
@@ -434,10 +434,10 @@ window.onload = function() {
     });
     $("#strokecount8").mouseleave(function() {
         $(strokeB8).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR8).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page9').css({
@@ -446,11 +446,11 @@ window.onload = function() {
     });
     $("#strokecount9").mouseenter(function() {
         $(strokeR9).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB9).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page10').css({
           "background-color":"white"
@@ -458,10 +458,10 @@ window.onload = function() {
     });
     $("#strokecount9").mouseleave(function() {
         $(strokeB9).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR9).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page10').css({
@@ -470,11 +470,11 @@ window.onload = function() {
     });
     $("#strokecount10").mouseenter(function() {
         $(strokeR10).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB10).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page11').css({
           "background-color":"white"
@@ -482,10 +482,10 @@ window.onload = function() {
     });
     $("#strokecount10").mouseleave(function() {
         $(strokeB10).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR10).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page11').css({
@@ -495,11 +495,11 @@ window.onload = function() {
 
     $("#strokecount11").mouseenter(function() {
         $(strokeR11).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB11).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page12').css({
           "background-color":"white"
@@ -507,10 +507,10 @@ window.onload = function() {
     });
     $("#strokecount11").mouseleave(function() {
         $(strokeB11).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR11).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page12').css({
@@ -520,11 +520,11 @@ window.onload = function() {
     });
     $("#strokecount12").mouseenter(function() {
         $(strokeR12).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB12).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page13').css({
           "background-color":"white"
@@ -532,10 +532,10 @@ window.onload = function() {
     });
     $("#strokecount12").mouseleave(function() {
         $(strokeB12).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR12).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page13').css({
@@ -545,11 +545,11 @@ window.onload = function() {
     });
     $("#strokecount13").mouseenter(function() {
         $(strokeR13).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB13).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page14').css({
           "background-color":"white"
@@ -557,10 +557,10 @@ window.onload = function() {
     });
     $("#strokecount13").mouseleave(function() {
         $(strokeB13).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR13).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page14').css({
@@ -570,11 +570,11 @@ window.onload = function() {
     });
     $("#strokecount14").mouseenter(function() {
         $(strokeR14).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB14).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page15').css({
           "background-color":"white"
@@ -582,10 +582,10 @@ window.onload = function() {
     });
     $("#strokecount14").mouseleave(function() {
         $(strokeB14).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR14).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page15').css({
@@ -594,11 +594,11 @@ window.onload = function() {
     });
     $("#strokecount15").mouseenter(function() {
         $(strokeR15).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB15).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page16').css({
           "background-color":"white"
@@ -606,10 +606,10 @@ window.onload = function() {
     });
     $("#strokecount15").mouseleave(function() {
         $(strokeB15).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR15).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page16').css({
@@ -618,11 +618,11 @@ window.onload = function() {
     });
     $("#strokecount16").mouseenter(function() {
         $(strokeR16).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB16).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page17').css({
           "background-color":"white"
@@ -630,10 +630,10 @@ window.onload = function() {
     });
     $("#strokecount16").mouseleave(function() {
         $(strokeB16).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR16).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page17').css({
@@ -642,11 +642,11 @@ window.onload = function() {
     });
     $("#strokecount17").mouseenter(function() {
         $(strokeR17).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB17).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page18').css({
           "background-color":"white"
@@ -654,10 +654,10 @@ window.onload = function() {
     });
     $("#strokecount17").mouseleave(function() {
         $(strokeB17).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR17).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page18').css({
@@ -666,11 +666,11 @@ window.onload = function() {
     });
     $("#strokecount18").mouseenter(function() {
         $(strokeR18).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB18).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page19').css({
           "background-color":"white"
@@ -678,10 +678,10 @@ window.onload = function() {
     });
     $("#strokecount18").mouseleave(function() {
         $(strokeB18).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR18).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page19').css({
@@ -690,11 +690,11 @@ window.onload = function() {
     });
     $("#strokecount19").mouseenter(function() {
         $(strokeR19).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB19).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page20').css({
           "background-color":"white"
@@ -702,10 +702,10 @@ window.onload = function() {
     });
     $("#strokecount19").mouseleave(function() {
         $(strokeB19).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR19).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page20').css({
@@ -714,11 +714,11 @@ window.onload = function() {
     });
     $("#strokecount20").mouseenter(function() {
         $(strokeR20).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
         });
         $(strokeB20).css({
-            "display": "none",
+            "opacity": "0",
         });
         $('.page21').css({
           "background-color":"white"
@@ -726,10 +726,10 @@ window.onload = function() {
     });
     $("#strokecount20").mouseleave(function() {
         $(strokeB20).css({
-            "display": "block"
+            "opacity": "1"
         });
         $(strokeR20).css({
-            "display": "none",
+            "opacity": "0",
             "animation": ""
         });
         $('.page21').css({
@@ -749,11 +749,11 @@ window.onload = function() {
 
     $("#one").mouseenter(function() {
         $(oneB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(oneR).css({
-            "display": "none"
+            "opacity": "0"
         });
         $("#one").removeClass("fade");
         $(".fade").css({
@@ -765,11 +765,11 @@ window.onload = function() {
     });
     $("#one").mouseleave(function() {
         $(oneB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(oneR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#one").addClass("fade");
         $(".fade").css({
@@ -783,11 +783,11 @@ window.onload = function() {
     });
     $("#two").mouseenter(function() {
         $(twoB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(twoR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#two").removeClass("fade");
         $(".fade").css({
@@ -799,11 +799,11 @@ window.onload = function() {
     });
     $("#two").mouseleave(function() {
         $(twoB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(twoR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#two").addClass("fade");
         $(".fade").css({
@@ -817,11 +817,11 @@ window.onload = function() {
     });
     $("#three").mouseenter(function() {
         $(threeB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(threeR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#three").removeClass("fade");
         $(".fade").css({
@@ -833,11 +833,11 @@ window.onload = function() {
     });
     $("#three").mouseleave(function() {
         $(threeB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(threeR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#three").addClass("fade");
         $(".fade").css({
@@ -851,11 +851,11 @@ window.onload = function() {
     });
     $("#four").mouseenter(function() {
         $(fourB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(fourR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#four").removeClass("fade");
         $(".fade").css({
@@ -867,11 +867,11 @@ window.onload = function() {
     });
     $("#four").mouseleave(function() {
         $(fourB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(fourR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#four").addClass("fade");
         $(".fade").css({
@@ -885,11 +885,11 @@ window.onload = function() {
     });
     $("#five").mouseenter(function() {
         $(fiveB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(fiveR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#five").removeClass("fade");
         $(".fade").css({
@@ -901,11 +901,11 @@ window.onload = function() {
     });
     $("#five").mouseleave(function() {
         $(fiveB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(fiveR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#five").addClass("fade");
         $(".fade").css({
@@ -919,11 +919,11 @@ window.onload = function() {
     });
     $("#six").mouseenter(function() {
         $(sixB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(sixR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#six").removeClass("fade");
         $(".fade").css({
@@ -935,11 +935,11 @@ window.onload = function() {
     });
     $("#six").mouseleave(function() {
         $(sixB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(sixR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#six").addClass("fade");
         $(".fade").css({
@@ -953,11 +953,11 @@ window.onload = function() {
     });
     $("#seven").mouseenter(function() {
         $(sevenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(sevenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#seven").removeClass("fade");
         $(".fade").css({
@@ -969,11 +969,11 @@ window.onload = function() {
     });
     $("#seven").mouseleave(function() {
         $(sevenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(sevenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#seven").addClass("fade");
         $(".fade").css({
@@ -987,11 +987,11 @@ window.onload = function() {
     });
     $("#eight").mouseenter(function() {
         $(eightB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(eightR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#eight").removeClass("fade");
         $(".fade").css({
@@ -1003,11 +1003,11 @@ window.onload = function() {
     });
     $("#eight").mouseleave(function() {
         $(eightB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(eightR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#eight").addClass("fade");
         $(".fade").css({
@@ -1021,11 +1021,11 @@ window.onload = function() {
     });
     $("#nine").mouseenter(function() {
         $(nineB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(nineR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#nine").removeClass("fade");
         $(".fade").css({
@@ -1037,11 +1037,11 @@ window.onload = function() {
     });
     $("#nine").mouseleave(function() {
         $(nineB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(nineR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#nine").addClass("fade");
         $(".fade").css({
@@ -1055,11 +1055,11 @@ window.onload = function() {
     });
     $("#ten").mouseenter(function() {
         $(tenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(tenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#ten").removeClass("fade");
         $(".fade").css({
@@ -1071,11 +1071,11 @@ window.onload = function() {
     });
     $("#ten").mouseleave(function() {
         $(tenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(tenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#ten").addClass("fade");
         $(".fade").css({
@@ -1089,11 +1089,11 @@ window.onload = function() {
     });
     $("#eleven").mouseenter(function() {
         $(elevenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(elevenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#eleven").removeClass("fade");
         $(".fade").css({
@@ -1106,11 +1106,11 @@ window.onload = function() {
     });
     $("#eleven").mouseleave(function() {
         $(elevenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(elevenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#eleven").addClass("fade");
         $(".fade").css({
@@ -1124,11 +1124,11 @@ window.onload = function() {
     });
     $("#twelve").mouseenter(function() {
         $(twelveB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(twelveR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#twelve").removeClass("fade");
         $(".fade").css({
@@ -1140,11 +1140,11 @@ window.onload = function() {
     });
     $("#twelve").mouseleave(function() {
         $(twelveB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(twelveR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#twelve").addClass("fade");
         $(".fade").css({
@@ -1158,11 +1158,11 @@ window.onload = function() {
     });
     $("#thirteen").mouseenter(function() {
         $(thirteenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(thirteenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#thirteen").removeClass("fade");
         $(".fade").css({
@@ -1174,11 +1174,11 @@ window.onload = function() {
     });
     $("#thirteen").mouseleave(function() {
         $(thirteenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(thirteenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#thirteen").addClass("fade");
         $(".fade").css({
@@ -1192,11 +1192,11 @@ window.onload = function() {
     });
     $("#fourteen").mouseenter(function() {
         $(fourteenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(fourteenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#fourteen").removeClass("fade");
         $(".fade").css({
@@ -1208,11 +1208,11 @@ window.onload = function() {
     });
     $("#fourteen").mouseleave(function() {
         $(fourteenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(fourteenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#fourteen").addClass("fade");
         $(".fade").css({
@@ -1226,11 +1226,11 @@ window.onload = function() {
     });
     $("#fifteen").mouseenter(function() {
         $(fifteenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(fifteenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#fifteen").removeClass("fade");
         $(".fade").css({
@@ -1242,11 +1242,11 @@ window.onload = function() {
     });
     $("#fifteen").mouseleave(function() {
         $(fifteenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(fifteenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#fifteen").addClass("fade");
         $(".fade").css({
@@ -1260,11 +1260,11 @@ window.onload = function() {
     });
     $("#sixteen").mouseenter(function() {
         $(sixteenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(sixteenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#sixteen").removeClass("fade");
         $(".fade").css({
@@ -1276,11 +1276,11 @@ window.onload = function() {
     });
     $("#sixteen").mouseleave(function() {
         $(sixteenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(sixteenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#sixteen").addClass("fade");
         $(".fade").css({
@@ -1294,11 +1294,11 @@ window.onload = function() {
     });
     $("#seventeen").mouseenter(function() {
         $(seventeenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(seventeenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#seventeen").removeClass("fade");
         $(".fade").css({
@@ -1310,11 +1310,11 @@ window.onload = function() {
     });
     $("#seventeen").mouseleave(function() {
         $(seventeenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(seventeenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#seventeen").addClass("fade");
         $(".fade").css({
@@ -1328,11 +1328,11 @@ window.onload = function() {
     });
     $("#eighteen").mouseenter(function() {
         $(eighteenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(eighteenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#eighteen").removeClass("fade");
         $(".fade").css({
@@ -1344,11 +1344,11 @@ window.onload = function() {
     });
     $("#eighteen").mouseleave(function() {
         $(eighteenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(eighteenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#eighteen").addClass("fade");
         $(".fade").css({
@@ -1362,11 +1362,11 @@ window.onload = function() {
     });
     $("#nineteen").mouseenter(function() {
         $(nineteenB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(nineteenR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#nineteen").removeClass("fade");
         $(".fade").css({
@@ -1378,11 +1378,11 @@ window.onload = function() {
     });
     $("#nineteen").mouseleave(function() {
         $(nineteenB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(nineteenR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#nineteen").addClass("fade");
         $(".fade").css({
@@ -1396,11 +1396,11 @@ window.onload = function() {
     });
     $("#twenty").mouseenter(function() {
         $(twentyB).css({
-            "display": "block",
+            "opacity": "1",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)"
         });
         $(twentyR).css({
-            "display": "none"
+            "opacity": "0",
         });
         $("#twenty").removeClass("fade");
         $(".fade").css({
@@ -1412,11 +1412,11 @@ window.onload = function() {
     });
     $("#twenty").mouseleave(function() {
         $(twentyB).css({
-            "display": "",
+            "opacity": "",
             "animation": ""
         });
         $(twentyR).css({
-            "display": ""
+            "opacity": ""
         });
         $("#twenty").addClass("fade");
         $(".fade").css({

@@ -216,7 +216,13 @@ opacity: 1
   opacity: 1;
 }
 .birdbug{
-  display: none;
+  display: block;
+  opacity: 0;
+  /*transition: .5s;*/
+}
+.roman{
+  display: block;
+  /*transition: .5s;*/
 }
 
 .strokebox{
