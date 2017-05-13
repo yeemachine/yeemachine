@@ -493,6 +493,9 @@ align-items: center;
   height: 30vh;
  border-right: solid black 2px;
 }
+.democharacter{
+  display: block !important;
+}
 .vector{
   display: flex;
   align-items: center;
@@ -518,31 +521,77 @@ align-items: center;
   border: 0;
   margin: 0;
   padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  background-color: transparent;
   top:0vh;
   left:0;
   height: 100vh;
   width: 100vw;
-  z-index: -2;
-
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
 }
 .page4{
   border: 0;
   margin: 0;
   padding: 0;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  background-color: transparent;
   top:0vh;
-  left:300vw;
+  left:0;
   height: 100vh;
   width: 100vw;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
+}
+.page5{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  top:0vh;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
+}
+.page6{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  top:0vh;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s;
 }
 .freewrite{
   width: 80vw;
