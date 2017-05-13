@@ -16,6 +16,51 @@ window.onload = function() {
     var strokeDoc5 = strokecount5.contentDocument;
     var strokeB5 = strokeDoc5.getElementsByClassName("birdbug");
     var strokeR5 = strokeDoc5.getElementsByClassName("roman");
+    var strokeDoc6 = strokecount6.contentDocument;
+    var strokeB6 = strokeDoc6.getElementsByClassName("birdbug");
+    var strokeR6 = strokeDoc6.getElementsByClassName("roman");
+    var strokeDoc7 = strokecount7.contentDocument;
+    var strokeB7 = strokeDoc7.getElementsByClassName("birdbug");
+    var strokeR7 = strokeDoc7.getElementsByClassName("roman");
+    var strokeDoc8 = strokecount8.contentDocument;
+    var strokeB8 = strokeDoc8.getElementsByClassName("birdbug");
+    var strokeR8 = strokeDoc8.getElementsByClassName("roman");
+    var strokeDoc9 = strokecount9.contentDocument;
+    var strokeB9 = strokeDoc9.getElementsByClassName("birdbug");
+    var strokeR9 = strokeDoc9.getElementsByClassName("roman");
+    var strokeDoc10 = strokecount10.contentDocument;
+    var strokeB10 = strokeDoc10.getElementsByClassName("birdbug");
+    var strokeR10 = strokeDoc10.getElementsByClassName("roman");
+    // var strokeDoc11 = strokecount11.contentDocument;
+    // var strokeB11 = strokeDoc11.getElementsByClassName("birdbug");
+    // var strokeR11 = strokeDoc11.getElementsByClassName("roman");
+    // var strokeDoc12 = strokecount12.contentDocument;
+    // var strokeB12 = strokeDoc12.getElementsByClassName("birdbug");
+    // var strokeR12 = strokeDoc12.getElementsByClassName("roman");
+    // var strokeDoc13 = strokecount13.contentDocument;
+    // var strokeB13 = strokeDoc13.getElementsByClassName("birdbug");
+    // var strokeR13 = strokeDoc13.getElementsByClassName("roman");
+    // var strokeDoc14 = strokecount14.contentDocument;
+    // var strokeB14 = strokeDoc14.getElementsByClassName("birdbug");
+    // var strokeR14 = strokeDoc14.getElementsByClassName("roman");
+    // var strokeDoc15 = strokecount15.contentDocument;
+    // var strokeB15 = strokeDoc15.getElementsByClassName("birdbug");
+    // var strokeR15 = strokeDoc15.getElementsByClassName("roman");
+    // var strokeDoc16 = strokecount16.contentDocument;
+    // var strokeB16 = strokeDoc16.getElementsByClassName("birdbug");
+    // var strokeR16 = strokeDoc16.getElementsByClassName("roman");
+    // var strokeDoc17 = strokecount17.contentDocument;
+    // var strokeB17 = strokeDoc17.getElementsByClassName("birdbug");
+    // var strokeR17 = strokeDoc17.getElementsByClassName("roman");
+    // var strokeDoc18 = strokecount18.contentDocument;
+    // var strokeB18 = strokeDoc18.getElementsByClassName("birdbug");
+    // var strokeR18 = strokeDoc18.getElementsByClassName("roman");
+    // var strokeDoc19 = strokecount19.contentDocument;
+    // var strokeB19 = strokeDoc19.getElementsByClassName("birdbug");
+    // var strokeR19 = strokeDoc19.getElementsByClassName("roman");
+    // var strokeDoc20 = strokecount20.contentDocument;
+    // var strokeB20 = strokeDoc20.getElementsByClassName("birdbug");
+    // var strokeR20 = strokeDoc20.getElementsByClassName("roman");
 
     var oneDoc = one.contentDocument;
     var oneB = oneDoc.getElementsByClassName("birdbug");
@@ -99,6 +144,51 @@ window.onload = function() {
     $(strokeB5).css({
         "display": "block",
     });
+    $(strokeB6).css({
+        "display": "block",
+    });
+    $(strokeB7).css({
+        "display": "block",
+    });
+    $(strokeB8).css({
+        "display": "block",
+    });
+    $(strokeB9).css({
+        "display": "block",
+    });
+    $(strokeB10).css({
+        "display": "block",
+    });
+    // $(strokeB11).css({
+    //     "display": "block",
+    // });
+    // $(strokeB12).css({
+    //     "display": "block",
+    // });
+    // $(strokeB13).css({
+    //     "display": "block",
+    // });
+    // $(strokeB14).css({
+    //     "display": "block",
+    // });
+    // $(strokeB15).css({
+    //     "display": "block",
+    // });
+    // $(strokeB16).css({
+    //     "display": "block",
+    // });
+    // $(strokeB17).css({
+    //     "display": "block",
+    // });
+    // $(strokeB18).css({
+    //     "display": "block",
+    // });
+    // $(strokeB19).css({
+    //     "display": "block",
+    // });
+    // $(strokeB20).css({
+    //     "display": "block",
+    // });
     $(strokeR).css({
         "display": "none",
     });
@@ -114,15 +204,57 @@ window.onload = function() {
     $(strokeR5).css({
         "display": "none",
     });
+    $(strokeR6).css({
+        "display": "none",
+    });
+    $(strokeR7).css({
+        "display": "none",
+    });
+    $(strokeR8).css({
+        "display": "none",
+    });
+    $(strokeR9).css({
+        "display": "none",
+    });
+    $(strokeR10).css({
+        "display": "none",
+    });
+    // $(strokeR11).css({
+    //     "display": "none",
+    // });
+    // $(strokeR12).css({
+    //     "display": "none",
+    // });
+    // $(strokeR13).css({
+    //     "display": "none",
+    // });
+    // $(strokeR14).css({
+    //     "display": "none",
+    // });
+    // $(strokeR15).css({
+    //     "display": "none",
+    // });
+    // $(strokeR16).css({
+    //     "display": "none",
+    // });
+    // $(strokeR17).css({
+    //     "display": "none",
+    // });
+    // $(strokeR18).css({
+    //     "display": "none",
+    // });
+    // $(strokeR19).css({
+    //     "display": "none",
+    // });
+    // $(strokeR20).css({
+    //     "display": "none",
+    // });
     $("#strokecount").mouseenter(function() {
         $(strokeR).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
             "stroke":"#ffffff"
         });
-        // $(strokeRA).css({
-        //     "stroke":"#ffffff"
-        // });
         $(strokeB).css({
             "display": "none",
         });
@@ -251,13 +383,391 @@ window.onload = function() {
           "background-color":""
         });
     });
+    $("#strokecount6").mouseenter(function() {
+        $(strokeR6).css({
+            "display": "block",
+            "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+            "stroke":"#ffffff"
+        });
+        $(strokeB6).css({
+            "display": "none",
+        });
+        $('.page7').css({
+          "background-color":"white"
+        });
+    });
+    $("#strokecount6").mouseleave(function() {
+        $(strokeB6).css({
+            "display": "block",
+            "animation": ""
+        });
+        $(strokeR6).css({
+            "display": "none"
+        });
+        $('.page7').css({
+          "background-color":""
+        });
+    });
+    $("#strokecount7").mouseenter(function() {
+        $(strokeR7).css({
+            "display": "block",
+            "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+            "stroke":"#ffffff"
+        });
+        $(strokeB7).css({
+            "display": "none",
+        });
+        $('.page8').css({
+          "background-color":"white"
+        });
+    });
+    $("#strokecount7").mouseleave(function() {
+        $(strokeB7).css({
+            "display": "block",
+            "animation": ""
+        });
+        $(strokeR7).css({
+            "display": "none"
+        });
+        $('.page8').css({
+          "background-color":""
+        });
+    });
+    $("#strokecount8").mouseenter(function() {
+        $(strokeR8).css({
+            "display": "block",
+            "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+            "stroke":"#ffffff"
+        });
+        $(strokeB8).css({
+            "display": "none",
+        });
+        $('.page9').css({
+          "background-color":"white"
+        });
+    });
+    $("#strokecount8").mouseleave(function() {
+        $(strokeB8).css({
+            "display": "block",
+            "animation": ""
+        });
+        $(strokeR8).css({
+            "display": "none"
+        });
+        $('.page9').css({
+          "background-color":""
+        });
+    });
+    $("#strokecount9").mouseenter(function() {
+        $(strokeR9).css({
+            "display": "block",
+            "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+            "stroke":"#ffffff"
+        });
+        $(strokeB9).css({
+            "display": "none",
+        });
+        $('.page10').css({
+          "background-color":"white"
+        });
+    });
+    $("#strokecount9").mouseleave(function() {
+        $(strokeB9).css({
+            "display": "block",
+            "animation": ""
+        });
+        $(strokeR9).css({
+            "display": "none"
+        });
+        $('.page10').css({
+          "background-color":""
+        });
+    });
+    $("#strokecount10").mouseenter(function() {
+        $(strokeR10).css({
+            "display": "block",
+            "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+            "stroke":"#ffffff"
+        });
+        $(strokeB10).css({
+            "display": "none",
+        });
+        $('.page11').css({
+          "background-color":"white"
+        });
+    });
+    $("#strokecount10").mouseleave(function() {
+        $(strokeB10).css({
+            "display": "block",
+            "animation": ""
+        });
+        $(strokeR10).css({
+            "display": "none"
+        });
+        $('.page11').css({
+          "background-color":""
+        });
+    });
 
-
-
-
-
-
-
+    // $("#strokecount11").mouseenter(function() {
+    //     $(strokeR11).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB11).css({
+    //         "display": "none",
+    //     });
+    //     $('.page12').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount11").mouseleave(function() {
+    //     $(strokeB11).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR11).css({
+    //         "display": "none"
+    //     });
+    //     $('.page12').css({
+    //       "background-color":""
+    //     });
+    //
+    // });
+    // $("#strokecount12").mouseenter(function() {
+    //     $(strokeR12).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     // $(strokeRA).css({
+    //     //     "stroke":"#ffffff"
+    //     // });
+    //     $(strokeB12).css({
+    //         "display": "none",
+    //     });
+    //     $('.page13').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount12").mouseleave(function() {
+    //     $(strokeB12).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR12).css({
+    //         "display": "none"
+    //     });
+    //     $('.page13').css({
+    //       "background-color":""
+    //     });
+    //
+    // });
+    // $("#strokecount13").mouseenter(function() {
+    //     $(strokeR13).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     // $(strokeRA).css({
+    //     //     "stroke":"#ffffff"
+    //     // });
+    //     $(strokeB13).css({
+    //         "display": "none",
+    //     });
+    //     $('.page14').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount13").mouseleave(function() {
+    //     $(strokeB13).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR13).css({
+    //         "display": "none"
+    //     });
+    //     $('.page14').css({
+    //       "background-color":""
+    //     });
+    //
+    // });
+    // $("#strokecount14").mouseenter(function() {
+    //     $(strokeR14).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB14).css({
+    //         "display": "none",
+    //     });
+    //     $('.page15').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount14").mouseleave(function() {
+    //     $(strokeB14).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR14).css({
+    //         "display": "none"
+    //     });
+    //     $('.page15').css({
+    //       "background-color":""
+    //     });
+    // });
+    // $("#strokecount15").mouseenter(function() {
+    //     $(strokeR15).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB15).css({
+    //         "display": "none",
+    //     });
+    //     $('.page16').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount15").mouseleave(function() {
+    //     $(strokeB15).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR15).css({
+    //         "display": "none"
+    //     });
+    //     $('.page16').css({
+    //       "background-color":""
+    //     });
+    // });
+    // $("#strokecount16").mouseenter(function() {
+    //     $(strokeR16).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB16).css({
+    //         "display": "none",
+    //     });
+    //     $('.page17').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount16").mouseleave(function() {
+    //     $(strokeB16).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR16).css({
+    //         "display": "none"
+    //     });
+    //     $('.page17').css({
+    //       "background-color":""
+    //     });
+    // });
+    // $("#strokecount17").mouseenter(function() {
+    //     $(strokeR17).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB17).css({
+    //         "display": "none",
+    //     });
+    //     $('.page18').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount17").mouseleave(function() {
+    //     $(strokeB17).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR17).css({
+    //         "display": "none"
+    //     });
+    //     $('.page18').css({
+    //       "background-color":""
+    //     });
+    // });
+    // $("#strokecount18").mouseenter(function() {
+    //     $(strokeR18).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB18).css({
+    //         "display": "none",
+    //     });
+    //     $('.page19').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount18").mouseleave(function() {
+    //     $(strokeB18).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR18).css({
+    //         "display": "none"
+    //     });
+    //     $('.page19').css({
+    //       "background-color":""
+    //     });
+    // });
+    // $("#strokecount19").mouseenter(function() {
+    //     $(strokeR19).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB19).css({
+    //         "display": "none",
+    //     });
+    //     $('.page20').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount19").mouseleave(function() {
+    //     $(strokeB19).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR19).css({
+    //         "display": "none"
+    //     });
+    //     $('.page20').css({
+    //       "background-color":""
+    //     });
+    // });
+    // $("#strokecount20").mouseenter(function() {
+    //     $(strokeR20).css({
+    //         "display": "block",
+    //         "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
+    //         "stroke":"#ffffff"
+    //     });
+    //     $(strokeB20).css({
+    //         "display": "none",
+    //     });
+    //     $('.page21').css({
+    //       "background-color":"white"
+    //     });
+    // });
+    // $("#strokecount20").mouseleave(function() {
+    //     $(strokeB20).css({
+    //         "display": "block",
+    //         "animation": ""
+    //     });
+    //     $(strokeR20).css({
+    //         "display": "none"
+    //     });
+    //     $('.page21').css({
+    //       "background-color":""
+    //     });
+    // });
 
 
 
@@ -303,10 +813,6 @@ window.onload = function() {
         });
       }
     });
-
-
-
-
     $("#two").mouseenter(function() {
         $(twoB).css({
             "display": "block",
@@ -373,7 +879,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#four").mouseenter(function() {
         $(fourB).css({
             "display": "block",
@@ -407,7 +912,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#five").mouseenter(function() {
         $(fiveB).css({
             "display": "block",
@@ -441,10 +945,6 @@ window.onload = function() {
        });
      }
     });
-
-
-
-
     $("#six").mouseenter(function() {
         $(sixB).css({
             "display": "block",
@@ -545,7 +1045,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#nine").mouseenter(function() {
         $(nineB).css({
             "display": "block",
@@ -579,7 +1078,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#ten").mouseenter(function() {
         $(tenB).css({
             "display": "block",
@@ -613,14 +1111,6 @@ window.onload = function() {
        });
      }
     });
-
-
-
-
-
-
-
-
     $("#eleven").mouseenter(function() {
         $(elevenB).css({
             "display": "block",
@@ -722,7 +1212,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#fourteen").mouseenter(function() {
         $(fourteenB).css({
             "display": "block",
@@ -756,7 +1245,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#fifteen").mouseenter(function() {
         $(fifteenB).css({
             "display": "block",
@@ -790,10 +1278,6 @@ window.onload = function() {
        });
      }
     });
-
-
-
-
     $("#sixteen").mouseenter(function() {
         $(sixteenB).css({
             "display": "block",
@@ -894,7 +1378,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#nineteen").mouseenter(function() {
         $(nineteenB).css({
             "display": "block",
@@ -928,7 +1411,6 @@ window.onload = function() {
        });
      }
     });
-
     $("#twenty").mouseenter(function() {
         $(twentyB).css({
             "display": "block",
@@ -994,64 +1476,97 @@ window.onload = function() {
       $('#five').attr('status','clicked');
       $(".page6").css({"opacity": "1","pointer-events":"auto"});
     });
-
-    // $(twoDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(threeDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(fourDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(fiveDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(sixDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(sevenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(eightDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(nineDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
-    // $(tenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
-    // });
+    $(sixDoc).click(function() {
+      $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+      $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+      $('#six').attr('status','clicked');
+        $(".page7").css({"opacity": "1","pointer-events":"auto"});
+    });
+    $(sevenDoc).click(function() {
+      $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+      $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+      $('#seven').attr('status','clicked');
+      $(".page8").css({"opacity": "1","pointer-events":"auto"});
+    });
+    $(eightDoc).click(function() {
+      $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+      $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+      $('#eight').attr('status','clicked');
+      $(".page9").css({"opacity": "1","pointer-events":"auto"});
+    });
+    $(nineDoc).click(function() {
+      $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+      $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+      $('#nine').attr('status','clicked');
+      $(".page10").css({"opacity": "1","pointer-events":"auto"});
+    });
+    $(tenDoc).click(function() {
+      $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+      $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+      $('#ten').attr('status','clicked');
+      $(".page11").css({"opacity": "1","pointer-events":"auto"});
+    });
     // $(elevenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#eleven').attr('status','clicked');
+    //     $(".page12").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(twelveDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#twelve').attr('status','clicked');
+    //   $(".page13").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(thirteenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#thirteen').attr('status','clicked');
+    //   $(".page14").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(fourteenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#fourteen').attr('status','clicked');
+    //   $(".page15").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(fifteenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#fifteen').attr('status','clicked');
+    //   $(".page16").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(sixteenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#sixteen').attr('status','clicked');
+    //     $(".page17").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(seventeenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#seventeen').attr('status','clicked');
+    //   $(".page18").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(eighteenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#eighteen').attr('status','clicked');
+    //   $(".page19").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(nineteenDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#nineteen').attr('status','clicked');
+    //   $(".page20").css({"opacity": "1","pointer-events":"auto"});
     // });
     // $(twentyDoc).click(function() {
-    //   $(".stroke, .stroke2").css({"opacity": "0"});
+    //   $(".strokebox").css({"opacity": "0","pointer-events":"none"});
+    //   $(".strokebox2").css({"width": "90vw","justify-content":"center"});
+    //   $('#twenty').attr('status','clicked');
+    //   $(".page21").css({"opacity": "1","pointer-events":"auto"});
     // });
+
     $(strokeDoc).click(function() {
       $(".page2").css({"opacity": "","pointer-events":""});
       $(".strokebox").css({"opacity": "","pointer-events":""});
@@ -1102,6 +1617,156 @@ window.onload = function() {
       $(".strokebox2").css({"flex-direction":""});
       $( ".demodisappear" ).removeClass( 'disappear' );
     });
+    $(strokeDoc6).click(function() {
+      $(".page7").css({"opacity": "","pointer-events":""});
+      $(".strokebox").css({"opacity": "","pointer-events":""});
+      $("body").css({"background-color": ""});
+      $('.stroke').attr('status','');
+      $(".vector").css({"width": "","opacity":''});
+      $(".raster").css({"width": "","opacity":''});
+      $(".strokebox2").css({"flex-direction":""});
+      $( ".demodisappear" ).removeClass( 'disappear' );
+    });
+    $(strokeDoc7).click(function() {
+      $(".page8").css({"opacity": "","pointer-events":""});
+      $(".strokebox").css({"opacity": "","pointer-events":""});
+      $("body").css({"background-color": ""});
+      $('.stroke').attr('status','');
+      $(".vector").css({"width": "","opacity":''});
+      $(".raster").css({"width": "","opacity":''});
+      $(".strokebox2").css({"flex-direction":""});
+      $( ".demodisappear" ).removeClass( 'disappear' );
+    });
+    $(strokeDoc8).click(function() {
+      $(".page9").css({"opacity": "","pointer-events":""});
+      $(".strokebox").css({"opacity": "","pointer-events":""});
+      $("body").css({"background-color": ""});
+      $('.stroke').attr('status','');
+      $(".vector").css({"width": "","opacity":''});
+      $(".raster").css({"width": "","opacity":''});
+      $(".strokebox2").css({"flex-direction":""});
+      $( ".demodisappear" ).removeClass( 'disappear' );
+    });
+    $(strokeDoc9).click(function() {
+      $(".page10").css({"opacity": "","pointer-events":""});
+      $(".strokebox").css({"opacity": "","pointer-events":""});
+      $("body").css({"background-color": ""});
+      $('.stroke').attr('status','');
+      $(".vector").css({"width": "","opacity":''});
+      $(".raster").css({"width": "","opacity":''});
+      $(".strokebox2").css({"flex-direction":""});
+      $( ".demodisappear" ).removeClass( 'disappear' );
+    });
+    $(strokeDoc10).click(function() {
+      $(".page11").css({"opacity": "","pointer-events":""});
+      $(".strokebox").css({"opacity": "","pointer-events":""});
+      $("body").css({"background-color": ""});
+      $('.stroke').attr('status','');
+      $(".vector").css({"width": "","opacity":''});
+      $(".raster").css({"width": "","opacity":''});
+      $(".strokebox2").css({"flex-direction":""});
+      $( ".demodisappear" ).removeClass( 'disappear' );
+    });
+    // $(strokeDoc11).click(function() {
+    //   $(".page12").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc12).click(function() {
+    //   $(".page13").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc13).click(function() {
+    //   $(".page14").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc14).click(function() {
+    //   $(".page15").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc15).click(function() {
+    //   $(".page16").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc16).click(function() {
+    //   $(".page17").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc17).click(function() {
+    //   $(".page18").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc18).click(function() {
+    //   $(".page19").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc9).click(function() {
+    //   $(".page10").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
+    // $(strokeDoc20).click(function() {
+    //   $(".page21").css({"opacity": "","pointer-events":""});
+    //   $(".strokebox").css({"opacity": "","pointer-events":""});
+    //   $("body").css({"background-color": ""});
+    //   $('.stroke').attr('status','');
+    //   $(".vector").css({"width": "","opacity":''});
+    //   $(".raster").css({"width": "","opacity":''});
+    //   $(".strokebox2").css({"flex-direction":""});
+    //   $( ".demodisappear" ).removeClass( 'disappear' );
+    // });
 
     $('.stroke3').click(function() {
       $( '.democharacter' ).removeClass( 'democharacter' );
