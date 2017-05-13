@@ -253,7 +253,6 @@ window.onload = function() {
         $(strokeR).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB).css({
             "display": "none",
@@ -279,11 +278,7 @@ window.onload = function() {
         $(strokeR2).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
-        // $(strokeRA).css({
-        //     "stroke":"#ffffff"
-        // });
         $(strokeB2).css({
             "display": "none",
         });
@@ -308,11 +303,7 @@ window.onload = function() {
         $(strokeR3).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
-        // $(strokeRA).css({
-        //     "stroke":"#ffffff"
-        // });
         $(strokeB3).css({
             "display": "none",
         });
@@ -337,7 +328,6 @@ window.onload = function() {
         $(strokeR4).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB4).css({
             "display": "none",
@@ -362,7 +352,6 @@ window.onload = function() {
         $(strokeR5).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB5).css({
             "display": "none",
@@ -387,7 +376,6 @@ window.onload = function() {
         $(strokeR6).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB6).css({
             "display": "none",
@@ -412,7 +400,6 @@ window.onload = function() {
         $(strokeR7).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB7).css({
             "display": "none",
@@ -437,7 +424,6 @@ window.onload = function() {
         $(strokeR8).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB8).css({
             "display": "none",
@@ -486,7 +472,6 @@ window.onload = function() {
         $(strokeR10).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB10).css({
             "display": "none",
@@ -512,7 +497,6 @@ window.onload = function() {
         $(strokeR11).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB11).css({
             "display": "none",
@@ -538,11 +522,7 @@ window.onload = function() {
         $(strokeR12).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
-        // $(strokeRA).css({
-        //     "stroke":"#ffffff"
-        // });
         $(strokeB12).css({
             "display": "none",
         });
@@ -567,11 +547,7 @@ window.onload = function() {
         $(strokeR13).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
-        // $(strokeRA).css({
-        //     "stroke":"#ffffff"
-        // });
         $(strokeB13).css({
             "display": "none",
         });
@@ -596,7 +572,6 @@ window.onload = function() {
         $(strokeR14).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB14).css({
             "display": "none",
@@ -621,7 +596,6 @@ window.onload = function() {
         $(strokeR15).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB15).css({
             "display": "none",
@@ -646,7 +620,6 @@ window.onload = function() {
         $(strokeR16).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB16).css({
             "display": "none",
@@ -671,7 +644,6 @@ window.onload = function() {
         $(strokeR17).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB17).css({
             "display": "none",
@@ -696,7 +668,6 @@ window.onload = function() {
         $(strokeR18).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB18).css({
             "display": "none",
@@ -721,7 +692,6 @@ window.onload = function() {
         $(strokeR19).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB19).css({
             "display": "none",
@@ -746,7 +716,6 @@ window.onload = function() {
         $(strokeR20).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB20).css({
             "display": "none",
