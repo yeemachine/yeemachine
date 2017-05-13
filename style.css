@@ -201,7 +201,7 @@ body{
   font-family: -apple-system, BlinkMacSystemFont,
       "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans",
-      "Droid Sans", "Helvetica Neue", sans-serif;  
+      "Droid Sans", "Helvetica Neue", sans-serif;
 /*font-family:'alex';*/
       border: 0;
   margin: 0;
@@ -298,9 +298,11 @@ width: 40vw;
 }
 #svgObject5{
   /*position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw*/
+
 }
 #svgObject6{
   /*position:fixed;left:50vw;top:50vh;margin-top:-10vw;margin-left:-10vw;width:20vw;height:20vw;*/
+
 }
 h1{
   width: 50%;
