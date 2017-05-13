@@ -159,36 +159,36 @@ window.onload = function() {
     $(strokeB10).css({
         "display": "block",
     });
-    // $(strokeB11).css({
-    //     "display": "block",
-    // });
-    // $(strokeB12).css({
-    //     "display": "block",
-    // });
-    // $(strokeB13).css({
-    //     "display": "block",
-    // });
-    // $(strokeB14).css({
-    //     "display": "block",
-    // });
-    // $(strokeB15).css({
-    //     "display": "block",
-    // });
-    // $(strokeB16).css({
-    //     "display": "block",
-    // });
-    // $(strokeB17).css({
-    //     "display": "block",
-    // });
-    // $(strokeB18).css({
-    //     "display": "block",
-    // });
-    // $(strokeB19).css({
-    //     "display": "block",
-    // });
-    // $(strokeB20).css({
-    //     "display": "block",
-    // });
+    $(strokeB11).css({
+        "display": "block",
+    });
+    $(strokeB12).css({
+        "display": "block",
+    });
+    $(strokeB13).css({
+        "display": "block",
+    });
+    $(strokeB14).css({
+        "display": "block",
+    });
+    $(strokeB15).css({
+        "display": "block",
+    });
+    $(strokeB16).css({
+        "display": "block",
+    });
+    $(strokeB17).css({
+        "display": "block",
+    });
+    $(strokeB18).css({
+        "display": "block",
+    });
+    $(strokeB19).css({
+        "display": "block",
+    });
+    $(strokeB20).css({
+        "display": "block",
+    });
     $(strokeR).css({
         "display": "none",
     });
