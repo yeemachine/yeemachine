@@ -830,7 +830,8 @@ window.onload = function() {
     });
     $("#two").mouseleave(function() {
         $(twoB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(twoR).css({
             "display": ""
@@ -863,7 +864,8 @@ window.onload = function() {
     });
     $("#three").mouseleave(function() {
         $(threeB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(threeR).css({
             "display": ""
@@ -896,7 +898,8 @@ window.onload = function() {
     });
     $("#four").mouseleave(function() {
         $(fourB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(fourR).css({
             "display": ""
@@ -929,7 +932,8 @@ window.onload = function() {
     });
     $("#five").mouseleave(function() {
         $(fiveB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(fiveR).css({
             "display": ""
@@ -996,7 +1000,8 @@ window.onload = function() {
     });
     $("#seven").mouseleave(function() {
         $(sevenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(sevenR).css({
             "display": ""
@@ -1029,7 +1034,8 @@ window.onload = function() {
     });
     $("#eight").mouseleave(function() {
         $(eightB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(eightR).css({
             "display": ""
@@ -1062,7 +1068,8 @@ window.onload = function() {
     });
     $("#nine").mouseleave(function() {
         $(nineB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(nineR).css({
             "display": ""
@@ -1095,7 +1102,8 @@ window.onload = function() {
     });
     $("#ten").mouseleave(function() {
         $(tenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(tenR).css({
             "display": ""
@@ -1163,7 +1171,8 @@ window.onload = function() {
     });
     $("#twelve").mouseleave(function() {
         $(twelveB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(twelveR).css({
             "display": ""
@@ -1196,7 +1205,8 @@ window.onload = function() {
     });
     $("#thirteen").mouseleave(function() {
         $(thirteenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(thirteenR).css({
             "display": ""
@@ -1229,7 +1239,8 @@ window.onload = function() {
     });
     $("#fourteen").mouseleave(function() {
         $(fourteenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(fourteenR).css({
             "display": ""
@@ -1262,7 +1273,8 @@ window.onload = function() {
     });
     $("#fifteen").mouseleave(function() {
         $(fifteenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(fifteenR).css({
             "display": ""
@@ -1329,7 +1341,8 @@ window.onload = function() {
     });
     $("#seventeen").mouseleave(function() {
         $(seventeenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(seventeenR).css({
             "display": ""
@@ -1362,7 +1375,8 @@ window.onload = function() {
     });
     $("#eighteen").mouseleave(function() {
         $(eighteenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(eighteenR).css({
             "display": ""
@@ -1395,7 +1409,8 @@ window.onload = function() {
     });
     $("#nineteen").mouseleave(function() {
         $(nineteenB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(nineteenR).css({
             "display": ""
@@ -1428,7 +1443,8 @@ window.onload = function() {
     });
     $("#twenty").mouseleave(function() {
         $(twentyB).css({
-            "display": ""
+            "display": "",
+            "animation": ""
         });
         $(twentyR).css({
             "display": ""
