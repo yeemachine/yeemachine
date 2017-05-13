@@ -1762,8 +1762,8 @@ window.onload = function() {
       $(".strokebox2").css({"flex-direction":""});
       $( ".demodisappear" ).removeClass( 'disappear' );
     });
-    $(strokeDoc9).click(function() {
-      $(".page10").css({"opacity": "","pointer-events":""});
+    $(strokeDoc19).click(function() {
+      $(".page20").css({"opacity": "","pointer-events":""});
       $(".strokebox").css({"opacity": "","pointer-events":""});
       $("body").css({"background-color": ""});
       $('.stroke').attr('status','');
