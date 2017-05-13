@@ -462,7 +462,6 @@ window.onload = function() {
         $(strokeR9).css({
             "display": "block",
             "animation": "dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000)",
-            "stroke":"#ffffff"
         });
         $(strokeB9).css({
             "display": "none",
