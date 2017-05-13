@@ -104,7 +104,7 @@ if($(window).width() >= 600) {
       $(".timeline").css("margin-top", "-0.4em");
       $(".blue1").css("color", "red");
       $("#svgObject5").css({ "display": "block" });
-      $(".description p").hide().html("A parody of Tesla's website featuring a timeline that tries to place Tesla's achievements on the scale of larger historic events.").fadeIn("100")
+      $(".description p").hide().html("An ongoing digitization and archive of a 2000 year old Chinese script that had its origins on bronze vessels and tablets.").fadeIn("100")
     });
   $( ".timeline1" ).mouseleave(function() {
       $(".timeline").css("margin-top", "-.8em");
