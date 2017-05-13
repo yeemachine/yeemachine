@@ -1752,17 +1752,27 @@ window.onload = function() {
       $( ".demodisappear" ).removeClass( 'disappear' );
     });
 
-    $('.stroke3').click(function() {
-      $( '.democharacter' ).removeClass( 'democharacter' );
-      $( this ).addClass( 'democharacter' );
-      $( ".demodisappear" ).toggleClass( 'disappear' );
-      $('.demodisappear').attr('status','click1');
-      $( ".demodisappear" ).addClass( 'click1' );
-      $(".strokebox2").css({"width": "","flex-direction":"column"});
-      $(".vector").css({"width": "40vw","opacity":'1'});
-      $(".raster").css({"width": "40vw","opacity":'1'});
-    });
 
+
+
+      $('.stroke3').click(function() {
+        $( '.democharacter' ).removeClass( 'democharacter' );
+        $( this ).addClass( 'democharacter' );
+        $( ".demodisappear" ).toggleClass( 'disappear' );
+        $('.demodisappear').attr('status','click1');
+        $( ".demodisappear" ).addClass( 'click1' );
+        $(".strokebox2").css({"width": "","flex-direction":"column"});
+        $(".strokebox2").addClass('firstclick');
+        $(".vector").css({"width": "40vw","opacity":'1'});
+        $(".raster").css({"width": "40vw","opacity":'1'});
+
+        if($(".demodisappear").attr('class') === 'stroke3 demodisappear click1'){
+          console.log('help')
+          $(".strokebox2").css({"justify-content":"baseline"});
+        }else{
+            $(".strokebox2").css({"justify-content":""});
+        }
+      });
 
 
 
