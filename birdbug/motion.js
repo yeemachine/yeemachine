@@ -263,11 +263,11 @@ window.onload = function() {
     });
     $("#strokecount").mouseleave(function() {
         $(strokeB).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page2').css({
           "background-color":""
@@ -288,11 +288,11 @@ window.onload = function() {
     });
     $("#strokecount2").mouseleave(function() {
         $(strokeB2).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR2).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page3').css({
           "background-color":""
@@ -313,11 +313,11 @@ window.onload = function() {
     });
     $("#strokecount3").mouseleave(function() {
         $(strokeB3).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR3).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page4').css({
           "background-color":""
@@ -338,11 +338,11 @@ window.onload = function() {
     });
     $("#strokecount4").mouseleave(function() {
         $(strokeB4).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR4).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page5').css({
           "background-color":""
@@ -362,11 +362,11 @@ window.onload = function() {
     });
     $("#strokecount5").mouseleave(function() {
         $(strokeB5).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR5).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page6').css({
           "background-color":""
@@ -386,11 +386,11 @@ window.onload = function() {
     });
     $("#strokecount6").mouseleave(function() {
         $(strokeB6).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR6).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page7').css({
           "background-color":""
@@ -410,11 +410,11 @@ window.onload = function() {
     });
     $("#strokecount7").mouseleave(function() {
         $(strokeB7).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR7).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page8').css({
           "background-color":""
@@ -434,11 +434,11 @@ window.onload = function() {
     });
     $("#strokecount8").mouseleave(function() {
         $(strokeB8).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR8).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page9').css({
           "background-color":""
@@ -458,11 +458,11 @@ window.onload = function() {
     });
     $("#strokecount9").mouseleave(function() {
         $(strokeB9).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR9).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page10').css({
           "background-color":""
@@ -482,11 +482,11 @@ window.onload = function() {
     });
     $("#strokecount10").mouseleave(function() {
         $(strokeB10).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR10).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page11').css({
           "background-color":""
@@ -507,11 +507,11 @@ window.onload = function() {
     });
     $("#strokecount11").mouseleave(function() {
         $(strokeB11).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR11).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page12').css({
           "background-color":""
@@ -532,11 +532,11 @@ window.onload = function() {
     });
     $("#strokecount12").mouseleave(function() {
         $(strokeB12).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR12).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page13').css({
           "background-color":""
@@ -557,11 +557,11 @@ window.onload = function() {
     });
     $("#strokecount13").mouseleave(function() {
         $(strokeB13).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR13).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page14').css({
           "background-color":""
@@ -582,11 +582,11 @@ window.onload = function() {
     });
     $("#strokecount14").mouseleave(function() {
         $(strokeB14).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR14).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page15').css({
           "background-color":""
@@ -606,11 +606,11 @@ window.onload = function() {
     });
     $("#strokecount15").mouseleave(function() {
         $(strokeB15).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR15).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page16').css({
           "background-color":""
@@ -630,11 +630,11 @@ window.onload = function() {
     });
     $("#strokecount16").mouseleave(function() {
         $(strokeB16).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR16).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page17').css({
           "background-color":""
@@ -654,11 +654,11 @@ window.onload = function() {
     });
     $("#strokecount17").mouseleave(function() {
         $(strokeB17).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR17).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page18').css({
           "background-color":""
@@ -678,11 +678,11 @@ window.onload = function() {
     });
     $("#strokecount18").mouseleave(function() {
         $(strokeB18).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR18).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page19').css({
           "background-color":""
@@ -702,11 +702,11 @@ window.onload = function() {
     });
     $("#strokecount19").mouseleave(function() {
         $(strokeB19).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR19).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page20').css({
           "background-color":""
@@ -726,11 +726,11 @@ window.onload = function() {
     });
     $("#strokecount20").mouseleave(function() {
         $(strokeB20).css({
-            "display": "block",
-            "animation": ""
+            "display": "block"
         });
         $(strokeR20).css({
-            "display": "none"
+            "display": "none",
+            "animation": ""
         });
         $('.page21').css({
           "background-color":""
