@@ -1785,8 +1785,8 @@ var count = ""
         $( ".demodisappear" ).addClass( 'click1' );
         $(".strokebox2").css({"width": "","padding-left":"","padding-right":"","flex-direction":"column","flex-wrap":"nowrap"});
         $(".strokebox2").addClass('firstclick');
-        $(".vector").css({"width": "40vw","opacity":'1'});
-        $(".raster").css({"width": "40vw","opacity":'1'});
+        $(".vector").css({"width": "60vw","opacity":'1'});
+        $(".raster").css({"width": "25vw","opacity":'1'});
 
         if($(".demodisappear").attr('class') === 'stroke3 demodisappear click1'){
           $(".strokebox2").css({"justify-content":"baseline"});
@@ -1795,7 +1795,7 @@ var count = ""
             var chinesecharacter = $(this).text();
             console.log(count)
             console.log(chinesecharacter)
-            var container = $('<div></div>')
+            var container = $('<div class="rastercontainer"></div>')
             var internalcount=[]
             var i = 0;
             for (i; i<4; i++){
