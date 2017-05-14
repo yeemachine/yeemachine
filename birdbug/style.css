@@ -291,6 +291,7 @@ svg:hover{
   font-size: 8vh;
   margin-left: 5px;
   margin-bottom: 5px;
+  transition: .25s
 }
 .stroke3:hover{
   color:white;
