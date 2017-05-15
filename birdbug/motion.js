@@ -1802,7 +1802,7 @@ var count = ""
             var blankarrayLength
             $.ajax({url: "img/library/"+count+"/"+chinesecharacter}).done(function( data ) {
           $(data).find("tbody tr a").each(function(i){
-              if(i>=3){
+              if(i>=4){
                   blankarray.push('1');
               }
           });
