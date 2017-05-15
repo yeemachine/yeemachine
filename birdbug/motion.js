@@ -1798,7 +1798,7 @@ var count = ""
             var container = $('<div class="rastercontainer"></div>')
             var internalcount=[]
             var i = 0;
-            for (i; i<4; i++){
+            for (i; i<8; i++){
               var row = $('<div class="row"></div>');
               var j = 0;
               for (j; j<3; j++){
