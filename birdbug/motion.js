@@ -1798,19 +1798,20 @@ var count = ""
             var container = $('<div class="rastercontainer"></div>')
             var internalcount=[]
 
-            var blankarray = []
-            var blankarrayLength
-            $.ajax({url: "img/library/"+count+"/"+chinesecharacter}).done(function( data ) {
-          $(data).find("tbody tr a").each(function(i){
-              if(i>=4){
-                  blankarray.push('1');
-              }
-          });
-          blankarrayLength = blankarray.length
-
-          console.log(blankarrayLength)
-          var rowcount = Math.ceil(blankarrayLength/3)
-          console.log(rowcount);
+          //   var blankarray = []
+          //   var blankarrayLength
+          //   $.ajax({url: "img/library/"+count+"/"+chinesecharacter}).done(function( data ) {
+          // $(data).find("tbody tr a").each(function(i){
+          //     if(i>=4){
+          //         blankarray.push('1');
+          //     }
+          // });
+          // blankarrayLength = blankarray.length
+          //
+          // console.log(blankarrayLength)
+          // var rowcount = Math.ceil(blankarrayLength/3)
+          // console.log(rowcount);
+          // });
 
             var i = 0;
             for (i; i<8; i++){
@@ -1830,7 +1831,7 @@ var count = ""
 
 
 
-            });
+
 
             // console.log(container)
         }
