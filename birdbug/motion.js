@@ -1431,7 +1431,7 @@ var count = ""
 
     $(oneDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#one').attr('status','clicked');
         $(".page2").css({"opacity": "1","pointer-events":"auto"});
         count="1"
@@ -1439,7 +1439,7 @@ var count = ""
     });
     $(twoDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#two').attr('status','clicked');
       $(".page3").css({"opacity": "1","pointer-events":"auto"});
       count="2"
@@ -1447,126 +1447,126 @@ var count = ""
     });
     $(threeDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#three').attr('status','clicked');
       $(".page4").css({"opacity": "1","pointer-events":"auto"});
       count="3"
     });
     $(fourDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#four').attr('status','clicked');
       $(".page5").css({"opacity": "1","pointer-events":"auto"});
       count="4"
     });
     $(fiveDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#five').attr('status','clicked');
       $(".page6").css({"opacity": "1","pointer-events":"auto"});
       count="5"
     });
     $(sixDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#six').attr('status','clicked');
         $(".page7").css({"opacity": "1","pointer-events":"auto"});
         count="6"
     });
     $(sevenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#seven').attr('status','clicked');
       $(".page8").css({"opacity": "1","pointer-events":"auto"});
       count="7"
     });
     $(eightDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#eight').attr('status','clicked');
       $(".page9").css({"opacity": "1","pointer-events":"auto"});
       count="8"
     });
     $(nineDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#nine').attr('status','clicked');
       $(".page10").css({"opacity": "1","pointer-events":"auto"});
       count="9"
     });
     $(tenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#ten').attr('status','clicked');
       $(".page11").css({"opacity": "1","pointer-events":"auto"});
       count="10"
     });
     $(elevenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#eleven').attr('status','clicked');
         $(".page12").css({"opacity": "1","pointer-events":"auto"});
         count="11"
     });
     $(twelveDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#twelve').attr('status','clicked');
       $(".page13").css({"opacity": "1","pointer-events":"auto"});
       count="12"
     });
     $(thirteenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#thirteen').attr('status','clicked');
       $(".page14").css({"opacity": "1","pointer-events":"auto"});
       count="13"
     });
     $(fourteenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#fourteen').attr('status','clicked');
       $(".page15").css({"opacity": "1","pointer-events":"auto"});
       count="14"
     });
     $(fifteenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#fifteen').attr('status','clicked');
       $(".page16").css({"opacity": "1","pointer-events":"auto"});
       count="15"
     });
     $(sixteenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#sixteen').attr('status','clicked');
         $(".page17").css({"opacity": "1","pointer-events":"auto"});
         count="16"
     });
     $(seventeenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#seventeen').attr('status','clicked');
       $(".page18").css({"opacity": "1","pointer-events":"auto"});
       count="17"
     });
     $(eighteenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#eighteen').attr('status','clicked');
       $(".page19").css({"opacity": "1","pointer-events":"auto"});
       count="18"
     });
     $(nineteenDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#nineteen').attr('status','clicked');
       $(".page20").css({"opacity": "1","pointer-events":"auto"});
       count="19"
     });
     $(twentyDoc).click(function() {
       $(".strokebox").css({"opacity": "0","pointer-events":"none"});
-      $(".strokebox2").css({"width": "80vw","padding-left":"5vw","padding-right":"5vw","justify-content":"center"});
+      $(".strokebox2").css({"width": "70vw","padding-left":"10vw","padding-right":"10vw","justify-content":"center"});
       $('#twenty').attr('status','clicked');
       $(".page21").css({"opacity": "1","pointer-events":"auto"});
       count="20"
